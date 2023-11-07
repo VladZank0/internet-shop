@@ -1,0 +1,62 @@
+.ceo{
+    margin-bottom: 80px;
+    color: $black-07;
+    font-family: 'SF Pro Display-Regular', sans-serif;
+    padding-bottom: env(safe-area-inset-bottom);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    h2,h3,h4,h5,h6{
+        margin: revert;
+        font-weight: bold;
+    }
+    p{
+        margin: revert;
+    }
+    a{
+        display: block;
+        width: fit-content;
+        color: $prime-prime;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        &:hover{
+            color: #7AABFF;
+        }
+    }
+    ul,ol{
+        list-style-type: revert;
+        margin: revert;
+        padding: revert;
+    }
+    &_bottom{
+        margin-bottom: 112px;
+        @include s_1260{
+            margin-bottom: 72px;
+        }
+        @include s_768{
+            margin-bottom: 60px;
+        }
+    }
+    @include s_1260{
+        margin-bottom: 96px;
+    }
+    @include s_768{
+        margin-bottom: 60px;
+    }
+    .section-title{
+        font-size: 24px;
+        margin-bottom: 16px;
+        font-family: 'SF Pro Display-Bold', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        @media (max-width:1250px) {
+            font-size: 32px;
+            font-weight: 500;
+        }
+        @include s_768{
+            font-size: 24px;
+        }
+    }
+    
+}

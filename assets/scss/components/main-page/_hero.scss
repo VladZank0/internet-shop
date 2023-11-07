@@ -1,0 +1,61 @@
+.hero{
+   &__inner{
+        overflow: hidden;
+   }
+   &__slider{
+        position: relative;
+        &-pagination{
+            @include s_768(){
+                display: flex;
+            }
+        }
+   }
+   &__item{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        row-gap: 10px;
+        color: #000;
+        font-family: 'SF Pro Display-Semibold', sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+        font-style: normal;
+        padding: 55px 46px;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 348px;
+        min-height: 560px;
+        background: linear-gradient(180deg, #FBBFF5 0%, #320F99 100%);
+        border-radius: 16px;
+        @media (max-width:500px){
+            width: 268px;
+            min-height: 431px;
+            padding: 42px 35px;
+        }
+        &-title{
+            font-size: 35px;
+            font-weight: 600;
+            @media (max-width:500px){
+                font-size: 27px;
+            }
+        }
+        &-text{
+            font-weight: 600;
+            font-size: 16px;
+            @media (max-width:500px){
+                font-size: 12px;
+            }
+        }
+        
+        &-img{
+            @media (max-width:500px){
+                height: 281px;
+            }
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    
+   }
+}

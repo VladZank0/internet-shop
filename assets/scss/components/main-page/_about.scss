@@ -1,0 +1,119 @@
+.about{
+    margin-top: 42px;
+    margin-bottom: 72px;
+    @include s_768{
+        margin-top: 32px;
+    }
+    &__logo{
+        display: flex;
+        margin-right: 0;
+        svg{
+            overflow: visible;
+        }
+        @include s_460{
+            &-link{
+                font-size: 30px !important;
+            }
+        }
+    }
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 16px;
+        justify-content: center;
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        column-gap: 3px;
+        width: fit-content;
+        margin: 0 auto 32px;
+        @include s_768{
+            margin: 0 0 32px 0;
+        }
+        &-text{
+            color: #31373C;
+            text-align: center;
+            font-family: 'SF Pro Display-Bold', sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            @include s_768{
+                font-size: 32px;
+            }
+            @include s_460{
+                font-size: 25px;
+            }
+        }
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 16px;
+        flex-grow: 1;
+        border-radius: 16px;
+        border: 1px solid $black-01;
+        padding: 14px 26px;
+        box-sizing: border-box;
+        width: 320px;
+        text-align: center;
+        @include s_600{
+            align-items: flex-start;
+            text-align: left;
+            min-height: 272px;
+        }
+        &-icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            background: linear-gradient(180deg, #8FC3FF 0%, #6C7BFF 100%);
+            width: 120px;
+            height: 120px;
+            @include s_600{
+                width: 70px;
+                height: 70px;
+                svg{
+                    width: 50%;
+                }
+            }
+        }
+        &-title{
+            color: $black-1;
+            font-family: 'SF Pro Display-Bold', sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            @include s_768{
+                font-size: 24px;
+            }
+        }
+        &-info{
+            color: $black-07;
+            font-family: 'SF Pro Display-Regular', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        &-link{
+            display: flex;
+            align-items: center;
+            column-gap: 2px;
+            color: $prime-prime;
+            text-align: center;
+            font-family: 'SF Pro Display-Regular', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            &:hover{
+                color: #8FC3FF;
+            }
+        }
+    }
+}

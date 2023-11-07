@@ -1,0 +1,181 @@
+.selections{
+    margin-top: 44px;
+    margin-bottom: 64px;
+    @media (max-width: 1000px){
+        margin-top: 32px;
+    }
+    @media (max-width: 480px){
+        margin-top: 24px;
+    }
+    &__wrapper{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(21, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 32px 40px;
+        @media (max-width: 1000px){
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: 24px;
+        }
+        @media (max-width: 480px){
+            gap: 16px;
+        }
+    }
+    &__title{
+        color: $black-1;
+        font-family: 'Inter-Bold', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        @media (max-width: 1000px){
+            display: none;
+        }
+    }
+    &__item{
+        position: relative;
+        border-radius: 24px;
+        background: #FFD84E;
+        padding: 40px;
+        box-sizing: border-box;
+        min-height: 532px;
+        overflow: hidden;
+        @media (max-width: 1000px){
+            min-height: 320px;
+        }
+        @media (max-width:480px){
+            min-height: 200px;
+        }
+        @media (max-width: 480px){
+            display: flex;
+            align-items: center;
+            padding: 18px;
+            justify-content: space-between;
+        }
+        @media (max-width: 350px){
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        &-button-prev{
+            left: 1%;
+            top: 36.5%;
+            svg path{
+                fill: $prime-prime;
+            }
+            &-icon{
+                background-color:  #EBF4FF;
+            }
+            @media (max-width: 1000px){
+                display: none;
+            }
+        }
+        &-button-next{
+            right: 1%;
+            top: 36.5%;
+            svg path{
+                fill: $prime-prime;
+            }
+            &-icon{
+                background-color:  #EBF4FF;
+            }
+            @media (max-width: 1000px){
+                display: none;
+            }
+        }
+        &-img{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            @media (max-width: 1000px){
+                top: 43%;
+                right: 50px;
+            }
+            @media (max-width: 480px){
+                position: static;
+            }
+           
+        }
+        &-title{
+            color: #000;
+            font-family: 'SF Pro Display-Bold', sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            @media (max-width:480px){
+                font-size: 24px;
+            }
+        }
+        &_slider{
+            padding: 5px;
+            box-sizing: border-box;
+            background: none;
+            overflow-x: hidden;
+            @media (max-width:480px){
+                margin-bottom: 8px;
+            }
+        }
+        &:nth-child(1){
+            grid-column: 1/9;
+            grid-row: 1;
+            @media (max-width: 1000px){
+                grid-column: 1;
+            }
+        }
+        &:nth-child(2){
+            grid-column: 9/22;
+            grid-row: 1;
+            @media (max-width: 1000px){
+                grid-column: 1;
+                grid-row: 2;
+            }
+        }
+        &:nth-child(3){
+            grid-column: 1/14;
+            grid-row: 2;
+            @media (max-width: 1000px){
+                grid-column: 1;
+                grid-row: 4;
+            }
+        }
+        &:nth-child(4){
+            grid-column: 14/22;
+            grid-row: 2;
+            @media (max-width: 1000px){
+                grid-column: 1;
+                grid-row: 3;
+            }
+        }
+        &:nth-child(5){
+            grid-column: 1/9;
+            grid-row: 3;
+            @media (max-width: 1000px){
+                grid-column: 1;
+                grid-row: 5;
+            }
+        }
+        &:nth-child(6){
+            grid-column: 9/22;
+            grid-row: 3;
+            @media (max-width: 1000px){
+                grid-column: 1;
+                grid-row: 6;
+            }
+        }
+        &:nth-child(7){
+            grid-column: 1/14;
+            grid-row: 4;
+            @media (max-width: 1000px){
+                display: none;
+            }
+        }
+        &:nth-child(8){
+            grid-column: 14/22;
+            grid-row: 4;
+            @media (max-width: 1000px){
+                display: none;
+            }
+        }
+    }
+}

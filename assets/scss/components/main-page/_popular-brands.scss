@@ -1,0 +1,45 @@
+.popular-brands{
+    margin-bottom: 48px;
+    @include s_768{
+        margin-bottom: 32px;
+    }
+    &__title{
+        margin: 0;
+    }
+    &__wrapper{
+        display: flex;
+        column-gap: 16px;
+        justify-content: space-between;
+        width: 100%;
+        overflow-x: auto;
+        padding: 10px 0;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        -ms-overflow-style: none;  
+        scrollbar-width: none; 
+        overflow-y: scroll;
+    }
+    &__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 144px;
+        min-height: 144px;
+        border-radius: 16px;
+        background: $black-005;
+        &:hover{
+            box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.1);
+        }
+        &-img{
+            @include s_600(){
+                width: 70%;
+            }
+        }
+        @include s_600(){
+            width: 88px;
+            min-height: 88px;
+        }
+    }
+}

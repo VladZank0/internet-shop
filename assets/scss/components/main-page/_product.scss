@@ -1,0 +1,340 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    max-width: 275px;
+    width: 275px;
+    min-height: 532px;
+    height: 100%;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    box-sizing: border-box;
+    @include s_520{
+        max-width: 150px;
+        padding: 8px;
+        min-height: 508px;
+        height: 100%;
+        border: none;
+        box-shadow: unset;
+    }
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        @include s_520{
+            flex-direction: column-reverse;
+            row-gap: 13px;
+            align-items: unset;
+        }
+    }
+    &__rating{
+        display: flex;
+        column-gap: 4px;
+        align-items: center;
+    }
+    &__rating-link{
+        color: $prime-prime;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    &__rating-stars{
+        display: flex;
+        column-gap: 2px;
+    }
+    &__top-buttons{
+        display: flex;
+        column-gap: 14px;
+        @include s_520{
+            justify-content: space-between;
+        }
+    }
+    &__top-button{
+        border: none;
+        background-color: transparent;
+        outline: none;
+        height: 24px;
+        &:hover{
+            cursor: pointer;
+            
+            svg path{
+                stroke: $prime-prime;
+            }
+        }
+    }
+    &__preview{
+        margin-bottom: 10px;
+        @include s_520{
+            &-img{
+                width: 134px;
+            }
+        }
+    }
+    &__preview-link{
+        display: flex;
+        justify-content: center;
+    } 
+    &__name{
+        display: block;
+        overflow: hidden;
+        color: $black-1;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        padding-bottom: 8px;
+        box-sizing: border-box;
+        @include s_520{
+            font-size: 16px;
+        }
+    }
+    &__status{
+        display: flex;
+        align-items: center;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: auto;
+        margin-bottom: 16px;
+        column-gap: 4px;
+        @include s_520{
+            margin-bottom: 8px;
+        }
+        &::before{
+            content: "";
+            width: 16px;
+            height: 16px;
+            background-color: #77EE83;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        &-text{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            line-height: 20px;
+            @include s_520{
+                width: 100px;
+            }
+        }
+    }
+    &__status_not-actual{
+        &::before{
+            content: url("../img/product/bx_time.svg");
+            display: block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: transparent;
+            transform: translateY(-20%);
+            margin-right: 5px;
+        }
+    }
+    &__basket-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 8px;
+        padding: 12px;
+        margin-bottom: 5px;
+        border-radius: 8px;
+        background: $prime-prime;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        color: white;
+        border: none;
+        outline: none;
+        font-size: 17px;
+        font-weight: 500;
+        overflow-x: hidden;
+        transition: .3s;
+        @include s_520{
+            padding: 0 2px;
+            height: 48px;
+        }
+        &:hover{
+            transition: .3s;
+            background: #7AABFF;
+        }
+        &-icon{
+            height: 24px;
+            &_hidden{
+                display: none;
+            }
+        }
+        &-text{
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            @include s_520{
+                display: none;
+            }
+        }
+        &-mobile-text{
+            display: none;
+            @include s_520{
+                display: block;
+                white-space: initial;
+            }
+        }
+        &_active{
+            background: $prime-green;
+            &:hover{
+                transition: .3s;
+                background-color: #3EDD4E;
+            }
+        }
+        &_not-actual{
+            border: 1px solid $prime-prime;
+            color: $prime-prime;
+            background: transparent;
+            overflow: hidden;
+            padding: 13px;
+            @include s_520{
+                padding: 0 2px;
+                height: 48px;
+            }
+            &:hover{
+                border: 1px solid transparent;
+                color: white;
+                background: #7AABFF;
+            }
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__bottom-buttons{
+        display: flex;
+        justify-content: space-between;
+        @include s_520{
+            flex-direction: column;
+            row-gap: 8px;
+        }
+    }
+    &__bottom-buttons_hidden{
+        visibility: hidden;
+    }
+    &__credit-button{
+        &:hover{
+            transition: .3s;
+            color: #7AABFF;
+        }
+        color: $prime-prime;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    &__fast-buy-button{
+        &:hover{
+            transition: .3s;
+            color: #7AABFF;
+        }
+        color: $prime-prime;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    &__price{
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+        column-gap: 6px;
+        @include s_520{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__price-text{
+        color: $black-1;
+        font-family: 'SF Pro Display-Bold', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &__price-text_hidden{
+        @include s_520{
+            display: none;
+        }
+    }
+    &__price-sale{
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        padding: 4px 8px;
+        border-radius: 4px;
+        background: #DCE9FF;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 14px;
+        color: #4370BE;
+        &_hidden{
+            display: none;
+            // visibility: hidden;
+        }
+    }
+    &__price-sale-icon{
+        display: block;
+        text-align: center;
+        line-height: 16px;
+        color: #DCE9FF;
+        border-radius: 50%;
+        font-size: 13px;
+        transform: rotate(-18.346deg);
+        width: 16px;
+        height: 16px;
+        font-family: 'SF Pro Display-Bold', sans-serif;
+        font-weight: 700;
+        background-color: #AECCFF;
+    }
+    &__buy-info{
+        margin-bottom: 14px;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        &_not-actual{
+            visibility: hidden;
+        }
+    }
+    &__buy-info_hidden{
+        visibility: hidden;
+    }
+}
+.product-slider{
+    &__wrapper{
+        @include s_768(){
+            padding-bottom: 20px;
+        }
+    }
+    &__button-prev{
+        left: 1%;
+        top: 36.5%;
+        svg path{
+            fill: $prime-prime;
+        }
+        &-icon{
+            background-color:  #EBF4FF;
+        }
+    }
+    &__button-next{
+        right: 1%;
+        top: 36.5%;
+        svg path{
+            fill: $prime-prime;
+        }
+        &-icon{
+            background-color:  #EBF4FF;
+        }
+    }
+}
+.rating-star{
+    height: 16px;
+}
+.rating-star_active{
+   svg path{
+    fill: rgba(255, 158, 12, 1);
+   }
+}
+

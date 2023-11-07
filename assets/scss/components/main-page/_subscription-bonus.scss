@@ -1,0 +1,196 @@
+.subscription-bonus{
+    margin-bottom: 86px;
+    @include s_700{
+        margin-bottom: 32px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 18px;
+        row-gap: 24px;
+    }
+}
+.bonus{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    border-radius: 16px;
+    background: #EDF5FF;
+    padding: 54px 56px 25px;
+    box-sizing: border-box;
+    width: 500px;
+    flex-grow: 1;
+    min-height: 284px;
+    @include s_700{
+        padding: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content{
+        position: relative;
+        z-index: 2;
+        max-width: 350px;
+        @include s_700{
+            max-width: unset;
+            width: 100%;
+        }
+    }
+    &__title{
+        color: $black-1;
+        font-family: 'SF Pro Display-Bold', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        @include s_700{
+            font-size: 20px;
+        }
+    }
+    &__info{
+        color: $black-07;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 16px;
+        @include s_700{
+            margin-bottom: 24px;
+        }
+    }
+    &__btns{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        width: fit-content;
+        @include s_700{
+            width: 100%;
+        }
+    }
+    &__registration-btn{
+        display: block;
+        padding: 14.5px 16px;
+        border-radius: 8px;
+        background: $prime-prime;
+        color: white;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        &:hover{
+            background-color: #8FC3FF;
+        }
+    }   
+    &__login-btn{
+        display: block;
+        padding: 14.5px 16px;
+        border-radius: 8px;
+        border: 1px solid $prime-prime;
+        color: $prime-prime;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 16px;
+        font-weight: 550;
+        text-align: center;
+        &:hover{
+            background-color: #8FC3FF;
+            color: white;
+        }
+    }
+    &__image{
+        opacity: 1;
+        img:nth-child(1){
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        img:nth-child(2){
+            position: absolute;
+            right: 28px;
+            transform: translateY(45%);
+            top: 0;
+        }
+        @include s_1430{
+            opacity: .3;
+            z-index: 1;
+        }
+        @media(max-width:1053px){
+            opacity: 1;
+        }
+        @include s_700{
+            display: none;
+        }
+    }
+}
+.subscription{
+    width: 500px;
+    flex-grow: 1;
+    min-height: 284px;
+    border-radius: 16px;
+    background: $black-005;
+    padding: 63px 56px 25px;
+    box-sizing: border-box;
+    @include s_700{
+        padding: 24px;
+    }
+    &__title{
+        display: flex;
+        column-gap: 4px;
+        align-items: center;
+        margin-bottom: 21px;
+        &-text{
+            color: var(_black-1, #31373C);
+            font-family: 'SF Pro Display-Bold', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            @include s_1430{
+                font-size: 24px;
+            }
+            @include s_700{
+                font-size: 24px;
+            }
+        }
+    }
+    &__info{
+        margin-bottom: 16px;
+        color: $black-07;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__form{
+        display: flex;
+        column-gap: 8px;
+        row-gap: 8px;
+        @include s_700{
+            flex-direction: column;
+
+        }
+    }
+    &__input{
+        padding: 14.5px 40px 14.5px 16px;
+        border-radius: 8px;
+        border: 1px solid $black-04;
+        color: $black-1;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        outline: none;
+        min-width: 180px; 
+        @include s_380{
+            padding: 14.5px 16px 14.5px 16px;
+        }
+    }
+    &__btn{
+        border: none;
+        outline: none;
+        padding: 14.5px 16px;
+        border-radius: 8px;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: $prime-prime;
+        color: white;
+        &:hover{
+            cursor: pointer;
+            background-color: #8FC3FF;
+        }
+    }
+}

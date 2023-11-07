@@ -1,0 +1,143 @@
+.mini-promo{
+    margin-bottom: 80px;
+    @include s_1260{
+        margin-bottom: 48px;
+    }
+    @include s_768{
+        margin-bottom: 56px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 16px;
+        align-items: center;
+        justify-content: center;
+        &_reverse{
+            flex-direction: row-reverse;
+        }
+    }
+    &__item{
+        display: block;
+        height: 222px;
+        min-width: 308px;
+        border-radius: 16px;
+        position: relative;
+        overflow: hidden;
+        color: #FFF;
+        text-align: center;
+        font-family:' SF Pro Display-Medium', sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        transition: .3s;
+        box-sizing: border-box;
+        width: 348px;
+        height: 222px;
+        &:hover{
+            transition: .3s;
+            box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.3);
+        }
+        @include s_1260{
+            flex-grow: 1;
+        }
+        @include s_768{
+            font-size: 37px;
+        }
+        @include s_380{
+            min-width: 270px;
+        }
+        &-text{
+            font-size: 16px;
+        }
+        &:nth-child(1){
+            text-align: center;
+            padding: 15px 45px;
+            background: linear-gradient(113deg, #A65DB4 0%, #A479FF 97.97%);
+            img{
+                position: absolute;
+                transform: translateX(-50%);
+                left: 50%;
+                bottom: 0;
+            }
+            @include s_460{
+                font-size: 30px;
+            }
+        }
+        &:nth-child(2){
+            text-align: left;
+            color: black;
+            padding: 25px 20px;
+            background: #B8D6EF;
+            position: relative;
+            img{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+            @include s_460{
+                font-size: 30px;
+            }
+        }
+        &:nth-child(3){
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 24px 55px;
+            box-sizing: border-box;
+            justify-content: flex-end;
+            row-gap: 8px;
+            background-image: url("../img/mini-promo/fon1.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 25%;
+            overflow: hidden;
+            text-align: left;
+            font-size: 32px;
+            flex-grow: 1;
+            max-width: 100%;
+            @include s_700{
+                padding: 16px;
+            }
+        }
+        &_bottom{
+            &:nth-child(1){
+                background: #E1F3E1;
+                padding: 32px 40px;
+                text-align: left;
+                color: black;
+            }
+            &:nth-child(2){
+                background: linear-gradient(113deg, #2787F5 0%, #A479FF 97.97%);
+                color: #FFF;
+                font-size: 28px;
+                font-weight: 500;
+                @include s_380{
+                    font-size: 23px;
+                }
+                img{
+                    transform: translateX(-50%);
+                    left: 50%;
+                    bottom: 0;
+                }
+            }
+            &:nth-child(3){
+                *{
+                    min-width: 264px;
+                }
+                background: url("../img/mini-promo/fon2-big.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 0% 25%;
+                overflow: hidden;
+                align-items: flex-end;
+                white-space: nowrap;
+                @include s_600{
+                    background-image: url("../img/mini-promo/fon2.svg");
+                    white-space: unset;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,199 @@
+.blog{
+    background: #EDF5FF;
+    &__inner{
+        padding: 48px 0 40px 0 !important;
+    }
+    &__tabs-wrapper{
+        display: flex;
+        column-gap: 32px;
+        align-items: center;
+        margin-bottom: 24px;
+        @include s_1200{
+            margin-bottom: 24px;
+        }
+        @include s_768{
+            margin-bottom: 19px;
+        }
+        @include s_600{
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 12px;
+        }
+    }
+    &__title{
+        color: $black-1;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        @include s_600{
+            font-size: 24px;
+        }
+    }
+    &__content{
+       overflow-x: hidden;
+       position: relative;
+    }
+    &__tabs{
+        display: flex;
+        column-gap: 8px;
+        overflow-x: auto;
+        width: 100%;
+        padding-bottom: 5px;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        -ms-overflow-style: none;  
+        scrollbar-width: none; 
+        overflow-y: scroll;
+    }
+    &__tab{
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        padding: 11px 16px;
+        border: none;
+        border-radius: 16px;
+        background: #FFF;
+        color: $black-1;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        white-space: nowrap;
+        &-icon{
+            pointer-events: none;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__tab.tab_active{
+        color: white;
+        background-color: $prime-prime;
+    }
+    &__follow-blog{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 56px;
+        min-height: 109px;
+        border-radius: 16px;
+        background: #FFF;
+        padding: 24px 18px;
+        box-sizing: border-box;
+        color: $black-1;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 24px;
+        margin-top: 24px;
+        @include s_600{
+            font-size: 20px;
+            flex-direction: column;
+            row-gap: 8px;
+            align-items: flex-start;
+        }
+    }
+    &__follow-blog-link{
+        display: block;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        color: rgb(255, 255, 255);
+        padding: 14px 22px;
+        border-radius: 8px;
+        background: $prime-prime;
+        font-size: 16px;
+        white-space: nowrap;
+        transition: .3s;
+        &:hover{
+            transition: .3s;
+            background-color: #7AABFF !important;
+        }
+    }
+    &-slider{
+        width: 100%;
+        &__next-btn{
+            right: 1%;
+            top: 36.5%;
+            svg path{
+                fill: $prime-prime;
+            }
+            span{
+                background-color:  #EBF4FF;
+            }
+        }
+        &__prev-btn{
+            left: 1%;
+            top: 36.5%;
+            svg path{
+                fill: $prime-prime;
+            }
+            span{
+                background-color:  #EBF4FF;
+            }
+        }
+    }
+}
+.article-card{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 8px;
+    justify-content: flex-start;
+    align-content: space-between;
+    padding: 32px 16px 21px;
+    box-sizing: border-box;
+    width: 227px;
+    height: 100%;
+    min-height: 405px;
+    border-radius: 16px;
+    background: #FFF;
+    overflow: hidden;
+    &__content{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        row-gap: 8px;
+        justify-content: space-between;
+        align-content: space-between;
+        min-height: 0;
+        height: 100%;
+    }
+    &__img{
+        height: 132px;
+        // margin: auto 0;
+    }
+    &__btn{
+        display: block;
+        text-align: center;
+        border-radius: 8px;
+        background: #EDF5FF;
+        color: $black-1;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 13px 37px;
+        &:hover{
+            color: $prime-prime;
+        }
+    }
+    &__title{
+        color: $black-1;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: auto;
+        &:hover{
+            color: $prime-prime;
+        }
+    }
+    &__info{
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        width: 100%;
+        color: $black-1;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: auto;
+    }
+}

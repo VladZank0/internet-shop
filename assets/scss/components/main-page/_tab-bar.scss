@@ -1,0 +1,109 @@
+.tab-bar{
+    position: fixed;
+    bottom: 0;
+    z-index: 21;
+    display: none;
+    width: 100%;
+    height: 56px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.05);
+    @include s_1200{
+        display: flex;
+    }
+    &__basket-btn{
+        padding: 8px;
+        border-radius: 12px;
+        background: #F5F5F5;
+        position: relative;
+        height: 24px;
+        &-amount{
+            display: none;
+            position: absolute;
+            top: 3px;
+            right: 5px;
+            color: #FFF;
+            font-family:'SF Pro Display-Regualr', sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            &_active{
+                display: block;
+            }
+        }
+        &_filled{
+            background-color: $prime-green;
+            svg path{
+                fill: white;
+            }
+        }
+        &_active{
+            background-color: $prime-prime;
+            svg path{
+                fill: white;
+            }
+        }
+    }
+    &__list{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }  
+    &__item{
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        &-icon{
+            height: 24px;
+            &:hover{
+                cursor: pointer;
+                color: $prime-prime;
+            }
+        }
+        &-text{
+            color: var(_black-1, #31373C);
+            text-align: right;
+            font-family: 'SF Pro Display-Regular', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            &:first-child{
+                height: 24px;
+            }
+            @include s_700{
+                display: none;
+            }
+        }
+    }
+}
+.mobile-catalog-btn{
+    @include s_700{
+        &__text{
+            display: none;
+        }
+    }
+    &__icon{
+        height: 24px;
+    }
+    &__icon_close{
+        display: none;
+        height: 24px;
+    }
+    &_active{
+        span:nth-child(1){
+            display: none;
+        }
+        span:nth-child(2){
+            display: block;
+        }
+        span:last-child{
+            color: $prime-prime;
+        }
+    }
+}
