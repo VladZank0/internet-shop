@@ -1,0 +1,80 @@
+.help{
+    background-color: $prime-prime-10;
+    margin-bottom: 72px;
+    @include s_768{
+        margin-bottom: 48px;
+    }
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 24px;
+        padding: 42px 0;
+        box-sizing: border-box;
+        @include s_460{
+            flex-direction: column;
+            row-gap: 16px;
+            padding: 24px;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        width: 100%;
+        @include s_460{
+            align-items: center;
+        }
+    }
+    &__title{
+        color: $black-1;
+        font-family: 'SF Pro Display-Bold', sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        @include s_460{
+            font-size: 24px;
+        }
+    }
+    &__description{
+        color: $black-1;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 8px;
+    }
+    &__img {
+        display: inline-flex;
+        svg{
+            @include s_460{
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+    
+   
+    &__btn{
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);
+        }
+        padding: 14.5px 16px;
+        width: fit-content;
+        border: none;
+        border-radius: 8px;
+        background: #FFF;
+        color: $black-1;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        @include s_460{
+            width: 100%;
+        }
+    }
+}

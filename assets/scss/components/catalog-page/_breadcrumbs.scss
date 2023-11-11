@@ -1,0 +1,43 @@
+.breadcrumbs{
+    margin-bottom: 24px;
+    @include s_768{
+        margin-bottom: 17px;
+    }
+    &__inner{
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        overflow-x: auto;
+        overflow-y: visible;
+        padding-bottom: 3px;
+    }
+    &__list{
+        display: flex;
+        width: 100%;
+        column-gap: 28px;
+    }
+    &__item{
+        position: relative;
+        white-space: nowrap;
+        &:not(:last-child)::after{
+            content: "";
+            background-image:  url("../img/catalog/dashicons_arrow-right.svg");
+            position: absolute;
+            background-position: center;
+            right: -24px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &__link{
+        color: $black-1;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        &:hover{
+            color: $prime-prime;
+        }
+    }
+}

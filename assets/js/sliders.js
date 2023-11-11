@@ -79,4 +79,15 @@ const selections_slider = new Swiper ('.selections__item_slider', {
       prevEl: '.swiper-button-prev',
     }
 })
+const news_slider = new Swiper ('.news__slider', {
+    spaceBetween: 29,
+    watchOverflow: true,
+    slidesPerView: "auto",
+    centeredSlidesBounds:true,
+    observer: true,
+    observeParents: true,
+    loop:false,
+    slidesOffsetAfter:false,
+    dynamicBullets: true
+})
 

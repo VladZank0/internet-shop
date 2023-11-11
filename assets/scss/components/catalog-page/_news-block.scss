@@ -1,0 +1,113 @@
+.news{
+    margin-bottom: 96px;
+    @include s_460{
+        margin-bottom: 56px;
+    }
+    &__title{
+        margin-bottom: 0;
+    }
+    &__show-all-row{
+        flex-direction: row;
+        align-items: flex-end;
+        @include s_600{
+            align-items: center;
+        }
+    }
+    &__show-all-btn{
+        &:hover{
+            span:first-child{
+                color: white ;
+            }
+        }
+    }
+    &__show-all-btn-link{
+        padding: 14.5px 16px;
+        background-color: $prime-prime;
+        border-radius: 8px;
+        &:hover{
+            background-color: #7AABFF;
+        }
+        @include s_600{
+            padding: 6.5px 16px;
+        }
+    }
+    &__inner{
+        overflow-x: hidden;
+        padding-bottom: 5px;
+    }
+    &__show-all-btn-text{
+        color: #FFF;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        &:hover{
+            color: white;
+        }
+    }
+    &__show-all-btn-icon{
+        display: none;
+    }
+    &__item{
+        display: block;
+        width: 216px;
+        height: 302px;
+        border-radius: 8px;
+        overflow: hidden;
+        &:hover{
+            box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);
+        }
+        &-img{
+            object-fit: cover;
+            width: 216px;
+            height: 148px;          
+        }
+        &-content{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 154px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        &-title{
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            color: $black-1;
+            text-overflow: ellipsis;
+            font-family: 'SF Pro Display-Medium', sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 8px;
+        }
+        &-description{
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            color: $black-07;
+            text-overflow: ellipsis;
+            font-family: 'SF Pro Display-Regular', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: auto;
+        }
+        &-date{
+            display: block;
+            color: $black-07;
+            font-family: 'SF Pro Display-Regular', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: right;
+        }
+    }
+}

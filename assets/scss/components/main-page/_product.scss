@@ -65,12 +65,90 @@
             }
         }
     }
+    &__list-part{
+        display: none;
+    }
+    &__article-number{
+        color: $black-07;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__details{
+        display: none;
+        color: $black-07;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+    }
+    &__more-details-btn{
+        color: $prime-prime;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__delivery-info{
+        display: none;
+        align-items: center;
+        column-gap: 8px;
+        color: $black-07;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &:not(:last-child){
+            margin-bottom: 4px;
+        }
+    }
+    &__delivery-icon{
+        display: inline-flex;
+    }
     &__preview{
+        position: relative;
         margin-bottom: 10px;
         @include s_520{
             &-img{
                 width: 134px;
             }
+        }
+        &-button{
+            display: none;
+            align-items: center;
+            position: absolute;
+            column-gap: 4px;
+            bottom: 20px;
+            left: 50%;
+            color: $black-1;
+            font-family: 'SF Pro Display-Medium', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            transform: translate(-50%, 0);
+            padding: 16px 23px 16px 22px;
+            border-radius: 32px;
+            border: 1px solid $black-01;
+            white-space: nowrap;
+            background: rgba(255, 255, 255, 0.80);
+            &-icon{
+                display: inline-flex;
+            }
+            &:hover{
+                cursor: pointer;
+                background-color: $prime-prime;
+                color: white;
+                border: 1px solid transparent;
+                svg path{
+                    stroke: white;
+                }
+            } 
         }
     }
     &__preview-link{
@@ -254,6 +332,7 @@
         font-family: 'SF Pro Display-Bold', sans-serif;
         font-size: 20px;
         font-weight: 700;
+        white-space: nowrap;
     }
     &__price-text_hidden{
         @include s_520{

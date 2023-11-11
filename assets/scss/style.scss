@@ -1,5 +1,6 @@
 $prime-prime : #4286FA;
 $prime-green : #0ECF21;
+$prime-prime-5: rgba(66, 134, 250, 0.05);
 $prime-prime-10: rgba(66, 134, 250, 0.10);
 $black-1: #31373C;
 $black-01: #E7E7E7;
@@ -102,8 +103,10 @@ body{
     @include s_380(){
         padding: 0 10px;
     }
-    max-width: 1440px;
+    max-width: 1460px;
     padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
     margin: 0 auto;
 }
 .shop-title{
@@ -156,13 +159,12 @@ body{
 }
 .show-all-btn{
     &:hover{
-        .show-all-btn__icon{
-            background: #7AABFF;
-        }
-        .show-all-btn__text{
+        span:first-child{
             color: #7AABFF;
         }
-        
+        span:nth-child(2){
+            background: #7AABFF;
+        }
     }
     &__link{
         display: flex;
@@ -306,7 +308,26 @@ body{
 .swiper-button-disabled{
     display:none;
 }
-
+.show-more-btn{
+    width: 100%;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid $prime-prime;    
+    color: $prime-prime;
+    padding: 10.5px;
+    font-family: 'SF Pro Display-Medium', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    box-sizing: border-box;  
+    &:hover{
+        cursor: pointer;
+        color: white;
+        background-color: #7AABFF;
+        border: 1px solid transparent;
+    }
+}
 
 @import "./components/main-page/header";
 @import "./components/main-page/collection-line";
@@ -323,4 +344,8 @@ body{
 @import "./components/main-page/mini-promo";
 @import "./components/main-page/subscription-bonus";
 @import "./components/main-page/footer";
-@import "./components/selections-page/selections"
+@import "./components/selections-page/selections";
+@import "./components/catalog-page/breadcrumbs";
+@import "./components/catalog-page/catalog-page";
+@import "./components/catalog-page/news-block";
+@import "./components/catalog-page/help";
