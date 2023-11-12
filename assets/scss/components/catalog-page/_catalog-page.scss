@@ -95,6 +95,7 @@
         width: 400px;
         background: $black-005;
         max-height: 1836px;
+        flex-shrink: 0;
         @include s_1200{
             display: none;
         }
@@ -172,6 +173,9 @@
            
         }
     }
+    &__show-more-btn{
+        padding: 14.5px;
+    }
     &__catalog-list{
         display: grid;
         grid-template-columns: repeat( auto-fill, minmax(242px, 1fr));
@@ -207,6 +211,7 @@
                 }
             }
         }
+       
         &_list{
             justify-items:baseline;
             grid-template-columns: repeat( auto-fit,  100%);
@@ -239,7 +244,7 @@
                 max-width: unset;
                 height: fit-content;
                 min-height: 283px;
-                column-gap: 33px;
+                column-gap: 18px;
                 padding-right: 48px;
                 border-radius: 4px;
                 @include s_1260{
@@ -259,15 +264,17 @@
                     justify-content: flex-start;
                     height: 100%;
                     row-gap: 8px;
-                    max-width: 404px;
+                    max-width: 384px;
                     width: 100%;
                     &:nth-child(even){
                         max-width: 315px;
-                        padding: 11px 24px;
+                        padding: 15px 16px 6px 24px;
+                        box-sizing: border-box;
                     }
                     &-row{
                         display: flex;
                         justify-content: space-between;
+                        align-items: center;
                         width: 100%;
                     }
                     .product__delivery-info{
@@ -283,6 +290,7 @@
                     }
                     .product__rating{
                         display: flex;
+                        align-items: center;
                     }
                     .product__status{
                         display: flex;
@@ -298,14 +306,15 @@
                     .product__basket-button{
                         display: flex;
                         margin: 0;
-                        width: 283px;
+                        width: 243px;
                     }
                     .product__bottom-buttons{
                         display: flex;
                         margin-bottom: 8px;
-                        width: 283px;
+                        width: 243px;
                     }
                     .rating-star{
+                        height: 20px;
                         svg{
                             width: 20px;
                             height: 20px;
@@ -317,6 +326,9 @@
                     .product__price{
                         display: flex;
                         margin: 0;
+                        &-text{
+                            font-size: 24px;
+                        }
                     }
 
                 }

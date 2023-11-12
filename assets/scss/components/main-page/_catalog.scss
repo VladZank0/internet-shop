@@ -139,7 +139,7 @@
     padding-left: 16px !important;
     border: none;
     padding-top: 5px !important;
-    margin-bottom: 60px !important;
+    margin-bottom: 56px !important;
     transition: none !important;
     &::-webkit-scrollbar {
         display: none !important;
@@ -236,6 +236,9 @@
             flex-direction: column;
             row-gap: 20px;
             overflow-y: scroll;
+            &_big-padding{
+                margin-bottom: 88px !important;
+            }
             li{
                 width: 97%;
                 a{

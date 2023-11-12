@@ -1,14 +1,21 @@
 .tab-bar{
+    display: flex;
+    row-gap: 6.5px;
     position: fixed;
     bottom: 0;
     z-index: 21;
     display: none;
     width: 100%;
-    height: 56px;
+    min-height: 56px;
     background: rgb(255, 255, 255);
     box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.05);
     @include s_1200{
         display: flex;
+    }
+    &_full{
+        flex-direction: column;
+        padding: 9px 0;
+        box-sizing: border-box;
     }
     &__basket-btn{
         padding: 8px;
@@ -45,6 +52,10 @@
         }
     }
     &__list{
+        
+        &_hidden{
+            display: none;
+        }
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -57,7 +68,6 @@
         column-gap: 4px;
         justify-content: center;
         height: 100%;
-        width: 100%;
         &-icon{
             height: 24px;
             &:hover{
@@ -66,7 +76,7 @@
             }
         }
         &-text{
-            color: var(_black-1, #31373C);
+            color: $black-1;
             text-align: right;
             font-family: 'SF Pro Display-Regular', sans-serif;
             font-size: 16px;
@@ -78,7 +88,11 @@
             }
             @include s_700{
                 display: none;
+                &_visiable{
+                    display: flex;
+                }
             }
+           
         }
     }
 }

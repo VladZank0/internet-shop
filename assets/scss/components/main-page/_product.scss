@@ -103,9 +103,6 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        &:not(:last-child){
-            margin-bottom: 4px;
-        }
     }
     &__delivery-icon{
         display: inline-flex;
