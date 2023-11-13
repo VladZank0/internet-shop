@@ -377,6 +377,7 @@
         display: none;
     }
     &__icon{
+        display: inline-flex;
         svg path{
             fill: black;
         }
