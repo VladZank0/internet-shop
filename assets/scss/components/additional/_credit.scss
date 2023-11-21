@@ -1,0 +1,164 @@
+.credit{
+    padding-top: 16px;
+    box-sizing: border-box;
+    @include s_520{
+        padding-top: 0;
+    }
+    &__title{
+        color: $black-1;
+        font-family: 'SF Pro Display-Bold', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        margin-bottom: 12px;
+        @include s_520{
+            font-size: 24px;
+        }
+    }
+    &__subtitle{
+        color: $black-1;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 56px;
+        @include s_520{
+            font-size: 20px;
+            margin-bottom: 48px;
+        }
+    }
+    &__advantages{
+        display: flex;
+        column-gap: 64px;
+        row-gap: 64px;
+        margin-bottom: 32px;
+        flex-wrap: wrap;
+        @include s_1000{
+            justify-content: space-between;
+        }
+        @include s_768{
+            flex-direction: column;
+        }
+        @include s_520{
+            row-gap: 29.5px;
+            margin-bottom: 24px;
+        }
+    }
+    &__advantage{
+        display: flex;
+        column-gap: 16px;
+        align-items: flex-start;
+        @include s_520{
+            column-gap: 8px;
+            align-items: center;
+        }
+        &-svg{
+            @include s_520{
+                width: 20px;
+            }
+        }
+        &-title{
+            color: $black-1;
+            font-family: 'SF Pro Display-Medium', sans-serif;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            @include s_520{
+                font-size: 20px;
+            }
+        }
+        &-text{
+            color: $black-07;
+            font-family: 'SF Pro Display-Regular', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        &-icon{
+            display: flex;
+            column-gap: 18px;
+            width: 64px;
+            height: 64px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: $prime-prime-10;
+            @include s_520{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &-content{
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+        }
+    }
+    &__consultation{
+        margin-bottom: 32px;
+        padding: 32px 0;
+        background: $prime-prime-5;
+        &-inner{
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+        }
+        &-title{
+            color: $prime-prime;
+            font-family: 'SF Pro Display-Bold';
+            font-size: 40px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            @include s_520{
+                font-size: 24px;
+            }
+        }
+        &-subtitle{
+            color: $black-1;
+            font-family: 'SF Pro Display-Medium', sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            @include s_520{
+                font-size: 20px;
+            }
+        }
+        &-text{
+            color: $black-1;
+            font-family: 'SF Pro Display-Medium', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            @include s_520{
+                font-size: 16px;
+                max-width: 222px;
+            }
+        }
+        &-button{
+            display: block;
+            margin-top: 8px;
+            width: fit-content;
+            border-radius: 8px;
+            background: $prime-prime;
+            color: #FFF;
+            padding: 14.5px 16px;
+            font-family: 'SF Pro Display-Medium', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border: none;
+            &:hover{
+                cursor: pointer;
+                background-color: #7AABFF;
+            }
+        }
+    }
+}

@@ -1,5 +1,7 @@
 .help{
-    background-color: $prime-prime-10;
+    &_big-container{
+        background-color: $prime-prime-10;
+    }
     margin-bottom: 72px;
     @include s_768{
         margin-bottom: 48px;
@@ -7,23 +9,35 @@
     &__inner{
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
+        background-color: $prime-prime-10;
         column-gap: 24px;
-        padding: 42px 0;
+        padding-top: 42px;
+        padding-bottom: 42px;
         box-sizing: border-box;
-        @include s_460{
+        border-radius: 16px;
+        @include s_520{
             flex-direction: column;
             row-gap: 16px;
             padding: 24px;
+            align-items: flex-start;
         }
+        &_align-center{
+            justify-content: flex-start;
+            background-color: unset;
+            @include s_520{
+                justify-content: center;
+                align-items: center;
+            }
+        }
+       
     }
     &__content{
         display: flex;
         flex-direction: column;
         row-gap: 8px;
-        width: 100%;
-        @include s_460{
-            align-items: center;
+        @include s_520{
+            align-items: flex-start;
         }
     }
     &__title{
@@ -33,7 +47,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        @include s_460{
+        @include s_520{
             font-size: 24px;
         }
     }
@@ -48,15 +62,23 @@
     }
     &__img {
         display: inline-flex;
+      
         svg{
-            @include s_460{
+            @include s_520{
                 width: 80px;
                 height: 80px;
             }
         }
+        
     }
-    
-   
+    &__img_mini{
+        svg{
+            @include s_520{
+                width: 56px;
+                height: 56px;
+            }
+        }
+    }
     &__btn{
         &:hover{
             cursor: pointer;
@@ -73,8 +95,11 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        @include s_460{
-            width: 100%;
+        &_large{
+            @include s_520{
+                width: 100%;
+            }
         }
+       
     }
 }

@@ -1,0 +1,68 @@
+.warranty{
+    margin-bottom: 73px;
+    @include s_768{
+        margin-bottom: 91px;
+    }
+    @include s_520{
+        margin-bottom: 56px;
+    }
+    
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        @include s_900{
+            row-gap: 24px;
+        }
+        @include s_520{
+            row-gap: 8px;
+        }
+    }
+    &__title{
+        font-family: 'SF Pro Display-Bold',sans-serif;
+        font-size: 48px;
+        font-weight: bold;
+        margin: 16px 0 8px 0;
+        @include s_900{
+            margin: 16px 0 0px 0;
+        }
+        @include s_520{
+            font-size: 24px;
+            margin: 8px 0 0 0;
+        }
+    }
+    &__subtitle{
+        color: $black-1;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        @include s_520{
+            font-size: 20px;
+        }
+    }
+    &__text{
+        color: $black-07;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__warning{
+        color: $prime-prime;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 16px;
+        background: $prime-prime-10;
+        padding: 24px;
+        box-sizing: border-box;
+        @include s_520{
+            padding: 16px;
+        }
+    }
+}

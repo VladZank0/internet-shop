@@ -30,6 +30,11 @@ $black-07: #595959;
         @content;
     }
 }
+@mixin s_1000{
+    @media screen and(max-width:1000px){
+        @content;
+    }
+}
 @mixin s_900{
     @media screen and(max-width:900px){
         @content;
@@ -349,3 +354,7 @@ body{
 @import "./components/catalog-page/catalog-page";
 @import "./components/catalog-page/news-block";
 @import "./components/catalog-page/help";
+@import "./components/additional/warranty";
+@import "./components/additional/faq";
+@import "./components/additional/credit";
+@import "./components/additional/bonus";

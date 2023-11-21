@@ -1,0 +1,101 @@
+.faq{
+    margin-bottom: 72px;
+    @include s_900{
+        margin-bottom: 48px;
+    }
+    @include s_768{
+        margin-bottom: 40px;
+    }
+    &__title{
+        color: $black-1;
+        font-family: 'SF Pro Display-Bold';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        @include s_520{
+            font-size: 24px;
+        }
+    }
+    &-list{
+        column-count: 4;
+        @include s_900{
+            column-count: 2;
+        }
+        @include s_600{
+            display: none;
+        }
+        &-item{
+            page-break-inside: avoid;
+            break-inside: avoid;
+            padding: 24px 16px;
+            border-radius: 16px;
+            border:1px solid $black-005;
+            background: #FFF;
+            height: fit-content;
+            box-sizing: border-box;
+            max-width: 500px;
+            width: 100%;
+            margin-bottom: 8px;
+           
+            &__title{
+                color: $black-1;
+                font-family: 'SF Pro Display-Bold', sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: bold;
+                line-height: normal;
+                margin: 0;
+                margin-bottom: 8px;
+                @include s_520{
+                    font-size: 20px;
+                }
+            }
+            &__text{
+                color: $black-1;
+                font-family: 'SF Pro Display-Medium', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin: 0;
+                @include s_520{
+                    color: $black-07;
+                }
+            }
+        }
+
+    }
+    &-list-mobile{
+        display: none;
+        border: none;
+        @include s_600{
+            display: block;
+        }
+            &__item{
+                max-width: unset;
+                border: none;  
+                margin-bottom: 0;
+                &-title{
+                    width: 90%;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        background-image:  url("../img/footer/dashicons_arrow-down-alt2.svg");
+                        position: absolute;
+                        background-position: center;
+                        background-size: contain;
+                        top: 5px;
+                        right: -10%;
+                        width: 20px;
+                        height: 20px;
+                        transition: .3s ease-in-out;
+                    }
+                    &.accordion-btn_active::after{
+                        transform: rotate(180deg);
+                        transition: .3s ease-in-out;
+                    }
+                }
+            }
+    }
+}

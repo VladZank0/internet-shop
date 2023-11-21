@@ -1,0 +1,56 @@
+.bonus{
+    &__banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 40px;
+        padding: 34px 34px;
+        border-radius: 32px;
+        background: #B2CEFF;
+        margin-bottom: 30px;
+        @include s_700{
+            flex-direction: column;
+            row-gap: 16px;
+            text-align: center;
+        }
+        &-content{
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+        }
+        &-title{
+            color: $prime-prime;
+            font-family: 'SF Pro Display-Bold', sans-serif;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            max-width: 807px;
+            @include s_1200{
+                font-size: 60px;
+            }
+            @include s_1000{
+                font-size: 40px;
+            }
+            @include s_700{
+                font-size: 24px;
+            }
+        }
+        &-subtitle{
+            color: $prime-prime;
+            font-family: 'SF Pro Display-Medium', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            @include s_700{
+                font-size: 16px;
+            }
+        }
+        &-img{
+            @include s_1000{
+                width: 202px;
+            }
+        }
+    }
+}
