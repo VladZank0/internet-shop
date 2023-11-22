@@ -1,0 +1,161 @@
+.referal{
+    &__banner{
+        background: $prime-prime;
+        margin-bottom: 41px;
+        @include s_1000{
+            margin-bottom: 32px;
+        }
+        @include s_576{
+            margin-bottom: 24px;
+        }
+        &-inner{
+            display: flex;
+            justify-content: space-between;
+            padding: 70px 0 40px;
+            column-gap: 20px;
+            align-items: center;
+            box-sizing: border-box;
+            overflow: hidden;
+            @media (max-width:1100px){
+                flex-direction: column;
+                align-items: unset;
+                height: 574px;
+                padding: 40px 0 0px;
+            }
+            @include s_768{
+                align-content: center;
+                align-items: center;
+                height: unset;
+                padding: 32px 5px;
+                text-align: center;
+            }
+        }
+        &-content{
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+        }
+        &-title{
+            color:  #FFF;
+            font-family: 'SF Pro Display-Black', sans-serif;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            max-width: 720px;
+            @include s_768{
+               font-size: 32px;
+               max-width: unset;
+            }
+        }
+        &-subtitle{
+            color: #FFF;
+            font-family: 'SF Pro Display-Bold', sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            max-width: 571px;
+            @include s_768{
+                font-size: 16px;
+                max-width: unset;
+            }
+        }
+        &-button{
+            padding: 14.5px 16px;
+            width: fit-content;
+            box-sizing: border-box;
+            color: $black-1;
+            border-radius: 8px;
+            background: #FFF;
+            font-family: 'SF Pro Display-Medium', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            &:hover{
+                cursor: pointer;
+                box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
+            }
+            @include s_768{
+                width: 100%;
+            }
+        }
+         
+        &-img{
+            @include s_1260{  
+                    width: 315px;
+                    height: 312px;
+            }
+            @media (max-width:1100px){
+                    margin-left: auto;
+                    margin-top: -30px;
+                    margin-right: 40px;
+            }
+            @include s_768{
+                margin: 0;
+                display: none;
+            }
+            &_copy{
+                display: none;
+                @include s_768{
+                    display: block;
+                    align-self: center;
+                }
+            }
+        }
+    }
+    &__instruction{
+        margin-bottom: 73px;
+        @include s_1000{
+            margin-bottom: 65px;
+        }
+        @include s_576{
+            margin-bottom: 53px;
+        }
+        &-title{
+            color: $black-1;
+            font-family: 'SF Pro Display-Bold', sans-serif;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 150%; /* 48px */
+            margin-bottom: 8px;
+        }
+        &-list{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            row-gap: 20px;
+            align-items: flex-start;
+        }
+        &-item{
+            width: 272px;
+        }
+        &-item-title{
+            color: $prime-prime;
+            font-family: 'SF Pro Display-Bold', sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 150%; /* 72px */
+        }
+        &-item-text{
+            color: $black-1;
+            font-family: 'SF Pro Display-Medium', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 24px */
+        }
+        &-item-link{
+            color: $prime-prime;
+        }
+    }
+}
+
+
+
+.referal-instruction{
+   
+}

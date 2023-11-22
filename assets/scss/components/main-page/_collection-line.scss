@@ -6,6 +6,9 @@
     @include s_768{
         margin-bottom: 16px;
     }
+    &_no-margin{
+        margin-bottom: 0;
+    }
     &__inner{
         display: flex;
         align-items: center;
