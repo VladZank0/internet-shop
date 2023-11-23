@@ -18,6 +18,18 @@
         border: none;
         box-shadow: unset;
     }
+    &__delete-btn{
+        margin-left: auto;
+        display: inline-flex;
+        svg{
+            &:hover{
+                path{
+                    fill: $prime-prime;
+                }
+            }
+            
+        }
+    }
     &__header{
         display: flex;
         justify-content: space-between;
@@ -46,6 +58,9 @@
         column-gap: 2px;
     }
     &__top-buttons{
+        &_hidden{
+            display: none;
+        }
         display: flex;
         column-gap: 14px;
         @include s_520{

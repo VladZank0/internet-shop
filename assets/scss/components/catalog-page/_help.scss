@@ -6,13 +6,19 @@
     @include s_768{
         margin-bottom: 48px;
     }
+    &_min-margin{
+        margin-bottom: 40px;
+        @include s_576{
+            margin-bottom: 16px;
+        }
+    }
     &__inner{
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: $prime-prime-10;
         column-gap: 24px;
-        padding: 42px;
+        padding: 27px;
         box-sizing: border-box;
         border-radius: 16px;
         @include s_600{
