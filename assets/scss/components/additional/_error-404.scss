@@ -1,0 +1,42 @@
+.not-found{
+    text-align: center;
+    background: $prime-prime-2;
+    &__inner{
+        padding: 137px 0;
+        box-sizing: border-box;
+        @include s_576{
+            padding: 40px 0;
+        }
+    }
+    &__img{
+        margin-bottom: 24px;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        align-items: center;
+    }
+    &__title{
+        color: $black-1;
+        font-family: 'SF Pro Display-Bold', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        @include s_576{
+            font-size: 32px;
+        }
+    }
+    &__subtitle{
+        color: $black-07;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__button{
+        width: fit-content;
+    }
+}

@@ -57,6 +57,7 @@
         display: flex;
         column-gap: 2px;
     }
+   
     &__top-buttons{
         &_hidden{
             display: none;
@@ -399,26 +400,6 @@
             padding-bottom: 20px;
         }
     }
-    &__button-prev{
-        left: 1%;
-        top: 36.5%;
-        svg path{
-            fill: $prime-prime;
-        }
-        &-icon{
-            background-color:  #EBF4FF;
-        }
-    }
-    &__button-next{
-        right: 1%;
-        top: 36.5%;
-        svg path{
-            fill: $prime-prime;
-        }
-        &-icon{
-            background-color:  #EBF4FF;
-        }
-    }
 }
 .rating-star{
     height: 16px;
@@ -427,5 +408,13 @@
    svg path{
     fill: rgba(255, 158, 12, 1);
    }
+}
+.rating-star_big{
+    width: 24px;
+    height: 24px;
+    svg{
+        width: 24px;
+        height: 24px;
+    }
 }
 
