@@ -1,0 +1,93 @@
+.search-page{
+    &__title{
+        color: $black-1;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 16px;
+        @include s_576{
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+    }
+    &__list-title{
+        color: $black-1;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 16px;
+        @include s_576{
+            font-size: 24px;
+        }
+    }
+    &__name{
+        display: block;
+        color: $prime-prime;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 40px;
+        @include s_900{
+            margin-bottom: 32px;
+        }
+        @include s_576{
+            font-size: 24px;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    &__list-wrapper{
+        margin-bottom: 40px;
+        @include s_900{
+            margin-bottom: 32px;
+        }
+        @include s_576{
+            margin-bottom: 16px;
+        }
+        &:last-child{
+            margin-bottom: 40px;
+        }
+    }
+    &__products-list-item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    &__product{
+        display: flex;
+        max-height: unset;
+    }
+    &__article{
+        max-width: 342px;
+        width: 100%;
+        @include s_768{
+            max-width: 224px;
+        }
+        .article-card__info{
+            -webkit-line-clamp: 3;
+            @include s_768{
+                -webkit-line-clamp: 5;
+            }
+        }
+        .article-card__img{
+            height: unset;
+        }
+        img{
+            width: 326px;
+            text-align: center;
+            @include s_768{
+                width: unset;
+            }
+        }
+        
+    }
+}

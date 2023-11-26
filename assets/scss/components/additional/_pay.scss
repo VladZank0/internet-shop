@@ -1,0 +1,101 @@
+.pay{
+    margin-bottom: 62px;
+    @include s_900{
+        margin-bottom: 62px;
+    }
+    @include s_576{
+        margin-bottom: 24px;
+    }
+    &__title{
+        color: $black-1;
+        font-family: 'SF Pro Display-Bold', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        margin-bottom: 12px;
+        @include s_900{
+            margin-bottom: 24px;
+        }
+        @include s_576{
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+    }
+    &__subtitle{
+        color: $black-07;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 40px;
+        @include s_900{
+            margin-bottom: 56px;
+        }
+        @include s_576{
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+    }
+    
+    &__methods{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        @include s_576{
+            gap: 16px;
+        }
+        &-item{
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            flex-grow: 1;
+            border-radius: 16px;
+            width: 200px;
+            padding: 24px 11px 24px 24px;
+            border-radius: 16px;
+            background: $prime-prime-5;
+            
+            @include s_576{
+                padding: 16px 19px 16px 16px;
+                row-gap: 16px;
+            }
+            &-title{
+                color: $black-1;
+                font-family: 'SF Pro Display-Medium', sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                @include s_576{
+                    font-size: 20px;
+                }
+                &-box{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    @include s_576{
+                        align-items: center;
+                        flex-direction: row;
+                    }
+                }
+            }
+            &-text{
+                color: $black-07;
+                font-family: 'SF Pro Display-Medium', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            &-icon{
+                @include s_576{
+                    width: 21px;
+                    height: 21px;
+                }
+            }
+        }
+    }
+  
+}
