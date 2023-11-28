@@ -123,6 +123,10 @@
             top: 16px;
             background: transparent;
             border: none;
+            @include s_576{
+                right: 16px;
+                top: 16px;
+            }
         }
         &-count{
             display: flex;
@@ -580,7 +584,7 @@
                 font-weight: 500;
                 line-height: normal;
                 appearance: none;
-                
+                background-color: transparent;
                 &::-webkit-calendar-picker-indicator {
                     background-image: url('../img/calendar.svg');
                     background-position: center;
