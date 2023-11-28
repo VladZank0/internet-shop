@@ -402,7 +402,56 @@ body{
     }
     
 }
+.custom-switch{
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    &__label{
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+        border: 1px solid $black-01;
+        background: $black-01;
+        border-radius: 20px;
+        transition: all 0.3s;
+        &:hover{
+            cursor: pointer;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius:50%;
+            background-color: white;
+            top: 0px;
+            left: 0px;
+            transition: all 0.3s;
+        }
+    }
+    &__input{
+        appearance: none;
+        &:checked ~ .custom-switch__label::after{
+            left : 10px;
+            background-color: $prime-prime;
+        }
+        &:checked + .custom-switch__label {
+            background-color: #7AABFF;
+            border: 1px solid $prime-prime;
+        }  
+    }
+    &__text{
+        color: $black-1;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
 .default-btn{
+    display: block;
     color: #FFF;
     font-family: 'SF Pro Display-Medium', sans-serif;
     font-size: 16px;
@@ -413,13 +462,57 @@ body{
     background: $prime-prime;
     transition: .3s;
     padding: 14.5px 16px;
+    box-sizing: border-box;
     border: none;
     &:hover{
         cursor: pointer;
         transition: .3s;
         background: #7AABFF;
     }
-    
+    &_green{
+        background: $prime-green;
+        &:hover{
+            background: #3EDD4E;
+        }
+    }
+    &_ghost{
+        color: $prime-prime;
+        border: 1px solid $prime-prime;
+        background: transparent;
+        &:hover{
+            background: #D3E4FF;
+            border: 1px solid transparent;
+        }
+    }
+}
+.close-btn{
+    &:hover{
+        cursor: pointer;
+        svg path{
+            fill: $prime-prime;
+        }
+    }
+}
+.map-btn{
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+    border: none;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    color: $black-1;
+    font-family: 'SF Pro Display-Medium', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 8px;
+    background:  #FFF;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
+    white-space: nowrap;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 @import "./components/main-page/header";
@@ -453,3 +546,4 @@ body{
 @import "./components/additional/error-404";
 @import "./components/additional/search-page";
 @import "./components/additional/pay";
+@import "./components/additional/busket";
