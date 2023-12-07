@@ -36,4 +36,5 @@
         list_view_change_btn.classList.remove('catalog-page__view-modes-list_active');
         catalog_list.classList.remove('catalog-page__catalog-list_list');
     })
+
 }())

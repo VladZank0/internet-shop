@@ -1,0 +1,203 @@
+.contacts{
+    padding: 40px 0 40px 0;
+    @include s_900{
+        padding: 32px 0 32px 0;
+    }
+    @include s_576{
+        padding: 24px 0 24px 0;
+    }
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    &__title{
+        color: $black-1;
+        font-family: 'SF Pro Display-Bold', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        margin-bottom: 16px;
+        @include s_576{
+            font-size: 24px;
+        }
+    }
+    &__map{
+        border-radius: 24px;
+        height: 640px;
+        overflow: hidden;
+        @include s_576{
+            height: 378px;
+            yamps{
+                height: 378px;
+            }
+        }
+       
+    }
+    &__top{
+        position: relative;
+    }
+    &__addresses{
+        display: flex;
+        flex-direction: column;
+        column-gap: 8px;
+        row-gap: 8px;
+        padding: 24px 16px 24px 24px;
+        box-sizing: border-box;
+        overflow: auto;
+        margin-right: 8px;
+        background-color: transparent;
+        height: 592px;
+        @include s_900{
+            height: 378px;
+        }
+        @include s_576{
+            flex-direction: row;
+            height: fit-content;
+            margin-bottom: 8px;
+            padding: 16px 8px 8px 8px;
+            margin-right: 0;
+        }
+        &-wrapper{
+            width: 400px;
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            border-radius: 16px;
+            background: #FFF;
+            height: fit-content;
+            @include s_900{
+                top: unset;
+                bottom: 24px;
+            }
+            @include s_576{
+                width: inherit;
+                left: 16px;
+                right: 16px;
+                bottom: 40px;
+            }
+        }
+        &::-webkit-scrollbar{
+            width: 8px;
+            height: 8px;
+            padding-right: 8px;
+        }
+        &::-webkit-scrollbar-thumb{
+            border-radius: 24px;
+            background-color: $black-01;
+        } 
+      
+    }
+    &__addresses-item{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        padding: 16px 24px;
+        box-sizing: border-box;
+        border-radius: 16px;
+        border: 1px solid $black-01;
+        &:hover{
+            cursor: pointer;
+        }
+        @include s_576{
+            padding: 16px;
+        }
+        &-text{
+            color: $black-1;
+            font-family: 'SF Pro Display-Medium', sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            white-space: nowrap;
+            @include s_576{
+                font-size: 20px;
+            }
+        }
+        &-location{
+            display: flex;
+            column-gap: 9px;
+            align-items: center;
+            &-street{
+                display: flex;
+                column-gap: 4px;
+                align-items: center;
+                color: $black-07;
+                font-family: 'SF Pro Display-Regylar', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            &-color{
+                display: block;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+            }
+            &-distance{
+                display: flex;
+                column-gap: 4px;
+                color: $black-05;
+                font-family: 'SF Pro Display-Medium', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                @include s_576{
+                    display: none;
+                }
+            }
+        }
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: 16px;
+        row-gap: 16px;
+        @include s_576{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &-item{
+            display: flex;
+            flex-direction: column;
+            &:last-child{
+                align-items: flex-end;
+                @include s_576{
+                    align-items: flex-start;
+                }
+            }
+            &-text{
+                color: $black-1;
+                font-family: 'SF Pro Display-Regular', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+    }
+    &__social{
+        display: flex;
+    }
+    &__chat-button{
+        margin: 0;
+        margin-top: 23px;
+    }
+    &__phonenumber{
+        color: $black-1;
+        font-family: 'SF Pro Display-Bold', sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        @include s_576{
+            font-size: 20px;
+        }
+    }
+}
