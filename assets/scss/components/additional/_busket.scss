@@ -19,27 +19,6 @@
             font-size: 32px;
         }
     }
-    &__chat-button{
-        display: flex;
-        column-gap: 2.5px;
-        align-items: center;
-        color: $prime-prime;
-        font-family: 'SF Pro Display-Regular', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        padding: 4px 8px;
-        border: none;
-        border-radius: 8px;
-        border: 1px solid $prime-prime;
-        background-color: transparent;
-        margin-bottom: 16px;
-        margin-top: 16px;
-        &:hover{
-            cursor: pointer;
-        }
-    }
     &__back-button{
         display: flex;
         align-items: center;
@@ -585,6 +564,7 @@
                 line-height: normal;
                 appearance: none;
                 background-color: transparent;
+
                 &::-webkit-calendar-picker-indicator {
                     background-image: url('../img/calendar.svg');
                     background-position: center;

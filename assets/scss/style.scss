@@ -514,7 +514,27 @@ body{
         cursor: pointer;
     }
 }
-
+.chat-button{
+    display: flex;
+    column-gap: 2.5px;
+    align-items: center;
+    color: $prime-prime;
+    font-family: 'SF Pro Display-Regular', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 8px;
+    border: 1px solid $prime-prime;
+    background-color: transparent;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    &:hover{
+        cursor: pointer;
+    }
+}
 @import "./components/main-page/header";
 @import "./components/main-page/collection-line";
 @import "./components/main-page/hero";
@@ -547,3 +567,4 @@ body{
 @import "./components/additional/search-page";
 @import "./components/additional/pay";
 @import "./components/additional/busket";
+@import "./components/additional/busket-end-page";
