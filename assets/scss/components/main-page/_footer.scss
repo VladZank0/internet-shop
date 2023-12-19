@@ -1,5 +1,18 @@
 .footer{
     background: #FAFAFA;
+    @include s_1200{
+        margin-bottom: 56px;
+    }
+    &_product-review-margin{
+        @include s_1200{
+            margin-bottom: 112px;
+        }
+    }
+    &_catalog-margin{
+        @include s_1200{
+            margin-bottom: 88px;
+        }
+    }
     &__logo{
         display: flex;
         margin-bottom: 40px;

@@ -1,0 +1,142 @@
+.blog-page{
+    background-color: $prime-prime-2;
+    padding: 40px 0;
+    box-sizing: border-box;
+    @include s_900{
+        padding: 32px 0;
+    }
+    @include s_576{
+        padding: 24px 0;
+    }
+    &__title{
+        color: $black-1;
+        font-family: 'SF Pro Display-Bold', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        margin-bottom: 16px;
+        &_headline{
+            margin-bottom: 0;
+        }
+        @include s_576{
+            font-size: 24px;
+        }
+    }
+    &__date{
+        color: $black-05;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 16px;
+    }
+    &__theme{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        column-gap: 8px;
+        padding: 11px 16px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 16px;
+        background: #FFF;
+        white-space: nowrap;
+        color: $black-1;
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        &-icon{
+            pointer-events: none;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+        &_active{
+            color: white;
+            background-color: $prime-prime;
+        }
+    }
+    &__themes{
+        &-list{
+            display: flex;
+            column-gap: 8px;
+            overflow-x: auto;
+            width: 100%;
+            padding-bottom: 5px;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            -ms-overflow-style: none;  
+            scrollbar-width: none; 
+            overflow-y: scroll;
+        }
+    }
+    &__content{
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(auto-fill, minmax(342px, 1fr));
+        @include s_576{
+                grid-template-columns: repeat( auto-fill, minmax(220px, 1fr));
+        }
+        margin: 25px 0;
+        &-item{
+            width: unset;
+        }
+    }
+    &__article-content{
+        margin-top: 16px;
+        &-body{
+            padding: 32px 0;
+            box-sizing: border-box;
+            color: $black-1;
+            font-family: 'SF Pro Display-Medium', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+        }
+        &-img{
+            max-width: 883px;
+        }
+    }
+    &__read-more{
+        &-block{
+            overflow: hidden;
+        }
+        &-title{
+            color: $black-1;
+            font-family: 'SF Pro Display-Medium', sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            margin-bottom: 24px;
+        }
+        &-list{
+            display: flex;
+            justify-content: space-between;
+            &-item{
+                width: 342px;
+                @include s_576{
+                    width: 227px;
+                }
+            }
+        }
+        
+    }
+    &__bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        row-gap: 40px;
+        max-width: 822px;
+        box-sizing: border-box;
+        @include s_520{
+            flex-direction: column-reverse;
+        }
+    }
+}

@@ -1,10 +1,16 @@
 .pay{
+    padding-top: 40px;
     margin-bottom: 62px;
+    
     @include s_900{
         margin-bottom: 62px;
     }
     @include s_576{
         margin-bottom: 24px;
+        padding-top: 24px;
+    }
+    &_no-padding{
+        padding: 0;
     }
     &__title{
         color: $black-1;
@@ -16,6 +22,11 @@
         margin-bottom: 12px;
         @include s_900{
             margin-bottom: 24px;
+            font-size: 48px;
+            &_product-page{
+                font-size: 40px;
+                margin-bottom: 12px;
+            }
         }
         @include s_576{
             font-size: 24px;
@@ -56,7 +67,14 @@
             padding: 24px 11px 24px 24px;
             border-radius: 16px;
             background: $prime-prime-5;
-            
+            overflow: hidden;
+            &_product-page{
+                row-gap: 16px;
+            }
+            &-payment-icon{
+                flex-shrink: 0;
+                align-self: flex-end;
+            }
             @include s_576{
                 padding: 16px 19px 16px 16px;
                 row-gap: 16px;
@@ -75,6 +93,10 @@
                     display: flex;
                     flex-direction: column;
                     gap: 12px;
+                    &_product-page{
+                        flex-direction: row;
+                        align-items: center;
+                    }
                     @include s_576{
                         align-items: center;
                         flex-direction: row;
@@ -88,11 +110,28 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
+                &_icon-attach{
+                    position: relative;
+                    width: fit-content;
+                    &::after{
+                        content: url("../img/payment-cards-icon.svg");
+                        width: 114px;
+                        height: 16px;
+                        right: -120px;
+                        top: -10px;
+                        position: absolute;
+                    }
+                }
             }
             &-icon{
+                flex-shrink: 0;
                 @include s_576{
-                    width: 21px;
-                    height: 21px;
+                    width: 32px;
+                    height: 32px;
+                    &_min{
+                        width: 24px;
+                        height: 24px;
+                    }
                 }
             }
         }

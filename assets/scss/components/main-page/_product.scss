@@ -3,7 +3,7 @@
     flex-direction: column;
     max-width: 275px;
     width: 275px;
-    min-height: 532px;
+    // min-height: 532px;
     height: 100%;
     border-radius: 16px;
     background: #FFF;
@@ -11,9 +11,9 @@
     padding: 16px;
     box-sizing: border-box;
     @include s_576{
-        max-width: 150px;
+        width: 150px;
         padding: 8px;
-        min-height: 508px;
+        // min-height: 508px;
         height: 100%;
         border: none;
         box-shadow: unset;
@@ -129,6 +129,7 @@
         @include s_576{
             &-img{
                 width: 134px;
+                height: auto;
             }
         }
         &-button{
@@ -404,10 +405,20 @@
 .rating-star{
     height: 16px;
 }
+.rating-stars{
+    display: flex;
+    column-gap: 2px;
+}
 .rating-star_active{
-   svg path{
-    fill: rgba(255, 158, 12, 1);
-   }
+    svg path{
+        fill: rgba(255, 158, 12, 1);
+    }
+    &-blue{
+        svg path{
+            fill: rgba(66, 134, 250, 1);
+        }
+    }
+   
 }
 .rating-star_big{
     width: 24px;

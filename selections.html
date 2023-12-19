@@ -15,7 +15,12 @@
     <header class="header">
         <div class="header-top">
             <div class="header-top__inner container">
-                <a class="mini-logo" href="index.html">
+                <button class="burger-btn" aria-label="burger-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M5.33337 7.99999C5.33337 7.64637 5.47385 7.30723 5.7239 7.05718C5.97395 6.80713 6.31309 6.66666 6.66671 6.66666H25.3334C25.687 6.66666 26.0261 6.80713 26.2762 7.05718C26.5262 7.30723 26.6667 7.64637 26.6667 7.99999C26.6667 8.35361 26.5262 8.69275 26.2762 8.9428C26.0261 9.19285 25.687 9.33332 25.3334 9.33332H6.66671C6.31309 9.33332 5.97395 9.19285 5.7239 8.9428C5.47385 8.69275 5.33337 8.35361 5.33337 7.99999ZM5.33337 24C5.33337 23.6464 5.47385 23.3072 5.7239 23.0572C5.97395 22.8071 6.31309 22.6667 6.66671 22.6667H25.3334C25.687 22.6667 26.0261 22.8071 26.2762 23.0572C26.5262 23.3072 26.6667 23.6464 26.6667 24C26.6667 24.3536 26.5262 24.6928 26.2762 24.9428C26.0261 25.1928 25.687 25.3333 25.3334 25.3333H6.66671C6.31309 25.3333 5.97395 25.1928 5.7239 24.9428C5.47385 24.6928 5.33337 24.3536 5.33337 24ZM6.66671 14.6667C6.31309 14.6667 5.97395 14.8071 5.7239 15.0572C5.47385 15.3072 5.33337 15.6464 5.33337 16C5.33337 16.3536 5.47385 16.6927 5.7239 16.9428C5.97395 17.1928 6.31309 17.3333 6.66671 17.3333H17.3334C17.687 17.3333 18.0261 17.1928 18.2762 16.9428C18.5262 16.6927 18.6667 16.3536 18.6667 16C18.6667 15.6464 18.5262 15.3072 18.2762 15.0572C18.0261 14.8071 17.687 14.6667 17.3334 14.6667H6.66671Z" fill="#4286FA"/>
+                    </svg>
+                </button>
+                <a class="mini-logo" href="index.html" aria-label="katalog">
                     <span class="mini-logo__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="33" viewBox="0 0 34 33" fill="none">
                             <path d="M32.7678 16.3636C32.7678 25.401 25.4325 32.7273 16.3839 32.7273C7.33532 32.7273 0 25.401 0 16.3636C0 7.32625 7.33532 0 16.3839 0C25.4325 0 32.7678 7.32625 32.7678 16.3636Z" fill="url(#paint0_linear_1033_741)"/>
@@ -41,7 +46,7 @@
                     </div>
                     <div class="select__option-box"></div>
                 </div>
-                <nav class="nav">
+                <nav class="nav header__nav">
                     <ul class="nav__list menu">
                         <li class="menu__item"><a class="menu__link" href="#">Гарантия</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">Оплата</a></li>
@@ -53,43 +58,36 @@
                         <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
                     </ul>
                 </nav>
-                <div class="header-top__adaptive-btns">
-                    <div class="call-btn">
-                        <a href="tel:+7 812 770-63-72">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <path d="M26.68 20.5067C25.04 20.5067 23.4533 20.24 21.9733 19.76C21.7415 19.6814 21.4922 19.6697 21.254 19.7263C21.0158 19.7829 20.7984 19.9055 20.6267 20.08L18.5333 22.7067C14.76 20.9067 11.2267 17.5067 9.34667 13.6L11.9467 11.3867C12.3067 11.0133 12.4133 10.4933 12.2667 10.0267C11.7733 8.54667 11.52 6.96 11.52 5.32C11.52 4.6 10.92 4 10.2 4H5.58667C4.86667 4 4 4.32 4 5.32C4 17.7067 14.3067 28 26.68 28C27.6267 28 28 27.16 28 26.4267V21.8267C28 21.1067 27.4 20.5067 26.68 20.5067Z" fill="#0ECF21"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="working-time">
-                        <span class="working-time__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <g clip-path="url(#clip0_769_3365)">
-                                <path d="M10 0C4.47656 0 0 4.47656 0 10C0 15.5234 4.47656 20 10 20C15.5234 20 20 15.5234 20 10C20 4.47656 15.5234 0 10 0ZM10 18.332C5.39844 18.332 1.66797 14.6016 1.66797 10C1.66797 5.39844 5.39844 1.66797 10 1.66797C14.6016 1.66797 18.332 5.39844 18.332 10C18.332 14.6016 14.6016 18.332 10 18.332ZM9.16797 8.33203L7.08203 6.25L5.83203 7.5L10.832 12.5V3.33203H9.16406V8.33203H9.16797Z" fill="#4286FA"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_769_3365">
-                                <rect width="20" height="20" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                        </span>
-                        <span>10-22</span>
-                    </div>
-                    <div class="burger-btn">
+                <div class="call-btn">
+                    <a href="tel:+78127706372" aria-label="tel">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <path d="M5.33337 7.99999C5.33337 7.64637 5.47385 7.30723 5.7239 7.05718C5.97395 6.80713 6.31309 6.66666 6.66671 6.66666H25.3334C25.687 6.66666 26.0261 6.80713 26.2762 7.05718C26.5262 7.30723 26.6667 7.64637 26.6667 7.99999C26.6667 8.35361 26.5262 8.69275 26.2762 8.9428C26.0261 9.19285 25.687 9.33332 25.3334 9.33332H6.66671C6.31309 9.33332 5.97395 9.19285 5.7239 8.9428C5.47385 8.69275 5.33337 8.35361 5.33337 7.99999ZM5.33337 24C5.33337 23.6464 5.47385 23.3072 5.7239 23.0572C5.97395 22.8071 6.31309 22.6667 6.66671 22.6667H25.3334C25.687 22.6667 26.0261 22.8071 26.2762 23.0572C26.5262 23.3072 26.6667 23.6464 26.6667 24C26.6667 24.3536 26.5262 24.6928 26.2762 24.9428C26.0261 25.1928 25.687 25.3333 25.3334 25.3333H6.66671C6.31309 25.3333 5.97395 25.1928 5.7239 24.9428C5.47385 24.6928 5.33337 24.3536 5.33337 24ZM6.66671 14.6667C6.31309 14.6667 5.97395 14.8071 5.7239 15.0572C5.47385 15.3072 5.33337 15.6464 5.33337 16C5.33337 16.3536 5.47385 16.6927 5.7239 16.9428C5.97395 17.1928 6.31309 17.3333 6.66671 17.3333H17.3334C17.687 17.3333 18.0261 17.1928 18.2762 16.9428C18.5262 16.6927 18.6667 16.3536 18.6667 16C18.6667 15.6464 18.5262 15.3072 18.2762 15.0572C18.0261 14.8071 17.687 14.6667 17.3334 14.6667H6.66671Z" fill="#4286FA"/>
+                            <path d="M26.68 20.5067C25.04 20.5067 23.4533 20.24 21.9733 19.76C21.7415 19.6814 21.4922 19.6697 21.254 19.7263C21.0158 19.7829 20.7984 19.9055 20.6267 20.08L18.5333 22.7067C14.76 20.9067 11.2267 17.5067 9.34667 13.6L11.9467 11.3867C12.3067 11.0133 12.4133 10.4933 12.2667 10.0267C11.7733 8.54667 11.52 6.96 11.52 5.32C11.52 4.6 10.92 4 10.2 4H5.58667C4.86667 4 4 4.32 4 5.32C4 17.7067 14.3067 28 26.68 28C27.6267 28 28 27.16 28 26.4267V21.8267C28 21.1067 27.4 20.5067 26.68 20.5067Z" fill="#0ECF21"/>
                         </svg>
-                    </div>
+                    </a>
                 </div>
                 <div class="communications">
                     <div class="contact-info">
-                        <a href="tel:+7 812 770-63-72" class="contact-info__link">+7 812 770-63-72</a>
-                        <p class="contact-info__text">с 10:00 до 20:00 без выходных</p>
+                        <a href="tel:+78127706372" class="contact-info__link" aria-label="tel">+7 812 770-63-72</a>
+                        <!-- <p class="contact-info__text">с 10:00 до 20:00 без выходных</p> -->
+                        <div class="working-time">
+                            <span class="working-time__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <g clip-path="url(#clip0_2209_12246)">
+                                      <path d="M10 0C4.47656 0 0 4.47656 0 10C0 15.5234 4.47656 20 10 20C15.5234 20 20 15.5234 20 10C20 4.47656 15.5234 0 10 0ZM10 18.332C5.39844 18.332 1.66797 14.6016 1.66797 10C1.66797 5.39844 5.39844 1.66797 10 1.66797C14.6016 1.66797 18.332 5.39844 18.332 10C18.332 14.6016 14.6016 18.332 10 18.332ZM9.16797 8.33203L7.08203 6.25L5.83203 7.5L10.832 12.5V3.33203H9.16406V8.33203H9.16797Z" fill="#888888"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_2209_12246">
+                                        <rect width="20" height="20" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <span>10-22</span>
+                        </div>
                     </div>
                     <ul class="social">
                         <li class="social__item">
-                            <a class="social__link" href="#">
+                            <a class="social__link" href="#" aria-label="Ссылка на вк">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                     <g clip-path="url(#clip0_1_33)">
                                     <path d="M0 15.3333C0 8.10513 0 4.49103 2.24551 2.24551C4.49103 0 8.10513 0 15.3333 0H16.6667C23.8949 0 27.509 0 29.7545 2.24551C32 4.49103 32 8.10513 32 15.3333V16.6667C32 23.8949 32 27.509 29.7545 29.7545C27.509 32 23.8949 32 16.6667 32H15.3333C8.10513 32 4.49103 32 2.24551 29.7545C0 27.509 0 23.8949 0 16.6667L0 15.3333Z" fill="#2787F5"/>
@@ -104,7 +102,7 @@
                             </a>
                         </li>
                         <li class="social__item">
-                            <a class="social__link" href="#">
+                            <a class="social__link" href="#" aria-label="Ссылка на вотсап">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                     <g clip-path="url(#clip0_1_36)">
                                     <path d="M0 15.3333C0 8.10513 0 4.49103 2.24551 2.24551C4.49103 0 8.10513 0 15.3333 0H16.6667C23.8949 0 27.509 0 29.7545 2.24551C32 4.49103 32 8.10513 32 15.3333V16.6667C32 23.8949 32 27.509 29.7545 29.7545C27.509 32 23.8949 32 16.6667 32H15.3333C8.10513 32 4.49103 32 2.24551 29.7545C0 27.509 0 23.8949 0 16.6667L0 15.3333Z" fill="#23D735"/>
@@ -119,8 +117,8 @@
                             </a>
                         </li>
                         <li class="social__item">
-                            <a class="social__link" href="#">
-                                <img src="./assets/img/header/tg_svg.svg" alt="">
+                            <a class="social__link" href="#" aria-label="Ссылка на телеграм">
+                                <img src="./assets/img/header/tg_svg.svg" alt="" width="32" height="32">
                             </a>
                         </li>
                     </ul>
@@ -129,13 +127,13 @@
         </div>
         <div class="header-bottom">
             <div class="header-bottom__inner container">
-                <a class="logo" href="index.html">
+                <a class="logo" href="index.html" aria-label="logo">
                     <span class="logo__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="none">
-                            <path d="M49.4117 24.6753C49.4117 38.3032 38.3506 49.3506 24.7059 49.3506C11.0612 49.3506 0 38.3032 0 24.6753C0 11.0475 11.0612 0 24.7059 0C38.3506 0 49.4117 11.0475 49.4117 24.6753Z" fill="url(#paint0_linear_1033_70)"/>
+                            <path d="M49.4117 24.6753C49.4117 38.3032 38.3506 49.3506 24.7059 49.3506C11.0612 49.3506 0 38.3032 0 24.6753C0 11.0475 11.0612 0 24.7059 0C38.3506 0 49.4117 11.0475 49.4117 24.6753Z" fill="url(#paint0_linear_1033_65)"/>
                             <path d="M34.6879 15.9162H31.8359C31.8359 12.0835 28.6416 8.97287 24.7058 8.97287C20.77 8.97287 17.5757 12.0835 17.5757 15.9162H14.7236C13.155 15.9162 11.8716 17.1659 11.8716 18.6934V35.3572C11.8716 36.8848 13.155 38.1346 14.7236 38.1346H34.6879C36.2566 38.1346 37.54 36.8848 37.54 35.3572V18.6934C37.54 17.1659 36.2566 15.9162 34.6879 15.9162ZM24.7058 11.7502C27.073 11.7502 28.9839 13.611 28.9839 15.9162H20.4277C20.4277 13.611 22.3386 11.7502 24.7058 11.7502ZM34.6879 35.3572H14.7236V18.6934H34.6879V35.3572ZM24.7058 24.2481C22.3386 24.2481 20.4277 22.3873 20.4277 20.0821H17.5757C17.5757 23.9148 20.77 27.0254 24.7058 27.0254C28.6416 27.0254 31.8359 23.9148 31.8359 20.0821H28.9839C28.9839 22.3873 27.073 24.2481 24.7058 24.2481Z" fill="white"/>
                             <defs>
-                            <linearGradient id="paint0_linear_1033_70" x1="-2.79197" y1="51.5939" x2="134.4" y2="-1.81052" gradientUnits="userSpaceOnUse">
+                            <linearGradient id="paint0_linear_1033_65" x1="-2.79197" y1="51.5939" x2="134.4" y2="-1.81052" gradientUnits="userSpaceOnUse">
                             <stop stop-color="#4174F7"/>
                             <stop offset="1" stop-color="#42A4FF"/>
                             </linearGradient>
@@ -144,7 +142,7 @@
                     </span>
                     <span>katalog</span>
                 </a>
-                <button class="catalog-btn">
+                <button class="catalog-btn" aria-label="catalog-button">
                     <span class="catalog-btn__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M7.5 6.75H21M7.5 12H21M7.5 17.25H21" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
@@ -156,7 +154,7 @@
                     <span class="catalog-btn__text">Каталог товаров</span>
                 </button>
                 <div class="search">
-                    <button class="search__btn">
+                    <button class="search__btn" aria-label="search-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M16.875 16.875L21.375 21.375" stroke="#595959" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M11.25 18.375C15.185 18.375 18.375 15.185 18.375 11.25C18.375 7.31497 15.185 4.125 11.25 4.125C7.31497 4.125 4.125 7.31497 4.125 11.25C4.125 15.185 7.31497 18.375 11.25 18.375Z" stroke="#595959" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -165,7 +163,7 @@
                     <input class="search__input" type="text" placeholder="Более 5000 товаров в каталоге">
                 </div>
                 <div class="header-bottom__btns">
-                    <a class="favorite-btn" href="#">
+                    <a class="favorite-btn" href="#" aria-label="favorite-link">
                         <span class="favorite-btn__amount">3</span>
                         <span class="favorite-btn__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -173,14 +171,14 @@
                             </svg>
                         </span>
                     </a>
-                    <a class="compare-btn" href="#">
+                    <a class="compare-btn" href="#" aria-label="compare-link">
                         <span class="compare-btn__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#595959" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </span>
                     </a>
-                    <a class="profile-btn" href="#">
+                    <a class="profile-btn" href="#" aria-label="profile-link">
                         <span class="profile-btn__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#595959" stroke-width="2.66667"/>
@@ -189,7 +187,7 @@
                         </span>
                     </a>
                 </div>
-                <a class="basket-btn basket-btn_active" href="#">
+                <a class="basket-btn basket-btn_active" href="#" aria-label="busket-link">
                     <span class="basket-btn__icon basket-btn__icon_active">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 6V6.75H5.513C4.553 6.75 3.749 7.474 3.648 8.429L2.385 20.429C2.35753 20.6903 2.3853 20.9545 2.46651 21.2045C2.54773 21.4544 2.68057 21.6844 2.85642 21.8797C3.03227 22.075 3.2472 22.2311 3.48728 22.338C3.72736 22.4448 3.98721 22.5 4.25 22.5H19.75C20.0128 22.5 20.2726 22.4448 20.5127 22.338C20.7528 22.2311 20.9677 22.075 21.1436 21.8797C21.3194 21.6844 21.4523 21.4544 21.5335 21.2045C21.6147 20.9545 21.6425 20.6903 21.615 20.429L20.352 8.429C20.3036 7.96815 20.0862 7.54155 19.7418 7.23151C19.3974 6.92146 18.9504 6.74993 18.487 6.75H16.5V6C16.5 4.80653 16.0259 3.66193 15.182 2.81802C14.3381 1.97411 13.1935 1.5 12 1.5C10.8065 1.5 9.66193 1.97411 8.81802 2.81802C7.9741 3.66193 7.5 4.80653 7.5 6ZM12 3C11.2043 3 10.4413 3.31607 9.87868 3.87868C9.31607 4.44129 9 5.20435 9 6V6.75H15V6C15 5.20435 14.6839 4.44129 14.1213 3.87868C13.5587 3.31607 12.7956 3 12 3ZM9 11.25C9 12.0456 9.31607 12.8087 9.87868 13.3713C10.4413 13.9339 11.2043 14.25 12 14.25C12.7956 14.25 13.5587 13.9339 14.1213 13.3713C14.6839 12.8087 15 12.0456 15 11.25V10.5C15 10.3011 15.079 10.1103 15.2197 9.96967C15.3603 9.82902 15.5511 9.75 15.75 9.75C15.9489 9.75 16.1397 9.82902 16.2803 9.96967C16.421 10.1103 16.5 10.3011 16.5 10.5V11.25C16.5 12.4435 16.0259 13.5881 15.182 14.432C14.3381 15.2759 13.1935 15.75 12 15.75C10.8065 15.75 9.66193 15.2759 8.81802 14.432C7.9741 13.5881 7.5 12.4435 7.5 11.25V10.5C7.5 10.3011 7.57902 10.1103 7.71967 9.96967C7.86032 9.82902 8.05109 9.75 8.25 9.75C8.44891 9.75 8.63968 9.82902 8.78033 9.96967C8.92098 10.1103 9 10.3011 9 10.5V11.25Z" fill="white"/>
@@ -713,7 +711,9 @@
                         <a class="catalog__tab-content-title" href="#">Смартфоны</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -724,7 +724,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -735,7 +737,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -746,7 +750,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -757,7 +763,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -768,7 +776,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -776,10 +786,25 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 Pro </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 </a></li>
-                                <li class="catalog__tab-3content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 </a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 Pro Max </a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 Pro </a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 </a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
+                            </ul>
+                            <ul class="catalog__tab-content-list">
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -795,7 +820,9 @@
                         <a class="catalog__tab-content-title" href="#">Планшеты и книги</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -806,7 +833,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -822,7 +851,9 @@
                         <a class="catalog__tab-content-title" href="#">Аудио</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -833,7 +864,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -849,7 +882,9 @@
                         <a class="catalog__tab-content-title" href="#">TV и мониторы</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -860,7 +895,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -876,7 +913,9 @@
                         <a class="catalog__tab-content-title" href="#">Компьютерная техника</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -887,7 +926,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -903,7 +944,9 @@
                         <a class="catalog__tab-content-title" href="#">Гаджеты и электроника</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -914,7 +957,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -930,7 +975,9 @@
                         <a class="catalog__tab-content-title" href="#">Часы и браслеты</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -941,7 +988,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -957,7 +1006,9 @@
                         <a class="catalog__tab-content-title" href="#">Виртуальная реальность</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -968,7 +1019,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -984,7 +1037,9 @@
                         <a class="catalog__tab-content-title" href="#">Весь каталог</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -995,7 +1050,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -1011,7 +1068,9 @@
                         <a class="catalog__tab-content-title" href="#">Новинки</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -1022,7 +1081,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -1038,7 +1099,9 @@
                         <a class="catalog__tab-content-title" href="#">Акции</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -1049,7 +1112,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -1065,7 +1130,9 @@
                         <a class="catalog__tab-content-title" href="#">Популярные товары</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -1076,7 +1143,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -1090,12 +1159,17 @@
                     </div>
                 </div>
                 <div class="catalog__promo">
-                    <img src="./assets/img/catalog/promo.svg" alt="">
+                    <img src="./assets/img/catalog/promo.svg" loading="lazy" width="266" height="368" alt="">
                 </div>
             </div>
         </div>
         <div class="burger-menu">
             <div class="burger-menu__top-row">
+                <div class="burger-btn burger-btn_close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M6.10022 6.09998C6.47528 5.72503 6.98389 5.5144 7.51422 5.5144C8.04455 5.5144 8.55317 5.72503 8.92822 6.09998L16.0002 13.172L23.0722 6.09998C23.4494 5.73566 23.9546 5.53407 24.479 5.53863C25.0034 5.54319 25.505 5.75352 25.8759 6.12434C26.2467 6.49516 26.457 6.99678 26.4616 7.52117C26.4661 8.04557 26.2645 8.55077 25.9002 8.92798L18.8282 16L25.9002 23.072C26.2645 23.4492 26.4661 23.9544 26.4616 24.4788C26.457 25.0032 26.2467 25.5048 25.8759 25.8756C25.505 26.2464 25.0034 26.4568 24.479 26.4613C23.9546 26.4659 23.4494 26.2643 23.0722 25.9L16.0002 18.828L8.92822 25.9C8.55102 26.2643 8.04581 26.4659 7.52142 26.4613C6.99703 26.4568 6.4954 26.2464 6.12458 25.8756C5.75377 25.5048 5.54343 25.0032 5.53887 24.4788C5.53432 23.9544 5.73591 23.4492 6.10022 23.072L13.1722 16L6.10022 8.92798C5.72528 8.55292 5.51465 8.04431 5.51465 7.51398C5.51465 6.98365 5.72528 6.47503 6.10022 6.09998Z" fill="#4286FA"/>
+                    </svg>
+                </div>
                 <div class="locality-select burger-menu__select">
                     <div class="locality-select__box">
                         <span class="locality-select__text">Санкт-Петербург</span>
@@ -1106,11 +1180,6 @@
                         </span>
                     </div>
                     <div class="locality-select__option-box"></div>
-                </div>
-                <div class="burger-btn burger-btn_close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <path d="M6.10022 6.09998C6.47528 5.72503 6.98389 5.5144 7.51422 5.5144C8.04455 5.5144 8.55317 5.72503 8.92822 6.09998L16.0002 13.172L23.0722 6.09998C23.4494 5.73566 23.9546 5.53407 24.479 5.53863C25.0034 5.54319 25.505 5.75352 25.8759 6.12434C26.2467 6.49516 26.457 6.99678 26.4616 7.52117C26.4661 8.04557 26.2645 8.55077 25.9002 8.92798L18.8282 16L25.9002 23.072C26.2645 23.4492 26.4661 23.9544 26.4616 24.4788C26.457 25.0032 26.2467 25.5048 25.8759 25.8756C25.505 26.2464 25.0034 26.4568 24.479 26.4613C23.9546 26.4659 23.4494 26.2643 23.0722 25.9L16.0002 18.828L8.92822 25.9C8.55102 26.2643 8.04581 26.4659 7.52142 26.4613C6.99703 26.4568 6.4954 26.2464 6.12458 25.8756C5.75377 25.5048 5.54343 25.0032 5.53887 24.4788C5.53432 23.9544 5.73591 23.4492 6.10022 23.072L13.1722 16L6.10022 8.92798C5.72528 8.55292 5.51465 8.04431 5.51465 7.51398C5.51465 6.98365 5.72528 6.47503 6.10022 6.09998Z" fill="#4286FA"/>
-                    </svg>
                 </div>
             </div>
             <nav class="nav">
@@ -1127,12 +1196,12 @@
             </nav>
             <div class="communications burger-menu__communications">
                 <div class="contact-info burger-menu__contact-info">
-                    <a class="contact-info__link" href="tel:+7 812 770-63-72">+7 812 770-63-72</a>
+                    <a class="contact-info__link contact-info__link_burger-menu" href="tel:+78127706372">+7 812 770-63-72</a>
                     <p class="contact-info__text">с 10:00 до 20:00 без выходных</p>
                 </div>
                 <ul class="social burger-menu__social">
                     <li class="social__item burger-menu__social-item">
-                        <a class="social__link burger-menu__social-link" href="#">
+                        <a class="social__link burger-menu__social-link" href="#" aria-label="Ссылка на вк">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                 <g clip-path="url(#clip0_1_33)">
                                 <path d="M0 15.3333C0 8.10513 0 4.49103 2.24551 2.24551C4.49103 0 8.10513 0 15.3333 0H16.6667C23.8949 0 27.509 0 29.7545 2.24551C32 4.49103 32 8.10513 32 15.3333V16.6667C32 23.8949 32 27.509 29.7545 29.7545C27.509 32 23.8949 32 16.6667 32H15.3333C8.10513 32 4.49103 32 2.24551 29.7545C0 27.509 0 23.8949 0 16.6667L0 15.3333Z" fill="#2787F5"/>
@@ -1147,7 +1216,7 @@
                         </a>
                     </li>
                     <li class="social__item burger-menu__social-item">
-                        <a class="social__link burger-menu__social-link" href="#">
+                        <a class="social__link burger-menu__social-link" href="#" aria-label="Ссылка на вотсап">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                 <g clip-path="url(#clip0_1_36)">
                                 <path d="M0 15.3333C0 8.10513 0 4.49103 2.24551 2.24551C4.49103 0 8.10513 0 15.3333 0H16.6667C23.8949 0 27.509 0 29.7545 2.24551C32 4.49103 32 8.10513 32 15.3333V16.6667C32 23.8949 32 27.509 29.7545 29.7545C27.509 32 23.8949 32 16.6667 32H15.3333C8.10513 32 4.49103 32 2.24551 29.7545C0 27.509 0 23.8949 0 16.6667L0 15.3333Z" fill="#23D735"/>
@@ -1162,8 +1231,8 @@
                         </a>
                     </li>
                     <li class="social__item burger-menu__social-item">
-                        <a class="social__link burger-menu__social-link" href="#">
-                            <img src="./assets/img/header/tg_svg.svg" alt="">
+                        <a class="social__link burger-menu__social-link" href="#" aria-label="Ссылка на телеграм">
+                            <img src="./assets/img/header/tg_svg.svg" width="32" height="32" loading="lazy" alt="">
                         </a>
                     </li>
                 </ul>
@@ -1174,9 +1243,7 @@
                 <li class="tab-bar__item mobile-catalog-btn">
                     <span class="tab-bar__item-icon mobile-catalog-btn__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M12 7.5C12.8284 7.5 13.5 6.82843 13.5 6C13.5 5.17157 12.8284 4.5 12 4.5C11.1716 4.5 10.5 5.17157 10.5 6C10.5 6.82843 11.1716 7.5 12 7.5Z" fill="#31373C"/>
-                            <path d="M12 13.5C12.8284 13.5 13.5 12.8284 13.5 12C13.5 11.1716 12.8284 10.5 12 10.5C11.1716 10.5 10.5 11.1716 10.5 12C10.5 12.8284 11.1716 13.5 12 13.5Z" fill="#31373C"/>
-                            <path d="M12 19.5C12.8284 19.5 13.5 18.8284 13.5 18C13.5 17.1716 12.8284 16.5 12 16.5C11.1716 16.5 10.5 17.1716 10.5 18C10.5 18.8284 11.1716 19.5 12 19.5Z" fill="#31373C"/>
+                            <path d="M4 4C3.73478 4 3.48043 4.10536 3.29289 4.29289C3.10536 4.48043 3 4.73478 3 5C3 5.26522 3.10536 5.51957 3.29289 5.70711C3.48043 5.89464 3.73478 6 4 6H20C20.2652 6 20.5196 5.89464 20.7071 5.70711C20.8946 5.51957 21 5.26522 21 5C21 4.73478 20.8946 4.48043 20.7071 4.29289C20.5196 4.10536 20.2652 4 20 4H4ZM3 12C3 11.7348 3.10536 11.4804 3.29289 11.2929C3.48043 11.1054 3.73478 11 4 11H7C7.26522 11 7.51957 11.1054 7.70711 11.2929C7.89464 11.4804 8 11.7348 8 12C8 12.2652 7.89464 12.5196 7.70711 12.7071C7.51957 12.8946 7.26522 13 7 13H4C3.73478 13 3.48043 12.8946 3.29289 12.7071C3.10536 12.5196 3 12.2652 3 12ZM3 19C3 18.7348 3.10536 18.4804 3.29289 18.2929C3.48043 18.1054 3.73478 18 4 18H8C8.26522 18 8.51957 18.1054 8.70711 18.2929C8.89464 18.4804 9 18.7348 9 19C9 19.2652 8.89464 19.5196 8.70711 19.7071C8.51957 19.8946 8.26522 20 8 20H4C3.73478 20 3.48043 19.8946 3.29289 19.7071C3.10536 19.5196 3 19.2652 3 19ZM10 14C10.0002 13.2204 10.1827 12.4517 10.5329 11.7552C10.8831 11.0587 11.3913 10.4537 12.0169 9.98857C12.6426 9.52346 13.3683 9.21108 14.1361 9.07639C14.904 8.9417 15.6927 8.98843 16.4393 9.21285C17.1859 9.43726 17.8697 9.83315 18.436 10.3689C19.0024 10.9046 19.4356 11.5654 19.7011 12.2984C19.9666 13.0313 20.057 13.8162 19.9652 14.5904C19.8733 15.3646 19.6017 16.1065 19.172 16.757L20.707 18.293C20.8892 18.4816 20.99 18.7342 20.9877 18.9964C20.9854 19.2586 20.8802 19.5094 20.6948 19.6948C20.5094 19.8802 20.2586 19.9854 19.9964 19.9877C19.7342 19.99 19.4816 19.8892 19.293 19.707L17.757 18.172C17.0034 18.6701 16.1288 18.9548 15.2264 18.9957C14.3239 19.0366 13.4272 18.8322 12.6316 18.4043C11.836 17.9764 11.1712 17.3409 10.7078 16.5654C10.2445 15.7899 9.99986 14.9034 10 14ZM15 11C14.606 11 14.2159 11.0776 13.8519 11.2284C13.488 11.3791 13.1573 11.6001 12.8787 11.8787C12.6001 12.1573 12.3791 12.488 12.2284 12.8519C12.0776 13.2159 12 13.606 12 14C12 14.394 12.0776 14.7841 12.2284 15.1481C12.3791 15.512 12.6001 15.8427 12.8787 16.1213C13.1573 16.3999 13.488 16.6209 13.8519 16.7716C14.2159 16.9224 14.606 17 15 17C15.7956 17 16.5587 16.6839 17.1213 16.1213C17.6839 15.5587 18 14.7956 18 14C18 13.2044 17.6839 12.4413 17.1213 11.8787C16.5587 11.3161 15.7956 11 15 11Z" fill="#595959"/>
                         </svg>
                     </span>
                     <span class="tab-bar__item-icon mobile-catalog-btn__icon_close">
@@ -1354,12 +1421,12 @@
                                             <a href="#" class="product__rating-link">(15)</a>
                                         </div>
                                         <div class="product__top-buttons">
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -1368,10 +1435,10 @@
                                     </div>
                                     <div class="product__preview">
                                         <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
                                         </a>
                                     </div>
-                                    <a href class="product__name">Смартфон </a>
+                                    <a href class="product__name">См</a>
                                     <div class="product__status">
                                         <span class="product__status-text">в наличии</span>
                                     </div>
@@ -1432,12 +1499,12 @@
                                             <a href="#" class="product__rating-link">(15)</a>
                                         </div>
                                         <div class="product__top-buttons">
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -1446,7 +1513,7 @@
                                     </div>
                                     <div class="product__preview">
                                         <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
                                         </a>
                                     </div>
                                     <a href class="product__name">Смартфон Xiaomi Redmi 10C NFC 4/64 ГБ RU, серый графит</a>
@@ -1465,7 +1532,7 @@
                                         <span class="product__basket-button-icon product__basket-button-icon_hidden">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.50003 6V6.75H5.51303C4.55303 6.75 3.74903 7.474 3.64803 8.429L2.38503 20.429C2.35756 20.6903 2.38533 20.9545 2.46654 21.2045C2.54776 21.4544 2.6806 21.6844 2.85645 21.8797C3.0323 22.075 3.24723 22.2311 3.48731 22.338C3.72739 22.4448 3.98724 22.5 4.25003 22.5H19.75C20.0128 22.5 20.2727 22.4448 20.5127 22.338C20.7528 22.2311 20.9678 22.075 21.1436 21.8797C21.3195 21.6844 21.4523 21.4544 21.5335 21.2045C21.6147 20.9545 21.6425 20.6903 21.615 20.429L20.352 8.429C20.3036 7.96815 20.0862 7.54155 19.7418 7.23151C19.3974 6.92146 18.9504 6.74993 18.487 6.75H16.5V6C16.5 4.80653 16.0259 3.66193 15.182 2.81802C14.3381 1.97411 13.1935 1.5 12 1.5C10.8066 1.5 9.66196 1.97411 8.81805 2.81802C7.97413 3.66193 7.50003 4.80653 7.50003 6ZM12 3C11.2044 3 10.4413 3.31607 9.87871 3.87868C9.3161 4.44129 9.00003 5.20435 9.00003 6V6.75H15V6C15 5.20435 14.684 4.44129 14.1213 3.87868C13.5587 3.31607 12.7957 3 12 3ZM9.00003 11.25C9.00003 12.0456 9.3161 12.8087 9.87871 13.3713C10.4413 13.9339 11.2044 14.25 12 14.25C12.7957 14.25 13.5587 13.9339 14.1213 13.3713C14.684 12.8087 15 12.0456 15 11.25V10.5C15 10.3011 15.079 10.1103 15.2197 9.96967C15.3604 9.82902 15.5511 9.75 15.75 9.75C15.9489 9.75 16.1397 9.82902 16.2804 9.96967C16.421 10.1103 16.5 10.3011 16.5 10.5V11.25C16.5 12.4435 16.0259 13.5881 15.182 14.432C14.3381 15.2759 13.1935 15.75 12 15.75C10.8066 15.75 9.66196 15.2759 8.81805 14.432C7.97413 13.5881 7.50003 12.4435 7.50003 11.25V10.5C7.50003 10.3011 7.57905 10.1103 7.7197 9.96967C7.86035 9.82902 8.05112 9.75 8.25003 9.75C8.44894 9.75 8.63971 9.82902 8.78036 9.96967C8.92101 10.1103 9.00003 10.3011 9.00003 10.5V11.25Z" fill="white"/>
-                                            </svg>
+                                            </svg> 
                                         </span>
                                         <span class="product__basket-button-text">сообщить о поступлении</span>
                                         <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
@@ -1510,12 +1577,12 @@
                                             <a href="#" class="product__rating-link">(15)</a>
                                         </div>
                                         <div class="product__top-buttons">
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -1524,7 +1591,7 @@
                                     </div>
                                     <div class="product__preview">
                                         <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
                                         </a>
                                     </div>
                                     <a href class="product__name">Смартфон Xiaomi Redmi 10C NFC 4/64 ГБ RU, серый графит</a>
@@ -1588,12 +1655,12 @@
                                             <a href="#" class="product__rating-link">(15)</a>
                                         </div>
                                         <div class="product__top-buttons">
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -1602,7 +1669,7 @@
                                     </div>
                                     <div class="product__preview">
                                         <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
                                         </a>
                                     </div>
                                     <a href class="product__name">Смартфон Xiaomi Redmi 10C NFC 4/64 ГБ RU, серый графит</a>
@@ -1684,12 +1751,12 @@
                                             <a href="#" class="product__rating-link">(15)</a>
                                         </div>
                                         <div class="product__top-buttons">
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -1698,10 +1765,10 @@
                                     </div>
                                     <div class="product__preview">
                                         <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
                                         </a>
                                     </div>
-                                    <a href class="product__name">Смартфон </a>
+                                    <a href class="product__name">См</a>
                                     <div class="product__status">
                                         <span class="product__status-text">в наличии</span>
                                     </div>
@@ -1762,12 +1829,12 @@
                                             <a href="#" class="product__rating-link">(15)</a>
                                         </div>
                                         <div class="product__top-buttons">
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -1776,7 +1843,7 @@
                                     </div>
                                     <div class="product__preview">
                                         <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
                                         </a>
                                     </div>
                                     <a href class="product__name">Смартфон Xiaomi Redmi 10C NFC 4/64 ГБ RU, серый графит</a>
@@ -1795,7 +1862,7 @@
                                         <span class="product__basket-button-icon product__basket-button-icon_hidden">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.50003 6V6.75H5.51303C4.55303 6.75 3.74903 7.474 3.64803 8.429L2.38503 20.429C2.35756 20.6903 2.38533 20.9545 2.46654 21.2045C2.54776 21.4544 2.6806 21.6844 2.85645 21.8797C3.0323 22.075 3.24723 22.2311 3.48731 22.338C3.72739 22.4448 3.98724 22.5 4.25003 22.5H19.75C20.0128 22.5 20.2727 22.4448 20.5127 22.338C20.7528 22.2311 20.9678 22.075 21.1436 21.8797C21.3195 21.6844 21.4523 21.4544 21.5335 21.2045C21.6147 20.9545 21.6425 20.6903 21.615 20.429L20.352 8.429C20.3036 7.96815 20.0862 7.54155 19.7418 7.23151C19.3974 6.92146 18.9504 6.74993 18.487 6.75H16.5V6C16.5 4.80653 16.0259 3.66193 15.182 2.81802C14.3381 1.97411 13.1935 1.5 12 1.5C10.8066 1.5 9.66196 1.97411 8.81805 2.81802C7.97413 3.66193 7.50003 4.80653 7.50003 6ZM12 3C11.2044 3 10.4413 3.31607 9.87871 3.87868C9.3161 4.44129 9.00003 5.20435 9.00003 6V6.75H15V6C15 5.20435 14.684 4.44129 14.1213 3.87868C13.5587 3.31607 12.7957 3 12 3ZM9.00003 11.25C9.00003 12.0456 9.3161 12.8087 9.87871 13.3713C10.4413 13.9339 11.2044 14.25 12 14.25C12.7957 14.25 13.5587 13.9339 14.1213 13.3713C14.684 12.8087 15 12.0456 15 11.25V10.5C15 10.3011 15.079 10.1103 15.2197 9.96967C15.3604 9.82902 15.5511 9.75 15.75 9.75C15.9489 9.75 16.1397 9.82902 16.2804 9.96967C16.421 10.1103 16.5 10.3011 16.5 10.5V11.25C16.5 12.4435 16.0259 13.5881 15.182 14.432C14.3381 15.2759 13.1935 15.75 12 15.75C10.8066 15.75 9.66196 15.2759 8.81805 14.432C7.97413 13.5881 7.50003 12.4435 7.50003 11.25V10.5C7.50003 10.3011 7.57905 10.1103 7.7197 9.96967C7.86035 9.82902 8.05112 9.75 8.25003 9.75C8.44894 9.75 8.63971 9.82902 8.78036 9.96967C8.92101 10.1103 9.00003 10.3011 9.00003 10.5V11.25Z" fill="white"/>
-                                            </svg>
+                                            </svg> 
                                         </span>
                                         <span class="product__basket-button-text">сообщить о поступлении</span>
                                         <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
@@ -1840,12 +1907,12 @@
                                             <a href="#" class="product__rating-link">(15)</a>
                                         </div>
                                         <div class="product__top-buttons">
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -1854,7 +1921,7 @@
                                     </div>
                                     <div class="product__preview">
                                         <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
                                         </a>
                                     </div>
                                     <a href class="product__name">Смартфон Xiaomi Redmi 10C NFC 4/64 ГБ RU, серый графит</a>
@@ -1918,12 +1985,12 @@
                                             <a href="#" class="product__rating-link">(15)</a>
                                         </div>
                                         <div class="product__top-buttons">
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -1932,7 +1999,7 @@
                                     </div>
                                     <div class="product__preview">
                                         <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
                                         </a>
                                     </div>
                                     <a href class="product__name">Смартфон Xiaomi Redmi 10C NFC 4/64 ГБ RU, серый графит</a>
@@ -2030,12 +2097,12 @@
                                             <a href="#" class="product__rating-link">(15)</a>
                                         </div>
                                         <div class="product__top-buttons">
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -2044,10 +2111,10 @@
                                     </div>
                                     <div class="product__preview">
                                         <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
                                         </a>
                                     </div>
-                                    <a href class="product__name">Смартфон </a>
+                                    <a href class="product__name">См</a>
                                     <div class="product__status">
                                         <span class="product__status-text">в наличии</span>
                                     </div>
@@ -2108,12 +2175,12 @@
                                             <a href="#" class="product__rating-link">(15)</a>
                                         </div>
                                         <div class="product__top-buttons">
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -2122,7 +2189,7 @@
                                     </div>
                                     <div class="product__preview">
                                         <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
                                         </a>
                                     </div>
                                     <a href class="product__name">Смартфон Xiaomi Redmi 10C NFC 4/64 ГБ RU, серый графит</a>
@@ -2141,7 +2208,7 @@
                                         <span class="product__basket-button-icon product__basket-button-icon_hidden">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.50003 6V6.75H5.51303C4.55303 6.75 3.74903 7.474 3.64803 8.429L2.38503 20.429C2.35756 20.6903 2.38533 20.9545 2.46654 21.2045C2.54776 21.4544 2.6806 21.6844 2.85645 21.8797C3.0323 22.075 3.24723 22.2311 3.48731 22.338C3.72739 22.4448 3.98724 22.5 4.25003 22.5H19.75C20.0128 22.5 20.2727 22.4448 20.5127 22.338C20.7528 22.2311 20.9678 22.075 21.1436 21.8797C21.3195 21.6844 21.4523 21.4544 21.5335 21.2045C21.6147 20.9545 21.6425 20.6903 21.615 20.429L20.352 8.429C20.3036 7.96815 20.0862 7.54155 19.7418 7.23151C19.3974 6.92146 18.9504 6.74993 18.487 6.75H16.5V6C16.5 4.80653 16.0259 3.66193 15.182 2.81802C14.3381 1.97411 13.1935 1.5 12 1.5C10.8066 1.5 9.66196 1.97411 8.81805 2.81802C7.97413 3.66193 7.50003 4.80653 7.50003 6ZM12 3C11.2044 3 10.4413 3.31607 9.87871 3.87868C9.3161 4.44129 9.00003 5.20435 9.00003 6V6.75H15V6C15 5.20435 14.684 4.44129 14.1213 3.87868C13.5587 3.31607 12.7957 3 12 3ZM9.00003 11.25C9.00003 12.0456 9.3161 12.8087 9.87871 13.3713C10.4413 13.9339 11.2044 14.25 12 14.25C12.7957 14.25 13.5587 13.9339 14.1213 13.3713C14.684 12.8087 15 12.0456 15 11.25V10.5C15 10.3011 15.079 10.1103 15.2197 9.96967C15.3604 9.82902 15.5511 9.75 15.75 9.75C15.9489 9.75 16.1397 9.82902 16.2804 9.96967C16.421 10.1103 16.5 10.3011 16.5 10.5V11.25C16.5 12.4435 16.0259 13.5881 15.182 14.432C14.3381 15.2759 13.1935 15.75 12 15.75C10.8066 15.75 9.66196 15.2759 8.81805 14.432C7.97413 13.5881 7.50003 12.4435 7.50003 11.25V10.5C7.50003 10.3011 7.57905 10.1103 7.7197 9.96967C7.86035 9.82902 8.05112 9.75 8.25003 9.75C8.44894 9.75 8.63971 9.82902 8.78036 9.96967C8.92101 10.1103 9.00003 10.3011 9.00003 10.5V11.25Z" fill="white"/>
-                                            </svg>
+                                            </svg> 
                                         </span>
                                         <span class="product__basket-button-text">сообщить о поступлении</span>
                                         <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
@@ -2186,12 +2253,12 @@
                                             <a href="#" class="product__rating-link">(15)</a>
                                         </div>
                                         <div class="product__top-buttons">
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -2200,7 +2267,7 @@
                                     </div>
                                     <div class="product__preview">
                                         <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
                                         </a>
                                     </div>
                                     <a href class="product__name">Смартфон Xiaomi Redmi 10C NFC 4/64 ГБ RU, серый графит</a>
@@ -2264,12 +2331,12 @@
                                             <a href="#" class="product__rating-link">(15)</a>
                                         </div>
                                         <div class="product__top-buttons">
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -2278,7 +2345,7 @@
                                     </div>
                                     <div class="product__preview">
                                         <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
                                         </a>
                                     </div>
                                     <a href class="product__name">Смартфон Xiaomi Redmi 10C NFC 4/64 ГБ RU, серый графит</a>
@@ -2360,12 +2427,12 @@
                                             <a href="#" class="product__rating-link">(15)</a>
                                         </div>
                                         <div class="product__top-buttons">
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -2374,10 +2441,10 @@
                                     </div>
                                     <div class="product__preview">
                                         <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
                                         </a>
                                     </div>
-                                    <a href class="product__name">Смартфон </a>
+                                    <a href class="product__name">См</a>
                                     <div class="product__status">
                                         <span class="product__status-text">в наличии</span>
                                     </div>
@@ -2438,12 +2505,12 @@
                                             <a href="#" class="product__rating-link">(15)</a>
                                         </div>
                                         <div class="product__top-buttons">
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -2452,85 +2519,7 @@
                                     </div>
                                     <div class="product__preview">
                                         <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
-                                        </a>
-                                    </div>
-                                    <a href class="product__name">Смартфон </a>
-                                    <div class="product__status">
-                                        <span class="product__status-text">в наличии</span>
-                                    </div>
-                                    <div class="product__price">
-                                        <span class="product__price-text product__price-text_hidden">23 490 ₽</span>
-                                        <div class="product__price-sale">
-                                            <span class="product__price-sale-icon">%</span>
-                                            <span class="product__price-sale-text">-3000₽</span>
-                                        </div>
-                                    </div>
-                                    <span class="product__buy-info">Вернем 700₽ бонусами</span>
-                                    <button class="product__basket-button">
-                                        <span class="product__basket-button-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.50003 6V6.75H5.51303C4.55303 6.75 3.74903 7.474 3.64803 8.429L2.38503 20.429C2.35756 20.6903 2.38533 20.9545 2.46654 21.2045C2.54776 21.4544 2.6806 21.6844 2.85645 21.8797C3.0323 22.075 3.24723 22.2311 3.48731 22.338C3.72739 22.4448 3.98724 22.5 4.25003 22.5H19.75C20.0128 22.5 20.2727 22.4448 20.5127 22.338C20.7528 22.2311 20.9678 22.075 21.1436 21.8797C21.3195 21.6844 21.4523 21.4544 21.5335 21.2045C21.6147 20.9545 21.6425 20.6903 21.615 20.429L20.352 8.429C20.3036 7.96815 20.0862 7.54155 19.7418 7.23151C19.3974 6.92146 18.9504 6.74993 18.487 6.75H16.5V6C16.5 4.80653 16.0259 3.66193 15.182 2.81802C14.3381 1.97411 13.1935 1.5 12 1.5C10.8066 1.5 9.66196 1.97411 8.81805 2.81802C7.97413 3.66193 7.50003 4.80653 7.50003 6ZM12 3C11.2044 3 10.4413 3.31607 9.87871 3.87868C9.3161 4.44129 9.00003 5.20435 9.00003 6V6.75H15V6C15 5.20435 14.684 4.44129 14.1213 3.87868C13.5587 3.31607 12.7957 3 12 3ZM9.00003 11.25C9.00003 12.0456 9.3161 12.8087 9.87871 13.3713C10.4413 13.9339 11.2044 14.25 12 14.25C12.7957 14.25 13.5587 13.9339 14.1213 13.3713C14.684 12.8087 15 12.0456 15 11.25V10.5C15 10.3011 15.079 10.1103 15.2197 9.96967C15.3604 9.82902 15.5511 9.75 15.75 9.75C15.9489 9.75 16.1397 9.82902 16.2804 9.96967C16.421 10.1103 16.5 10.3011 16.5 10.5V11.25C16.5 12.4435 16.0259 13.5881 15.182 14.432C14.3381 15.2759 13.1935 15.75 12 15.75C10.8066 15.75 9.66196 15.2759 8.81805 14.432C7.97413 13.5881 7.50003 12.4435 7.50003 11.25V10.5C7.50003 10.3011 7.57905 10.1103 7.7197 9.96967C7.86035 9.82902 8.05112 9.75 8.25003 9.75C8.44894 9.75 8.63971 9.82902 8.78036 9.96967C8.92101 10.1103 9.00003 10.3011 9.00003 10.5V11.25Z" fill="white"/>
-                                            </svg>
-                                        </span>
-                                        <span class="product__basket-button-text">добавить в корзину</span>
-                                        <span class="product__basket-button-mobile-text">23 490 ₽</span>
-                                    </button>
-                                    <div class="product__bottom-buttons">
-                                        <a href="#" class="product__credit-button">Купить в кредит</a>
-                                        <a href="#" class="product__fast-buy-button">Купить в 1 клик</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="swiper-slide">
-                                <article class="product">
-                                    <div class="product__header">
-                                        <div class="product__rating">
-                                            <div class="product__rating-stars">
-                                                <div class="rating-star rating-star_active">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                        <path d="M14.1891 5.51714L10.2219 4.94058L8.44847 1.34527C8.40003 1.24683 8.32034 1.16714 8.2219 1.11871C7.97503 0.996832 7.67503 1.09839 7.55159 1.34527L5.77815 4.94058L1.81097 5.51714C1.70159 5.53277 1.60159 5.58433 1.52503 5.66246C1.43247 5.75759 1.38146 5.88558 1.38322 6.0183C1.38498 6.15103 1.43936 6.27762 1.5344 6.37027L4.40472 9.16871L3.72659 13.1203C3.71069 13.2122 3.72086 13.3067 3.75595 13.3932C3.79105 13.4796 3.84966 13.5545 3.92514 13.6093C4.00062 13.6641 4.08995 13.6967 4.183 13.7033C4.27605 13.71 4.3691 13.6904 4.45159 13.6468L8.00003 11.7812L11.5485 13.6468C11.6453 13.6984 11.7578 13.7156 11.8657 13.6968C12.1375 13.65 12.3203 13.3921 12.2735 13.1203L11.5953 9.16871L14.4657 6.37027C14.5438 6.29371 14.5953 6.19371 14.611 6.08433C14.6532 5.81089 14.4625 5.55777 14.1891 5.51714Z" fill="#E7E7E7"/>
-                                                    </svg>
-                                                </div>
-                                                <div class="rating-star rating-star_active">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                        <path d="M14.1891 5.51714L10.2219 4.94058L8.44847 1.34527C8.40003 1.24683 8.32034 1.16714 8.2219 1.11871C7.97503 0.996832 7.67503 1.09839 7.55159 1.34527L5.77815 4.94058L1.81097 5.51714C1.70159 5.53277 1.60159 5.58433 1.52503 5.66246C1.43247 5.75759 1.38146 5.88558 1.38322 6.0183C1.38498 6.15103 1.43936 6.27762 1.5344 6.37027L4.40472 9.16871L3.72659 13.1203C3.71069 13.2122 3.72086 13.3067 3.75595 13.3932C3.79105 13.4796 3.84966 13.5545 3.92514 13.6093C4.00062 13.6641 4.08995 13.6967 4.183 13.7033C4.27605 13.71 4.3691 13.6904 4.45159 13.6468L8.00003 11.7812L11.5485 13.6468C11.6453 13.6984 11.7578 13.7156 11.8657 13.6968C12.1375 13.65 12.3203 13.3921 12.2735 13.1203L11.5953 9.16871L14.4657 6.37027C14.5438 6.29371 14.5953 6.19371 14.611 6.08433C14.6532 5.81089 14.4625 5.55777 14.1891 5.51714Z" fill="#E7E7E7"/>
-                                                    </svg>
-                                                </div>
-                                                <div class="rating-star rating-star_active">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                        <path d="M14.1891 5.51714L10.2219 4.94058L8.44847 1.34527C8.40003 1.24683 8.32034 1.16714 8.2219 1.11871C7.97503 0.996832 7.67503 1.09839 7.55159 1.34527L5.77815 4.94058L1.81097 5.51714C1.70159 5.53277 1.60159 5.58433 1.52503 5.66246C1.43247 5.75759 1.38146 5.88558 1.38322 6.0183C1.38498 6.15103 1.43936 6.27762 1.5344 6.37027L4.40472 9.16871L3.72659 13.1203C3.71069 13.2122 3.72086 13.3067 3.75595 13.3932C3.79105 13.4796 3.84966 13.5545 3.92514 13.6093C4.00062 13.6641 4.08995 13.6967 4.183 13.7033C4.27605 13.71 4.3691 13.6904 4.45159 13.6468L8.00003 11.7812L11.5485 13.6468C11.6453 13.6984 11.7578 13.7156 11.8657 13.6968C12.1375 13.65 12.3203 13.3921 12.2735 13.1203L11.5953 9.16871L14.4657 6.37027C14.5438 6.29371 14.5953 6.19371 14.611 6.08433C14.6532 5.81089 14.4625 5.55777 14.1891 5.51714Z" fill="#E7E7E7"/>
-                                                    </svg>
-                                                </div>
-                                                <div class="rating-star rating-star_active">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                        <path d="M14.1891 5.51714L10.2219 4.94058L8.44847 1.34527C8.40003 1.24683 8.32034 1.16714 8.2219 1.11871C7.97503 0.996832 7.67503 1.09839 7.55159 1.34527L5.77815 4.94058L1.81097 5.51714C1.70159 5.53277 1.60159 5.58433 1.52503 5.66246C1.43247 5.75759 1.38146 5.88558 1.38322 6.0183C1.38498 6.15103 1.43936 6.27762 1.5344 6.37027L4.40472 9.16871L3.72659 13.1203C3.71069 13.2122 3.72086 13.3067 3.75595 13.3932C3.79105 13.4796 3.84966 13.5545 3.92514 13.6093C4.00062 13.6641 4.08995 13.6967 4.183 13.7033C4.27605 13.71 4.3691 13.6904 4.45159 13.6468L8.00003 11.7812L11.5485 13.6468C11.6453 13.6984 11.7578 13.7156 11.8657 13.6968C12.1375 13.65 12.3203 13.3921 12.2735 13.1203L11.5953 9.16871L14.4657 6.37027C14.5438 6.29371 14.5953 6.19371 14.611 6.08433C14.6532 5.81089 14.4625 5.55777 14.1891 5.51714Z" fill="#E7E7E7"/>
-                                                    </svg>
-                                                </div>
-                                                <div class="rating-star">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                        <path d="M14.1891 5.51714L10.2219 4.94058L8.44847 1.34527C8.40003 1.24683 8.32034 1.16714 8.2219 1.11871C7.97503 0.996832 7.67503 1.09839 7.55159 1.34527L5.77815 4.94058L1.81097 5.51714C1.70159 5.53277 1.60159 5.58433 1.52503 5.66246C1.43247 5.75759 1.38146 5.88558 1.38322 6.0183C1.38498 6.15103 1.43936 6.27762 1.5344 6.37027L4.40472 9.16871L3.72659 13.1203C3.71069 13.2122 3.72086 13.3067 3.75595 13.3932C3.79105 13.4796 3.84966 13.5545 3.92514 13.6093C4.00062 13.6641 4.08995 13.6967 4.183 13.7033C4.27605 13.71 4.3691 13.6904 4.45159 13.6468L8.00003 11.7812L11.5485 13.6468C11.6453 13.6984 11.7578 13.7156 11.8657 13.6968C12.1375 13.65 12.3203 13.3921 12.2735 13.1203L11.5953 9.16871L14.4657 6.37027C14.5438 6.29371 14.5953 6.19371 14.611 6.08433C14.6532 5.81089 14.4625 5.55777 14.1891 5.51714Z" fill="#E7E7E7"/>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="product__rating-link">(15)</a>
-                                        </div>
-                                        <div class="product__top-buttons">
-                                            <button class="product__top-button">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                    <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </button>
-                                            <button class="product__top-button">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                    <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="product__preview">
-                                        <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
                                         </a>
                                     </div>
                                     <a href class="product__name">Смартфон Xiaomi Redmi 10C NFC 4/64 ГБ RU, серый графит</a>
@@ -2549,7 +2538,7 @@
                                         <span class="product__basket-button-icon product__basket-button-icon_hidden">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.50003 6V6.75H5.51303C4.55303 6.75 3.74903 7.474 3.64803 8.429L2.38503 20.429C2.35756 20.6903 2.38533 20.9545 2.46654 21.2045C2.54776 21.4544 2.6806 21.6844 2.85645 21.8797C3.0323 22.075 3.24723 22.2311 3.48731 22.338C3.72739 22.4448 3.98724 22.5 4.25003 22.5H19.75C20.0128 22.5 20.2727 22.4448 20.5127 22.338C20.7528 22.2311 20.9678 22.075 21.1436 21.8797C21.3195 21.6844 21.4523 21.4544 21.5335 21.2045C21.6147 20.9545 21.6425 20.6903 21.615 20.429L20.352 8.429C20.3036 7.96815 20.0862 7.54155 19.7418 7.23151C19.3974 6.92146 18.9504 6.74993 18.487 6.75H16.5V6C16.5 4.80653 16.0259 3.66193 15.182 2.81802C14.3381 1.97411 13.1935 1.5 12 1.5C10.8066 1.5 9.66196 1.97411 8.81805 2.81802C7.97413 3.66193 7.50003 4.80653 7.50003 6ZM12 3C11.2044 3 10.4413 3.31607 9.87871 3.87868C9.3161 4.44129 9.00003 5.20435 9.00003 6V6.75H15V6C15 5.20435 14.684 4.44129 14.1213 3.87868C13.5587 3.31607 12.7957 3 12 3ZM9.00003 11.25C9.00003 12.0456 9.3161 12.8087 9.87871 13.3713C10.4413 13.9339 11.2044 14.25 12 14.25C12.7957 14.25 13.5587 13.9339 14.1213 13.3713C14.684 12.8087 15 12.0456 15 11.25V10.5C15 10.3011 15.079 10.1103 15.2197 9.96967C15.3604 9.82902 15.5511 9.75 15.75 9.75C15.9489 9.75 16.1397 9.82902 16.2804 9.96967C16.421 10.1103 16.5 10.3011 16.5 10.5V11.25C16.5 12.4435 16.0259 13.5881 15.182 14.432C14.3381 15.2759 13.1935 15.75 12 15.75C10.8066 15.75 9.66196 15.2759 8.81805 14.432C7.97413 13.5881 7.50003 12.4435 7.50003 11.25V10.5C7.50003 10.3011 7.57905 10.1103 7.7197 9.96967C7.86035 9.82902 8.05112 9.75 8.25003 9.75C8.44894 9.75 8.63971 9.82902 8.78036 9.96967C8.92101 10.1103 9.00003 10.3011 9.00003 10.5V11.25Z" fill="white"/>
-                                            </svg>
+                                            </svg> 
                                         </span>
                                         <span class="product__basket-button-text">сообщить о поступлении</span>
                                         <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
@@ -2594,12 +2583,12 @@
                                             <a href="#" class="product__rating-link">(15)</a>
                                         </div>
                                         <div class="product__top-buttons">
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button class="product__top-button">
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -2608,7 +2597,85 @@
                                     </div>
                                     <div class="product__preview">
                                         <a class="product__preview-link" href="#">
-                                            <img class="product__preview-img" src="./assets/img/product/img1.svg" alt="">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
+                                        </a>
+                                    </div>
+                                    <a href class="product__name">Смартфон Xiaomi Redmi 10C NFC 4/64 ГБ RU, серый графит</a>
+                                    <div class="product__status">
+                                        <span class="product__status-text">в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product__price-text product__price-text_hidden">23 490 ₽</span>
+                                        <div class="product__price-sale">
+                                            <span class="product__price-sale-icon">%</span>
+                                            <span class="product__price-sale-text">-3000₽</span>
+                                        </div>
+                                    </div>
+                                    <span class="product__buy-info">Вернем 700₽ бонусами</span>
+                                    <button class="product__basket-button product__basket-button_active">
+                                        <span class="product__basket-button-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.50003 6V6.75H5.51303C4.55303 6.75 3.74903 7.474 3.64803 8.429L2.38503 20.429C2.35756 20.6903 2.38533 20.9545 2.46654 21.2045C2.54776 21.4544 2.6806 21.6844 2.85645 21.8797C3.0323 22.075 3.24723 22.2311 3.48731 22.338C3.72739 22.4448 3.98724 22.5 4.25003 22.5H19.75C20.0128 22.5 20.2727 22.4448 20.5127 22.338C20.7528 22.2311 20.9678 22.075 21.1436 21.8797C21.3195 21.6844 21.4523 21.4544 21.5335 21.2045C21.6147 20.9545 21.6425 20.6903 21.615 20.429L20.352 8.429C20.3036 7.96815 20.0862 7.54155 19.7418 7.23151C19.3974 6.92146 18.9504 6.74993 18.487 6.75H16.5V6C16.5 4.80653 16.0259 3.66193 15.182 2.81802C14.3381 1.97411 13.1935 1.5 12 1.5C10.8066 1.5 9.66196 1.97411 8.81805 2.81802C7.97413 3.66193 7.50003 4.80653 7.50003 6ZM12 3C11.2044 3 10.4413 3.31607 9.87871 3.87868C9.3161 4.44129 9.00003 5.20435 9.00003 6V6.75H15V6C15 5.20435 14.684 4.44129 14.1213 3.87868C13.5587 3.31607 12.7957 3 12 3ZM9.00003 11.25C9.00003 12.0456 9.3161 12.8087 9.87871 13.3713C10.4413 13.9339 11.2044 14.25 12 14.25C12.7957 14.25 13.5587 13.9339 14.1213 13.3713C14.684 12.8087 15 12.0456 15 11.25V10.5C15 10.3011 15.079 10.1103 15.2197 9.96967C15.3604 9.82902 15.5511 9.75 15.75 9.75C15.9489 9.75 16.1397 9.82902 16.2804 9.96967C16.421 10.1103 16.5 10.3011 16.5 10.5V11.25C16.5 12.4435 16.0259 13.5881 15.182 14.432C14.3381 15.2759 13.1935 15.75 12 15.75C10.8066 15.75 9.66196 15.2759 8.81805 14.432C7.97413 13.5881 7.50003 12.4435 7.50003 11.25V10.5C7.50003 10.3011 7.57905 10.1103 7.7197 9.96967C7.86035 9.82902 8.05112 9.75 8.25003 9.75C8.44894 9.75 8.63971 9.82902 8.78036 9.96967C8.92101 10.1103 9.00003 10.3011 9.00003 10.5V11.25Z" fill="white"/>
+                                            </svg>
+                                        </span>
+                                        <span class="product__basket-button-text">В корзине</span>
+                                        <span class="product__basket-button-mobile-text">В корзине</span>
+                                    </button>
+                                    <div class="product__bottom-buttons">
+                                        <a href="#" class="product__credit-button">Купить в кредит</a>
+                                        <a href="#" class="product__fast-buy-button">Купить в 1 клик</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="product">
+                                    <div class="product__header">
+                                        <div class="product__rating">
+                                            <div class="product__rating-stars">
+                                                <div class="rating-star rating-star_active">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M14.1891 5.51714L10.2219 4.94058L8.44847 1.34527C8.40003 1.24683 8.32034 1.16714 8.2219 1.11871C7.97503 0.996832 7.67503 1.09839 7.55159 1.34527L5.77815 4.94058L1.81097 5.51714C1.70159 5.53277 1.60159 5.58433 1.52503 5.66246C1.43247 5.75759 1.38146 5.88558 1.38322 6.0183C1.38498 6.15103 1.43936 6.27762 1.5344 6.37027L4.40472 9.16871L3.72659 13.1203C3.71069 13.2122 3.72086 13.3067 3.75595 13.3932C3.79105 13.4796 3.84966 13.5545 3.92514 13.6093C4.00062 13.6641 4.08995 13.6967 4.183 13.7033C4.27605 13.71 4.3691 13.6904 4.45159 13.6468L8.00003 11.7812L11.5485 13.6468C11.6453 13.6984 11.7578 13.7156 11.8657 13.6968C12.1375 13.65 12.3203 13.3921 12.2735 13.1203L11.5953 9.16871L14.4657 6.37027C14.5438 6.29371 14.5953 6.19371 14.611 6.08433C14.6532 5.81089 14.4625 5.55777 14.1891 5.51714Z" fill="#E7E7E7"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating-star rating-star_active">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M14.1891 5.51714L10.2219 4.94058L8.44847 1.34527C8.40003 1.24683 8.32034 1.16714 8.2219 1.11871C7.97503 0.996832 7.67503 1.09839 7.55159 1.34527L5.77815 4.94058L1.81097 5.51714C1.70159 5.53277 1.60159 5.58433 1.52503 5.66246C1.43247 5.75759 1.38146 5.88558 1.38322 6.0183C1.38498 6.15103 1.43936 6.27762 1.5344 6.37027L4.40472 9.16871L3.72659 13.1203C3.71069 13.2122 3.72086 13.3067 3.75595 13.3932C3.79105 13.4796 3.84966 13.5545 3.92514 13.6093C4.00062 13.6641 4.08995 13.6967 4.183 13.7033C4.27605 13.71 4.3691 13.6904 4.45159 13.6468L8.00003 11.7812L11.5485 13.6468C11.6453 13.6984 11.7578 13.7156 11.8657 13.6968C12.1375 13.65 12.3203 13.3921 12.2735 13.1203L11.5953 9.16871L14.4657 6.37027C14.5438 6.29371 14.5953 6.19371 14.611 6.08433C14.6532 5.81089 14.4625 5.55777 14.1891 5.51714Z" fill="#E7E7E7"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating-star rating-star_active">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M14.1891 5.51714L10.2219 4.94058L8.44847 1.34527C8.40003 1.24683 8.32034 1.16714 8.2219 1.11871C7.97503 0.996832 7.67503 1.09839 7.55159 1.34527L5.77815 4.94058L1.81097 5.51714C1.70159 5.53277 1.60159 5.58433 1.52503 5.66246C1.43247 5.75759 1.38146 5.88558 1.38322 6.0183C1.38498 6.15103 1.43936 6.27762 1.5344 6.37027L4.40472 9.16871L3.72659 13.1203C3.71069 13.2122 3.72086 13.3067 3.75595 13.3932C3.79105 13.4796 3.84966 13.5545 3.92514 13.6093C4.00062 13.6641 4.08995 13.6967 4.183 13.7033C4.27605 13.71 4.3691 13.6904 4.45159 13.6468L8.00003 11.7812L11.5485 13.6468C11.6453 13.6984 11.7578 13.7156 11.8657 13.6968C12.1375 13.65 12.3203 13.3921 12.2735 13.1203L11.5953 9.16871L14.4657 6.37027C14.5438 6.29371 14.5953 6.19371 14.611 6.08433C14.6532 5.81089 14.4625 5.55777 14.1891 5.51714Z" fill="#E7E7E7"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating-star rating-star_active">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M14.1891 5.51714L10.2219 4.94058L8.44847 1.34527C8.40003 1.24683 8.32034 1.16714 8.2219 1.11871C7.97503 0.996832 7.67503 1.09839 7.55159 1.34527L5.77815 4.94058L1.81097 5.51714C1.70159 5.53277 1.60159 5.58433 1.52503 5.66246C1.43247 5.75759 1.38146 5.88558 1.38322 6.0183C1.38498 6.15103 1.43936 6.27762 1.5344 6.37027L4.40472 9.16871L3.72659 13.1203C3.71069 13.2122 3.72086 13.3067 3.75595 13.3932C3.79105 13.4796 3.84966 13.5545 3.92514 13.6093C4.00062 13.6641 4.08995 13.6967 4.183 13.7033C4.27605 13.71 4.3691 13.6904 4.45159 13.6468L8.00003 11.7812L11.5485 13.6468C11.6453 13.6984 11.7578 13.7156 11.8657 13.6968C12.1375 13.65 12.3203 13.3921 12.2735 13.1203L11.5953 9.16871L14.4657 6.37027C14.5438 6.29371 14.5953 6.19371 14.611 6.08433C14.6532 5.81089 14.4625 5.55777 14.1891 5.51714Z" fill="#E7E7E7"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="rating-star">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M14.1891 5.51714L10.2219 4.94058L8.44847 1.34527C8.40003 1.24683 8.32034 1.16714 8.2219 1.11871C7.97503 0.996832 7.67503 1.09839 7.55159 1.34527L5.77815 4.94058L1.81097 5.51714C1.70159 5.53277 1.60159 5.58433 1.52503 5.66246C1.43247 5.75759 1.38146 5.88558 1.38322 6.0183C1.38498 6.15103 1.43936 6.27762 1.5344 6.37027L4.40472 9.16871L3.72659 13.1203C3.71069 13.2122 3.72086 13.3067 3.75595 13.3932C3.79105 13.4796 3.84966 13.5545 3.92514 13.6093C4.00062 13.6641 4.08995 13.6967 4.183 13.7033C4.27605 13.71 4.3691 13.6904 4.45159 13.6468L8.00003 11.7812L11.5485 13.6468C11.6453 13.6984 11.7578 13.7156 11.8657 13.6968C12.1375 13.65 12.3203 13.3921 12.2735 13.1203L11.5953 9.16871L14.4657 6.37027C14.5438 6.29371 14.5953 6.19371 14.611 6.08433C14.6532 5.81089 14.4625 5.55777 14.1891 5.51714Z" fill="#E7E7E7"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="product__rating-link">(15)</a>
+                                        </div>
+                                        <div class="product__top-buttons">
+                                            <button class="product__top-button" aria-label ="Кнопка нравится">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product__top-button" aria-label ="Кнопка сравнить">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#888888" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__preview">
+                                        <a class="product__preview-link" href="#">
+                                            <img class="product__preview-img" aria-label="Cсылка на продукт в карточке товара" src="./assets/img/product/img1.svg" width="auto" height="auto" loading="lazy"  alt="">
                                         </a>
                                     </div>
                                     <a href class="product__name">Смартфон Xiaomi Redmi 10C NFC 4/64 ГБ RU, серый графит</a>
@@ -2717,10 +2784,10 @@
             <a class="logo footer__logo" href="index.html">
                 <span class="logo__icon footer__logo-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="none">
-                        <path d="M49.4117 24.6753C49.4117 38.3032 38.3506 49.3506 24.7059 49.3506C11.0612 49.3506 0 38.3032 0 24.6753C0 11.0475 11.0612 0 24.7059 0C38.3506 0 49.4117 11.0475 49.4117 24.6753Z" fill="url(#paint0_linear_1033_71)"/>
+                        <path d="M49.4117 24.6753C49.4117 38.3032 38.3506 49.3506 24.7059 49.3506C11.0612 49.3506 0 38.3032 0 24.6753C0 11.0475 11.0612 0 24.7059 0C38.3506 0 49.4117 11.0475 49.4117 24.6753Z" fill="url(#paint0_linear_1033_164)"/>
                         <path d="M34.6879 15.9162H31.8359C31.8359 12.0835 28.6416 8.97287 24.7058 8.97287C20.77 8.97287 17.5757 12.0835 17.5757 15.9162H14.7236C13.155 15.9162 11.8716 17.1659 11.8716 18.6934V35.3572C11.8716 36.8848 13.155 38.1346 14.7236 38.1346H34.6879C36.2566 38.1346 37.54 36.8848 37.54 35.3572V18.6934C37.54 17.1659 36.2566 15.9162 34.6879 15.9162ZM24.7058 11.7502C27.073 11.7502 28.9839 13.611 28.9839 15.9162H20.4277C20.4277 13.611 22.3386 11.7502 24.7058 11.7502ZM34.6879 35.3572H14.7236V18.6934H34.6879V35.3572ZM24.7058 24.2481C22.3386 24.2481 20.4277 22.3873 20.4277 20.0821H17.5757C17.5757 23.9148 20.77 27.0254 24.7058 27.0254C28.6416 27.0254 31.8359 23.9148 31.8359 20.0821H28.9839C28.9839 22.3873 27.073 24.2481 24.7058 24.2481Z" fill="white"/>
                         <defs>
-                        <linearGradient id="paint0_linear_1033_71" x1="-2.79197" y1="51.5939" x2="134.4" y2="-1.81052" gradientUnits="userSpaceOnUse">
+                        <linearGradient id="paint0_linear_1033_164" x1="-2.79197" y1="51.5939" x2="134.4" y2="-1.81052" gradientUnits="userSpaceOnUse">
                         <stop stop-color="#4174F7"/>
                         <stop offset="1" stop-color="#42A4FF"/>
                         </linearGradient>
@@ -3003,7 +3070,7 @@
                 <div class="footer-bottom__social-wrapper">
                     <ul class="social footer-bottom__social">
                         <li class="social__item">
-                            <a href="">
+                            <a class="social__link" href="#" aria-label="Ссылка на вк">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                     <g clip-path="url(#clip0_1_33)">
                                     <path d="M0 15.3333C0 8.10513 0 4.49103 2.24551 2.24551C4.49103 0 8.10513 0 15.3333 0H16.6667C23.8949 0 27.509 0 29.7545 2.24551C32 4.49103 32 8.10513 32 15.3333V16.6667C32 23.8949 32 27.509 29.7545 29.7545C27.509 32 23.8949 32 16.6667 32H15.3333C8.10513 32 4.49103 32 2.24551 29.7545C0 27.509 0 23.8949 0 16.6667L0 15.3333Z" fill="#2787F5"/>
@@ -3018,7 +3085,7 @@
                             </a>
                         </li>
                         <li class="social__item">
-                            <a href="">
+                            <a class="social__link" href="#" aria-label="Ссылка на вотсап">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                     <g clip-path="url(#clip0_1_36)">
                                     <path d="M0 15.3333C0 8.10513 0 4.49103 2.24551 2.24551C4.49103 0 8.10513 0 15.3333 0H16.6667C23.8949 0 27.509 0 29.7545 2.24551C32 4.49103 32 8.10513 32 15.3333V16.6667C32 23.8949 32 27.509 29.7545 29.7545C27.509 32 23.8949 32 16.6667 32H15.3333C8.10513 32 4.49103 32 2.24551 29.7545C0 27.509 0 23.8949 0 16.6667L0 15.3333Z" fill="#23D735"/>
@@ -3033,8 +3100,8 @@
                             </a>
                         </li>
                         <li class="social__item">
-                            <a href="">
-                                <img src="./assets/img/header/tg_svg.svg" alt="">
+                            <a class="social__link" href="#" aria-label="Ссылка на телеграм">
+                                <img src="./assets/img/header/tg_svg.svg" alt="" width="32" height="32">
                             </a>
                         </li>
                     </ul>

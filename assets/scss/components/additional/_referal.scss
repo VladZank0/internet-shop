@@ -1,4 +1,5 @@
 .referal{
+    
     &__banner{
         background: $prime-prime;
         margin-bottom: 41px;
@@ -131,6 +132,9 @@
         }
         &-item{
             width: 272px;
+            @include s_600{
+                width: 100%;
+            }
         }
         &-item-title{
             color: $prime-prime;

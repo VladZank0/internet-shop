@@ -12,7 +12,7 @@
         justify-content: space-between;
         width: 100%;
         overflow-x: auto;
-        padding: 10px 0;
+        padding: 10px 7px;
         &::-webkit-scrollbar{
             display: none;
         }
@@ -40,6 +40,7 @@
         @include s_600(){
             width: 88px;
             min-height: 88px;
+            height: 88px;
         }
     }
 }

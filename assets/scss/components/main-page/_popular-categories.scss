@@ -86,6 +86,9 @@
             transition: .3s;
             box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
         }
+        &-box{
+            align-self: flex-start;
+        }
         &-title{
             color: $black-1;
             font-family: 'SF Pro Display-Medium',sans-serif;
@@ -247,6 +250,7 @@
                 grid-row: 4;
                 img{
                     bottom: 12px;
+                    height: auto;
                 }
             }
         }
@@ -326,6 +330,7 @@
             &-img{
                 @include s_800(){
                     width: 77px;
+                    height: auto;
                 }
                 @include s_700(){
                     width: 34px;

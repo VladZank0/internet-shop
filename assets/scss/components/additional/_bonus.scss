@@ -1,4 +1,8 @@
  .bonus{
+    padding-top: 32px;
+    @include s_576{
+        padding-top: 24px;
+    }
     &__banner{
         &-inner{
             display: flex;

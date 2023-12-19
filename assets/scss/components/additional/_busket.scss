@@ -509,15 +509,13 @@
         width: fit-content;
         padding: 16px 32px;
         box-sizing: border-box;
-        border-radius: 12px;
-        border: 1px solid $black-01; 
+        position: relative;
+        z-index: 2;
+        // background-color: black;
         @include s_576{
             width: 100%;
             padding: 16px;
-        }  
-        &:hover{
-            cursor: pointer;
-        }
+        } 
         &-title{
             display: flex;
             column-gap: 4px;
@@ -535,6 +533,11 @@
             &_pay-method{
                 font-size: 18px;
             }
+            &_center-text{
+                display: block;
+                text-align: center;
+                margin-bottom: 0;
+            }
         }  
         &-info{
             display: flex;
@@ -550,54 +553,76 @@
         }
         &-input{
             appearance: none;
+            width: 100%;
+            height: 100%;
+            border: 1px solid $black-01; 
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            border-radius: 12px; 
+            cursor: pointer;
+            &:checked {
+                border: 1px solid $prime-prime;
+                & ~ *{
+                    color: $prime-prime;   
+                }
+                & ~ .busket-page__form-radio-title .busket-page__form-radio-icon_stroke-fill{
+                    path{
+                        fill: none;
+                        stroke: $prime-prime;
+                    }
+                }
+                & ~ .busket-page__form-radio-title svg path{
+                    fill: $prime-prime;
+                }
+                & ~ .busket-page__form-radio-title svg rect{
+                    fill: $prime-prime;
+                }
+                & ~ .busket-page__form-radio-title_empty-svg-path svg path{
+                    fill: none;
+                    stroke: $prime-prime;
+                }
+                & ~ .busket-page__form-select-location-item-selected-mark{
+                    display: inline-flex;
+                }  
+            }
+            
             &_date{
-                display: flex;
-                flex-direction: row-reverse;
-                align-items: center;
-                width: 200px;
-                border: none;
+                appearance: none;
+                position: relative;
                 color: $black-1;
                 font-family: 'SF Pro Display-Medium', sans-serif;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
-                appearance: none;
                 background-color: transparent;
-
+                padding: 16px 32px 16px 56px;
+                box-sizing: border-box;
+                &:focus {
+                    color: $prime-prime;
+                    svg path{
+                        fill: $prime-prime;
+                    }  
+                    & ~ .busket-page__form-radio-title svg path{
+                        fill: $prime-prime;
+                    }
+                    & ~ .busket-page__form-radio-title svg rect{
+                        fill: $prime-prime;
+                    }
+                }
                 &::-webkit-calendar-picker-indicator {
-                    background-image: url('../img/calendar.svg');
+                    background-image: url('../img/catalog/dashicons_arrow-right.svg');
+                    transform: rotate(90deg);
                     background-position: center;
                     -webkit-appearance: none;
                     width: 24px;
                     height: 24px;
                     background-size: cover;
                 }
-                
             }
         }
-        &_active{
-            border: 1px solid $prime-prime;
-            svg path{
-                fill: $prime-prime;
-            }
-            rect{
-                fill: $prime-prime;
-            }
-            *{
-                color: $prime-prime;   
-            }
-            .busket-page__form-radio-input_date::-webkit-calendar-picker-indicator {
-                background-image: url('../img/calendar_active.svg');
-                background-position: center;
-                -webkit-appearance: none;
-                width: 24px;
-                height: 24px;
-                background-size: cover;
-            }
-            
-        }
-        
         &_pay-method{
             max-width: 253px;
             width: 100%;
@@ -607,20 +632,20 @@
             }
         }
         &_date{
+            position: relative;
             display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
             column-gap: 4px;
-            align-items: center;
-            justify-content: center;
-        }
-        &-icon{
-            &_stroke-fill{
-                path{
-                    fill: none !important;
-                    stroke: $prime-prime;
-                }
-               
+            width: fit-content;
+            padding: 0;
+            font-stretch: 0;
+            svg{
+                display: inline-flex;
+                position: absolute;
+                top: 50%;
+                width: 24px;
+                height: 24px;
+                transform: translateY(-50%);
+                left: 32px;
             }
         }
     }
@@ -645,9 +670,10 @@
         position: relative;
         border-radius: 16px;
         border: 1px solid $black-01;
-        padding: 16px 99px 5px 24px;
+        padding: 16px 70px 5px 24px;
         box-sizing: border-box;
         max-width: 547px;
+        width: 100%;
         
         &:hover{
             cursor: pointer;
@@ -725,13 +751,6 @@
                 font-size: 20px;
             }
         }
-        &_active{
-            border: 1px solid $prime-prime;
-            .busket-page__form-select-location-item-selected-mark{
-                display: inline-flex;
-            }
-        }
-        
     }
     &__pay-methods-form{
         display: flex;
@@ -784,7 +803,5 @@
             row-gap: 16px;
         }
     }
-
-
 }
 

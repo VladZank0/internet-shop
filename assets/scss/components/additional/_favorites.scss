@@ -1,4 +1,8 @@
 .favorites-page{
+    padding-top: 40px;
+    @include s_576{
+        padding-top: 24px;
+    }
     &__title{
         color: $black-1;
         font-family: 'SF Pro Display-Bold', sans-serif;
@@ -6,14 +10,22 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        padding-top: 16px;
         margin-bottom: 24px;
         box-sizing: border-box;
+        &_empty-message{
+            margin-bottom: 16px;
+            @include s_900{
+                margin-bottom: 7px;
+            }
+            @include s_576{
+                margin-bottom: 12px;
+            }
+        }
         @include s_900{
             font-size: 48px;
         }
         @include s_576{
-            padding-top: 8px;
+    
             font-size: 24px;
         }
 

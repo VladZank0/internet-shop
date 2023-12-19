@@ -82,6 +82,10 @@ $black-07: #595959;
     }
 }
 
+:root{
+    --gl-star-color: #fdd835;                 
+    --gl-star-color-inactive: #dcdce6;
+}
 *{
     margin: 0;
     padding: 0;
@@ -103,22 +107,24 @@ a{
 }
 body{
     @include s_1200(){
-        padding-bottom: 56px;
         box-sizing: border-box;
     }
 }
 .container{
-    @include s_1430(){
-        padding: 0 18px;
-    }
-    @include s_380(){
-        padding: 0 10px;
-    }
     max-width: 1460px;
     padding: 0 10px;
     width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
+    @include s_1200(){
+        padding: 0 24px;
+    }
+    @include s_576(){
+        padding: 0 16px;
+    }
+    @include s_380(){
+        padding: 0 10px;
+    }
 }
 .shop-title{
     text-align: center;
@@ -241,6 +247,9 @@ body{
     left: 0;
     z-index: 10;
     width: fit-content;
+    &_align-center{
+
+    }
     @include s_768{
         display: none;
     }
@@ -321,9 +330,12 @@ body{
 }
 .slider-default-button-prev{
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     left: 1%;
     top: 36.5%;
+    &_align-center{
+        top: 48%;
+    }
     svg path{
         fill: $prime-prime;
     }
@@ -336,9 +348,12 @@ body{
 }
 .slider-default-button-next{
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     right: 1%;
     top: 36.5%;
+    &_align-center{
+        top: 48%;
+    }
     svg path{
         fill: $prime-prime;
     }
@@ -464,6 +479,7 @@ body{
     padding: 14.5px 16px;
     box-sizing: border-box;
     border: none;
+    text-align: center;
     &:hover{
         cursor: pointer;
         transition: .3s;
@@ -535,6 +551,118 @@ body{
         cursor: pointer;
     }
 }
+.empty-message{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: $black-1;
+    margin-bottom: 120px;
+    &__title{
+        font-family: 'SF Pro Display-Bold', sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        margin-bottom: 13px;
+        @include s_576(){
+            font-size: 20px
+        }
+    }
+    &__text{
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        row-gap: 8px;
+        flex-wrap: wrap;
+        font-family: 'SF Pro Display-Semibold', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        @include s_576(){
+            font-size: 16px;
+        }
+    }
+    &__icon{
+        display: inline-flex;
+    }
+}
+.default-input{
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--black-01, #E7E7E7);
+    font-family: 'SF Pro Display-Medium', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    &::placeholder{
+        color: var(--black-04, #A0A0A0);
+    }
+}
+.default-radio{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    color: var(--black-1, #31373C);
+    font-family: 'SF Pro Display-Regular', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    &__input{
+        position: relative;
+        border: 1px solid var(--black-01, #E7E7E7);
+        width: 24px;
+        height: 24px;
+        appearance: none;
+        border-radius: 50%;
+        cursor: pointer;
+        &:checked{
+            border: 1px solid $prime-prime;
+        }
+        &:checked::after{
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            border-radius: 50%;
+            background-color: $prime-prime;
+
+        }
+    }
+}
+.rating-input{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    &__star{
+        position: relative;
+        width: 24px;
+        height: 24px;
+   
+        &-input{
+            position: absolute;
+            left: 0;
+            top: 0;
+            appearance: none;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            &_active + .rating-input__star-icon{
+                path{
+                    fill: $prime-prime;
+                }
+            }
+        }
+    }
+}
+
 @import "./components/main-page/header";
 @import "./components/main-page/collection-line";
 @import "./components/main-page/hero";
@@ -569,3 +697,6 @@ body{
 @import "./components/additional/busket";
 @import "./components/additional/busket-end-page";
 @import "./components/additional/contacts";
+@import "./components/additional/blog";
+@import "./components/additional/product-review";
+@import "./components/modals/modal-window";

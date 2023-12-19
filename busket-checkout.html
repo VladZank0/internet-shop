@@ -15,7 +15,12 @@
     <header class="header">
         <div class="header-top">
             <div class="header-top__inner container">
-                <a class="mini-logo" href="index.html">
+                <button class="burger-btn" aria-label="burger-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M5.33337 7.99999C5.33337 7.64637 5.47385 7.30723 5.7239 7.05718C5.97395 6.80713 6.31309 6.66666 6.66671 6.66666H25.3334C25.687 6.66666 26.0261 6.80713 26.2762 7.05718C26.5262 7.30723 26.6667 7.64637 26.6667 7.99999C26.6667 8.35361 26.5262 8.69275 26.2762 8.9428C26.0261 9.19285 25.687 9.33332 25.3334 9.33332H6.66671C6.31309 9.33332 5.97395 9.19285 5.7239 8.9428C5.47385 8.69275 5.33337 8.35361 5.33337 7.99999ZM5.33337 24C5.33337 23.6464 5.47385 23.3072 5.7239 23.0572C5.97395 22.8071 6.31309 22.6667 6.66671 22.6667H25.3334C25.687 22.6667 26.0261 22.8071 26.2762 23.0572C26.5262 23.3072 26.6667 23.6464 26.6667 24C26.6667 24.3536 26.5262 24.6928 26.2762 24.9428C26.0261 25.1928 25.687 25.3333 25.3334 25.3333H6.66671C6.31309 25.3333 5.97395 25.1928 5.7239 24.9428C5.47385 24.6928 5.33337 24.3536 5.33337 24ZM6.66671 14.6667C6.31309 14.6667 5.97395 14.8071 5.7239 15.0572C5.47385 15.3072 5.33337 15.6464 5.33337 16C5.33337 16.3536 5.47385 16.6927 5.7239 16.9428C5.97395 17.1928 6.31309 17.3333 6.66671 17.3333H17.3334C17.687 17.3333 18.0261 17.1928 18.2762 16.9428C18.5262 16.6927 18.6667 16.3536 18.6667 16C18.6667 15.6464 18.5262 15.3072 18.2762 15.0572C18.0261 14.8071 17.687 14.6667 17.3334 14.6667H6.66671Z" fill="#4286FA"/>
+                    </svg>
+                </button>
+                <a class="mini-logo" href="index.html" aria-label="mini-logo">
                     <span class="mini-logo__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="33" viewBox="0 0 34 33" fill="none">
                             <path d="M32.7678 16.3636C32.7678 25.401 25.4325 32.7273 16.3839 32.7273C7.33532 32.7273 0 25.401 0 16.3636C0 7.32625 7.33532 0 16.3839 0C25.4325 0 32.7678 7.32625 32.7678 16.3636Z" fill="url(#paint0_linear_1033_741)"/>
@@ -41,7 +46,7 @@
                     </div>
                     <div class="select__option-box"></div>
                 </div>
-                <nav class="nav">
+                <nav class="nav header__nav">
                     <ul class="nav__list menu">
                         <li class="menu__item"><a class="menu__link" href="#">Гарантия</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">Оплата</a></li>
@@ -53,43 +58,36 @@
                         <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
                     </ul>
                 </nav>
-                <div class="header-top__adaptive-btns">
-                    <div class="call-btn">
-                        <a href="tel:+7 812 770-63-72">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <path d="M26.68 20.5067C25.04 20.5067 23.4533 20.24 21.9733 19.76C21.7415 19.6814 21.4922 19.6697 21.254 19.7263C21.0158 19.7829 20.7984 19.9055 20.6267 20.08L18.5333 22.7067C14.76 20.9067 11.2267 17.5067 9.34667 13.6L11.9467 11.3867C12.3067 11.0133 12.4133 10.4933 12.2667 10.0267C11.7733 8.54667 11.52 6.96 11.52 5.32C11.52 4.6 10.92 4 10.2 4H5.58667C4.86667 4 4 4.32 4 5.32C4 17.7067 14.3067 28 26.68 28C27.6267 28 28 27.16 28 26.4267V21.8267C28 21.1067 27.4 20.5067 26.68 20.5067Z" fill="#0ECF21"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="working-time">
-                        <span class="working-time__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <g clip-path="url(#clip0_769_3365)">
-                                <path d="M10 0C4.47656 0 0 4.47656 0 10C0 15.5234 4.47656 20 10 20C15.5234 20 20 15.5234 20 10C20 4.47656 15.5234 0 10 0ZM10 18.332C5.39844 18.332 1.66797 14.6016 1.66797 10C1.66797 5.39844 5.39844 1.66797 10 1.66797C14.6016 1.66797 18.332 5.39844 18.332 10C18.332 14.6016 14.6016 18.332 10 18.332ZM9.16797 8.33203L7.08203 6.25L5.83203 7.5L10.832 12.5V3.33203H9.16406V8.33203H9.16797Z" fill="#4286FA"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_769_3365">
-                                <rect width="20" height="20" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                        </span>
-                        <span>10-22</span>
-                    </div>
-                    <div class="burger-btn">
+                <div class="call-btn">
+                    <a href="tel:+78127706372" aria-label="tel">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <path d="M5.33337 7.99999C5.33337 7.64637 5.47385 7.30723 5.7239 7.05718C5.97395 6.80713 6.31309 6.66666 6.66671 6.66666H25.3334C25.687 6.66666 26.0261 6.80713 26.2762 7.05718C26.5262 7.30723 26.6667 7.64637 26.6667 7.99999C26.6667 8.35361 26.5262 8.69275 26.2762 8.9428C26.0261 9.19285 25.687 9.33332 25.3334 9.33332H6.66671C6.31309 9.33332 5.97395 9.19285 5.7239 8.9428C5.47385 8.69275 5.33337 8.35361 5.33337 7.99999ZM5.33337 24C5.33337 23.6464 5.47385 23.3072 5.7239 23.0572C5.97395 22.8071 6.31309 22.6667 6.66671 22.6667H25.3334C25.687 22.6667 26.0261 22.8071 26.2762 23.0572C26.5262 23.3072 26.6667 23.6464 26.6667 24C26.6667 24.3536 26.5262 24.6928 26.2762 24.9428C26.0261 25.1928 25.687 25.3333 25.3334 25.3333H6.66671C6.31309 25.3333 5.97395 25.1928 5.7239 24.9428C5.47385 24.6928 5.33337 24.3536 5.33337 24ZM6.66671 14.6667C6.31309 14.6667 5.97395 14.8071 5.7239 15.0572C5.47385 15.3072 5.33337 15.6464 5.33337 16C5.33337 16.3536 5.47385 16.6927 5.7239 16.9428C5.97395 17.1928 6.31309 17.3333 6.66671 17.3333H17.3334C17.687 17.3333 18.0261 17.1928 18.2762 16.9428C18.5262 16.6927 18.6667 16.3536 18.6667 16C18.6667 15.6464 18.5262 15.3072 18.2762 15.0572C18.0261 14.8071 17.687 14.6667 17.3334 14.6667H6.66671Z" fill="#4286FA"/>
+                            <path d="M26.68 20.5067C25.04 20.5067 23.4533 20.24 21.9733 19.76C21.7415 19.6814 21.4922 19.6697 21.254 19.7263C21.0158 19.7829 20.7984 19.9055 20.6267 20.08L18.5333 22.7067C14.76 20.9067 11.2267 17.5067 9.34667 13.6L11.9467 11.3867C12.3067 11.0133 12.4133 10.4933 12.2667 10.0267C11.7733 8.54667 11.52 6.96 11.52 5.32C11.52 4.6 10.92 4 10.2 4H5.58667C4.86667 4 4 4.32 4 5.32C4 17.7067 14.3067 28 26.68 28C27.6267 28 28 27.16 28 26.4267V21.8267C28 21.1067 27.4 20.5067 26.68 20.5067Z" fill="#0ECF21"/>
                         </svg>
-                    </div>
+                    </a>
                 </div>
                 <div class="communications">
                     <div class="contact-info">
-                        <a href="tel:+7 812 770-63-72" class="contact-info__link">+7 812 770-63-72</a>
-                        <p class="contact-info__text">с 10:00 до 20:00 без выходных</p>
+                        <a href="tel:+78127706372" class="contact-info__link" aria-label="tel">+7 812 770-63-72</a>
+                        <!-- <p class="contact-info__text">с 10:00 до 20:00 без выходных</p> -->
+                        <div class="working-time">
+                            <span class="working-time__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <g clip-path="url(#clip0_2209_12246)">
+                                      <path d="M10 0C4.47656 0 0 4.47656 0 10C0 15.5234 4.47656 20 10 20C15.5234 20 20 15.5234 20 10C20 4.47656 15.5234 0 10 0ZM10 18.332C5.39844 18.332 1.66797 14.6016 1.66797 10C1.66797 5.39844 5.39844 1.66797 10 1.66797C14.6016 1.66797 18.332 5.39844 18.332 10C18.332 14.6016 14.6016 18.332 10 18.332ZM9.16797 8.33203L7.08203 6.25L5.83203 7.5L10.832 12.5V3.33203H9.16406V8.33203H9.16797Z" fill="#888888"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_2209_12246">
+                                        <rect width="20" height="20" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <span>10-22</span>
+                        </div>
                     </div>
                     <ul class="social">
                         <li class="social__item">
-                            <a class="social__link" href="#">
+                            <a class="social__link" href="#" aria-label="Ссылка на вк">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                     <g clip-path="url(#clip0_1_33)">
                                     <path d="M0 15.3333C0 8.10513 0 4.49103 2.24551 2.24551C4.49103 0 8.10513 0 15.3333 0H16.6667C23.8949 0 27.509 0 29.7545 2.24551C32 4.49103 32 8.10513 32 15.3333V16.6667C32 23.8949 32 27.509 29.7545 29.7545C27.509 32 23.8949 32 16.6667 32H15.3333C8.10513 32 4.49103 32 2.24551 29.7545C0 27.509 0 23.8949 0 16.6667L0 15.3333Z" fill="#2787F5"/>
@@ -104,7 +102,7 @@
                             </a>
                         </li>
                         <li class="social__item">
-                            <a class="social__link" href="#">
+                            <a class="social__link" href="#" aria-label="Ссылка на вотсап">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                     <g clip-path="url(#clip0_1_36)">
                                     <path d="M0 15.3333C0 8.10513 0 4.49103 2.24551 2.24551C4.49103 0 8.10513 0 15.3333 0H16.6667C23.8949 0 27.509 0 29.7545 2.24551C32 4.49103 32 8.10513 32 15.3333V16.6667C32 23.8949 32 27.509 29.7545 29.7545C27.509 32 23.8949 32 16.6667 32H15.3333C8.10513 32 4.49103 32 2.24551 29.7545C0 27.509 0 23.8949 0 16.6667L0 15.3333Z" fill="#23D735"/>
@@ -119,8 +117,8 @@
                             </a>
                         </li>
                         <li class="social__item">
-                            <a class="social__link" href="#">
-                                <img src="./assets/img/header/tg_svg.svg" alt="">
+                            <a class="social__link" href="#" aria-label="Ссылка на телеграм">
+                                <img src="./assets/img/header/tg_svg.svg" alt="" width="32" height="32">
                             </a>
                         </li>
                     </ul>
@@ -129,13 +127,13 @@
         </div>
         <div class="header-bottom">
             <div class="header-bottom__inner container">
-                <a class="logo" href="index.html">
+                <a class="logo" href="index.html" aria-label="logo">
                     <span class="logo__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="none">
-                            <path d="M49.4117 24.6753C49.4117 38.3032 38.3506 49.3506 24.7059 49.3506C11.0612 49.3506 0 38.3032 0 24.6753C0 11.0475 11.0612 0 24.7059 0C38.3506 0 49.4117 11.0475 49.4117 24.6753Z" fill="url(#paint0_linear_1033_73)"/>
+                            <path d="M49.4117 24.6753C49.4117 38.3032 38.3506 49.3506 24.7059 49.3506C11.0612 49.3506 0 38.3032 0 24.6753C0 11.0475 11.0612 0 24.7059 0C38.3506 0 49.4117 11.0475 49.4117 24.6753Z" fill="url(#paint0_linear_1033_62)"/>
                             <path d="M34.6879 15.9162H31.8359C31.8359 12.0835 28.6416 8.97287 24.7058 8.97287C20.77 8.97287 17.5757 12.0835 17.5757 15.9162H14.7236C13.155 15.9162 11.8716 17.1659 11.8716 18.6934V35.3572C11.8716 36.8848 13.155 38.1346 14.7236 38.1346H34.6879C36.2566 38.1346 37.54 36.8848 37.54 35.3572V18.6934C37.54 17.1659 36.2566 15.9162 34.6879 15.9162ZM24.7058 11.7502C27.073 11.7502 28.9839 13.611 28.9839 15.9162H20.4277C20.4277 13.611 22.3386 11.7502 24.7058 11.7502ZM34.6879 35.3572H14.7236V18.6934H34.6879V35.3572ZM24.7058 24.2481C22.3386 24.2481 20.4277 22.3873 20.4277 20.0821H17.5757C17.5757 23.9148 20.77 27.0254 24.7058 27.0254C28.6416 27.0254 31.8359 23.9148 31.8359 20.0821H28.9839C28.9839 22.3873 27.073 24.2481 24.7058 24.2481Z" fill="white"/>
                             <defs>
-                            <linearGradient id="paint0_linear_1033_73" x1="-2.79197" y1="51.5939" x2="134.4" y2="-1.81052" gradientUnits="userSpaceOnUse">
+                            <linearGradient id="paint0_linear_1033_63" x1="-2.79197" y1="51.5939" x2="134.4" y2="-1.81052" gradientUnits="userSpaceOnUse">
                             <stop stop-color="#4174F7"/>
                             <stop offset="1" stop-color="#42A4FF"/>
                             </linearGradient>
@@ -144,7 +142,7 @@
                     </span>
                     <span>katalog</span>
                 </a>
-                <button class="catalog-btn">
+                <button class="catalog-btn" aria-label="catalog-button">
                     <span class="catalog-btn__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M7.5 6.75H21M7.5 12H21M7.5 17.25H21" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
@@ -156,7 +154,7 @@
                     <span class="catalog-btn__text">Каталог товаров</span>
                 </button>
                 <div class="search">
-                    <button class="search__btn">
+                    <button class="search__btn" aria-label="search-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M16.875 16.875L21.375 21.375" stroke="#595959" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M11.25 18.375C15.185 18.375 18.375 15.185 18.375 11.25C18.375 7.31497 15.185 4.125 11.25 4.125C7.31497 4.125 4.125 7.31497 4.125 11.25C4.125 15.185 7.31497 18.375 11.25 18.375Z" stroke="#595959" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -165,7 +163,7 @@
                     <input class="search__input" type="text" placeholder="Более 5000 товаров в каталоге">
                 </div>
                 <div class="header-bottom__btns">
-                    <a class="favorite-btn" href="#">
+                    <a class="favorite-btn" href="#" aria-label="favorite-link">
                         <span class="favorite-btn__amount">3</span>
                         <span class="favorite-btn__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -173,14 +171,14 @@
                             </svg>
                         </span>
                     </a>
-                    <a class="compare-btn" href="#">
+                    <a class="compare-btn" href="#" aria-label="compare-link">
                         <span class="compare-btn__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M7 21H17M12 3V21M3 7H5C7 7 10 6 12 5C14 6 17 7 19 7H21M16 16L19 8L22 16C21.13 16.65 20.08 17 19 17C17.92 17 16.87 16.65 16 16ZM2 16L5 8L8 16C7.13 16.65 6.08 17 5 17C3.92 17 2.87 16.65 2 16Z" stroke="#595959" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </span>
                     </a>
-                    <a class="profile-btn" href="#">
+                    <a class="profile-btn" href="#" aria-label="profile-link">
                         <span class="profile-btn__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#595959" stroke-width="2.66667"/>
@@ -189,7 +187,7 @@
                         </span>
                     </a>
                 </div>
-                <a class="basket-btn basket-btn_active" href="#">
+                <a class="basket-btn basket-btn_active" href="#" aria-label="busket-link">
                     <span class="basket-btn__icon basket-btn__icon_active">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 6V6.75H5.513C4.553 6.75 3.749 7.474 3.648 8.429L2.385 20.429C2.35753 20.6903 2.3853 20.9545 2.46651 21.2045C2.54773 21.4544 2.68057 21.6844 2.85642 21.8797C3.03227 22.075 3.2472 22.2311 3.48728 22.338C3.72736 22.4448 3.98721 22.5 4.25 22.5H19.75C20.0128 22.5 20.2726 22.4448 20.5127 22.338C20.7528 22.2311 20.9677 22.075 21.1436 21.8797C21.3194 21.6844 21.4523 21.4544 21.5335 21.2045C21.6147 20.9545 21.6425 20.6903 21.615 20.429L20.352 8.429C20.3036 7.96815 20.0862 7.54155 19.7418 7.23151C19.3974 6.92146 18.9504 6.74993 18.487 6.75H16.5V6C16.5 4.80653 16.0259 3.66193 15.182 2.81802C14.3381 1.97411 13.1935 1.5 12 1.5C10.8065 1.5 9.66193 1.97411 8.81802 2.81802C7.9741 3.66193 7.5 4.80653 7.5 6ZM12 3C11.2043 3 10.4413 3.31607 9.87868 3.87868C9.31607 4.44129 9 5.20435 9 6V6.75H15V6C15 5.20435 14.6839 4.44129 14.1213 3.87868C13.5587 3.31607 12.7956 3 12 3ZM9 11.25C9 12.0456 9.31607 12.8087 9.87868 13.3713C10.4413 13.9339 11.2043 14.25 12 14.25C12.7956 14.25 13.5587 13.9339 14.1213 13.3713C14.6839 12.8087 15 12.0456 15 11.25V10.5C15 10.3011 15.079 10.1103 15.2197 9.96967C15.3603 9.82902 15.5511 9.75 15.75 9.75C15.9489 9.75 16.1397 9.82902 16.2803 9.96967C16.421 10.1103 16.5 10.3011 16.5 10.5V11.25C16.5 12.4435 16.0259 13.5881 15.182 14.432C14.3381 15.2759 13.1935 15.75 12 15.75C10.8065 15.75 9.66193 15.2759 8.81802 14.432C7.9741 13.5881 7.5 12.4435 7.5 11.25V10.5C7.5 10.3011 7.57902 10.1103 7.71967 9.96967C7.86032 9.82902 8.05109 9.75 8.25 9.75C8.44891 9.75 8.63968 9.82902 8.78033 9.96967C8.92098 10.1103 9 10.3011 9 10.5V11.25Z" fill="white"/>
@@ -201,7 +199,7 @@
         </div>
         <div class="mobile-catalog">
             <nav id="menu" class="mobile-catalog__menu">
-                <ul class="mobile-catalog__menu-list mobile-catalog__menu-list_big-padding">
+                <ul class="mobile-catalog__menu-list">
                     <li class="catalog__tab submenu-btn mobile-catalog__submenu-btn" >
                         <span class="mobile-catalog__menu-btn">
                             <span class="mobile-catalog__menu-btn-icon"> 
@@ -713,7 +711,9 @@
                         <a class="catalog__tab-content-title" href="#">Смартфоны</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -724,7 +724,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -735,7 +737,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -746,7 +750,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -757,7 +763,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -768,7 +776,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -776,10 +786,25 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 Pro </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 </a></li>
-                                <li class="catalog__tab-3content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 </a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 Pro Max </a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 Pro </a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 </a></li>
+                                <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
+                            </ul>
+                            <ul class="catalog__tab-content-list">
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -795,7 +820,9 @@
                         <a class="catalog__tab-content-title" href="#">Планшеты и книги</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -806,7 +833,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -822,7 +851,9 @@
                         <a class="catalog__tab-content-title" href="#">Аудио</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -833,7 +864,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -849,7 +882,9 @@
                         <a class="catalog__tab-content-title" href="#">TV и мониторы</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -860,7 +895,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -876,7 +913,9 @@
                         <a class="catalog__tab-content-title" href="#">Компьютерная техника</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -887,7 +926,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -903,7 +944,9 @@
                         <a class="catalog__tab-content-title" href="#">Гаджеты и электроника</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -914,7 +957,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -930,7 +975,9 @@
                         <a class="catalog__tab-content-title" href="#">Часы и браслеты</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -941,7 +988,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -957,7 +1006,9 @@
                         <a class="catalog__tab-content-title" href="#">Виртуальная реальность</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -968,7 +1019,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -984,7 +1037,9 @@
                         <a class="catalog__tab-content-title" href="#">Весь каталог</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -995,7 +1050,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -1011,7 +1068,9 @@
                         <a class="catalog__tab-content-title" href="#">Новинки</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -1022,7 +1081,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -1038,7 +1099,9 @@
                         <a class="catalog__tab-content-title" href="#">Акции</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -1049,7 +1112,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -1065,7 +1130,9 @@
                         <a class="catalog__tab-content-title" href="#">Популярные товары</a>
                         <div class="catalog__tab-content-wrapper">
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -1076,7 +1143,9 @@
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 12 mini </a></li>
                             </ul>
                             <ul class="catalog__tab-content-list">
-                                <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                <li>
+                                    <a class="catalog__tab-content-list-title" href="#">Apple</a>
+                                </li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 14 </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro Max </a></li>
                                 <li class="catalog__tab-content-item"><a class="catalog__tab-content-link" href="#">iPhone 13 Pro</a></li>
@@ -1090,12 +1159,17 @@
                     </div>
                 </div>
                 <div class="catalog__promo">
-                    <img src="./assets/img/catalog/promo.svg" alt="">
+                    <img src="./assets/img/catalog/promo.svg" loading="lazy" width="266" height="368" alt="">
                 </div>
             </div>
         </div>
         <div class="burger-menu">
             <div class="burger-menu__top-row">
+                <div class="burger-btn burger-btn_close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M6.10022 6.09998C6.47528 5.72503 6.98389 5.5144 7.51422 5.5144C8.04455 5.5144 8.55317 5.72503 8.92822 6.09998L16.0002 13.172L23.0722 6.09998C23.4494 5.73566 23.9546 5.53407 24.479 5.53863C25.0034 5.54319 25.505 5.75352 25.8759 6.12434C26.2467 6.49516 26.457 6.99678 26.4616 7.52117C26.4661 8.04557 26.2645 8.55077 25.9002 8.92798L18.8282 16L25.9002 23.072C26.2645 23.4492 26.4661 23.9544 26.4616 24.4788C26.457 25.0032 26.2467 25.5048 25.8759 25.8756C25.505 26.2464 25.0034 26.4568 24.479 26.4613C23.9546 26.4659 23.4494 26.2643 23.0722 25.9L16.0002 18.828L8.92822 25.9C8.55102 26.2643 8.04581 26.4659 7.52142 26.4613C6.99703 26.4568 6.4954 26.2464 6.12458 25.8756C5.75377 25.5048 5.54343 25.0032 5.53887 24.4788C5.53432 23.9544 5.73591 23.4492 6.10022 23.072L13.1722 16L6.10022 8.92798C5.72528 8.55292 5.51465 8.04431 5.51465 7.51398C5.51465 6.98365 5.72528 6.47503 6.10022 6.09998Z" fill="#4286FA"/>
+                    </svg>
+                </div>
                 <div class="locality-select burger-menu__select">
                     <div class="locality-select__box">
                         <span class="locality-select__text">Санкт-Петербург</span>
@@ -1106,11 +1180,6 @@
                         </span>
                     </div>
                     <div class="locality-select__option-box"></div>
-                </div>
-                <div class="burger-btn burger-btn_close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <path d="M6.10022 6.09998C6.47528 5.72503 6.98389 5.5144 7.51422 5.5144C8.04455 5.5144 8.55317 5.72503 8.92822 6.09998L16.0002 13.172L23.0722 6.09998C23.4494 5.73566 23.9546 5.53407 24.479 5.53863C25.0034 5.54319 25.505 5.75352 25.8759 6.12434C26.2467 6.49516 26.457 6.99678 26.4616 7.52117C26.4661 8.04557 26.2645 8.55077 25.9002 8.92798L18.8282 16L25.9002 23.072C26.2645 23.4492 26.4661 23.9544 26.4616 24.4788C26.457 25.0032 26.2467 25.5048 25.8759 25.8756C25.505 26.2464 25.0034 26.4568 24.479 26.4613C23.9546 26.4659 23.4494 26.2643 23.0722 25.9L16.0002 18.828L8.92822 25.9C8.55102 26.2643 8.04581 26.4659 7.52142 26.4613C6.99703 26.4568 6.4954 26.2464 6.12458 25.8756C5.75377 25.5048 5.54343 25.0032 5.53887 24.4788C5.53432 23.9544 5.73591 23.4492 6.10022 23.072L13.1722 16L6.10022 8.92798C5.72528 8.55292 5.51465 8.04431 5.51465 7.51398C5.51465 6.98365 5.72528 6.47503 6.10022 6.09998Z" fill="#4286FA"/>
-                    </svg>
                 </div>
             </div>
             <nav class="nav">
@@ -1127,12 +1196,12 @@
             </nav>
             <div class="communications burger-menu__communications">
                 <div class="contact-info burger-menu__contact-info">
-                    <a class="contact-info__link" href="tel:+7 812 770-63-72">+7 812 770-63-72</a>
+                    <a class="contact-info__link contact-info__link_burger-menu" href="tel:+78127706372">+7 812 770-63-72</a>
                     <p class="contact-info__text">с 10:00 до 20:00 без выходных</p>
                 </div>
                 <ul class="social burger-menu__social">
                     <li class="social__item burger-menu__social-item">
-                        <a class="social__link burger-menu__social-link" href="#">
+                        <a class="social__link burger-menu__social-link" href="#" aria-label="Ссылка на вк">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                 <g clip-path="url(#clip0_1_33)">
                                 <path d="M0 15.3333C0 8.10513 0 4.49103 2.24551 2.24551C4.49103 0 8.10513 0 15.3333 0H16.6667C23.8949 0 27.509 0 29.7545 2.24551C32 4.49103 32 8.10513 32 15.3333V16.6667C32 23.8949 32 27.509 29.7545 29.7545C27.509 32 23.8949 32 16.6667 32H15.3333C8.10513 32 4.49103 32 2.24551 29.7545C0 27.509 0 23.8949 0 16.6667L0 15.3333Z" fill="#2787F5"/>
@@ -1147,7 +1216,7 @@
                         </a>
                     </li>
                     <li class="social__item burger-menu__social-item">
-                        <a class="social__link burger-menu__social-link" href="#">
+                        <a class="social__link burger-menu__social-link" href="#" aria-label="Ссылка на вотсап">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                 <g clip-path="url(#clip0_1_36)">
                                 <path d="M0 15.3333C0 8.10513 0 4.49103 2.24551 2.24551C4.49103 0 8.10513 0 15.3333 0H16.6667C23.8949 0 27.509 0 29.7545 2.24551C32 4.49103 32 8.10513 32 15.3333V16.6667C32 23.8949 32 27.509 29.7545 29.7545C27.509 32 23.8949 32 16.6667 32H15.3333C8.10513 32 4.49103 32 2.24551 29.7545C0 27.509 0 23.8949 0 16.6667L0 15.3333Z" fill="#23D735"/>
@@ -1162,35 +1231,17 @@
                         </a>
                     </li>
                     <li class="social__item burger-menu__social-item">
-                        <a class="social__link burger-menu__social-link" href="#">
-                            <img src="./assets/img/header/tg_svg.svg" alt="">
+                        <a class="social__link burger-menu__social-link" href="#" aria-label="Ссылка на телеграм">
+                            <img src="./assets/img/header/tg_svg.svg" width="32" height="32" loading="lazy" alt="">
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="tab-bar">
-            <ul class="tab-bar__list tab-bar__list_hidden container">
-                <li class="tab-bar__item">
-                    <span class="tab-bar__item-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                            <path d="M2 5.5C2 5.23478 2.10536 4.98043 2.29289 4.79289C2.48043 4.60536 2.73478 4.5 3 4.5H21C21.2652 4.5 21.5196 4.60536 21.7071 4.79289C21.8946 4.98043 22 5.23478 22 5.5C22 5.76522 21.8946 6.01957 21.7071 6.20711C21.5196 6.39464 21.2652 6.5 21 6.5H3C2.73478 6.5 2.48043 6.39464 2.29289 6.20711C2.10536 6.01957 2 5.76522 2 5.5ZM6 11.5C6 11.2348 6.10536 10.9804 6.29289 10.7929C6.48043 10.6054 6.73478 10.5 7 10.5H17C17.2652 10.5 17.5196 10.6054 17.7071 10.7929C17.8946 10.9804 18 11.2348 18 11.5C18 11.7652 17.8946 12.0196 17.7071 12.2071C17.5196 12.3946 17.2652 12.5 17 12.5H7C6.73478 12.5 6.48043 12.3946 6.29289 12.2071C6.10536 12.0196 6 11.7652 6 11.5ZM10 16.5C9.73478 16.5 9.48043 16.6054 9.29289 16.7929C9.10536 16.9804 9 17.2348 9 17.5C9 17.7652 9.10536 18.0196 9.29289 18.2071C9.48043 18.3946 9.73478 18.5 10 18.5H14C14.2652 18.5 14.5196 18.3946 14.7071 18.2071C14.8946 18.0196 15 17.7652 15 17.5C15 17.2348 14.8946 16.9804 14.7071 16.7929C14.5196 16.6054 14.2652 16.5 14 16.5H10Z" fill="#31373C"/>
-                        </svg>
-                    </span>
-                    <span class="tab-bar__item-text tab-bar__item-text_visiable">Фильтр</span>
-                </li>
-                <li class="tab-bar__item">
-                    <span class="tab-bar__item-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M14.9999 19.5004C14.8686 19.5005 14.7385 19.4747 14.6172 19.4244C14.4959 19.3742 14.3857 19.3004 14.2929 19.2074L11.9999 16.9144L9.70692 19.2074C9.51832 19.3896 9.26571 19.4904 9.00352 19.4881C8.74132 19.4858 8.49051 19.3806 8.3051 19.1952C8.11969 19.0098 8.01452 18.759 8.01224 18.4968C8.00997 18.2346 8.11076 17.982 8.29292 17.7934L11.2929 14.7934C11.4804 14.6059 11.7348 14.5006 11.9999 14.5006C12.2651 14.5006 12.5194 14.6059 12.7069 14.7934L15.7069 17.7934C15.8467 17.9333 15.9419 18.1114 15.9805 18.3054C16.0191 18.4993 15.9993 18.7004 15.9236 18.8831C15.8479 19.0658 15.7198 19.2219 15.5554 19.3318C15.391 19.4417 15.1977 19.5004 14.9999 19.5004ZM11.9999 10.5004C11.8686 10.5005 11.7385 10.4747 11.6172 10.4244C11.4959 10.3742 11.3857 10.3004 11.2929 10.2074L8.29292 7.20741C8.11076 7.0188 8.00997 6.7662 8.01224 6.50401C8.01452 6.24181 8.11969 5.991 8.3051 5.80559C8.49051 5.62018 8.74132 5.51501 9.00352 5.51273C9.26571 5.51045 9.51832 5.61125 9.70692 5.79341L11.9999 8.08641L14.2929 5.79341C14.4815 5.61125 14.7341 5.51045 14.9963 5.51273C15.2585 5.51501 15.5093 5.62018 15.6947 5.80559C15.8801 5.991 15.9853 6.24181 15.9876 6.50401C15.9899 6.7662 15.8891 7.0188 15.7069 7.20741L12.7069 10.2074C12.6142 10.3004 12.504 10.3742 12.3827 10.4244C12.2613 10.4747 12.1313 10.5005 11.9999 10.5004Z" fill="#31373C"/>
-                        </svg>
-                    </span>
-                    <span class="tab-bar__item-text tab-bar__item-text_visiable">Сортировка</span>
-                </li>
-            </ul>
             <ul class="tab-bar__list container">
                 <li class="tab-bar__item mobile-catalog-btn">
-                    <span class="tab-bar__item-icon">
+                    <span class="tab-bar__item-icon mobile-catalog-btn__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M4 4C3.73478 4 3.48043 4.10536 3.29289 4.29289C3.10536 4.48043 3 4.73478 3 5C3 5.26522 3.10536 5.51957 3.29289 5.70711C3.48043 5.89464 3.73478 6 4 6H20C20.2652 6 20.5196 5.89464 20.7071 5.70711C20.8946 5.51957 21 5.26522 21 5C21 4.73478 20.8946 4.48043 20.7071 4.29289C20.5196 4.10536 20.2652 4 20 4H4ZM3 12C3 11.7348 3.10536 11.4804 3.29289 11.2929C3.48043 11.1054 3.73478 11 4 11H7C7.26522 11 7.51957 11.1054 7.70711 11.2929C7.89464 11.4804 8 11.7348 8 12C8 12.2652 7.89464 12.5196 7.70711 12.7071C7.51957 12.8946 7.26522 13 7 13H4C3.73478 13 3.48043 12.8946 3.29289 12.7071C3.10536 12.5196 3 12.2652 3 12ZM3 19C3 18.7348 3.10536 18.4804 3.29289 18.2929C3.48043 18.1054 3.73478 18 4 18H8C8.26522 18 8.51957 18.1054 8.70711 18.2929C8.89464 18.4804 9 18.7348 9 19C9 19.2652 8.89464 19.5196 8.70711 19.7071C8.51957 19.8946 8.26522 20 8 20H4C3.73478 20 3.48043 19.8946 3.29289 19.7071C3.10536 19.5196 3 19.2652 3 19ZM10 14C10.0002 13.2204 10.1827 12.4517 10.5329 11.7552C10.8831 11.0587 11.3913 10.4537 12.0169 9.98857C12.6426 9.52346 13.3683 9.21108 14.1361 9.07639C14.904 8.9417 15.6927 8.98843 16.4393 9.21285C17.1859 9.43726 17.8697 9.83315 18.436 10.3689C19.0024 10.9046 19.4356 11.5654 19.7011 12.2984C19.9666 13.0313 20.057 13.8162 19.9652 14.5904C19.8733 15.3646 19.6017 16.1065 19.172 16.757L20.707 18.293C20.8892 18.4816 20.99 18.7342 20.9877 18.9964C20.9854 19.2586 20.8802 19.5094 20.6948 19.6948C20.5094 19.8802 20.2586 19.9854 19.9964 19.9877C19.7342 19.99 19.4816 19.8892 19.293 19.707L17.757 18.172C17.0034 18.6701 16.1288 18.9548 15.2264 18.9957C14.3239 19.0366 13.4272 18.8322 12.6316 18.4043C11.836 17.9764 11.1712 17.3409 10.7078 16.5654C10.2445 15.7899 9.99986 14.9034 10 14ZM15 11C14.606 11 14.2159 11.0776 13.8519 11.2284C13.488 11.3791 13.1573 11.6001 12.8787 11.8787C12.6001 12.1573 12.3791 12.488 12.2284 12.8519C12.0776 13.2159 12 13.606 12 14C12 14.394 12.0776 14.7841 12.2284 15.1481C12.3791 15.512 12.6001 15.8427 12.8787 16.1213C13.1573 16.3999 13.488 16.6209 13.8519 16.7716C14.2159 16.9224 14.606 17 15 17C15.7956 17 16.5587 16.6839 17.1213 16.1213C17.6839 15.5587 18 14.7956 18 14C18 13.2044 17.6839 12.4413 17.1213 11.8787C16.5587 11.3161 15.7956 11 15 11Z" fill="#595959"/>
                         </svg>
@@ -1333,7 +1384,7 @@
                         </svg>
                         Назад
                     </a>
-                    <button class="busket-page__chat-button">
+                    <button class="busket-page__chat-button chat-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
                             <path d="M1 15L0.0700028 14.63C0.003552 14.7972 -0.0165591 14.9792 0.0117894 15.1569C0.0401378 15.3346 0.115896 15.5013 0.231077 15.6395C0.346259 15.7777 0.496597 15.8823 0.666244 15.9422C0.835891 16.0022 1.01856 16.0152 1.195 15.98L1 15ZM5.706 14.064L6.18 13.183L5.863 13.013L5.511 13.083L5.706 14.064ZM2.624 10.917L3.554 11.287L3.717 10.873L3.521 10.474L2.624 10.917ZM16 8C16 11.246 13.147 14 9.47 14V16C14.111 16 18 12.486 18 8H16ZM2.941 8C2.941 4.754 5.795 2 9.471 2V0C4.83 0 0.940003 3.514 0.940003 8H2.941ZM9.471 2C13.147 2 16 4.754 16 8H18C18 3.514 14.112 0 9.471 0V2ZM9.47 14C8.265 14 7.143 13.7 6.18 13.183L5.232 14.944C6.53585 15.6414 7.99139 16.0042 9.47 16V14ZM1.195 15.98L5.901 15.044L5.511 13.083L0.805003 14.019L1.195 15.981V15.98ZM3.521 10.474C3.13908 9.7052 2.94123 8.85844 2.941 8H0.940003C0.940003 9.2 1.222 10.338 1.726 11.36L3.521 10.474ZM1.695 10.547L0.0700028 14.631L1.928 15.369L3.552 11.286L1.694 10.547H1.695Z" fill="#4286FA"/>
                             <path d="M6 9C6.55228 9 7 8.55228 7 8C7 7.44772 6.55228 7 6 7C5.44772 7 5 7.44772 5 8C5 8.55228 5.44772 9 6 9Z" fill="#4286FA"/>
@@ -1372,7 +1423,6 @@
                                         </label>
                                     </div>
                                 </form>
-                               
                             </li>
                             <li class="busket-page__item busket-page__item_form">
                                 <h3 class="busket-page__form-title">Способ получения заказа</h3>
@@ -1389,7 +1439,8 @@
                                     </div>
                                     <div class="busket-page__shipping-load">
                                         <div class="busket-page__form-radios">
-                                            <label class="busket-page__form-radio busket-page__form-radio_active ">
+                                            <label class="busket-page__form-radio">
+                                                <input name="shipping-method" class="busket-page__form-radio-input" type="radio">
                                                 <span class="busket-page__form-radio-title">
                                                     <svg class="busket-page__form-radio-icon busket-page__form-radio-icon_stroke-fill" xmlns="http://www.w3.org/2000/svg" width="14" height="21" viewBox="0 0 14 21" fill="none">
                                                         <path d="M2 19.5L5 15.5M11 19.5L9 15.5L6 12.5L7 6.5M7 2.5C7 2.76522 7.10536 3.01957 7.29289 3.20711C7.48043 3.39464 7.73478 3.5 8 3.5C8.26522 3.5 8.51957 3.39464 8.70711 3.20711C8.89464 3.01957 9 2.76522 9 2.5C9 2.23478 8.89464 1.98043 8.70711 1.79289C8.51957 1.60536 8.26522 1.5 8 1.5C7.73478 1.5 7.48043 1.60536 7.29289 1.79289C7.10536 1.98043 7 2.23478 7 2.5Z" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1401,9 +1452,9 @@
                                                     Сегодня до 21:00
                                                     <span>бесплатно</span>
                                                 </span>
-                                                <input class="busket-page__form-radio-input" type="radio">
                                             </label>
-                                            <label class="busket-page__form-radio  busket-page__form-radio_active">
+                                            <label class="busket-page__form-radio">
+                                                <input name="shipping-method" class="busket-page__form-radio-input" type="radio">
                                                 <span class="busket-page__form-radio-title">
                                                     <svg class="busket-page__form-radio-icon busket-page__form-radio-icon_stroke-fill" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                                                         <g clip-path="url(#clip0_1954_38383)">
@@ -1422,12 +1473,12 @@
                                                     Сегодня до 18:32
                                                     <span>350₽</span>
                                                 </span>
-                                                <input class="busket-page__form-radio-input" type="radio">
                                             </label>
                                         </div>
                                         <div class="busket-page__shipping-form-load">
                                             <div class="busket-page__form-select-location-list">
-                                                <label class="busket-page__form-select-location-item busket-page__form-select-location-item_active">
+                                                <label class="busket-page__form-radio busket-page__form-select-location-item ">
+                                                    <input type="radio" name="delivery-address" class="busket-page__form-radio-input busket-page__form-select-location-item-radio">
                                                     <span class="busket-page__form-select-location-item-title">ул Барклая 8</span>
                                                     <div class="busket-page__form-select-location-item-content">
                                                         <span class="busket-page__form-select-location-item-location">
@@ -1461,9 +1512,9 @@
                                                             <path d="M13.7126 6.21163C13.8887 6.04399 14.123 5.95131 14.3661 5.95315C14.6092 5.95499 14.8421 6.0512 15.0156 6.22149C15.1892 6.39177 15.2898 6.62281 15.2962 6.86585C15.3026 7.10888 15.2144 7.34491 15.0501 7.52413L10.0626 13.7616C9.97681 13.854 9.87331 13.9281 9.75824 13.9796C9.64317 14.031 9.51891 14.0588 9.39289 14.0611C9.26686 14.0634 9.14166 14.0403 9.02477 13.9932C8.90788 13.946 8.8017 13.8758 8.71257 13.7866L5.40507 10.4791C5.31297 10.3933 5.23909 10.2898 5.18785 10.1748C5.13661 10.0598 5.10906 9.93566 5.10684 9.80978C5.10461 9.6839 5.12777 9.55887 5.17492 9.44213C5.22207 9.3254 5.29225 9.21935 5.38128 9.13033C5.4703 9.04131 5.57634 8.97113 5.69308 8.92398C5.80981 8.87682 5.93485 8.85367 6.06073 8.85589C6.18661 8.85811 6.31075 8.88566 6.42575 8.9369C6.54075 8.98814 6.64425 9.06202 6.73007 9.15413L9.34758 11.7704L13.6888 6.23913C13.6966 6.22951 13.705 6.22032 13.7138 6.21163H13.7126Z" fill="#FCFCFC"/>
                                                         </svg>
                                                     </div>
-                                                    <input type="radio" class="busket-page__form-select-location-item-radio">
                                                 </label>
                                                 <label class="busket-page__form-select-location-item">
+                                                    <input type="radio" name="delivery-address" class="busket-page__form-radio-input busket-page__form-select-location-item-radio">
                                                     <span class="busket-page__form-select-location-item-title">Тверская 22</span>
                                                     <div class="busket-page__form-select-location-item-content">
                                                         <span class="busket-page__form-select-location-item-location">
@@ -1497,21 +1548,21 @@
                                                             <path d="M13.7126 6.21163C13.8887 6.04399 14.123 5.95131 14.3661 5.95315C14.6092 5.95499 14.8421 6.0512 15.0156 6.22149C15.1892 6.39177 15.2898 6.62281 15.2962 6.86585C15.3026 7.10888 15.2144 7.34491 15.0501 7.52413L10.0626 13.7616C9.97681 13.854 9.87331 13.9281 9.75824 13.9796C9.64317 14.031 9.51891 14.0588 9.39289 14.0611C9.26686 14.0634 9.14166 14.0403 9.02477 13.9932C8.90788 13.946 8.8017 13.8758 8.71257 13.7866L5.40507 10.4791C5.31297 10.3933 5.23909 10.2898 5.18785 10.1748C5.13661 10.0598 5.10906 9.93566 5.10684 9.80978C5.10461 9.6839 5.12777 9.55887 5.17492 9.44213C5.22207 9.3254 5.29225 9.21935 5.38128 9.13033C5.4703 9.04131 5.57634 8.97113 5.69308 8.92398C5.80981 8.87682 5.93485 8.85367 6.06073 8.85589C6.18661 8.85811 6.31075 8.88566 6.42575 8.9369C6.54075 8.98814 6.64425 9.06202 6.73007 9.15413L9.34758 11.7704L13.6888 6.23913C13.6966 6.22951 13.705 6.22032 13.7138 6.21163H13.7126Z" fill="#FCFCFC"/>
                                                         </svg>
                                                     </div>
-                                                    <input type="radio" class="busket-page__form-select-location-item-radio">
                                                 </label>
                                             </div>
                                             <div class="busket-page__form-select-time-list">
                                                 <label class="busket-page__form-radio">
-                                                    <span class="busket-page__form-radio-title">
+                                                    <input name="delivery-time" class="busket-page__form-radio-input" type="radio">
+                                                    <span class="busket-page__form-radio-title busket-page__form-radio-title_center-text">
                                                         Как можно скорее
                                                     </span>
-                                                    <input class="busket-page__form-radio-input" type="radio">
                                                 </label>
-                                                <label class="busket-page__form-radio busket-page__form-radio_active busket-page__form-radio_date">
-                                                    <svg class="busket-page__form-radio-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                                                        <path d="M5 6.5L10 11.5L15 6.5L17 7.5L10 14.5L3 7.5L5 6.5Z" fill="#31373C"/>
+                                                <label class="busket-page__form-radio busket-page__form-radio_date">
+                                                    <input name="delivery-time" class="busket-page__form-radio-input busket-page__form-radio-input_date" value="2023-11-30T19:30" type="datetime-local">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                        <path d="M16 2.5C16.2449 2.50003 16.4813 2.58996 16.6644 2.75272C16.8474 2.91547 16.9643 3.13975 16.993 3.383L17 3.5V4.5H18C18.7652 4.49996 19.5015 4.79233 20.0583 5.31728C20.615 5.84224 20.9501 6.56011 20.995 7.324L21 7.5V19.5C21 20.2652 20.7077 21.0015 20.1827 21.5583C19.6578 22.115 18.9399 22.4501 18.176 22.495L18 22.5H6C5.23479 22.5 4.49849 22.2077 3.94174 21.6827C3.38499 21.1578 3.04989 20.4399 3.005 19.676L3 19.5V7.5C2.99996 6.73479 3.29233 5.99849 3.81728 5.44174C4.34224 4.88499 5.06011 4.54989 5.824 4.505L6 4.5H7V3.5C7.00028 3.24512 7.09788 2.99997 7.27285 2.81463C7.44782 2.6293 7.68695 2.51777 7.94139 2.50283C8.19584 2.48789 8.44638 2.57067 8.64183 2.73426C8.83729 2.89786 8.9629 3.1299 8.993 3.383L9 3.5V4.5H15V3.5C15 3.23478 15.1054 2.98043 15.2929 2.79289C15.4804 2.60536 15.7348 2.5 16 2.5ZM19 9.5H5V19.125C5 19.83 5.386 20.411 5.883 20.491L6 20.5H18C18.513 20.5 18.936 19.97 18.993 19.285L19 19.125V9.5Z" fill="rgba(49, 55, 60, 1)"/>
+                                                        <path d="M11.9999 12.5C12.2448 12.5 12.4812 12.59 12.6642 12.7527C12.8473 12.9155 12.9642 13.1397 12.9929 13.383L12.9999 13.5V16.5C12.9996 16.7549 12.902 17 12.727 17.1854C12.5521 17.3707 12.3129 17.4822 12.0585 17.4972C11.804 17.5121 11.5535 17.4293 11.358 17.2657C11.1626 17.1021 11.037 16.8701 11.0069 16.617L10.9999 16.5V14.5C10.745 14.4997 10.4998 14.4021 10.3145 14.2272C10.1292 14.0522 10.0176 13.813 10.0027 13.5586C9.98776 13.3042 10.0705 13.0536 10.2341 12.8582C10.3977 12.6627 10.6298 12.5371 10.8829 12.507L10.9999 12.5H11.9999Z" fill="rgba(49, 55, 60, 1)"/>
                                                     </svg>
-                                                    <input class="busket-page__form-radio-input busket-page__form-radio-input_date" value="2023-11-30T19:30" type="datetime-local">
                                                 </label>
                                             </div>
                                             <div class="busket-page__adress-form">
@@ -1551,6 +1602,7 @@
                                             </div>
                                             <div class="busket-page__delivery-list">
                                                 <label class="busket-page__form-radio">
+                                                    <input class="busket-page__form-radio-input" name="shipping-option" type="radio">
                                                     <span class="busket-page__form-radio-title">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                                                             <g clip-path="url(#clip0_2041_18015)">
@@ -1568,9 +1620,9 @@
                                                         15.11.2023
                                                         <span>500₽</span>
                                                     </span>
-                                                    <input class="busket-page__form-radio-input" type="radio">
                                                 </label>
-                                                <label class="busket-page__form-radio busket-page__form-radio_active">
+                                                <label class="busket-page__form-radio">
+                                                    <input class="busket-page__form-radio-input" name="shipping-option" type="radio">
                                                     <span class="busket-page__form-radio-title">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
                                                             <path d="M5.73431 4.12894L5.7635 4.19723L5.79946 4.26238L5.83517 4.33066L5.87765 4.40234L5.90033 4.43491L5.92639 4.47063L5.94932 4.50659L5.97539 4.54256L6.00458 4.57826L6.03377 4.61422L6.06296 4.64993L6.09553 4.6859L6.13124 4.72498L6.16721 4.76095L6.20317 4.80005L6.24227 4.83915L6.28475 4.87824L6.32697 4.91734L6.37258 4.95642L6.42158 4.99865L6.47031 5.03774L6.52244 5.07996L6.57456 5.12219L6.62982 5.1678L6.69185 5.21027L6.75049 5.25589L6.81564 5.29811L6.8808 5.34372C7.0403 5.45448 7.223 5.68591 7.08617 6.00831C6.94934 6.33409 6.69524 6.79018 6.84822 6.96949C7.00147 7.14854 7.54201 7.23976 7.98533 7.06384C7.98533 7.06384 8.07994 7.34402 8.24283 7.52307C8.24283 7.52307 8.16464 7.67605 7.91053 7.59786C7.91053 7.59786 8.00514 7.8293 7.87457 8.0769C7.87457 8.0769 7.57823 8.02477 7.44766 7.75112C7.44766 7.75112 7.33038 7.96613 7.09269 8.04093C7.09269 8.04093 6.89722 7.94006 6.9397 7.54912C6.9397 7.54912 6.79636 7.89785 6.35329 7.9565C6.35329 7.9565 6.09918 7.63409 6.43148 7.20067C6.43148 7.20067 6.1904 7.4123 5.76037 7.31144C5.76037 7.31144 5.6887 7.08991 6.08302 6.78368C6.08302 6.78368 5.63996 6.76413 5.47055 6.39274C5.47055 6.39274 5.65612 6.16155 6.1156 6.21342C6.1156 6.21342 5.68896 6.11881 5.59435 5.61059C5.59435 5.61059 5.90059 5.41513 6.38926 5.72788C6.38926 5.72788 6.30456 5.56499 6.09944 5.4021C5.89381 5.2465 5.64622 4.79353 5.73431 4.12894Z" fill="#31373C"/>
@@ -1758,12 +1810,9 @@
                                                         18.11.2023
                                                         <span>500₽</span>
                                                     </span>
-                                                    <input class="busket-page__form-radio-input" type="radio">
                                                 </label>
                                             </div>
                                         </div>
-                                        
-                                        
                                     </div>
                                 </form>
                             </li>
@@ -1771,7 +1820,8 @@
                                 <h3 class="busket-page__form-title">Способ оплаты</h3>
                                 <form class="busket-page__pay-methods-form">
                                     <label class="busket-page__form-radio busket-page__form-radio_pay-method">
-                                        <span class="busket-page__form-radio-title busket-page__form-radio-title_pay-method">
+                                        <input type="radio" class="busket-page__form-radio-input" name="payment__method">
+                                        <span class="busket-page__form-radio-title busket-page__form-radio-title_pay-method busket-page__form-radio-title_empty-svg-path">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                 <path d="M14 5V2C14 1.73478 13.8946 1.48043 13.7071 1.29289C13.5196 1.10536 13.2652 1 13 1H3C2.46957 1 1.96086 1.21071 1.58579 1.58579C1.21071 1.96086 1 2.46957 1 3M1 3C1 3.53043 1.21071 4.03914 1.58579 4.41421C1.96086 4.78929 2.46957 5 3 5H15C15.2652 5 15.5196 5.10536 15.7071 5.29289C15.8946 5.48043 16 5.73478 16 6V9M1 3V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H15C15.2652 17 15.5196 16.8946 15.7071 16.7071C15.8946 16.5196 16 16.2652 16 16V13" stroke="#31373C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                                 <path d="M17 9V13H13C12.4696 13 11.9609 12.7893 11.5858 12.4142C11.2107 12.0391 11 11.5304 11 11C11 10.4696 11.2107 9.96086 11.5858 9.58579C11.9609 9.21071 12.4696 9 13 9H17Z" stroke="#31373C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1781,21 +1831,21 @@
                                         <span class="busket-page__form-radio-info">
                                             без комиссии
                                         </span>
-                                        <input type="radio" class="busket-page__form-radio-input">
                                     </label>
-                                    <label class="busket-page__form-radio busket-page__form-radio_active busket-page__form-radio_pay-method">
+                                    <label class="busket-page__form-radio busket-page__form-radio_pay-method">
+                                        <input type="radio" class="busket-page__form-radio-input" name="payment__method">
                                         <span class="busket-page__form-radio-title busket-page__form-radio-title_pay-method">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                <path d="M18 2C18.5304 2 19.0391 2.21071 19.4142 2.58579C19.7893 2.96086 20 3.46957 20 4V15.586C19.9999 16.1164 19.7891 16.625 19.414 17L15 21.414C14.625 21.7891 14.1164 21.9999 13.586 22H6C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21071 5.46957 2 6 2H18ZM18 4H6V20H12V15.5C12 15.1022 12.158 14.7206 12.4393 14.4393C12.7206 14.158 13.1022 14 13.5 14H18V4ZM17.586 16H14V19.586L17.586 16ZM10 11C10.2652 11 10.5196 11.1054 10.7071 11.2929C10.8946 11.4804 11 11.7348 11 12C11 12.2652 10.8946 12.5196 10.7071 12.7071C10.5196 12.8946 10.2652 13 10 13H9C8.73478 13 8.48043 12.8946 8.29289 12.7071C8.10536 12.5196 8 12.2652 8 12C8 11.7348 8.10536 11.4804 8.29289 11.2929C8.48043 11.1054 8.73478 11 9 11H10ZM15 7C15.2652 7 15.5196 7.10536 15.7071 7.29289C15.8946 7.48043 16 7.73478 16 8C16 8.26522 15.8946 8.51957 15.7071 8.70711C15.5196 8.89464 15.2652 9 15 9H9C8.73478 9 8.48043 8.89464 8.29289 8.70711C8.10536 8.51957 8 8.26522 8 8C8 7.73478 8.10536 7.48043 8.29289 7.29289C8.48043 7.10536 8.73478 7 9 7H15Z" fill="#4286FA"/>
+                                                <path d="M18 2C18.5304 2 19.0391 2.21071 19.4142 2.58579C19.7893 2.96086 20 3.46957 20 4V15.586C19.9999 16.1164 19.7891 16.625 19.414 17L15 21.414C14.625 21.7891 14.1164 21.9999 13.586 22H6C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21071 5.46957 2 6 2H18ZM18 4H6V20H12V15.5C12 15.1022 12.158 14.7206 12.4393 14.4393C12.7206 14.158 13.1022 14 13.5 14H18V4ZM17.586 16H14V19.586L17.586 16ZM10 11C10.2652 11 10.5196 11.1054 10.7071 11.2929C10.8946 11.4804 11 11.7348 11 12C11 12.2652 10.8946 12.5196 10.7071 12.7071C10.5196 12.8946 10.2652 13 10 13H9C8.73478 13 8.48043 12.8946 8.29289 12.7071C8.10536 12.5196 8 12.2652 8 12C8 11.7348 8.10536 11.4804 8.29289 11.2929C8.48043 11.1054 8.73478 11 9 11H10ZM15 7C15.2652 7 15.5196 7.10536 15.7071 7.29289C15.8946 7.48043 16 7.73478 16 8C16 8.26522 15.8946 8.51957 15.7071 8.70711C15.5196 8.89464 15.2652 9 15 9H9C8.73478 9 8.48043 8.89464 8.29289 8.70711C8.10536 8.51957 8 8.26522 8 8C8 7.73478 8.10536 7.48043 8.29289 7.29289C8.48043 7.10536 8.73478 7 9 7H15Z" fill="#31373C"/>
                                             </svg>
                                             Безналичный расчет
                                         </span>
                                         <span class="busket-page__form-radio-info">
                                             +8% комиссия без НДС
                                         </span>
-                                        <input type="radio" class="busket-page__form-radio-input">
                                     </label>
                                     <label class="busket-page__form-radio busket-page__form-radio_pay-method">
+                                        <input type="radio" class="busket-page__form-radio-input" name="payment__method">
                                         <span class="busket-page__form-radio-title busket-page__form-radio-title_pay-method">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                 <path d="M6.25 3.5C6.05109 3.5 5.86032 3.57902 5.71967 3.71967C5.57902 3.86032 5.5 4.05109 5.5 4.25V11.627C5.05321 11.315 4.53944 11.1122 4 11.035V4.25C4 3.65326 4.23705 3.08097 4.65901 2.65901C5.08097 2.23705 5.65326 2 6.25 2H10.631C10.9265 2 11.2191 2.05819 11.492 2.17126C11.765 2.28434 12.0131 2.45007 12.222 2.659L16.841 7.278C17.263 7.7 17.5 8.272 17.5 8.868V17.25C17.5 17.8467 17.2629 18.419 16.841 18.841C16.419 19.2629 15.8467 19.5 15.25 19.5H12.855C12.6854 18.9314 12.3739 18.4152 11.95 18H15.25C15.4489 18 15.6397 17.921 15.7803 17.7803C15.921 17.6397 16 17.4489 16 17.25V8.998H12.754C12.1573 8.998 11.585 8.76095 11.163 8.33899C10.7411 7.91703 10.504 7.34474 10.504 6.748V3.5H6.25ZM12.004 4.562V6.748C12.004 7.162 12.34 7.498 12.754 7.498H14.939L12.004 4.562ZM15.25 22H12.662C12.878 21.545 12.999 21.037 12.999 20.5H15.249C16.111 20.5 16.9376 20.1576 17.5471 19.5481C18.1566 18.9386 18.499 18.112 18.499 17.25V8.937L19.341 9.777C19.763 10.2 20 10.772 20 11.369V17.25C20 18.5098 19.4996 19.718 18.6088 20.6088C17.718 21.4996 16.5098 22 15.25 22ZM3.5 17C4.16304 17 4.79893 16.7366 5.26777 16.2678C5.73661 15.7989 6 15.163 6 14.5C6 13.837 5.73661 13.2011 5.26777 12.7322C4.79893 12.2634 4.16304 12 3.5 12C2.83696 12 2.20107 12.2634 1.73223 12.7322C1.26339 13.2011 1 13.837 1 14.5C1 15.163 1.26339 15.7989 1.73223 16.2678C2.20107 16.7366 2.83696 17 3.5 17ZM3.5 13.5C3.76522 13.5 4.01957 13.6054 4.20711 13.7929C4.39464 13.9804 4.5 14.2348 4.5 14.5C4.5 14.7652 4.39464 15.0196 4.20711 15.2071C4.01957 15.3946 3.76522 15.5 3.5 15.5C3.23478 15.5 2.98043 15.3946 2.79289 15.2071C2.60536 15.0196 2.5 14.7652 2.5 14.5C2.5 14.2348 2.60536 13.9804 2.79289 13.7929C2.98043 13.6054 3.23478 13.5 3.5 13.5ZM9.5 23C10.163 23 10.7989 22.7366 11.2678 22.2678C11.7366 21.7989 12 21.163 12 20.5C12 19.837 11.7366 19.2011 11.2678 18.7322C10.7989 18.2634 10.163 18 9.5 18C8.83696 18 8.20107 18.2634 7.73223 18.7322C7.26339 19.2011 7 19.837 7 20.5C7 21.163 7.26339 21.7989 7.73223 22.2678C8.20107 22.7366 8.83696 23 9.5 23ZM9.5 19.5C9.76522 19.5 10.0196 19.6054 10.2071 19.7929C10.3946 19.9804 10.5 20.2348 10.5 20.5C10.5 20.7652 10.3946 21.0196 10.2071 21.2071C10.0196 21.3946 9.76522 21.5 9.5 21.5C9.23478 21.5 8.98043 21.3946 8.79289 21.2071C8.60536 21.0196 8.5 20.7652 8.5 20.5C8.5 20.2348 8.60536 19.9804 8.79289 19.7929C8.98043 19.6054 9.23478 19.5 9.5 19.5ZM10.78 14.28C10.8537 14.2113 10.9128 14.1285 10.9538 14.0365C10.9948 13.9445 11.0168 13.8452 11.0186 13.7445C11.0204 13.6438 11.0018 13.5438 10.9641 13.4504C10.9264 13.357 10.8703 13.2722 10.799 13.201C10.7278 13.1297 10.643 13.0736 10.5496 13.0359C10.4562 12.9982 10.3562 12.9796 10.2555 12.9814C10.1548 12.9832 10.0555 13.0052 9.96346 13.0462C9.87146 13.0872 9.78866 13.1463 9.72 13.22L2.22 20.72C2.14631 20.7887 2.08721 20.8715 2.04622 20.9635C2.00523 21.0555 1.98319 21.1548 1.98141 21.2555C1.97963 21.3562 1.99816 21.4562 2.03588 21.5496C2.0736 21.643 2.12974 21.7278 2.20096 21.799C2.27218 21.8703 2.35701 21.9264 2.4504 21.9641C2.54379 22.0018 2.64382 22.0204 2.74452 22.0186C2.84523 22.0168 2.94454 21.9948 3.03654 21.9538C3.12854 21.9128 3.21134 21.8537 3.28 21.78L10.78 14.28Z" fill="#31373C"/>
@@ -1805,9 +1855,9 @@
                                         <span class="busket-page__form-radio-info">
                                             +8% комиссия
                                         </span>
-                                        <input type="radio" class="busket-page__form-radio-input">
                                     </label>
                                     <label class="busket-page__form-radio busket-page__form-radio_pay-method">
+                                        <input type="radio" class="busket-page__form-radio-input" name="payment__method">
                                         <span class="busket-page__form-radio-title busket-page__form-radio-title_pay-method">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                 <path d="M20.97 6.2017L12.72 1.68764C12.4996 1.56584 12.2518 1.50195 12 1.50195C11.7482 1.50195 11.5004 1.56584 11.28 1.68764L3.03 6.20358C2.7944 6.33249 2.59772 6.52229 2.46052 6.75316C2.32331 6.98404 2.25061 7.24751 2.25 7.51608V16.4823C2.25061 16.7509 2.32331 17.0144 2.46052 17.2452C2.59772 17.4761 2.7944 17.6659 3.03 17.7948L11.28 22.3108C11.5004 22.4326 11.7482 22.4965 12 22.4965C12.2518 22.4965 12.4996 22.4326 12.72 22.3108L20.97 17.7948C21.2056 17.6659 21.4023 17.4761 21.5395 17.2452C21.6767 17.0144 21.7494 16.7509 21.75 16.4823V7.51701C21.7499 7.24797 21.6774 6.98391 21.5402 6.7525C21.403 6.52108 21.206 6.33084 20.97 6.2017ZM12 3.00014L19.5319 7.12514L16.7409 8.65326L9.20813 4.52826L12 3.00014ZM12 11.2501L4.46812 7.12514L7.64625 5.38514L15.1781 9.51014L12 11.2501ZM3.75 8.43764L11.25 12.542V20.5848L3.75 16.4833V8.43764ZM20.25 16.4795L12.75 20.5848V12.5458L15.75 10.9042V14.2501C15.75 14.4491 15.829 14.6398 15.9697 14.7805C16.1103 14.9211 16.3011 15.0001 16.5 15.0001C16.6989 15.0001 16.8897 14.9211 17.0303 14.7805C17.171 14.6398 17.25 14.4491 17.25 14.2501V10.083L20.25 8.43764V16.4786V16.4795Z" fill="#31373C"/>
@@ -1817,9 +1867,9 @@
                                         <span class="busket-page__form-radio-info">
                                             без комиссии
                                         </span>
-                                        <input type="radio" class="busket-page__form-radio-input">
                                     </label>
                                     <label class="busket-page__form-radio busket-page__form-radio_pay-method">
+                                        <input type="radio" class="busket-page__form-radio-input" name="payment__method">
                                         <span class="busket-page__form-radio-title busket-page__form-radio-title_pay-method">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                 <path d="M19 4C19.7956 4 20.5587 4.31607 21.1213 4.87868C21.6839 5.44129 22 6.20435 22 7V17C22 17.7956 21.6839 18.5587 21.1213 19.1213C20.5587 19.6839 19.7956 20 19 20H5C4.20435 20 3.44129 19.6839 2.87868 19.1213C2.31607 18.5587 2 17.7956 2 17V7C2 6.20435 2.31607 5.44129 2.87868 4.87868C3.44129 4.31607 4.20435 4 5 4H19ZM20 10H4V17C4.00003 17.2449 4.08996 17.4813 4.25272 17.6644C4.41547 17.8474 4.63975 17.9643 4.883 17.993L5 18H19C19.2449 18 19.4813 17.91 19.6644 17.7473C19.8474 17.5845 19.9643 17.3603 19.993 17.117L20 17V10ZM17 13C17.2549 13.0003 17.5 13.0979 17.6854 13.2728C17.8707 13.4478 17.9822 13.687 17.9972 13.9414C18.0121 14.1958 17.9293 14.4464 17.7657 14.6418C17.6021 14.8373 17.3701 14.9629 17.117 14.993L17 15H14C13.7451 14.9997 13.5 14.9021 13.3146 14.7272C13.1293 14.5522 13.0178 14.313 13.0028 14.0586C12.9879 13.8042 13.0707 13.5536 13.2343 13.3582C13.3979 13.1627 13.6299 13.0371 13.883 13.007L14 13H17ZM19 6H5C4.73478 6 4.48043 6.10536 4.29289 6.29289C4.10536 6.48043 4 6.73478 4 7V8H20V7C20 6.73478 19.8946 6.48043 19.7071 6.29289C19.5196 6.10536 19.2652 6 19 6Z" fill="#31373C"/>
@@ -1829,7 +1879,6 @@
                                         <span class="busket-page__form-radio-info">
                                             +8% комиссия
                                         </span>
-                                        <input type="radio" class="busket-page__form-radio-input">
                                     </label>
                                     <div class="busket-page__pay-methods-form-bottom">
                                         <label class="busket-page__form-label busket-page__form-label_promocode">
@@ -1960,7 +2009,6 @@
                           
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </section>
@@ -1971,10 +2019,10 @@
                 <a class="logo footer__logo" href="index.html">
                     <span class="logo__icon footer__logo-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="none">
-                            <path d="M49.4117 24.6753C49.4117 38.3032 38.3506 49.3506 24.7059 49.3506C11.0612 49.3506 0 38.3032 0 24.6753C0 11.0475 11.0612 0 24.7059 0C38.3506 0 49.4117 11.0475 49.4117 24.6753Z" fill="url(#paint0_linear_1033_74)"/>
+                            <path d="M49.4117 24.6753C49.4117 38.3032 38.3506 49.3506 24.7059 49.3506C11.0612 49.3506 0 38.3032 0 24.6753C0 11.0475 11.0612 0 24.7059 0C38.3506 0 49.4117 11.0475 49.4117 24.6753Z" fill="url(#paint0_linear_1033_179)"/>
                             <path d="M34.6879 15.9162H31.8359C31.8359 12.0835 28.6416 8.97287 24.7058 8.97287C20.77 8.97287 17.5757 12.0835 17.5757 15.9162H14.7236C13.155 15.9162 11.8716 17.1659 11.8716 18.6934V35.3572C11.8716 36.8848 13.155 38.1346 14.7236 38.1346H34.6879C36.2566 38.1346 37.54 36.8848 37.54 35.3572V18.6934C37.54 17.1659 36.2566 15.9162 34.6879 15.9162ZM24.7058 11.7502C27.073 11.7502 28.9839 13.611 28.9839 15.9162H20.4277C20.4277 13.611 22.3386 11.7502 24.7058 11.7502ZM34.6879 35.3572H14.7236V18.6934H34.6879V35.3572ZM24.7058 24.2481C22.3386 24.2481 20.4277 22.3873 20.4277 20.0821H17.5757C17.5757 23.9148 20.77 27.0254 24.7058 27.0254C28.6416 27.0254 31.8359 23.9148 31.8359 20.0821H28.9839C28.9839 22.3873 27.073 24.2481 24.7058 24.2481Z" fill="white"/>
                             <defs>
-                            <linearGradient id="paint0_linear_1033_74" x1="-2.79197" y1="51.5939" x2="134.4" y2="-1.81052" gradientUnits="userSpaceOnUse">
+                            <linearGradient id="paint0_linear_1033_179" x1="-2.79197" y1="51.5939" x2="134.4" y2="-1.81052" gradientUnits="userSpaceOnUse">
                             <stop stop-color="#4174F7"/>
                             <stop offset="1" stop-color="#42A4FF"/>
                             </linearGradient>
@@ -2304,7 +2352,5 @@
     <script src="./assets/lib/tabs/tabs.js"></script>
     <script src="./assets/js/burger-menu.js"></script>
     <script src="./assets/js/catalog.js"></script>
-    <script src="./assets/js/sliders.js"></script>
-    <script src="./assets/js/general-scripts.js"></script>
 </body>
 </html>

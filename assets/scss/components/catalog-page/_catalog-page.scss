@@ -347,13 +347,12 @@
     }
     &__bottom{
         display: flex;
-        column-gap: 40px;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        row-gap: 8px;
-        @include s_900{
-            flex-direction: column;
-        }
+        row-gap: 40px;
+        padding: 0 90px;
+        box-sizing: border-box;
         @include s_520{
             flex-direction: column-reverse;
         }

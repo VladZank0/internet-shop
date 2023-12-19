@@ -1,4 +1,11 @@
 .delivery{
+    padding-top: 40px;
+    @include s_576{
+        padding-top: 24px;
+    }
+    &_no-padding{
+        padding: 0;
+    }
     &__title{
         color: $black-1;
         font-family: 'SF Pro Display-Bold', sans-serif;
@@ -7,16 +14,19 @@
         font-weight: bold;
         line-height: normal;
         margin-bottom: 12px;
-        margin-top: 40px;
         @include s_900{
             margin-bottom: 24px;
             font-size: 48px;
+            &_product-page{
+                font-size: 40px;
+                margin-bottom: 12px;
+            }
         }
         @include s_576{
             margin-bottom: 8px;
             font-size: 24px;
-            margin-top: 24px;
         }
+        
     }
     &__subtitle{
         color: $black-1;
@@ -32,6 +42,7 @@
         }
         @include s_576{
             font-size: 20px;
+            margin-bottom: 48px;
         }
     }
     &__options{

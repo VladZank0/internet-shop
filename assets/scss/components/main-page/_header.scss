@@ -1,30 +1,18 @@
 .header{
+    &__nav{
+        @include s_1200{
+            display: none;
+        }
+    }
     &-top{
         display: flex;
         align-items: center;
         justify-content: space-between;
         background: #F8F8F8;
-        height: 64px;
+        height: 48px;
         font-family: 'SF Pro Display', sans-serif;
         font-weight: 400;
         font-style: normal; 
-        &__adaptive-btns{
-            display: none;
-            @include s_1430{
-                display: flex;
-                column-gap: 10px;
-                align-items: center;
-            }
-            @include s_1200{
-                column-gap: 32px;
-            }
-            @include s_600{
-                column-gap: 16px;
-            }
-            @media (max-width: 330px){
-                column-gap: 8px;
-            }
-        }
         &__inner{
             display: flex;
             justify-content: space-between;
@@ -35,7 +23,6 @@
                 column-gap: 8px;
             }
         }
-      
     }
     &-bottom{
         display: flex;
@@ -65,21 +52,31 @@
     }
 }
 .contact-info{
-    @include s_1430{
-        display: none;
-    }
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
     text-align: left;
     white-space: nowrap;
     &__link{
         color: $black-1;
-        font-family: 'SF Pro Display-Medium', sans-serif;
-        font-size: 20px;
+        font-family: 'SF Pro Display-Bold', sans-serif;
+        font-size: 16px;
         font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        margin-bottom: 4px;
+        font-weight: bold;
+        line-height: 100%;
         &:hover{
             color: $prime-prime;
+        }
+        @include s_1430{
+            display: none;
+        }
+        &_burger-menu{
+            font-family: 'SF Pro Display-Medium', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            @include s_1430{
+                display: block;
+            }
         }
     }
     &__text{
@@ -101,6 +98,7 @@
 .working-time{
     display: flex;
     align-items: center; 
+    color: $black-05;
     column-gap: 4px;
     font-family: 'SF Pro Display-Medium', sans-serif;
     font-size: 16px;
@@ -129,9 +127,13 @@
             color: $prime-prime;
         }
     }
-    @include s_1430{
+    @media (max-width: 1450px){
         font-size: 16px;
+        column-gap: 12px;
+    }
+    @include s_1260{
         column-gap: 9px;
+        font-size: 15px;
     }
     @include s_1200{
         display: none;
@@ -315,8 +317,8 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        right: 0;
-        top: 0;
+        right: -5px;
+        top: 5px;
         transform: translate(5px, -50%);
     }
     &__icon{
@@ -398,6 +400,9 @@
 .burger-btn{
     display: none;
     height: 32px;
+    border: none;
+    outline: none;
+    background: transparent;
     &:hover{
         cursor: pointer;
     }
@@ -411,12 +416,12 @@
     width: 100%;
     top: 0;
     background-color: white;
-    padding: 20px 24px;
+    padding: 16px 24px;
     box-sizing: border-box;
     z-index: 100;
     overflow-y: auto;
-    @include s_380(){
-        padding: 20px 10px;
+    @include s_576{
+        padding: 16px;
     }
     &_active{ 
         @include s_1200{
