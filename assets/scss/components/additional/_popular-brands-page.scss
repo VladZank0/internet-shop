@@ -1,0 +1,91 @@
+.popular-brands-page{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    @include s_576{
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+    &__title{
+        color: var(--black-1, #31373C);
+        font-family: 'SF Pro Display-Bold', sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        margin-bottom: 16px;
+        @include s_576{
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+    }
+    &__subtitle{
+        color: var(--black-07, #595959);
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 24px;
+        @include s_576{
+            margin-bottom: 8px;
+        }
+    }
+    &__brands-list{
+        display: flex;
+        row-gap: 24px;
+        column-gap: 16px;
+        flex-wrap: wrap;
+        @include s_576{
+            row-gap: 16px;
+        }
+        &-item{
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            &-link{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 8px;
+                width: 145px;
+                border-radius: 16px;
+                &:hover .popular-brands-page__brands-list-item-img-wrapper{
+                    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);
+                }
+            }
+           
+            &-img{
+                object-fit: contain;
+                &-wrapper{
+                    display: flex;
+                    justify-content: center;
+                    width: 144px;
+                    height: 146px;
+                    border-radius: 16px;
+                    background: var(--black-005, #FCFCFC);
+                }
+            }
+            &-title{
+                color: var(--black-1, #31373C);
+                text-align: center;
+                font-family: 'SF Pro Display-Medium', sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                width: fit-content;
+            }
+            &-subtitle{
+                color: var(--black-07, #595959);
+                text-align: center;
+                font-family: 'SF Pro Display-Regular', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: fit-content;
+            }
+        }
+    }
+    
+}

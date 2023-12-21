@@ -1,0 +1,109 @@
+.trade-in{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 32px;
+    @include s_576{
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-bottom: 24px;
+    }
+    background: var(--prime-prime-2, rgba(66, 134, 250, 0.02));
+    &__title{
+        color: var(--black-1, #31373C);
+        font-family: 'SF Pro Display-Bold', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        margin-bottom: 16px;
+        @include s_576{
+            font-size: 24px;
+        }
+    }
+    &__subtitle{
+        color: var(--black-1, #31373C);
+        font-family: 'SF Pro Display-Medium', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 40px;
+        @include s_576{
+            margin-bottom: 24px;
+            font-size: 16px;
+        }
+    }
+    &__main{
+        &-title{
+            color: var(--black-1, #31373C);
+            font-family: 'SF Pro Display-Bold', sans-serif;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            margin-bottom: 40px;
+            @include s_576{
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+        }
+        &-list{
+            display: flex;
+            column-gap: 16px;
+            row-gap: 16px;
+            flex-wrap: wrap;
+            &-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 16px;
+                padding: 16px 24px;
+                box-sizing: border-box;
+                background: var(--prime-prime-2, rgba(66, 134, 250, 0.02));
+                flex-grow: 1;
+                border-radius: 24px;
+                width: 240px;
+                @include s_576{
+                    flex-direction: row;
+                    column-gap: 16px;
+                }
+                &-content{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 16px;
+                    width: 100%;
+                    @include s_576{
+                        align-items: flex-start;
+                    }
+                }
+                &-title{
+                    color: var(--black-1, #31373C);
+                    text-align: center;
+                    font-family: 'SF Pro Display-Medium',sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+                &-button{
+                    width: 100%;
+                }
+                &-img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    &-wrapper{
+                        display: flex;
+                        justify-content: center;
+                        width: 237px;
+                        height: 160px;
+                        @include s_576{
+                            width: 120px;
+                            height: 81px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
