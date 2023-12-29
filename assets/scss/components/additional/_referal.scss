@@ -42,11 +42,14 @@
             font-size: 64px;
             font-style: normal;
             font-weight: 900;
-            line-height: normal;
+            line-height: 1.15;
             max-width: 720px;
             @include s_768{
                font-size: 32px;
                max-width: unset;
+               text-align: left;
+               letter-spacing: -1px;
+               word-spacing: -5px;
             }
         }
         &-subtitle{
@@ -60,6 +63,7 @@
             @include s_768{
                 font-size: 16px;
                 max-width: unset;
+                text-align: left;
             }
         }
         &-button{
@@ -102,6 +106,7 @@
                 @include s_768{
                     display: block;
                     align-self: center;
+                    width: 273px;
                 }
             }
         }

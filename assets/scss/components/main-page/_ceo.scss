@@ -1,8 +1,16 @@
 .ceo{
-    margin-bottom: 80px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include s_768{
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    @include s_576{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
     color: $black-07;
     font-family: 'SF Pro Display-Regular', sans-serif;
-    padding-bottom: env(safe-area-inset-bottom);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -28,20 +36,8 @@
         margin: revert;
         padding: revert;
     }
-    &_bottom{
-        margin-bottom: 112px;
-        @include s_1260{
-            margin-bottom: 72px;
-        }
-        @include s_768{
-            margin-bottom: 60px;
-        }
-    }
-    @include s_1260{
-        margin-bottom: 96px;
-    }
-    @include s_768{
-        margin-bottom: 60px;
+    i{
+        font-family: 'SF Pro Display-RegularItalic', sans-serif;
     }
     .section-title{
         font-size: 24px;

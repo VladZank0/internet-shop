@@ -70,6 +70,9 @@
         display: flex;
         column-gap: 56px;
         align-items: flex-start;
+        @include s_768{
+            justify-content: space-between;
+        }
         @include s_700{
             display: none;
         }
@@ -149,6 +152,9 @@
         @include s_460{
             font-size: 27px;
         }
+        &:hover{
+            color: $prime-prime;
+        }
     }
     &__support-site-address{
         color: $black-07;
@@ -167,6 +173,9 @@
         font-family: 'SF Pro Display-Medium', sans-serif;
         font-size: 16px;
         font-weight: 500;
+        &:hover{
+            color: #8FC3FF;
+        }
     }
     
 }

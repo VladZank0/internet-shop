@@ -21,7 +21,7 @@
         padding: 27px;
         box-sizing: border-box;
         border-radius: 16px;
-        @include s_600{
+        @include s_576{
             flex-direction: column;
             row-gap: 16px;
             padding: 24px;
@@ -30,7 +30,7 @@
         &_align-center{
             justify-content: flex-start;
             background-color: unset;
-            @include s_600{
+            @include s_576{
                 justify-content: center;
                 align-items: center;
             }
@@ -41,7 +41,7 @@
         display: flex;
         flex-direction: column;
         row-gap: 8px;
-        @include s_600{
+        @include s_576{
             align-items: flex-start;
         }
     }
@@ -52,7 +52,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        @include s_600{
+        @include s_576{
             font-size: 24px;
         }
     }
@@ -69,7 +69,7 @@
         display: inline-flex;
       
         svg{
-            @include s_600{
+            @include s_576{
                 width: 80px;
                 height: 80px;
             }
@@ -78,7 +78,7 @@
     }
     &__img_mini{
         svg{
-            @include s_600{
+            @include s_576{
                 width: 56px;
                 height: 56px;
             }
@@ -101,7 +101,7 @@
         font-weight: 500;
         line-height: normal;
         &_large{
-            @include s_600{
+            @include s_576{
                 width: 100%;
             }
         }

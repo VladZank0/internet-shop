@@ -196,6 +196,10 @@
         font-style: normal;
         font-weight: bold;
         line-height: normal;
+        cursor: pointer;
+        &:hover{
+            color: $prime-prime;
+        }
         @include s_576{
             font-size: 20px;
         }

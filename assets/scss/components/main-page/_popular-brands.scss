@@ -33,11 +33,11 @@
             box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.1);
         }
         &-img{
-            @include s_600(){
+            @include s_576(){
                 width: 70%;
             }
         }
-        @include s_600(){
+        @include s_576(){
             width: 88px;
             min-height: 88px;
             height: 88px;

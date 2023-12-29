@@ -18,6 +18,14 @@
         border: none;
         box-shadow: unset;
     }
+    &:hover{
+        .product__preview-button{
+            display: flex;
+            @include s_1200{
+                display: none;
+            }
+        }
+    }
     &__delete-btn{
         margin-left: auto;
         display: inline-flex;
@@ -52,6 +60,10 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
+        cursor: pointer;
+        &:hover{
+            color: #7AABFF;
+        }
     }
     &__rating-stars{
         display: flex;
@@ -181,6 +193,9 @@
         box-sizing: border-box;
         @include s_576{
             font-size: 16px;
+        }
+        &:hover{
+            color: $prime-prime;
         }
     }
     &__status{

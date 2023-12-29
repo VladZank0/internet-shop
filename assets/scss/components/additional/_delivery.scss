@@ -125,6 +125,9 @@
             line-height: normal;
             text-align: right;
             margin-top: auto;
+            @include s_768{
+                text-align: left;
+            }
             @include s_576{
                 font-size: 24px;
             }

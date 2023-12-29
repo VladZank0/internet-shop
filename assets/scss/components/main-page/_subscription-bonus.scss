@@ -1,7 +1,9 @@
 .subscription-bonus{
-    margin-bottom: 86px;
-    @include s_700{
-        margin-bottom: 32px;
+    padding-top: 80px;
+    padding-bottom: 86px;
+    @include s_768{
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
     &__inner{
         display: flex;

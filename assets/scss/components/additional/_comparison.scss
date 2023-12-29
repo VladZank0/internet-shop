@@ -6,6 +6,7 @@
     width: 193px;
     padding: 8px;
     box-sizing: border-box;
+    height: 100%;
     @include s_576{
         width: 150px;
     }
@@ -277,7 +278,6 @@
             }
             &-data{
                 display: flex;
-                justify-content: space-between;
                 &-item{
                     text-align: center;
                     width: 193px;

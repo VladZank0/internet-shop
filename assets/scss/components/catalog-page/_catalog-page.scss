@@ -46,6 +46,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        border: 1px solid var(--prime-prime-5, rgba(66, 134, 250, 0.05));
         @include s_768{
             &:not(:nth-child(-n+9)){
                 display: none;
@@ -204,14 +205,6 @@
                     padding: 13px 1px;
                 }
             }
-            &:hover{
-                .product__preview-button{
-                    display: flex;
-                    @include s_1200{
-                        display: none;
-                    }
-                }
-            }
         }
        
         &_list{
@@ -353,6 +346,10 @@
         row-gap: 40px;
         padding: 0 90px;
         box-sizing: border-box;
+        @include s_768{
+            row-gap: 12px;
+            padding: 0;
+        }
         @include s_520{
             flex-direction: column-reverse;
         }

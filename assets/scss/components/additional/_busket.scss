@@ -35,7 +35,8 @@
         display: flex;
         row-gap: 12px;
         flex-direction: column;
-        max-width: 840px;
+        max-width: 855px;
+        width: 100%;
         @media (max-width: 1100px){
             width: 100%;
             row-gap: 8px;
@@ -144,6 +145,8 @@
         &-price{
             display: flex;
             column-gap: 12px;
+            row-gap: 8px;
+            flex-wrap: wrap;
             align-items: center;
             flex-shrink: 0;
             &-value{
@@ -172,6 +175,7 @@
             display: flex;
             column-gap: 58px;
             row-gap: 12px;
+            flex-wrap: wrap;
             @media (max-width: 1250px){
                 flex-direction: column;
             }
@@ -431,7 +435,7 @@
                 max-width: unset;
                 flex-wrap: nowrap;
             }
-            @media (max-width: 720px){
+            @include s_768{
                 flex-wrap: wrap;
                 max-width: 425px;
             }
@@ -461,7 +465,7 @@
             column-gap: 10px;
             row-gap: 10px;
         }
-        @media (max-width:480px){
+        @media (max-width: 350px){
             flex-wrap: wrap;
         }
     }
@@ -478,12 +482,15 @@
         padding: 12px 24px;
         box-sizing: border-box;
         width: fit-content;
+        white-space: nowrap;
         @include s_576{
             font-size: 20px;
-            width: 100%;
+            width: unset;
             text-align: center;
             padding: 12px 16px;
+            width: 100%;
         }
+
         &:hover{
             cursor: pointer;
         }
@@ -624,8 +631,9 @@
             }
         }
         &_pay-method{
-            max-width: 253px;
-            width: 100%;
+            max-width: 255px;
+            flex-grow: 1;
+            width: 240px;
             padding: 16px 12px;
             @include s_576{
                 max-width: unset;
@@ -637,7 +645,7 @@
             column-gap: 4px;
             width: fit-content;
             padding: 0;
-            font-stretch: 0;
+            max-width: 100%;
             svg{
                 display: inline-flex;
                 position: absolute;

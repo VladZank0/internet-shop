@@ -1,8 +1,5 @@
 .news{
-    margin-bottom: 96px;
-    @include s_460{
-        margin-bottom: 56px;
-    }
+    
     &__title{
         margin-bottom: 0;
     }
@@ -33,7 +30,8 @@
     }
     &__inner{
         overflow-x: hidden;
-        padding-bottom: 5px;
+        padding-top: 32px;
+        padding-bottom: 48px;
     }
     &__show-all-btn-text{
         color: #FFF;

@@ -70,6 +70,15 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'SF Pro Display-RegularItalic';
+    src: url('../fonts/SFProDisplay2/SFProDisplay-RegularItalic.eot');
+    src:url('../fonts/SFProDisplay2/SFProDisplay-RegularItalic.woff2') format('woff2'),
+        url('../fonts/SFProDisplay2/SFProDisplay-RegularItalic.woff') format('woff'),
+        url('../fonts/SFProDisplay2/SFProDisplay-RegularItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
     font-family: 'SF Pro Display-Light';
     src: url('../fonts/SFProDisplay2/SFProDisplay-Light.eot');
     src:url('../fonts/SFProDisplay2/SFProDisplay-Light.woff2') format('woff2'),

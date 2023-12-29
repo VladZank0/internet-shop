@@ -47,7 +47,7 @@ $black-07: #595959;
     }
 }
 @mixin s_768{
-    @media screen and(max-width: 768px){
+    @media screen and(max-width: 770px){
         @content;
     }
 }
@@ -67,7 +67,7 @@ $black-07: #595959;
     }
 }
 @mixin s_576{
-    @media screen and(max-width: 576px){
+    @media screen and(max-width: 577px){
         @content;
     }
 }
@@ -139,7 +139,7 @@ body{
     @include s_1260(){
         margin: 24px 0 58px 0;
     }
-    @include s_700(){
+    @include s_768(){
         font-size: 32px;
         margin: 16px 0 40px 0;
     }
@@ -153,7 +153,7 @@ body{
     line-height: normal;
     text-align: left;
     margin-bottom: 28px;
-    @include s_700(){
+    @include s_768(){
         font-size: 24px;
     }
 }
@@ -222,10 +222,11 @@ body{
 }
 .swiper-pagination{
     display: flex;
-    margin-top: 20px;
+    margin-top: 16px;
     justify-content: center;
     column-gap: 8px;
-    @include s_768(){
+    padding: 8px 0;
+    @include s_576(){
         display: none;
     }
 }
@@ -235,6 +236,9 @@ body{
     border-radius: 500px;
     background: $black-01;
     border: 1px solid transparent;
+    &:hover{
+        cursor: pointer;
+    }
 }
 .swiper-pagination-bullet-active{
     border: 1px solid $black-03;
@@ -247,10 +251,8 @@ body{
     left: 0;
     z-index: 10;
     width: fit-content;
-    &_align-center{
-
-    }
-    @include s_768{
+   
+    @include s_576{
         display: none;
     }
     &:hover{
@@ -274,7 +276,7 @@ body{
     right: 0;
     z-index: 10;
     width: fit-content;
-    @include s_768{
+    @include s_576{
         display: none;
     }
     &:hover{
@@ -331,8 +333,11 @@ body{
 .slider-default-button-prev{
     position: absolute;
     z-index: 10;
-    left: 1%;
+    left: 10px;
     top: 36.5%;
+    @include s_1200(){
+        left: 24px;
+    }
     &_align-center{
         top: 48%;
     }
@@ -349,8 +354,11 @@ body{
 .slider-default-button-next{
     position: absolute;
     z-index: 10;
-    right: 1%;
+    right: 10px;
     top: 36.5%;
+    @include s_1200(){
+        right: 24px;
+    }
     &_align-center{
         top: 48%;
     }
@@ -387,7 +395,7 @@ body{
 .custom-checkbox{
     display: flex;
     align-items: center;
-    column-gap: 4px;
+    column-gap: 8px;
     color: $black-1;
     font-family: 'SF Pro Display-Regular', sans-serif;
     font-size: 16px;
@@ -399,13 +407,13 @@ body{
         cursor: pointer;
     }
     &__input{
-        width: 32px;
-        min-width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
         border: 1px solid $black-01;
-        border-radius: 8px;
+        border-radius: 4px;
         appearance: none;
         cursor: pointer;
+        flex-shrink: 0;
     }
     &__input:checked{
         background: $prime-prime;

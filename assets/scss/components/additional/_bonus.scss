@@ -69,7 +69,7 @@
             position: relative;
             justify-content: space-between;
             align-items: center;
-            column-gap: 67px;
+            column-gap: 50px;
             padding: 18px 15px 0;
             box-sizing: border-box;
             border-radius: 32px;
@@ -79,13 +79,17 @@
             @include s_1200{
                 padding: 57px 64px;
             }
-            @include s_800{
-                padding: 24px 36px;
+            @include s_900{
+                column-gap: 30px;
+                padding: 24px 36px 24px 0;
                 justify-content: center;
+            }
+            @media (max-width:730px){
+                padding: 24px;
             }
         }
         &-content{
-            @include s_800{
+            @media (max-width:730px){
                 text-align: center;
             }
         }
@@ -102,7 +106,7 @@
           
         }
         &-picture{
-            @include s_800{
+            @media (max-width:730px){
                 display: none;
             }
         }
@@ -117,7 +121,7 @@
             @include s_1200{
                 font-size: 32px;
             }
-            @include s_800{
+            @media (max-width:730px){
                 font-size: 24px;
             }
         }
@@ -150,7 +154,7 @@
                 cursor: pointer;
                 box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
             }
-            @include s_800{
+            @media (max-width:730px){
                 width: 100%;
             }
         }

@@ -1,6 +1,6 @@
 .selections{
     margin-top: 44px;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
     @media (max-width: 1000px){
         margin-top: 32px;
     }
@@ -12,14 +12,15 @@
         width: 100%;
         grid-template-columns: repeat(21, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        gap: 32px 40px;
+        gap: 12px 40px;
+        align-items: center;
         @media (max-width: 1000px){
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
-            gap: 24px;
+            gap: 14px;
         }
-        @media (max-width: 480px){
-            gap: 16px;
+        @include s_576{
+            gap: 6px;
         }
     }
     &__title{
@@ -44,14 +45,13 @@
         @media (max-width: 1000px){
             min-height: 320px;
         }
-        @media (max-width:480px){
-            min-height: 200px;
-        }
         @media (max-width: 480px){
             display: flex;
             align-items: center;
             padding: 18px;
             justify-content: space-between;
+            min-height: 200px;
+            border-radius: 16px;
         }
         @media (max-width: 350px){
             flex-direction: column;
@@ -108,10 +108,11 @@
             }
         }
         &_slider{
-            padding: 5px;
+            padding: 10px 10px 15px 4.5px;
             box-sizing: border-box;
             background: none;
             overflow-x: hidden;
+            margin-right: -7px;
             @media (max-width:480px){
                 margin-bottom: 8px;
             }

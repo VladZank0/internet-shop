@@ -100,6 +100,7 @@ const read_more_slider = new Swiper ('.blog-page__read-more-block', {
 })
 const compareSlider = new Swiper('.comparison-page__main-slider', {
   spaceBetween: 55,
+  watchOverflow: true,
   slidesPerView: "auto",
   breakpoints: {
     0: {
@@ -118,6 +119,7 @@ const compareSlider = new Swiper('.comparison-page__main-slider', {
 });
 const compareSlider_fixed = new Swiper('.comparison-page__main-fixed-slider', {
   spaceBetween: 55,
+  watchOverflow: true,
   slidesPerView: "auto",
   breakpoints: {
     0: {
@@ -184,12 +186,20 @@ const product_images_thumbs_slider = new Swiper('.product-review__images-thumbs-
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
   breakpoints: {
-    0: {
+     
+    0:{
       spaceBetween: 2,
-      slidesPerView: "auto",
+      slidesPerView:4
     },
-    577: {
-      spaceBetween: 13
+    420:{
+      slidesPerView:4,
+      spaceBetween: 10,
+    },
+    490:{
+      slidesPerView:5
+    },
+    600: {
+    
     }
   },
 });
