@@ -1,8 +1,8 @@
 .advantages{
-    margin-top: 42px;
-    margin-bottom: 72px;
-    @include s_768{
-        margin-top: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include s_576{
+        padding-top: 32px;
     }
     &__logo{
         display: flex;
@@ -29,7 +29,7 @@
         column-gap: 3px;
         width: fit-content;
         margin: 0 auto 32px;
-        @include s_768{
+        @include s_576{
             margin: 0 0 32px 0;
         }
         &-text{
@@ -52,7 +52,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: 16px;
+        // row-gap: 16px;
         flex-grow: 1;
         border-radius: 16px;
         border: 1px solid $black-01;
@@ -73,6 +73,10 @@
             background: linear-gradient(180deg, #8FC3FF 0%, #6C7BFF 100%);
             width: 120px;
             height: 120px;
+            margin-bottom: 13px;
+            @include s_576{
+                margin-bottom: 16px;
+            }
             @include s_600{
                 width: 70px;
                 height: 70px;
@@ -88,7 +92,8 @@
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-            @include s_768{
+            margin-bottom: 8px;
+            @include s_576{
                 font-size: 24px;
             }
         }
@@ -99,6 +104,10 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            margin-bottom: 16px;
+            @include s_576{
+                margin-bottom: 12px;
+            }
         }
         &-link{
             display: flex;

@@ -21,9 +21,11 @@
                     <path d="M4.5759 4.575C4.85719 4.29379 5.23865 4.13582 5.6364 4.13582C6.03414 4.13582 6.41561 4.29379 6.6969 4.575L12.0009 9.879L17.3049 4.575C17.5878 4.30176 17.9667 4.15057 18.36 4.15399C18.7533 4.1574 19.1295 4.31516 19.4076 4.59327C19.6857 4.87138 19.8435 5.2476 19.8469 5.6409C19.8503 6.03419 19.6991 6.4131 19.4259 6.696L14.1219 12L19.4259 17.304C19.6991 17.5869 19.8503 17.9658 19.8469 18.3591C19.8435 18.7524 19.6857 19.1286 19.4076 19.4067C19.1295 19.6848 18.7533 19.8426 18.36 19.846C17.9667 19.8494 17.5878 19.6982 17.3049 19.425L12.0009 14.121L6.6969 19.425C6.414 19.6982 6.03509 19.8494 5.6418 19.846C5.2485 19.8426 4.87228 19.6848 4.59417 19.4067C4.31606 19.1286 4.1583 18.7524 4.15489 18.3591C4.15147 17.9658 4.30266 17.5869 4.5759 17.304L9.8799 12L4.5759 6.696C4.29469 6.41471 4.13672 6.03324 4.13672 5.6355C4.13672 5.23775 4.29469 4.85629 4.5759 4.575Z" fill="#CECECE"/>
                 </svg>
             </button>
-            <img class="modal-window__img busket-window__img" src="./assets/img/modals/product-img.png" alt="">
+            <a class="busket-window__img-link" href="#">
+                <img class="modal-window__img busket-window__img" src="./assets/img/modals/product-img.png" alt="">
+            </a>
             <p class="modal-window__title busket-window__title">Добавлен в корзину</p>
-            <p class="modal-window__text busket-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</p>
+            <a href="#" class="modal-window__text modal-window__link-text busket-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</a>
             <div class="busket-window__buttons">
                 <button class="busket-window__button default-btn">Перейти в корзину</button>
                 <button class="busket-window__button default-btn default-btn_ghost">Продолжить покупки</button>
@@ -38,12 +40,14 @@
                 </svg>
             </button>
             <form class="fast-buy-window__form">
-                <img class="modal-window__img fast-buy-window__img" src="./assets/img/modals/product-img.png" alt="">
-                <p class="modal-window__title fast-buy-window__title">Добавлен в корзину</p>
-                <p class="modal-window__text fast-buy-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</p>
+                <a href="#" class="fast-buy-window__img-link">
+                    <img class="modal-window__img fast-buy-window__img" src="./assets/img/modals/product-img.png" alt="">
+                </a>
+                <p class="modal-window__title fast-buy-window__title">Купить в один клик</p>
+                <a href="#" class="modal-window__text modal-window__link-text fast-buy-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</a>
                 
                 <label class="modal-window__label fast-buy-window__label">Ваш номер телефона
-                    <input class="modal-window__input default-input" type="text" placeholder="+7 900 123 45 67">
+                    <input class="modal-window__input default-input phone-input" type="text" placeholder="+7 900 123 45 67">
                 </label>
                
                 <button class="fast-buy-window__button default-btn">Оформить заказ</button>
@@ -67,7 +71,7 @@
             <p class="modal-window__text credit-window__text">Оставьте номер телефона, с вами свяжется сотрудник магазина и поможет с оформлением заявки на кредит</p>
             <form action="" class="credit-window-form">
                 <label class="modal-window__label">Ваш номер телефона
-                    <input class="modal-window__input default-input" type="text" placeholder="+7 900 123 45 67">
+                    <input class="modal-window__input default-input phone-input" type="text" placeholder="+7 900 123 45 67">
                 </label>
                 
                 <button class="credit-window__button default-btn">Получить консультацию</button>
@@ -86,11 +90,13 @@
                 </svg>
             </button>
             <form class="hold-window__form">
-                <img class="modal-window__img hold-window__img" src="./assets/img/modals/product-img.png" alt="">
+                <a href="#" class="hold-window__img-link">
+                    <img class="modal-window__img hold-window__img" src="./assets/img/modals/product-img.png" alt="">
+                </a>
                 <p class="modal-window__title hold-window__title">Напишем, как появится</p>
-                <p class="modal-window__text hold-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</p>
+                <a href="#" class="modal-window__text modal-window__link-text hold-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</a>
                 <label class="modal-window__label hold-window__label">Ваш номер телефона
-                    <input class="modal-window__input default-input" type="text" placeholder="+7 900 123 45 67">
+                    <input class="modal-window__input default-input phone-input" type="text" placeholder="+7 900 123 45 67">
                 </label>
                 <button class="hold-window__button default-btn">Сообщить о поступлении</button>
                 <label class="custom-checkbox hold-window__checkbox">
@@ -114,7 +120,7 @@
                     <textarea class="modal-window__input modal-window__input_text-area default-input question-window__question-input"></textarea>
                 </label>
                 <label class="modal-window__label question-window__label">Ваш номер телефона
-                    <input class="modal-window__input default-input" type="text" placeholder="+7 900 123 45 67">
+                    <input class="modal-window__input default-input phone-input" type="text" placeholder="+7 900 123 45 67">
                 </label>
                 <button class="question-window__button default-btn">Задать вопрос</button>
                 <label class="custom-checkbox question-window__checkbox">
@@ -138,7 +144,7 @@
                     <input class="modal-window__input default-input" type="text">
                 </label>
                 <label class="modal-window__label trade-in-window__label">Ваш номер телефона
-                    <input class="modal-window__input default-input" type="text" placeholder="+7 900 123 45 67">
+                    <input class="modal-window__input default-input phone-input" type="text" placeholder="+7 900 123 45 67">
                 </label>
                 <button class="trade-in-window__button default-btn">Получить предложение</button>
                 <label class="custom-checkbox trade-in-window__checkbox">
@@ -223,7 +229,7 @@
                 <p class="credit-order-window__message">Оставьте свой номер телефона, сотрудник магазина свяжется
                     с вами и подберёт оптимальное кредитное предложение</p>
                 <label class="modal-window__label question-window__label">Ваш номер телефона
-                    <input class="modal-window__input default-input" type="text" placeholder="+7 900 123 45 67">
+                    <input class="modal-window__input default-input phone-input" type="text" placeholder="+7 900 123 45 67">
                 </label>
                 <button class="credit-order-window__button default-btn">Получить консультацию</button>
                 <label class="custom-checkbox question-window__checkbox">
@@ -240,9 +246,11 @@
                     <path d="M4.5759 4.575C4.85719 4.29379 5.23865 4.13582 5.6364 4.13582C6.03414 4.13582 6.41561 4.29379 6.6969 4.575L12.0009 9.879L17.3049 4.575C17.5878 4.30176 17.9667 4.15057 18.36 4.15399C18.7533 4.1574 19.1295 4.31516 19.4076 4.59327C19.6857 4.87138 19.8435 5.2476 19.8469 5.6409C19.8503 6.03419 19.6991 6.4131 19.4259 6.696L14.1219 12L19.4259 17.304C19.6991 17.5869 19.8503 17.9658 19.8469 18.3591C19.8435 18.7524 19.6857 19.1286 19.4076 19.4067C19.1295 19.6848 18.7533 19.8426 18.36 19.846C17.9667 19.8494 17.5878 19.6982 17.3049 19.425L12.0009 14.121L6.6969 19.425C6.414 19.6982 6.03509 19.8494 5.6418 19.846C5.2485 19.8426 4.87228 19.6848 4.59417 19.4067C4.31606 19.1286 4.1583 18.7524 4.15489 18.3591C4.15147 17.9658 4.30266 17.5869 4.5759 17.304L9.8799 12L4.5759 6.696C4.29469 6.41471 4.13672 6.03324 4.13672 5.6355C4.13672 5.23775 4.29469 4.85629 4.5759 4.575Z" fill="#CECECE"/>
                 </svg>
             </button>
-            <img class="modal-window__img out-of-stock-window__img" src="./assets/img/modals/product-img.png" alt="">
+            <a href="#" class="out-of-stock-window__img-link">
+                <img class="modal-window__img out-of-stock-window__img" src="./assets/img/modals/product-img.png" alt="">
+            </a>
             <p class="modal-window__title out-of-stock-window__title">Этот товар раскупили</p>
-            <p class="modal-window__text out-of-stock-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</p>
+            <a href="#" class="modal-window__text modal-window__link-text out-of-stock-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</a>
             <div class="out-of-stock-window__buttons">
                 <button class="out-of-stock-window__button default-btn">Заменить</button>
                 <button class="out-of-stock-window__button default-btn default-btn_ghost">Убрать из корзины</button>
@@ -256,9 +264,11 @@
                     <path d="M4.5759 4.575C4.85719 4.29379 5.23865 4.13582 5.6364 4.13582C6.03414 4.13582 6.41561 4.29379 6.6969 4.575L12.0009 9.879L17.3049 4.575C17.5878 4.30176 17.9667 4.15057 18.36 4.15399C18.7533 4.1574 19.1295 4.31516 19.4076 4.59327C19.6857 4.87138 19.8435 5.2476 19.8469 5.6409C19.8503 6.03419 19.6991 6.4131 19.4259 6.696L14.1219 12L19.4259 17.304C19.6991 17.5869 19.8503 17.9658 19.8469 18.3591C19.8435 18.7524 19.6857 19.1286 19.4076 19.4067C19.1295 19.6848 18.7533 19.8426 18.36 19.846C17.9667 19.8494 17.5878 19.6982 17.3049 19.425L12.0009 14.121L6.6969 19.425C6.414 19.6982 6.03509 19.8494 5.6418 19.846C5.2485 19.8426 4.87228 19.6848 4.59417 19.4067C4.31606 19.1286 4.1583 18.7524 4.15489 18.3591C4.15147 17.9658 4.30266 17.5869 4.5759 17.304L9.8799 12L4.5759 6.696C4.29469 6.41471 4.13672 6.03324 4.13672 5.6355C4.13672 5.23775 4.29469 4.85629 4.5759 4.575Z" fill="#CECECE"/>
                 </svg>
             </button>
-            <img class="modal-window__img combo-window__img" src="./assets/img/modals/product-img.png" alt="">
+            <a href="#" class="combo-window__img-link">
+                <img class="modal-window__img combo-window__img" src="./assets/img/modals/product-img.png" alt="">
+            </a>
             <p class="modal-window__title combo-window__title">Этот товар раскупили</p>
-            <p class="modal-window__text combo-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</p>
+            <a href="#" class="modal-window__text modal-window__link-text combo-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</a>
             <p class="modal-window__text combo-window__message">Если его убрать из корзины уменьшится скидка на остальные товары из комбо набора</p>
             <div class="combo-window__buttons">
                 <button class="combo-window__button default-btn">Редактировать комбо</button>
@@ -928,8 +938,10 @@
             
             <p class="modal-window__title review-write-window__title">Оставьте отзыв о товаре</p>
             <div class="review-write-window__product-info">
-                <img class="modal-window__img review-write-window__img" src="./assets/img/modals/product-img.png" alt="">
-                <p class="modal-window__text review-write-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</p>
+                <a href="#" class="modal-window__img-link">
+                    <img class="modal-window__img review-write-window__img" src="./assets/img/modals/product-img.png" alt="">
+                </a>
+                <a href="#" class="modal-window__text modal-window__link-text review-write-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</a>
             </div>
             <form action="" class="review-write-window-form">
                 <div class="review-write-window__rating">
@@ -977,7 +989,7 @@
                     <input type="file" name="images[]" class="upload-files__input" accept=".jpg, .jpeg, .png, .webp" multiple="">
                 </label>
                 <label class="modal-window__label">Ваш номер телефона
-                    <input class="modal-window__input default-input" type="text" placeholder="+7 900 123 45 67">
+                    <input class="modal-window__input default-input phone-input" type="text" placeholder="+7 900 123 45 67">
                 </label>
                 
                 <button class="review-write-window__button default-btn">Оставить отзыв</button>
@@ -998,7 +1010,7 @@
             <div class="fast-view-window__about">
                 <img class="modal-window__img fast-view-window__img" src="./assets/img/modals/product-img.png" alt="">
                 <div class="fast-view-window__about-content">
-                    <p class="modal-window__text fast-view-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</p>
+                    <a href="#" class="modal-window__text modal-window__link-text fast-view-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</a>
                     <div class="fast-view-window__rating">
                         <div class="fast-view-window__rating-stars">
                             <div class="rating-star rating-star_active">
@@ -1117,5 +1129,7 @@
     <script src="./assets/js/custom-select.js"></script>
     <script src="./assets/js/sliders.js"></script>
     <script src="./assets/js/range.js"></script>
+    <script src="./assets/lib/validation/imask.js"></script>
+    <script src="./assets/js/validation.js"></script>
 </body>
 </html>

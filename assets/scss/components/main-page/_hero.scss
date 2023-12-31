@@ -1,7 +1,7 @@
 .hero{
     padding-top: 24px;
     @include s_576{
-        padding: 16px 0;
+        padding-top: 16px;
     }
    &__inner{
         overflow: hidden;

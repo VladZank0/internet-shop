@@ -1,13 +1,16 @@
 .watched{
-    margin-bottom: 80px;
-    @include s_1260{
-        margin-bottom: 96px;
-    }
-    @include s_768{
-        margin-bottom: 71px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    @include s_576{
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
     &__title{
+        margin-bottom: 18px;
         text-align: left;
+        @include s_768{
+            margin-bottom: 6px;
+        }
     }
     &__wrapper{
         display: flex;
@@ -15,13 +18,13 @@
         justify-content: space-between;
         width: 100%;
         overflow-x: auto;
+        overflow-y: hidden;
         padding: 10px 5px;
         &::-webkit-scrollbar{
             display: none;
         }
         -ms-overflow-style: none;  
         scrollbar-width: none; 
-        overflow-y: scroll;
     }
     &__item{
         display: flex;

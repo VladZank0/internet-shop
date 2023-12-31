@@ -1,4 +1,9 @@
 .popular-categories{
+    padding-top: 8px;
+    padding-bottom: 40px;
+    @include s_768{
+        padding-top: 24px;
+    }
     &__title{
         text-align: center;
         @media(max-width: 768px){
@@ -283,12 +288,10 @@
     &__banner{
         display: flex;
         border-radius: 16px;
-        margin-bottom: 88px;
         box-sizing: border-box;
         background: $prime-prime-10;
         padding: 18px 64px;
         @media(max-width: 768px){
-            margin-bottom: 72px;
             padding: 24px 38px;
             align-items: flex-start;
             justify-items: center;

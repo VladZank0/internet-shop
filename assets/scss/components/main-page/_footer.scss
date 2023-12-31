@@ -31,10 +31,19 @@
                 font-size: 24px;
             }
         }
+        @include s_576{
+            margin: 0 auto 38px auto;
+        }
     }
     &__inner{
         padding: 35px 18px 40px;
         box-sizing: border-box;
+        @include s_768{
+            padding-top: 43px;
+        }
+        @include s_576{
+            padding-top: 24px;
+        }
     } 
    
 }
@@ -149,9 +158,6 @@
         font-family: 'SF Pro Display-Bold', sans-serif;
         font-size: 32px;
         font-weight: 700;
-        @include s_460{
-            font-size: 27px;
-        }
         &:hover{
             color: $prime-prime;
         }
@@ -184,7 +190,7 @@
     justify-content: space-between;
     align-items: flex-end;
     column-gap: 40px;
-    @include s_768{
+    @include s_576{
         flex-direction: column-reverse;
         align-items: flex-start;
     }
@@ -197,7 +203,7 @@
         max-width: 1050px;
         width: 100%;
         justify-content: space-between;
-        @include s_768{
+        @include s_576{
             flex-direction: column;
             align-items: flex-start;
         }
@@ -246,7 +252,7 @@
         &_mobile{
             display: none;
         }
-        @include s_768{
+        @include s_576{
             display: none;
             &_mobile{
                 display: block;

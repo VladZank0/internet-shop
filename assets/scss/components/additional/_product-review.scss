@@ -118,15 +118,16 @@
             overflow: hidden;
             max-width: 560px;
             margin: 0 auto;
-            // @include s_600{
-            //     max-width: unset;
-            // }
+
             .swiper-slide{
                 width: 80px !important;
                 height: 80px !important;
                 border-radius: 8px;
                 border: 1px solid transparent;
                 overflow: hidden;
+                &:hover{
+                    cursor: pointer;
+                }
             }
             .swiper-slide-thumb-active{
                 border: 1px solid $prime-prime;
@@ -311,13 +312,17 @@
             width: 100%;
             justify-content: space-between;
             margin-bottom: 8px;
+            row-gap: 4px;
+            column-gap: 8px;
+            flex-wrap: wrap;
+            
         }
         &-label{
             color: $black-1;
         }
         &-value{
             color: $black-07;
-            text-align: right;
+            text-align: left;
         }
         &-more-button{
             font-family: 'SF Pro Display-Regular', sans-serif;
@@ -719,7 +724,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 column-gap: 8px;
-                row-gap: 8px;
+                row-gap: 4px;
                 color: var(--black-07, #595959);
                 font-family: 'SF Pro Display-Regular', sans-serif;
                 font-size: 16px;
@@ -728,9 +733,6 @@
                 line-height: normal;
                 &-label{
                     white-space: nowrap;
-                    @include s_576{
-                        font-weight: bold;
-                    }
                 }
                 @include s_576{
                     flex-direction: column;
@@ -1082,7 +1084,6 @@
         padding: 24px 0;
     }
     box-sizing: border-box;
-    margin-bottom: 48px;
     &__header{
         margin-bottom: 24px;
         @include s_576{

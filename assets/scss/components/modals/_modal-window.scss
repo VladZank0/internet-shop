@@ -33,7 +33,6 @@
     }
     &__title{
         box-sizing: border-box;
-        padding-right: 30px;
         color: var(--black-1, #31373C);
         font-family: 'SF Pro Display-Bold', sans-serif;
         font-size: 32px;
@@ -45,6 +44,13 @@
             font-size: 24px;
         }
     }
+    &__link-text{
+        display: block;
+        cursor: pointer;
+    }
+    &__link-text:hover{
+        color: $prime-prime;
+    }
     &__text{
         color: var(--black-1, #31373C);
         font-family: 'SF Pro Display-Medium', sans-serif;
@@ -52,13 +58,14 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        
         @include s_576{
             font-size: 16px;
         }
     }
     &__close{
         position: absolute;
-        top: 16px;
+        top: 13px;
         right: 16px;
         width: 48px;
         height: 48px;
@@ -139,6 +146,7 @@
         'img text'
         'img buttons';
         max-width: 640px;
+        padding-top: 32px;
         @include s_576{
             grid-template-areas: 
             'title title'
@@ -147,7 +155,9 @@
         }
     }
     &__img{
-        grid-area: img;
+        &-link{
+            grid-area: img;
+        }
         margin-right: 16px;
         @include s_576{
             margin-bottom: 12px;
@@ -191,7 +201,9 @@
         }
     }
     &__img{
-        grid-area: img;
+        &-link{
+            grid-area: img;
+        }
         margin-right: 16px;
         @include s_576{
             margin-bottom: 12px;
@@ -240,7 +252,9 @@
     &__img{
         width: 120px;
         height: 120px;
-        grid-area: img;
+        &-link{
+            grid-area: img;
+        }
         margin-right: 16px;
         @include s_576{
             width: 80px;
@@ -291,6 +305,7 @@
     }
 }
 .fast-buy-window{
+    
     &__form{
         display: grid;
         grid-auto-flow: column;
@@ -302,6 +317,7 @@
         'img button'
         'checkbox checkbox';
         max-width: 640px;
+        padding-top: 8px;
         @include s_576{
             grid-template-areas: 
             'title title'
@@ -312,7 +328,9 @@
         }
     }
     &__img{
-        grid-area: img;
+        &-link{
+            grid-area: img;
+        }
         margin-right: 16px;
         @include s_576{
             margin-bottom: 12px;
@@ -452,36 +470,38 @@
         display: grid;
         grid-auto-flow: column;
         grid-template-areas: 
-        'hold-img hold-title'
-        'hold-img hold-text'
-        'hold-img hold-input'
-        'hold-img hold-button'
-        'hold-checkbox hold-checkbox';
+        'img title'
+        'img text'
+        'img input'
+        'img button'
+        'checkbox checkbox';
         max-width: 640px;
         @include s_576{
             grid-template-areas: 
-            'hold-title hold-title'
-            'hold-img hold-text'
-            'hold-input hold-input'
-            'hold-button hold-button'
-            'hold-checkbox hold-checkbox';
+            'title title'
+            'img text'
+            'input input'
+            'button button'
+            'checkbox checkbox';
         }
     }
     &__img{
-        grid-area: hold-img;
+        &-link{
+            grid-area: img;
+        }
         margin-right: 16px;
         @include s_576{
             margin-bottom: 12px;
         }
     }
     &__title{
-        grid-area: hold-title;
+        grid-area: title;
         @include s_576{
             margin-bottom: 16px;
         }
     }
     &__label{
-        grid-area: hold-input;
+        grid-area: input;
         max-width: 275px;
         @include s_576{
             max-width: none;
@@ -493,14 +513,14 @@
         @include s_576{
             margin-top: 12px;
         }
-        grid-area: hold-checkbox;
+        grid-area: checkbox;
     }
     &__text{
-        grid-area: hold-text;
+        grid-area: text;
         margin-bottom: 16px;
     }
     &__button{
-        grid-area: hold-button;
+        grid-area: button;
         width: 100%;
         margin-top: 17px;
     }

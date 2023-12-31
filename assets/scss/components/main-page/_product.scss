@@ -326,6 +326,7 @@
     }
     &__credit-button{
         &:hover{
+            cursor: pointer;
             transition: .3s;
             color: #7AABFF;
         }
@@ -334,9 +335,13 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
+        border: none;
+        outline: none;
+        background-color: transparent;
     }
     &__fast-buy-button{
         &:hover{
+            cursor: pointer;
             transition: .3s;
             color: #7AABFF;
         }
@@ -345,6 +350,9 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
+        border: none;
+        outline: none;
+        background-color: transparent;
     }
     &__price{
         display: flex;

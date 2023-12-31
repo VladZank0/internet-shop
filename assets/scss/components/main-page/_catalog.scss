@@ -345,3 +345,132 @@
         
     }
 }
+
+.mobile-filter{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    padding-bottom: 86px;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100%;
+    z-index: 10;
+    
+    &-btn{
+        &_active{
+            .tab-bar__item-icon svg path{
+                fill: $prime-prime;
+            }
+            .tab-bar__item-text{
+                color: $prime-prime;
+            }
+        }
+        &__count{
+            display: block;
+            min-width: 27px;
+            width: fit-content;
+            text-align: center;
+            padding: 4px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            background-color: $prime-prime;
+            color: white;
+            font-family: 'SF Pro Display-Regular', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+        }
+    }
+    &__block{
+        width: 400px;
+        height: 100%;
+        background: var(--black-005, #FCFCFC);
+    }
+    &__close-btn{
+        display: inline-flex;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        outline: none;
+        background: transparent;
+        border: none;
+    }
+    &_active{
+        display: block;
+        @media(min-width:1200px){
+            display: none;
+        }
+    }
+
+}
+.mobile-sort{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    padding: 40px 16px 110px 16px;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100%;
+    z-index: 10;
+    color: var(--black-1, #31373C);
+    font-family: 'SF Pro Display-Regular', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        height: 100%;
+        overflow-y: auto;
+        &-item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            &_active{
+                color: $prime-prime;
+                &::after{
+                    content: url('../img/catalog/bi_check.png');
+                    position: absolute;
+                    height: 24px;
+                    width: 20px;
+                    right: 0;
+                }
+            }
+        }
+    }
+    &-btn{
+        &_active{
+            .tab-bar__item-icon svg path{
+                fill: $prime-prime;
+            }
+            .tab-bar__item-text{
+                color: $prime-prime;
+            }
+        }
+    }
+    &__close-btn{
+        display: inline-flex;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        outline: none;
+        background: transparent;
+        border: none;
+    }
+    &_active{
+        display: block;
+        @media(min-width:1200px){
+            display: none;
+        }
+    }
+     
+}

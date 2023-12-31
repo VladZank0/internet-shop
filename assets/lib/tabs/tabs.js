@@ -16,16 +16,3 @@ function tabs(e){
     tabsParent.querySelector(contentID).classList.add('tab-content_active');
     
 }
-
-    let btn = document.querySelector('.product-review__characteristics-more-button');
-
-    if(btn){
-        btn.addEventListener('click', ()=>{
-           
-            const tabContent = document.querySelector(".product-tabs");
-            const yOffset = tabContent.offsetTop;  
-            window.scrollTo({top: yOffset, behavior: 'smooth'});  
-            document.getElementById('characteristics-tab').click();
-           
-        })
-    }

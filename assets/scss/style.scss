@@ -128,7 +128,6 @@ body{
 }
 .shop-title{
     text-align: center;
-    margin: 32px 0;
     color: $black-1;
     font-family: 'SF Pro Display-Bold', sans-serif;
     font-size: 40px;
@@ -136,12 +135,13 @@ body{
     font-weight: 700;
     padding: 0 18px;
     line-height: normal;
-    @include s_1260(){
-        margin: 24px 0 58px 0;
-    }
+    margin: 24px auto;
     @include s_768(){
+        margin: 24px auto 34px;
         font-size: 32px;
-        margin: 16px 0 40px 0;
+    }
+    @include s_576(){
+        margin: 16px 0;
     }
 }
 .section-title{
@@ -153,7 +153,7 @@ body{
     line-height: normal;
     text-align: left;
     margin-bottom: 28px;
-    @include s_768(){
+    @include s_576(){
         font-size: 24px;
     }
 }
@@ -293,23 +293,14 @@ body{
     }
 }
 .products-row{
-    margin-bottom: 64px;
-    &:not(:last-child){
-        @media (max-width: 1200px){
-            margin-bottom: 32px;
-        }
-        @include s_768(){
-            margin-bottom: 56px;
-        }
+    padding-top: 48px;
+    padding-bottom: 24px;
+    @include s_768(){
+        padding-bottom: 16px;
     }
-    &:last-child{
-        margin-bottom: 72px;
-        @media (max-width: 1200px){
-            margin-bottom: 80px;
-        }
-        @include s_768(){
-            margin-bottom: 64px;
-        }
+    @include s_576(){
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
     &__inner{
         position: relative;
