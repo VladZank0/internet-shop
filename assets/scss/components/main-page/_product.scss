@@ -140,6 +140,11 @@
     &__preview{
         position: relative;
         margin-bottom: 10px;
+        &-img{
+            max-width: 100%;
+            width: 208px;
+            height: auto;
+        }
         @include s_576{
             &-img{
                 width: 134px;
