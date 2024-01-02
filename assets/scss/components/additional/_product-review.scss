@@ -244,11 +244,17 @@
         border-radius: 8px;
         border: 2px solid $black-01;
         overflow: hidden;
+        &:hover{
+            border: 2px solid $prime-prime;
+        }
         &_active{
             border: 2px solid $prime-prime;
         }
         &_disabled{
             border: 2px solid $black-005;
+            &:hover{
+                border: 2px solid $black-005;
+            }
             img{
                 opacity: 0.25;
             }
@@ -273,6 +279,9 @@
         display: block;
         border-radius: 8px;
         border: 1px solid $black-03;
+        &:hover{
+            border: 1px solid $prime-prime;
+        }
         &-list{
             display: flex;
             flex-wrap: wrap;
@@ -295,6 +304,9 @@
             border: 1px solid $prime-prime;
         }
         &_disabled{
+            &:hover{
+                border: 1px solid $black-03;
+            }
             a{
                 color: $black-03;
             }
@@ -368,6 +380,9 @@
                 width: 100vw;
                 background-color: $prime-prime-5;
                 z-index: -1;
+                @include s_380{
+                    left: -9px;
+                }
             }
         } 
         &-title{

@@ -22,5 +22,13 @@
            
         })
     }
-
+    
+    document.querySelectorAll('button.product__rating-link').forEach(e =>{
+        e.addEventListener(('click'),()=>{
+            const tabContent = document.querySelector(".product-tabs");
+            const yOffset = tabContent.offsetTop;  
+            window.scrollTo({top: yOffset, behavior: 'smooth'});  
+            document.getElementById('reviews-tab').click();
+        })
+    })
 }())

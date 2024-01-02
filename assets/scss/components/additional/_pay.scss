@@ -1,13 +1,13 @@
 .pay{
-    padding-top: 40px;
-    margin-bottom: 62px;
-    
-    @include s_900{
-        margin-bottom: 62px;
+    padding-top: 32px;
+    padding-bottom: 22px;
+    @include s_768{
+        padding-top: 34px;
+        padding-bottom: 32px;
     }
     @include s_576{
-        margin-bottom: 24px;
-        padding-top: 24px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     &_no-padding{
         padding: 0;

@@ -14,16 +14,7 @@
             catalog.classList.remove('catalog__inner_active');
         }  
     })
-    mobile_catalogBtn.addEventListener('click', () => {
-        if(mobile_catalogBtn.classList.contains('mobile_catalogBtn_active')){
-            clear_btns();
-        }
-        mobile_catalogBtn.classList.toggle('mobile-catalog-btn_active');
-        mobile_catalog.classList.toggle('mobile-catalog_active');
-        if(body.style.overflow === "hidden"){
-            body.style.overflow = 'auto';
-        }else body.style.overflow = 'hidden';
-    })
+    
 
 const menu = new MmenuLight( document.querySelector( '#menu' ), 'all');
 var navigator = menu.navigation({
@@ -72,21 +63,6 @@ var navigator = menu.navigation({
         })
     }
 
-    function clear_btns(){
-        if(mobile_sort_btn.classList.contains('mobile-sort-btn_active')){
-            mobile_sort_btn.classList.remove('mobile-sort-btn_active');
-            mobile_sort.classList.remove('mobile-sort_active');
-        }
-        if(mobile_catalogBtn.classList.contains('mobile-catalog-btn_active')){
-            mobile_catalogBtn.classList.remove('mobile-catalog-btn_active');
-            mobile_catalog.classList.remove('mobile-catalog_active');
-        }
-        if(mobile_filter.classList.contains('mobile-filter_active')){
-            mobile_filter.classList.remove('mobile-filter_active');
-            mobile_filter_btn.classList.remove('mobile-filter-btn_active');
-        }  
-    }
-
     let mobile_filter_btn = document.querySelector('.mobile-filter-btn');
     let mobile_filter = document.querySelector('.mobile-filter');
     let mobile_filter_close = document.querySelector('.mobile-filter__close-btn');
@@ -95,9 +71,46 @@ var navigator = menu.navigation({
     let mobile_sort = document.querySelector('.mobile-sort');
     let mobile_sort_close = document.querySelector('.mobile-sort__close-btn');
 
+    function sort_close(){
+        mobile_sort_btn.classList.remove('mobile-sort-btn_active');
+        mobile_sort.classList.remove('mobile-sort_active');
+        console.log('выполнение закрытия сорт')
+    }
+    function catalog_close(){
+        mobile_catalogBtn.classList.remove('mobile-catalog-btn_active');
+        mobile_catalog.classList.remove('mobile-catalog_active');
+        if(body.style.overflow === "hidden"){
+            body.style.overflow = 'auto';
+        }else body.style.overflow = 'hidden';
+    }
+    function filter_close(){
+        mobile_filter.classList.remove('mobile-filter_active');
+        mobile_filter_btn.classList.remove('mobile-filter-btn_active');
+    }
+
+    if(mobile_catalogBtn){
+        mobile_catalogBtn.addEventListener('click', () => {
+            if(mobile_filter_btn || mobile_sort_btn){
+                if(mobile_filter_btn.classList.contains('mobile-filter-btn_active')){
+                    filter_close();
+                }else if(mobile_sort_btn.classList.contains('mobile-sort-btn_active')){
+                    sort_close();
+                }
+            }
+            mobile_catalogBtn.classList.toggle('mobile-catalog-btn_active');
+            mobile_catalog.classList.toggle('mobile-catalog_active');
+            if(body.style.overflow === "hidden"){
+                body.style.overflow = 'auto';
+            }else body.style.overflow = 'hidden';
+        })
+    }
     if(mobile_filter_btn){
         mobile_filter_btn.addEventListener('click', ()=>{
-            clear_btns();
+            if(mobile_sort_btn.classList.contains('mobile-sort-btn_active')){
+                sort_close();
+            }else if(mobile_catalogBtn.classList.contains('mobile-catalog-btn_active')){
+                catalog_close();
+            }
             mobile_filter.classList.toggle('mobile-filter_active');
             mobile_filter_btn.classList.toggle('mobile-filter-btn_active');            
         })
@@ -106,11 +119,13 @@ var navigator = menu.navigation({
             mobile_filter_btn.classList.remove('mobile-filter-btn_active');
         })
     }
-    
-  
     if(mobile_sort_btn){
         mobile_sort_btn.addEventListener('click', ()=>{
-            clear_btns();
+            if(mobile_filter_btn.classList.contains('mobile-filter-btn_active')){
+                filter_close();
+            }else if(mobile_catalogBtn.classList.contains('mobile-catalog-btn_active')){
+                catalog_close();
+            }
             mobile_sort.classList.toggle('mobile-sort_active');
             mobile_sort_btn.classList.toggle('mobile-sort-btn_active');
         })

@@ -1,4 +1,8 @@
 .catalog-page{
+    margin-bottom: 32px;
+    @include s_768{
+        margin-bottom: 0;
+    }
     &__title{
         color: $black-1;
         font-family: 'SF Pro Display-Bold', sans-serif;
@@ -91,7 +95,6 @@
     &__dual{
         display: flex;
         column-gap: 24px;
-        margin-bottom: 72px;
     }
     &__filter{
         width: 400px;
@@ -359,6 +362,10 @@
     display: flex;
     column-gap: 7.25px;
     align-items: center;
+    @include s_768{
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
     &__item{
         display: inline-flex;
     }

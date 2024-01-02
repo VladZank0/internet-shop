@@ -1,11 +1,14 @@
 .news{
-    
     &__title{
         margin-bottom: 0;
     }
     &__show-all-row{
         flex-direction: row;
         align-items: flex-end;
+        margin-bottom: 24px;
+        @include s_576{
+            margin-bottom: 18px;
+        }
         @include s_600{
             align-items: center;
         }
@@ -32,6 +35,10 @@
         overflow-x: hidden;
         padding-top: 32px;
         padding-bottom: 48px;
+        @include s_576{
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
     }
     &__show-all-btn-text{
         color: #FFF;

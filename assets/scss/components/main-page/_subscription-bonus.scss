@@ -155,9 +155,6 @@
             font-family: 'SF Pro Display-Bold', sans-serif;
             font-size: 32px;
             font-weight: 700;
-            @include s_1430{
-                font-size: 24px;
-            }
             @include s_576{
                 font-size: 24px;
             }

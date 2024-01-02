@@ -1,10 +1,9 @@
 .faq{
-    margin-bottom: 72px;
-    @include s_900{
-        margin-bottom: 48px;
-    }
-    @include s_768{
-        margin-bottom: 40px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include s_576{
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
     &__title{
         color: $black-1;
@@ -99,10 +98,5 @@
             }
         }
     }
-    &_min-margin{
-        margin-bottom: 32px;
-        @include s_576{
-            margin-bottom: 24px;
-        }
-    }
+
 }

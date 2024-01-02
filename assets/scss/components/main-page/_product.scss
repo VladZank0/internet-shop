@@ -61,6 +61,8 @@
         font-style: normal;
         font-weight: 400;
         cursor: pointer;
+        border: none;
+        background-color: transparent;
         &:hover{
             color: #7AABFF;
         }
@@ -330,6 +332,7 @@
             transition: .3s;
             color: #7AABFF;
         }
+        text-align: left;
         color: $prime-prime;
         font-family: 'SF Pro Display-Regular', sans-serif;
         font-size: 14px;
@@ -345,6 +348,7 @@
             transition: .3s;
             color: #7AABFF;
         }
+        text-align: left;
         color: $prime-prime;
         font-family: 'SF Pro Display-Regular', sans-serif;
         font-size: 14px;
