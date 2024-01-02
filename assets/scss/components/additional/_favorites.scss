@@ -50,6 +50,9 @@
         margin-bottom: 16px;
         justify-items: left;
         margin-bottom: 64px;
+        &-item{
+            width: 100%;
+        }
         @include s_900{
             gap: 12px;
             margin-bottom: 41px;
