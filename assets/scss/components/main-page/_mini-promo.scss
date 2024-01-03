@@ -90,7 +90,7 @@
             box-sizing: border-box;
             justify-content: flex-end;
             row-gap: 8px;
-            background-image: url("../img/mini-promo/fon1.svg");
+            background-image: url("../img/mini-promo/fon1.png");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 0 25%;
@@ -128,7 +128,7 @@
                 *{
                     min-width: 264px;
                 }
-                background: url("../img/mini-promo/fon2-big.svg");
+                background: url("../img/mini-promo/fon2-big.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: 0% 25%;
@@ -136,7 +136,7 @@
                 align-items: flex-end;
                 white-space: nowrap;
                 @include s_600{
-                    background-image: url("../img/mini-promo/fon2.svg");
+                    background-image: url("../img/mini-promo/fon2.png");
                     white-space: unset;
                     align-items: flex-start;
                 }
