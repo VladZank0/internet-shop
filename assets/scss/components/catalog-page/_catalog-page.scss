@@ -352,6 +352,8 @@
         @include s_768{
             row-gap: 12px;
             padding: 0;
+            padding-top: 16px;
+            padding-bottom: 16px;
         }
         @include s_520{
             flex-direction: column-reverse;
@@ -362,10 +364,6 @@
     display: flex;
     column-gap: 7.25px;
     align-items: center;
-    @include s_768{
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
     &__item{
         display: inline-flex;
     }

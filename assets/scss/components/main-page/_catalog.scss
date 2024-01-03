@@ -141,11 +141,14 @@
     padding-left: 16px !important;
     border: none;
     padding-top: 5px !important;
-    margin-bottom: 56px !important;
+    margin-bottom: 70px !important;
     transition: none !important;
     &::-webkit-scrollbar {
         display: none !important;
     }
+}
+.mobile-catalog_catalog-page .mm-spn--open{
+    margin-bottom: 110px !important;
 }
 .mm-spn{
     transition: none !important;

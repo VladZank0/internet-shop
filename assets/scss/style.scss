@@ -162,9 +162,10 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 39px;
+    flex-wrap: wrap;
+    row-gap: 16px;
     @include s_576{
         flex-direction: column;
-        row-gap: 16px;
         align-items: flex-start;
     }
     @include s_700(){

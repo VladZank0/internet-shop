@@ -7,6 +7,7 @@
     }
     @include s_576{
         padding: 24px 0;
+        padding-bottom: 0;
     }
     &__title{
         color: $black-1;
@@ -163,6 +164,12 @@
         row-gap: 40px;
         max-width: 822px;
         box-sizing: border-box;
+        @include s_768{
+            row-gap: 12px;
+            padding: 0;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
         @include s_520{
             flex-direction: column-reverse;
         }
