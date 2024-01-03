@@ -90,7 +90,7 @@
             box-sizing: border-box;
             justify-content: flex-end;
             row-gap: 8px;
-            background-image: url("../img/mini-promo/fon1.png");
+            background-image: url("../img/mini-promo/fon1-big.webp");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 0 25%;
@@ -101,6 +101,9 @@
             max-width: 100%;
             @include s_700{
                 padding: 16px;
+            }
+            @include s_600{
+                background-image: url("../img/mini-promo/fon1.webp");
             }
         }
         &_bottom{
@@ -128,7 +131,7 @@
                 *{
                     min-width: 264px;
                 }
-                background: url("../img/mini-promo/fon2-big.png");
+                background: url("../img/mini-promo/fon2-big.webp");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: 0% 25%;
@@ -136,7 +139,7 @@
                 align-items: flex-end;
                 white-space: nowrap;
                 @include s_600{
-                    background-image: url("../img/mini-promo/fon2.png");
+                    background-image: url("../img/mini-promo/fon2.webp");
                     white-space: unset;
                     align-items: flex-start;
                 }
