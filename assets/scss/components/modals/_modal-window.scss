@@ -23,13 +23,16 @@
     &__container{
         position: relative;
         background-color: white;
-        padding: 24px;
+        padding: 32px 24px;
         box-sizing: border-box;
         border-radius: 16px;
         box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);
         overflow-y: auto;
         height: fit-content;
         margin: auto;
+        @include s_576{
+            padding: 16px;
+        }
     }
     &__title{
         box-sizing: border-box;
@@ -40,6 +43,7 @@
         font-weight: bold;
         line-height: normal;
         margin-bottom: 8px;
+        margin-right: 25px;
         @include s_576{
             font-size: 24px;
         }
@@ -67,8 +71,8 @@
         position: absolute;
         top: 13px;
         right: 16px;
-        width: 48px;
-        height: 48px;
+        width: 24px;
+        height: 24px;
         margin: 0;
         padding: 0;
         display: flex;
@@ -153,7 +157,6 @@
         'img text'
         'img buttons';
         max-width: 640px;
-        padding-top: 32px;
         @include s_576{
             grid-template-areas: 
             'title title'
@@ -312,7 +315,6 @@
     }
 }
 .fast-buy-window{
-    
     &__form{
         display: grid;
         grid-auto-flow: column;
@@ -324,7 +326,6 @@
         'img button'
         'checkbox checkbox';
         max-width: 640px;
-        padding-top: 8px;
         @include s_576{
             grid-template-areas: 
             'title title'
@@ -372,7 +373,7 @@
 }
 .credit-window{
     &__container{
-        max-width: 640px;
+        max-width: 640px; 
     }
     &__text{
         margin-bottom: 16px;
@@ -536,7 +537,7 @@
     &__container{
         max-width: 640px;
         width: 100%;
-        padding-top: 32px;
+        
     }
     &__img{
         margin-right: 16px;
@@ -580,6 +581,7 @@
     &__container{
         max-width: 640px;
         width: 100%;
+        
     }
     &__img{
         margin-right: 16px;
@@ -755,6 +757,7 @@
         max-width: 1410px;
         width: 100%;
         overflow: hidden;
+        padding-top: 40px;
         @include s_1200(){
             padding: 40px 24px;
         }
@@ -791,7 +794,6 @@
     &__container{
         max-width: 640px;
         width: 100%;
-        padding-top: 49px;
     }
     &__about{
         display: flex;
@@ -882,7 +884,6 @@
 .success-window{
     &__container{
         max-width: 640px;
-        padding-top: 32px;
     }
     &__title{
         margin-bottom: 16px;
