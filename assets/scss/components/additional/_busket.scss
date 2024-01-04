@@ -594,6 +594,12 @@
                     display: inline-flex;
                 }  
             }
+
+            &[name="delivery-time"][type="radio"] + span{
+                @include s_576{
+                    font-size: 24px;
+                }
+            }
             
             &_date{
                 appearance: none;
@@ -610,6 +616,7 @@
                 text-align: center;
                 align-items: center;
                 width: fit-content;
+                letter-spacing: -1px;
                 &:focus {
                     color: $prime-prime;
                     svg path{
@@ -657,7 +664,7 @@
             max-width: 100%;
             align-items: center;
             text-align: center;
-            padding: 16px 32px 16px 56px;
+            padding: 16px 32px;
             border: 1px solid $black-01; 
             border-radius: 12px; 
             &-active{
