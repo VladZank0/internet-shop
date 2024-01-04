@@ -6,7 +6,7 @@
         padding-bottom: 32px;
     }
     @include s_576{
-        padding-top: 0;
+        padding-top: 24px;
         padding-bottom: 0;
     }
     &_no-padding{
@@ -40,9 +40,9 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        margin-bottom: 40px;
-        @include s_900{
-            margin-bottom: 56px;
+        margin-bottom: 8px;
+        @include s_768{
+            margin-bottom: 32px;
         }
         @include s_576{
             font-size: 20px;
@@ -54,8 +54,16 @@
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
+        padding-top: 32px;
+        padding-bottom: 22px;
+        @include s_768{
+            padding-top: 24px;
+            padding-bottom: 32px;
+        }
         @include s_576{
             gap: 16px;
+            padding-top: 0;
+            padding-bottom: 0;
         }
         &-item{
             display: flex;
