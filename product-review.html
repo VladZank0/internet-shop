@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./assets/lib/accordion/accordion.css">
     <link rel="stylesheet" href="./assets/lib/tabs/tabs.css">
     <link rel="stylesheet" href="./assets/lib/gallery/fancybox.css">
+    <link rel="stylesheet" href="./assets/lib/range/nouislider.min.css">
+    <link rel="stylesheet" href="./assets/lib/custom-select/custom-select.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -2153,7 +2155,7 @@
                                 <div class="container">
                                     <div class="product-reviews__inner">
                                         <div class="product-reviews__asking">
-                                            <button class="product-reviews__button default-btn">Оставить отзыв</button>
+                                            <button class="product-reviews__button default-btn" data-modal="review-write-window">Оставить отзыв</button>
                                         </div>
                                         <ul class="product-reviews__list">
                                             <li class="product-reviews__list-item">
@@ -2350,7 +2352,7 @@
                                 <div class="container">
                                     <div class="product-questions__inner">
                                         <div class="product-questions__asking">
-                                            <button class="product-questions__ask-button default-btn">Задать вопрос</button>
+                                            <button class="product-questions__ask-button default-btn" data-modal="question-window">Задать вопрос</button>
                                         </div>
                                         <ul class="product-questions__list">
                                             <li class="product-questions__list-item">
@@ -3082,7 +3084,7 @@
                                                                     <span class="product__basket-button-mobile-text">23 490 ₽</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -3170,7 +3172,7 @@
                                                                     <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons product__bottom-buttons_hidden">
-                                                                    <a href="#" class="product__credit-button" data-modal="credit-window">Купить в кредит</a>
+                                                                    <a href="#" class="product__credit-button" data-modal="credit-order-window">Купить в кредит</a>
                                                                     <a href="#" class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</a>
                                                                 </div>
                                                             </article>
@@ -3258,7 +3260,7 @@
                                                                     <span class="product__basket-button-mobile-text">В корзине</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -3346,7 +3348,7 @@
                                                                     <span class="product__basket-button-mobile-text">23 490 ₽</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -3434,7 +3436,7 @@
                                                                     <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons product__bottom-buttons_hidden">
-                                                                    <a href="#" class="product__credit-button" data-modal="credit-window">Купить в кредит</a>
+                                                                    <a href="#" class="product__credit-button" data-modal="credit-order-window">Купить в кредит</a>
                                                                     <a href="#" class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</a>
                                                                 </div>
                                                             </article>
@@ -3522,7 +3524,7 @@
                                                                     <span class="product__basket-button-mobile-text">В корзине</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -3632,7 +3634,7 @@
                                                                     <span class="product__basket-button-mobile-text">23 490 ₽</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -3720,7 +3722,7 @@
                                                                     <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons product__bottom-buttons_hidden">
-                                                                    <a href="#" class="product__credit-button" data-modal="credit-window">Купить в кредит</a>
+                                                                    <a href="#" class="product__credit-button" data-modal="credit-order-window">Купить в кредит</a>
                                                                     <a href="#" class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</a>
                                                                 </div>
                                                             </article>
@@ -3808,7 +3810,7 @@
                                                                     <span class="product__basket-button-mobile-text">В корзине</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -3896,7 +3898,7 @@
                                                                     <span class="product__basket-button-mobile-text">23 490 ₽</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -3984,7 +3986,7 @@
                                                                     <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons product__bottom-buttons_hidden">
-                                                                    <a href="#" class="product__credit-button" data-modal="credit-window">Купить в кредит</a>
+                                                                    <a href="#" class="product__credit-button" data-modal="credit-order-window">Купить в кредит</a>
                                                                     <a href="#" class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</a>
                                                                 </div>
                                                             </article>
@@ -4072,7 +4074,7 @@
                                                                     <span class="product__basket-button-mobile-text">В корзине</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -4182,7 +4184,7 @@
                                                                     <span class="product__basket-button-mobile-text">23 490 ₽</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -4270,7 +4272,7 @@
                                                                     <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons product__bottom-buttons_hidden">
-                                                                    <a href="#" class="product__credit-button" data-modal="credit-window">Купить в кредит</a>
+                                                                    <a href="#" class="product__credit-button" data-modal="credit-order-window">Купить в кредит</a>
                                                                     <a href="#" class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</a>
                                                                 </div>
                                                             </article>
@@ -4358,7 +4360,7 @@
                                                                     <span class="product__basket-button-mobile-text">В корзине</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -4446,7 +4448,7 @@
                                                                     <span class="product__basket-button-mobile-text">23 490 ₽</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -4534,7 +4536,7 @@
                                                                     <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons product__bottom-buttons_hidden">
-                                                                    <a href="#" class="product__credit-button" data-modal="credit-window">Купить в кредит</a>
+                                                                    <a href="#" class="product__credit-button" data-modal="credit-order-window">Купить в кредит</a>
                                                                     <a href="#" class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</a>
                                                                 </div>
                                                             </article>
@@ -4622,7 +4624,7 @@
                                                                     <span class="product__basket-button-mobile-text">В корзине</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -4732,7 +4734,7 @@
                                                                     <span class="product__basket-button-mobile-text">23 490 ₽</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -4820,7 +4822,7 @@
                                                                     <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons product__bottom-buttons_hidden">
-                                                                    <a href="#" class="product__credit-button" data-modal="credit-window">Купить в кредит</a>
+                                                                    <a href="#" class="product__credit-button" data-modal="credit-order-window">Купить в кредит</a>
                                                                     <a href="#" class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</a>
                                                                 </div>
                                                             </article>
@@ -4908,7 +4910,7 @@
                                                                     <span class="product__basket-button-mobile-text">В корзине</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -4996,7 +4998,7 @@
                                                                     <span class="product__basket-button-mobile-text">23 490 ₽</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -5084,7 +5086,7 @@
                                                                     <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons product__bottom-buttons_hidden">
-                                                                    <a href="#" class="product__credit-button" data-modal="credit-window">Купить в кредит</a>
+                                                                    <a href="#" class="product__credit-button" data-modal="credit-order-window">Купить в кредит</a>
                                                                     <a href="#" class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</a>
                                                                 </div>
                                                             </article>
@@ -5172,7 +5174,7 @@
                                                                     <span class="product__basket-button-mobile-text">В корзине</span>
                                                                 </button>
                                                                 <div class="product__bottom-buttons">
-                                                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                                                 </div>
                                                             </article>
@@ -5366,7 +5368,7 @@
                                     <span class="product__basket-button-mobile-text">23 490 ₽</span>
                                 </button>
                                 <div class="product__bottom-buttons">
-                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                 </div>
                             </article>
@@ -5454,7 +5456,7 @@
                                     <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
                                 </button>
                                 <div class="product__bottom-buttons product__bottom-buttons_hidden">
-                                    <a href="#" class="product__credit-button" data-modal="credit-window">Купить в кредит</a>
+                                    <a href="#" class="product__credit-button" data-modal="credit-order-window">Купить в кредит</a>
                                     <a href="#" class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</a>
                                 </div>
                             </article>
@@ -5542,7 +5544,7 @@
                                     <span class="product__basket-button-mobile-text">В корзине</span>
                                 </button>
                                 <div class="product__bottom-buttons">
-                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                 </div>
                             </article>
@@ -5630,7 +5632,7 @@
                                     <span class="product__basket-button-mobile-text">23 490 ₽</span>
                                 </button>
                                 <div class="product__bottom-buttons">
-                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                 </div>
                             </article>
@@ -5718,7 +5720,7 @@
                                     <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
                                 </button>
                                 <div class="product__bottom-buttons product__bottom-buttons_hidden">
-                                    <a href="#" class="product__credit-button" data-modal="credit-window">Купить в кредит</a>
+                                    <a href="#" class="product__credit-button" data-modal="credit-order-window">Купить в кредит</a>
                                     <a href="#" class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</a>
                                 </div>
                             </article>
@@ -5806,7 +5808,7 @@
                                     <span class="product__basket-button-mobile-text">В корзине</span>
                                 </button>
                                 <div class="product__bottom-buttons">
-                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                 </div>
                             </article>
@@ -6024,7 +6026,7 @@
                                     <span class="product__basket-button-mobile-text">23 490 ₽</span>
                                 </button>
                                 <div class="product__bottom-buttons">
-                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                 </div>
                             </article>
@@ -6112,7 +6114,7 @@
                                     <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
                                 </button>
                                 <div class="product__bottom-buttons product__bottom-buttons_hidden">
-                                    <a href="#" class="product__credit-button" data-modal="credit-window">Купить в кредит</a>
+                                    <a href="#" class="product__credit-button" data-modal="credit-order-window">Купить в кредит</a>
                                     <a href="#" class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</a>
                                 </div>
                             </article>
@@ -6200,7 +6202,7 @@
                                     <span class="product__basket-button-mobile-text">В корзине</span>
                                 </button>
                                 <div class="product__bottom-buttons">
-                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                 </div>
                             </article>
@@ -6288,7 +6290,7 @@
                                     <span class="product__basket-button-mobile-text">23 490 ₽</span>
                                 </button>
                                 <div class="product__bottom-buttons">
-                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                 </div>
                             </article>
@@ -6376,7 +6378,7 @@
                                     <span class="product__basket-button-mobile-text">сообщить о поступлении</span>
                                 </button>
                                 <div class="product__bottom-buttons product__bottom-buttons_hidden">
-                                    <a href="#" class="product__credit-button" data-modal="credit-window">Купить в кредит</a>
+                                    <a href="#" class="product__credit-button" data-modal="credit-order-window">Купить в кредит</a>
                                     <a href="#" class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</a>
                                 </div>
                             </article>
@@ -6464,7 +6466,7 @@
                                     <span class="product__basket-button-mobile-text">В корзине</span>
                                 </button>
                                 <div class="product__bottom-buttons">
-                                    <button class="product__credit-button" data-modal="credit-window">Купить в кредит</button>
+                                    <button class="product__credit-button" data-modal="credit-order-window">Купить в кредит</button>
                                     <button class="product__fast-buy-button" data-modal="fast-buy-window">Купить в 1 клик</button>
                                 </div>
                             </article>
@@ -6876,7 +6878,9 @@
                 </svg>
             </button>
             <div class="fast-view-window__about">
-                <img class="modal-window__img fast-view-window__img" src="./assets/img/modals/product-img.png" alt="">
+                <a href="#" class="fast-view-window-link-img">
+                    <img class="modal-window__img fast-view-window__img" src="./assets/img/modals/product-img.png" alt="">
+                </a>
                 <div class="fast-view-window__about-content">
                     <a href="#" class="modal-window__text modal-window__link-text fast-view-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</a>
                     <div class="fast-view-window__rating">
@@ -6941,7 +6945,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
             <button class="fast-view-window__busket-button default-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -6974,7 +6977,7 @@
             </div>
             
         </div>
-    </div>    
+    </div>   
     <div style="display: none;" id="fast-buy-window" class="modal-window fast-buy-window">
         <div class="modal-window__container fast-buy-window__container">
             <button class="modal-window__close" aria-label="Закрыть модальное окно">
@@ -7002,30 +7005,178 @@
 
         </div>
     </div>
-    <div style="display: none;" id="credit-window" class="modal-window credit-window">
-        <div class="modal-window__container credit-window__container">
+    <div style="display: none;" id="credit-order-window" class="modal-window credit-order-window">
+        <div class="modal-window__container credit-order-window__container">
             <button class="modal-window__close" aria-label="Закрыть модальное окно">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M4.57492 4.575C4.85621 4.29379 5.23768 4.13582 5.63542 4.13582C6.03317 4.13582 6.41463 4.29379 6.69592 4.575L11.9999 9.879L17.3039 4.575C17.5868 4.30176 17.9657 4.15057 18.359 4.15399C18.7523 4.1574 19.1285 4.31516 19.4066 4.59327C19.6848 4.87138 19.8425 5.2476 19.8459 5.6409C19.8493 6.03419 19.6982 6.4131 19.4249 6.696L14.1209 12L19.4249 17.304C19.6982 17.5869 19.8493 17.9658 19.8459 18.3591C19.8425 18.7524 19.6848 19.1286 19.4066 19.4067C19.1285 19.6848 18.7523 19.8426 18.359 19.846C17.9657 19.8494 17.5868 19.6982 17.3039 19.425L11.9999 14.121L6.69592 19.425C6.41302 19.6982 6.03412 19.8494 5.64082 19.846C5.24752 19.8426 4.87131 19.6848 4.59319 19.4067C4.31508 19.1286 4.15733 18.7524 4.15391 18.3591C4.15049 17.9658 4.30168 17.5869 4.57492 17.304L9.87892 12L4.57492 6.696C4.29372 6.41471 4.13574 6.03324 4.13574 5.6355C4.13574 5.23775 4.29372 4.85629 4.57492 4.575Z" fill="#CECECE"/>
                 </svg>
             </button>
-          
-            <p class="modal-window__title credit-window__title">Консультация по кредиту</p>
-            <p class="modal-window__text credit-window__text">Оставьте номер телефона, с вами свяжется сотрудник магазина и поможет с оформлением заявки на кредит</p>
-            <form action="#" class="credit-window-form">
-                <label class="modal-window__label">Ваш номер телефона
+            <p class="modal-window__title credit-order-window">Купить в кредит</p>
+            <div class="credit-order-window__info">
+                <span class="credit-order-window__info-price">4567₽</span>
+                <div class="credit-order-window__info-payment">
+                    <p class="credit-order-window__info-approximate-payment">Приблизительный ежемесячный платёж</p>
+                    <p class="credit-order-window__info-exact-payment">Точный платёж будет рассчитан сотрудником магазина</p>
+                </div>
+            </div>
+            <form class="credit-order-window__form">
+                <div class="credit-order-window__credit-parameters">
+                    <div class="credit-order-window__range-box">
+                        <p class="credit-order-window__label">Срок кредита (мес)</p>
+                        <div id="slider-round" class="credit-order-window__range">
+                            
+                        </div>
+                    </div>
+                    <div class="credit-order-window__bank-select-box">
+                        <p class="credit-order-window__label">Предпочитаемый банк</p>
+                        <select id="mySelect" class="credit-order-window__bank-select">
+                            <option value="Тинькофф">Тинькофф</option>
+                            <option value="Сбер">Сбер</option>
+                            <option value="Альфа банк">Альфа банк</option>
+                            <option value="ВТБ">ВТБ</option>
+                            <option value="ОТП-Банк">ОТП-Банк</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="credit-order-window__person-info">
+                    <div class="credit-order-window__person-info-item">
+                        <p class="credit-order-window__label">Вам более 18 лет?</p>
+                        <div class="credit-order-window__radios">
+                            <label class="default-radio">
+                                <input type="radio" class="default-radio__input" name="person-age">
+                                Да
+                            </label>
+                            <label class="default-radio">
+                                <input type="radio" class="default-radio__input" name="person-age">
+                                Нет
+                            </label>
+                        </div>
+                    </div>
+                    <div class="credit-order-window__person-info-item">
+                        <p class="credit-order-window__label">Есть задолженность по кредитам?</p>
+                        <div class="credit-order-window__radios">
+                            <label class="default-radio">
+                                <input type="radio" class="default-radio__input" name="person-debt">
+                                Да
+                            </label>
+                            <label class="default-radio">
+                                <input type="radio" class="default-radio__input" name="person-debt">
+                                Нет
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <p class="credit-order-window__message">Оставьте свой номер телефона, сотрудник магазина свяжется
+                    с вами и подберёт оптимальное кредитное предложение</p>
+                <label class="modal-window__label question-window__label">Ваш номер телефона
                     <input class="modal-window__input default-input phone-input" type="text" placeholder="+7 900 123 45 67">
                 </label>
-                
-                <button class="credit-window__button default-btn">Получить консультацию</button>
-                <label class="custom-checkbox credit-window__checkbox">
+                <button class="credit-order-window__button default-btn">Получить консультацию</button>
+                <label class="custom-checkbox question-window__checkbox">
                     <input class="custom-checkbox__input" checked type="checkbox">
                     Даю согласие на обработку своих персональных данных
                 </label>
             </form>
         </div>
     </div>
+    <div style="display: none;" id="review-write-window" class="modal-window review-write-window">
+        <div class="modal-window__container review-write-window__container">
+            <button class="modal-window__close" aria-label="Закрыть модальное окно">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4.57492 4.575C4.85621 4.29379 5.23768 4.13582 5.63542 4.13582C6.03317 4.13582 6.41463 4.29379 6.69592 4.575L11.9999 9.879L17.3039 4.575C17.5868 4.30176 17.9657 4.15057 18.359 4.15399C18.7523 4.1574 19.1285 4.31516 19.4066 4.59327C19.6848 4.87138 19.8425 5.2476 19.8459 5.6409C19.8493 6.03419 19.6982 6.4131 19.4249 6.696L14.1209 12L19.4249 17.304C19.6982 17.5869 19.8493 17.9658 19.8459 18.3591C19.8425 18.7524 19.6848 19.1286 19.4066 19.4067C19.1285 19.6848 18.7523 19.8426 18.359 19.846C17.9657 19.8494 17.5868 19.6982 17.3039 19.425L11.9999 14.121L6.69592 19.425C6.41302 19.6982 6.03412 19.8494 5.64082 19.846C5.24752 19.8426 4.87131 19.6848 4.59319 19.4067C4.31508 19.1286 4.15733 18.7524 4.15391 18.3591C4.15049 17.9658 4.30168 17.5869 4.57492 17.304L9.87892 12L4.57492 6.696C4.29372 6.41471 4.13574 6.03324 4.13574 5.6355C4.13574 5.23775 4.29372 4.85629 4.57492 4.575Z" fill="#CECECE"/>
+                </svg>
+            </button>
+            
+            <p class="modal-window__title review-write-window__title">Оставьте отзыв о товаре</p>
+            <div class="review-write-window__product-info">
+                <a href="#" class="modal-window__img-link">
+                    <img class="modal-window__img review-write-window__img" src="./assets/img/modals/product-img.png" alt="">
+                </a>
+                <a href="#" class="modal-window__text modal-window__link-text review-write-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</a>
+            </div>
+            <form action="" class="review-write-window-form">
+                <div class="review-write-window__rating">
+                    <p class="review-write-window__rating-label">Ваша оценка:</p>
+                    <div class="rating-input">
+                        <label class="rating-input__star">
+                            <input class="rating-input__star-input" type="radio" value="1" name="rating">
+                            <svg class="rating-input__star-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path d="M21.947 9.679C21.8842 9.49387 21.7685 9.33119 21.6142 9.21106C21.46 9.09093 21.2739 9.0186 21.079 9.003L15.378 8.55L12.911 3.089C12.8325 2.91311 12.7047 2.76372 12.5431 2.65886C12.3815 2.55399 12.193 2.49814 12.0004 2.49803C11.8077 2.49793 11.6192 2.55357 11.4575 2.65826C11.2957 2.76295 11.1678 2.9122 11.089 3.088L8.62203 8.55L2.92103 9.003C2.72948 9.01817 2.54636 9.08821 2.39358 9.20473C2.2408 9.32125 2.12482 9.47932 2.05952 9.66003C1.99422 9.84074 1.98236 10.0364 2.02537 10.2237C2.06838 10.411 2.16443 10.5819 2.30203 10.716L6.51503 14.823L5.02503 21.275C4.97978 21.4703 4.99428 21.6747 5.06665 21.8616C5.13901 22.0486 5.26589 22.2095 5.43083 22.3234C5.59577 22.4374 5.79115 22.4991 5.99161 22.5007C6.19208 22.5022 6.38837 22.4434 6.55503 22.332L12 18.702L17.445 22.332C17.6154 22.4451 17.8162 22.5033 18.0207 22.4988C18.2251 22.4944 18.4232 22.4274 18.5884 22.3069C18.7536 22.1865 18.878 22.0183 18.9448 21.8251C19.0116 21.6318 19.0176 21.4228 18.962 21.226L17.133 14.826L21.669 10.744C21.966 10.476 22.075 10.058 21.947 9.679Z" fill="#E7E7E7"/>
+                            </svg>
+                        </label>
+                        <label class="rating-input__star">
+                            <input class="rating-input__star-input" type="radio" value="2" name="rating">
+                            <svg class="rating-input__star-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path d="M21.947 9.679C21.8842 9.49387 21.7685 9.33119 21.6142 9.21106C21.46 9.09093 21.2739 9.0186 21.079 9.003L15.378 8.55L12.911 3.089C12.8325 2.91311 12.7047 2.76372 12.5431 2.65886C12.3815 2.55399 12.193 2.49814 12.0004 2.49803C11.8077 2.49793 11.6192 2.55357 11.4575 2.65826C11.2957 2.76295 11.1678 2.9122 11.089 3.088L8.62203 8.55L2.92103 9.003C2.72948 9.01817 2.54636 9.08821 2.39358 9.20473C2.2408 9.32125 2.12482 9.47932 2.05952 9.66003C1.99422 9.84074 1.98236 10.0364 2.02537 10.2237C2.06838 10.411 2.16443 10.5819 2.30203 10.716L6.51503 14.823L5.02503 21.275C4.97978 21.4703 4.99428 21.6747 5.06665 21.8616C5.13901 22.0486 5.26589 22.2095 5.43083 22.3234C5.59577 22.4374 5.79115 22.4991 5.99161 22.5007C6.19208 22.5022 6.38837 22.4434 6.55503 22.332L12 18.702L17.445 22.332C17.6154 22.4451 17.8162 22.5033 18.0207 22.4988C18.2251 22.4944 18.4232 22.4274 18.5884 22.3069C18.7536 22.1865 18.878 22.0183 18.9448 21.8251C19.0116 21.6318 19.0176 21.4228 18.962 21.226L17.133 14.826L21.669 10.744C21.966 10.476 22.075 10.058 21.947 9.679Z" fill="#E7E7E7"/>
+                            </svg>
+                        </label>
+                        <label class="rating-input__star">
+                            <input class="rating-input__star-input" type="radio" value="3" name="rating">
+                            <svg class="rating-input__star-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path d="M21.947 9.679C21.8842 9.49387 21.7685 9.33119 21.6142 9.21106C21.46 9.09093 21.2739 9.0186 21.079 9.003L15.378 8.55L12.911 3.089C12.8325 2.91311 12.7047 2.76372 12.5431 2.65886C12.3815 2.55399 12.193 2.49814 12.0004 2.49803C11.8077 2.49793 11.6192 2.55357 11.4575 2.65826C11.2957 2.76295 11.1678 2.9122 11.089 3.088L8.62203 8.55L2.92103 9.003C2.72948 9.01817 2.54636 9.08821 2.39358 9.20473C2.2408 9.32125 2.12482 9.47932 2.05952 9.66003C1.99422 9.84074 1.98236 10.0364 2.02537 10.2237C2.06838 10.411 2.16443 10.5819 2.30203 10.716L6.51503 14.823L5.02503 21.275C4.97978 21.4703 4.99428 21.6747 5.06665 21.8616C5.13901 22.0486 5.26589 22.2095 5.43083 22.3234C5.59577 22.4374 5.79115 22.4991 5.99161 22.5007C6.19208 22.5022 6.38837 22.4434 6.55503 22.332L12 18.702L17.445 22.332C17.6154 22.4451 17.8162 22.5033 18.0207 22.4988C18.2251 22.4944 18.4232 22.4274 18.5884 22.3069C18.7536 22.1865 18.878 22.0183 18.9448 21.8251C19.0116 21.6318 19.0176 21.4228 18.962 21.226L17.133 14.826L21.669 10.744C21.966 10.476 22.075 10.058 21.947 9.679Z" fill="#E7E7E7"/>
+                            </svg>
+                        </label>
+                        <label class="rating-input__star">
+                            <input class="rating-input__star-input" type="radio" value="4" name="rating">
+                            <svg class="rating-input__star-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path d="M21.947 9.679C21.8842 9.49387 21.7685 9.33119 21.6142 9.21106C21.46 9.09093 21.2739 9.0186 21.079 9.003L15.378 8.55L12.911 3.089C12.8325 2.91311 12.7047 2.76372 12.5431 2.65886C12.3815 2.55399 12.193 2.49814 12.0004 2.49803C11.8077 2.49793 11.6192 2.55357 11.4575 2.65826C11.2957 2.76295 11.1678 2.9122 11.089 3.088L8.62203 8.55L2.92103 9.003C2.72948 9.01817 2.54636 9.08821 2.39358 9.20473C2.2408 9.32125 2.12482 9.47932 2.05952 9.66003C1.99422 9.84074 1.98236 10.0364 2.02537 10.2237C2.06838 10.411 2.16443 10.5819 2.30203 10.716L6.51503 14.823L5.02503 21.275C4.97978 21.4703 4.99428 21.6747 5.06665 21.8616C5.13901 22.0486 5.26589 22.2095 5.43083 22.3234C5.59577 22.4374 5.79115 22.4991 5.99161 22.5007C6.19208 22.5022 6.38837 22.4434 6.55503 22.332L12 18.702L17.445 22.332C17.6154 22.4451 17.8162 22.5033 18.0207 22.4988C18.2251 22.4944 18.4232 22.4274 18.5884 22.3069C18.7536 22.1865 18.878 22.0183 18.9448 21.8251C19.0116 21.6318 19.0176 21.4228 18.962 21.226L17.133 14.826L21.669 10.744C21.966 10.476 22.075 10.058 21.947 9.679Z" fill="#E7E7E7"/>
+                            </svg>
+                        </label>
+                        <label class="rating-input__star">
+                            <input class="rating-input__star-input" type="radio" value="5" name="rating">
+                            <svg class="rating-input__star-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path d="M21.947 9.679C21.8842 9.49387 21.7685 9.33119 21.6142 9.21106C21.46 9.09093 21.2739 9.0186 21.079 9.003L15.378 8.55L12.911 3.089C12.8325 2.91311 12.7047 2.76372 12.5431 2.65886C12.3815 2.55399 12.193 2.49814 12.0004 2.49803C11.8077 2.49793 11.6192 2.55357 11.4575 2.65826C11.2957 2.76295 11.1678 2.9122 11.089 3.088L8.62203 8.55L2.92103 9.003C2.72948 9.01817 2.54636 9.08821 2.39358 9.20473C2.2408 9.32125 2.12482 9.47932 2.05952 9.66003C1.99422 9.84074 1.98236 10.0364 2.02537 10.2237C2.06838 10.411 2.16443 10.5819 2.30203 10.716L6.51503 14.823L5.02503 21.275C4.97978 21.4703 4.99428 21.6747 5.06665 21.8616C5.13901 22.0486 5.26589 22.2095 5.43083 22.3234C5.59577 22.4374 5.79115 22.4991 5.99161 22.5007C6.19208 22.5022 6.38837 22.4434 6.55503 22.332L12 18.702L17.445 22.332C17.6154 22.4451 17.8162 22.5033 18.0207 22.4988C18.2251 22.4944 18.4232 22.4274 18.5884 22.3069C18.7536 22.1865 18.878 22.0183 18.9448 21.8251C19.0116 21.6318 19.0176 21.4228 18.962 21.226L17.133 14.826L21.669 10.744C21.966 10.476 22.075 10.058 21.947 9.679Z" fill="#E7E7E7"/>
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+                <label class="modal-window__label review-write-window__textarea-label">Текст отзыва
+                    <textarea class="modal-window__input modal-window__input_text-area default-input review-write-window__textarea-input"></textarea>
+                </label>
+                <ul class="review-write-window__images">
+                </ul>
+                <label class="upload-files review-write-window__button default-btn default-btn_ghost">
+                    Добавить фото
+                    <input type="file" name="images[]" class="upload-files__input" accept=".jpg, .jpeg, .png, .webp" multiple="">
+                </label>
+                <label class="modal-window__label">Ваш номер телефона
+                    <input class="modal-window__input default-input phone-input" type="text" placeholder="+7 900 123 45 67">
+                </label>
+                
+                <button class="review-write-window__button default-btn">Оставить отзыв</button>
+                <label class="custom-checkbox review-write-window__checkbox">
+                    <input class="custom-checkbox__input" checked type="checkbox">
+                    Даю согласие на обработку своих персональных данных
+                </label>
+            </form>
+        </div>
+    </div> 
+    <div style="display: none;" id="question-window" class="modal-window question-window">
+        <div class="modal-window__container question-window__container">
+            <button class="modal-window__close" aria-label="Закрыть модальное окно">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4.57492 4.575C4.85621 4.29379 5.23768 4.13582 5.63542 4.13582C6.03317 4.13582 6.41463 4.29379 6.69592 4.575L11.9999 9.879L17.3039 4.575C17.5868 4.30176 17.9657 4.15057 18.359 4.15399C18.7523 4.1574 19.1285 4.31516 19.4066 4.59327C19.6848 4.87138 19.8425 5.2476 19.8459 5.6409C19.8493 6.03419 19.6982 6.4131 19.4249 6.696L14.1209 12L19.4249 17.304C19.6982 17.5869 19.8493 17.9658 19.8459 18.3591C19.8425 18.7524 19.6848 19.1286 19.4066 19.4067C19.1285 19.6848 18.7523 19.8426 18.359 19.846C17.9657 19.8494 17.5868 19.6982 17.3039 19.425L11.9999 14.121L6.69592 19.425C6.41302 19.6982 6.03412 19.8494 5.64082 19.846C5.24752 19.8426 4.87131 19.6848 4.59319 19.4067C4.31508 19.1286 4.15733 18.7524 4.15391 18.3591C4.15049 17.9658 4.30168 17.5869 4.57492 17.304L9.87892 12L4.57492 6.696C4.29372 6.41471 4.13574 6.03324 4.13574 5.6355C4.13574 5.23775 4.29372 4.85629 4.57492 4.575Z" fill="#CECECE"/>
+                </svg>
+            </button>
+            <form class="question-window__form">
+                <p class="modal-window__title question-window__title">Задайте вопрос о товаре</p>
 
+                <label class="modal-window__label question-window__question-label">Ваш вопрос
+                    <textarea class="modal-window__input modal-window__input_text-area default-input question-window__question-input"></textarea>
+                </label>
+                <label class="modal-window__label question-window__label">Ваш номер телефона
+                    <input class="modal-window__input default-input phone-input" type="text" placeholder="+7 900 123 45 67">
+                </label>
+                <button class="question-window__button default-btn">Задать вопрос</button>
+                <label class="custom-checkbox question-window__checkbox">
+                    <input class="custom-checkbox__input" checked type="checkbox">
+                    Даю согласие на обработку своих персональных данных
+                </label>
+            </form>
+        </div>
+    </div>
+    
     <script src="./assets/lib/swiper/swiper.min.js"></script>
     <script src="./assets/lib/multi-menu/mmenu-light.js"></script>
     <script src="./assets/lib/accordion/accordion.js"></script>
@@ -7039,5 +7190,11 @@
     <script src="./assets/js/validation.js"></script>
     <script src="./assets/lib/gallery/fancybox.umd.js"></script>
     <script src="./assets/js/gallery.js"></script>
+    <script src="./assets/js/upload-files.js"></script>
+    <script src="./assets/lib/range/nouislider.min.js"></script>
+    <script src="./assets/lib/custom-select/custom-select.min.js"></script>
+    <script src="./assets/js/rating.js"></script>
+    <script src="./assets/js/custom-select.js"></script>
+    <script src="./assets/js/range.js"></script>
 </body>
 </html>

@@ -79,7 +79,8 @@
         background: none;
         border: 0;
         z-index: 100;
-        &_min{
+        &-min{
+            position: absolute;
             top:8px;
             right: 8px;
             width: 24px;
@@ -87,6 +88,12 @@
             padding: 4.5px;
             background: var(--white-white, #FFF);
             border-radius: 50%;
+            fill: var(--color-7);
+            cursor: pointer;
+            display: flex;
+            border: 0;
+            align-items: center;
+            justify-content: center;
         }
         &_background{
             padding: 8px;
@@ -529,6 +536,7 @@
     &__container{
         max-width: 640px;
         width: 100%;
+        padding-top: 32px;
     }
     &__img{
         margin-right: 16px;

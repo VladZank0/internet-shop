@@ -13,10 +13,10 @@
     modals.forEach((e)=>{
         const closeBtn = e.querySelector('.modal-window__close');
         closeBtn.addEventListener('click', (e)=>{
-            e.target.closest('.modal-window').style.display = "none";
+            e.currentTarget.closest('.modal-window').style.display = "none";
         })
-        e.addEventListener('click', (el)=>{
-            if(!e.querySelector('.modal-window__container').contains(el.target) && e.style.display !== 'none'){
+        e.addEventListener('click', (event)=>{
+            if(event.target.classList.contains('modal-window') && e.style.display !== 'none'){
                 e.style.display = "none";
             } 
         })

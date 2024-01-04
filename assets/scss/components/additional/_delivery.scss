@@ -35,14 +35,12 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        margin-bottom: 56px;
+        margin-bottom: 24px;
         @include s_900{
-            margin-bottom: 24px;
             font-size: 24px;
         }
         @include s_576{
             font-size: 20px;
-            margin-bottom: 48px;
         }
     }
     &__options{
@@ -50,12 +48,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 24px;
-        margin-bottom: 64px;
-        @include s_900{
-            margin-bottom: 32px;
-        }
-        @include s_576{
-            margin-bottom: 24px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        @include s_768{
+            padding-top: 0;
+            padding-bottom: 0;
         }
     }
     &__option{
