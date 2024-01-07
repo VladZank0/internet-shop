@@ -43,21 +43,25 @@
         flex-direction: column;
         column-gap: 8px;
         row-gap: 8px;
-        padding: 24px 16px 24px 24px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        padding: 0px 16px  0px 24px;
         box-sizing: border-box;
         overflow: auto;
         margin-right: 8px;
         background-color: transparent;
-        height: 592px;
+        height: 544px;
         @include s_900{
-            height: 378px;
+            height: 280px;
         }
         @include s_576{
             flex-direction: row;
             height: fit-content;
+            margin-top: 0;
             margin-bottom: 8px;
-            padding: 16px 8px 8px 8px;
-            margin-right: 0;
+            padding: 16px 0px 8px 0px;
+            margin-left: 8px;
+            margin-right: 8px;
         }
         &-wrapper{
             width: 400px;

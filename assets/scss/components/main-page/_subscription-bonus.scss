@@ -77,35 +77,6 @@
             width: 100%;
         }
     }
-    &__registration-btn{
-        display: block;
-        padding: 14.5px 16px;
-        border-radius: 8px;
-        background: $prime-prime;
-        color: white;
-        font-family: 'SF Pro Display-Medium', sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        text-align: center;
-        &:hover{
-            background-color: #8FC3FF;
-        }
-    }   
-    &__login-btn{
-        display: block;
-        padding: 14.5px 16px;
-        border-radius: 8px;
-        border: 1px solid $prime-prime;
-        color: $prime-prime;
-        font-family: 'SF Pro Display-Medium', sans-serif;
-        font-size: 16px;
-        font-weight: 550;
-        text-align: center;
-        &:hover{
-            background-color: #8FC3FF;
-            color: white;
-        }
-    }
     &__image{
         opacity: 1;
         img:nth-child(1){
@@ -179,33 +150,47 @@
 
         }
     }
-    &__input{
-        padding: 14.5px 40px 14.5px 16px;
-        border-radius: 8px;
-        border: 1px solid $black-04;
+    &__label{
+        position: relative;
         color: $black-1;
         font-family: 'SF Pro Display-Regular', sans-serif;
         font-size: 16px;
         font-weight: 400;
+        min-width: 180px;
+    }
+    &__input{
+        padding: 14.5px 16px 14.5px 16px;
+        border-radius: 8px;
+        border: 1px solid $black-04;
         outline: none;
-        min-width: 180px; 
-        @include s_380{
-            padding: 14.5px 16px 14.5px 16px;
+        height: 48px;
+        box-sizing: border-box;
+        min-width: 236px;
+        width: 100%;
+        &::placeholder{
+            color: var(--black-07, #595959);
+            font-family: 'SF Pro Display-Regular', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+        }
+        &:focus, &:not(:placeholder-shown){
+            padding-top: 22px;
+            padding-bottom: 7px;
+        }
+        &:focus + .subscription-form__placeholder, &:not(:placeholder-shown) + .subscription-form__placeholder{
+            top: 4px;
+            font-size: 12px;
         }
     }
-    &__btn{
-        border: none;
-        outline: none;
-        padding: 14.5px 16px;
-        border-radius: 8px;
-        font-family: 'SF Pro Display-Medium', sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        background-color: $prime-prime;
-        color: white;
-        &:hover{
-            cursor: pointer;
-            background-color: #8FC3FF;
-        }
+    &__input::placeholder{
+        color: transparent;
+    }
+    &__placeholder{
+        position: absolute;
+        left: 14.5px;
+        top: 14px;
+        transition:all 0.25s ease;
+        pointer-events:none;
     }
 }

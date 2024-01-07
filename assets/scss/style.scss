@@ -110,6 +110,10 @@ body{
         box-sizing: border-box;
     }
 }
+input[type="text"]:focus:not(.search__input){
+    border: 1px solid $prime-prime;
+}
+
 .container{
     max-width: 1460px;
     padding: 0 10px;

@@ -3037,16 +3037,16 @@
             <div class="subscription-bonus__inner container">
                 <div class="bonus-form">
                     <div class="bonus-form__content">
-                        <h1 class="bonus-form__title">Зарегистрируйтесь, чтобы воспользоваться бонусами</h1>
+                        <h3 class="bonus-form__title">Зарегистрируйтесь, чтобы воспользоваться бонусами</h3>
                         <p class="bonus-form__info">Возвращаем 1% с каждой покупки</p>
                         <div class="bonus-form__btns">
-                            <a href="#" class="bonus-form__registration-btn">зарегистрироваться</a>
-                            <a href="#" class="bonus-form__login-btn">войти</a>
+                            <a href="#" class="bonus-form__registration-btn default-btn">зарегистрироваться</a>
+                            <a href="#" class="bonus-form__login-btn default-btn default-btn_ghost">войти</a>
                         </div>
                     </div>
                     <div class="bonus-form__image">
-                        <img src="./assets/img/subscription-bonus/Body.png" alt="">
-                        <img src="./assets/img/subscription-bonus/bonusCard.svg" alt="">
+                        <img src="./assets/img/subscription-bonus/Body.png" loading="lazy" alt="">
+                        <img src="./assets/img/subscription-bonus/bonusCard.svg" width="253" height="163" loading="lazy" alt="">
                     </div>
                 </div>
                 <div class="subscription-form">
@@ -3067,8 +3067,12 @@
                     <p class="subscription-form__info">Давайте дружить! Оформите подписку на рассылку наших акций
                         и получите бесплатную доставку на свою первую покупку!</p>
                     <form class="subscription-form__form" action="#">
-                        <input class="subscription-form__input phone-input" placeholder="Введите номер телефона" type="text">
-                        <button class="subscription-form__btn">подписаться</button>
+                        <label class="subscription-form__label">
+                            <input class="subscription-form__input phone-input" placeholder="+7 900 000 00 00" type="text">
+                            <span class="subscription-form__placeholder">Введите номер телефона</span>
+                        </label>
+
+                        <button class="subscription-form__btn default-btn">подписаться</button>
                     </form>
                 </div>
             </div>
