@@ -157,7 +157,10 @@
     &__img{
         img{
             max-width: 100%;
-            height: auto;
+            height: 168px;
+            @include s_576{
+                height: auto;
+            }
         }
         text-align: center;
     }
