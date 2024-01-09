@@ -88,6 +88,9 @@
     &__article-content{
         font-family: 'SF Pro Display-Regular', sans-serif;
         margin-top: 16px;
+        &-img{
+            max-width: 883px;
+        }
         &-body{
             h2,h3,h4,h5,h6{
                 margin: revert;
