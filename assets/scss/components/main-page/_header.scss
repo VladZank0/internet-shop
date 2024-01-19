@@ -271,7 +271,7 @@
             max-height: 350px;
         }
         @include s_380{
-            max-height: 385px;
+            max-height: 398px;
         }
         &::-webkit-scrollbar{
             width: 8px;
@@ -284,7 +284,6 @@
         } 
         &-item{
             display: flex;
-            
         }
         &-column{
             display: flex;
