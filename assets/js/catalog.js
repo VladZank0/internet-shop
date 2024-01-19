@@ -7,6 +7,9 @@
     catalog_btn.addEventListener('click', () => {
         catalog_btn.classList.toggle('catalog-btn_active');
         catalog.classList.toggle('catalog__inner_active');
+        window.scrollTo({
+            top: 0
+        });
     })
     body.addEventListener('click', (event) => {
         if(!catalog.contains(event.target) && !catalog_btn.contains(event.target)){

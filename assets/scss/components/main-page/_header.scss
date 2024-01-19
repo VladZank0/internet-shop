@@ -1,4 +1,13 @@
 .header{
+    position: fixed;
+    z-index: 15;
+    left: 0;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    @include s_1200{
+        position: static;
+    }
     &__nav{
         @include s_1200{
             display: none;
@@ -12,9 +21,17 @@
         padding: 8px 0;
         font-family: 'SF Pro Display', sans-serif;
         font-weight: 400;
-        font-style: normal; 
-        @include s_768{
+        font-style: normal;
+        @include s_1200{
+            position: fixed;
+            z-index: 15;
+            left: 0;
+            top: 0;
+            width: 100%;
             padding: 15px 0;
+        } 
+        @include s_768{
+            
         }
         @include s_576{
             border-bottom: 1px solid var(--black-01, #E7E7E7);
@@ -28,6 +45,7 @@
             @include s_380{
                 column-gap: 8px;
             }
+            position: relative;
         }
     }
     &-bottom{
@@ -158,11 +176,142 @@
     @include s_1200{
         display: none;
     }
+    &__close{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        @include s_576{
+            display: none;
+        }
+    }
+    &__search{
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
     &__box{
         display: flex;
         align-items: flex-start;
         column-gap: 4px;
         white-space: nowrap;
+        &_active{
+            .locality-select__icon{
+                transition: .3s;
+                transform: rotate(180deg);
+            }
+        }
+        &:hover{
+            cursor: pointer;
+            .locality-select__text{
+                color: #7AABFF;
+            }
+            .locality-select__icon{
+                svg path{
+                    fill: #7AABFF;;
+                }
+            }
+        }
+    }
+    &__icon{
+        display: inline-flex;
+        transition: .3s;
+    }
+    &__option-box{
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 10px;
+        z-index: 10;
+        width: 400px;
+        padding: 24px;
+        box-sizing: border-box;
+        background: white;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);
+        @include s_576{
+            width: 100%;
+            box-shadow: unset; 
+            padding: 0;
+            padding-top: 17px;
+        }
+        &-title{
+            color: var(--black-1, #31373C);
+            font-family: 'SF Pro Display-Medium', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            @include s_576{
+                display: none;
+            }
+        }
+        &_active{
+            display: block;
+        }
+        &_burger-menu{
+            top: 50px;
+            right: 16px;
+            left: unset;
+            @include s_576{
+                right: 0;
+                padding-right: 16px;
+                padding-left: 16px;
+            }
+        }
+    }
+    &__options{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        max-height: 256px;
+        height: 100%;
+        overflow-y: scroll;
+        @include s_576{
+            max-height: 350px;
+        }
+        @include s_380{
+            max-height: 385px;
+        }
+        &::-webkit-scrollbar{
+            width: 8px;
+            height: 8px;
+            padding-right: 8px;
+        }
+        &::-webkit-scrollbar-thumb{
+            border-radius: 24px;
+            background-color: $black-01;
+        } 
+        &-item{
+            display: flex;
+            
+        }
+        &-column{
+            display: flex;
+            column-gap: 12px;
+            &-list{
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+            }
+            &-title{
+                color: var(--black-03, #CECECE);
+                font-family: 'SF Pro Display-Medium', sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            &-item{
+                color: var(--black-07, #595959);
+                font-family: 'SF Pro Display-Medium', sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                &:hover{
+                    color: $prime-prime;
+                }
+            }
+        }
+        
     }
     &__text{
         line-height: 100%;
@@ -171,12 +320,6 @@
         font-size: 20px;
         font-style: normal;
         font-weight: 500;
-    }
-    &__icon{
-       display: inline-flex;
-    }
-    &:hover{
-        cursor: pointer;
     }
 }
 .social{
@@ -265,7 +408,7 @@
     }
     &:hover{
         cursor: pointer;
-        background: #7AABFF;;
+        background: #7AABFF;
     }
     &_active{
         background: #2ED23F;
@@ -427,21 +570,24 @@
 }
 .burger-menu{
     display: none;
-    position: absolute;
+    position: fixed;
     width: 100%;
-    top: 0;
+    top: 0px;
     background-color: white;
     padding: 16px 24px;
     box-sizing: border-box;
-    z-index: 100;
     overflow-y: auto;
+    border-radius: 0px 0px 16px 16px;
     @include s_576{
         padding: 16px;
     }
     &_active{ 
         @include s_1200{
             display: block;
-            height: 100%;
+            height: fit-content;
+            max-height: 100vh;
+            z-index: 205;
+            box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);
         }
     }
     &__social{

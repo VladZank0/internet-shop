@@ -66,13 +66,26 @@
         width: 100%;
         height: 100%;
         box-shadow: 4px 0px 8px 0px rgba(0, 0, 0, 0.10);
+        &::-webkit-scrollbar {
+            width: 4px;
+            border-radius: 8px;
+            background: #FCFCFC;
+        }
+        &::-webkit-scrollbar-thumb {
+        background: $prime-prime;
+        border-radius: 12px;
+        transition: all 0.15s ease-in-out;
+        } 
+        &::-webkit-scrollbar-track {
+        background: transparent;
+        }
     }
     &__inner{
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: absolute;
-        z-index: 100;
+        z-index: 14;
         left: 50%;
         transform: translateX(-50%);
         overflow: hidden;
@@ -84,7 +97,10 @@
         padding: 0;
         margin: 0; 
         &_active{
-            min-height: 690px;
+            // min-height: 30vh;
+            // height: 690px;
+            // max-height: 78vh;
+            height: 690px;
         }
     }
     &__promo{
@@ -362,7 +378,7 @@
     box-sizing: border-box;
     width: 100vw;
     height: 100%;
-    z-index: 10;
+    z-index: 20;
     
     &-btn{
         &_active{
@@ -423,7 +439,7 @@
     box-sizing: border-box;
     width: 100vw;
     height: 100%;
-    z-index: 10;
+    z-index: 20;
     color: var(--black-1, #31373C);
     font-family: 'SF Pro Display-Regular', sans-serif;
     font-size: 16px;

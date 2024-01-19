@@ -64,6 +64,9 @@
         }
         &:hover{
             cursor: pointer;
+            color: white;
+            background-color: $prime-prime;
+            transition: .3s;
         }
     }
     &__tab.tab_active{
@@ -116,9 +119,24 @@
             span{
                 background-color:  #EBF4FF;
             }
+            &:hover{
+                svg path{
+                    fill: white;
+                }
+                span{
+                    background-color:  $prime-prime;
+                }
+            }
         }
         &__prev-btn{
-            
+            &:hover{
+                svg path{
+                    fill: white;
+                }
+                span{
+                    background-color:  $prime-prime;
+                }
+            }
             top: 36.5%;
             svg path{
                 fill: $prime-prime;
@@ -127,6 +145,7 @@
                 background-color:  #EBF4FF;
             }
         }
+
     }
 }
 .article-card{

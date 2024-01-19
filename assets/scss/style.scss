@@ -108,7 +108,12 @@ a{
 body{
     @include s_1200(){
         box-sizing: border-box;
+        margin-top: 63px;
     }
+    @include s_768(){
+        
+    }
+    margin-top: 136px;
 }
 input[type="text"]:focus:not(.search__input){
     border: 1px solid $prime-prime;
@@ -168,11 +173,9 @@ input[type="text"]:focus:not(.search__input){
     margin-bottom: 39px;
     flex-wrap: wrap;
     row-gap: 16px;
+    column-gap: 100px;
     @include s_576{
-        flex-direction: column;
         align-items: flex-start;
-    }
-    @include s_700(){
         margin-bottom: 16px;
         &-title{
             font-size: 24px;
@@ -209,7 +212,7 @@ input[type="text"]:focus:not(.search__input){
         height: 32px;
         background: $prime-prime;
         border-radius: 50%;
-        @include s_700(){
+        @include s_576(){
             width: 24px;
             height: 24px;
             svg{
@@ -262,6 +265,12 @@ input[type="text"]:focus:not(.search__input){
     }
     &:hover{
         cursor: pointer;
+        .swiper-button-prev-icon{
+            background: $prime-prime;
+        }
+        svg path{
+            fill: white;
+        } 
     }
     &-icon{
         display: flex;
@@ -270,7 +279,7 @@ input[type="text"]:focus:not(.search__input){
         width: 64px;
         height: 64px;
         border-radius: 50%;
-        background: rgba(66, 134, 250, 0.10)
+        background: rgba(66, 134, 250, 0.10);
     }
 }
 .swiper-button-next{
@@ -286,6 +295,12 @@ input[type="text"]:focus:not(.search__input){
     }
     &:hover{
         cursor: pointer;
+        .swiper-button-next-icon{
+            background: $prime-prime;
+        }
+        svg path{
+            fill: white;
+        } 
     }   
     &-icon{
         display: flex;
@@ -294,7 +309,7 @@ input[type="text"]:focus:not(.search__input){
         width: 64px;
         height: 64px;
         border-radius: 50%;
-        background: rgba(66, 134, 250, 0.10)
+        background: rgba(66, 134, 250, 0.10);
     }
 }
 .products-row{
@@ -340,12 +355,10 @@ input[type="text"]:focus:not(.search__input){
     svg path{
         fill: $prime-prime;
     }
-    &:hover{
-        cursor: pointer;
-    }
     &__icon{
         background-color:  #EBF4FF;
     }
+    
 }
 .slider-default-button-next{
     position: absolute;
@@ -360,9 +373,6 @@ input[type="text"]:focus:not(.search__input){
     }
     svg path{
         fill: $prime-prime;
-    }
-    &:hover{
-        cursor: pointer;
     }
     &__icon{
         background-color:  #EBF4FF;

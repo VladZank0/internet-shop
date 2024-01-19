@@ -19,6 +19,7 @@
         justify-content: center;
         &_reverse{
             flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
         }
     }
     &__item{

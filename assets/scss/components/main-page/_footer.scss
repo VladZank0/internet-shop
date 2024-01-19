@@ -39,7 +39,7 @@
         padding: 35px 18px 40px;
         box-sizing: border-box;
         @include s_768{
-            padding-top: 43px;
+            padding-top: 40px;
         }
         @include s_576{
             padding-top: 24px;
@@ -79,10 +79,11 @@
         display: flex;
         column-gap: 56px;
         align-items: flex-start;
+        justify-content: space-between;
         @include s_768{
-            justify-content: space-between;
+            column-gap: 8px;
         }
-        @include s_700{
+        @include s_576{
             display: none;
         }
     }
@@ -99,7 +100,7 @@
             font-family: 'SF Pro Display-Bold', sans-serif;
             font-size: 20px;
             font-weight: 700;
-            @include s_700{
+            @include s_576{
                 margin-bottom: 8px;
             }
         }
@@ -123,7 +124,7 @@
     }
     &__mobile-lists{
         display: none;
-        @include s_700{
+        @include s_576{
             display: flex;
             flex-direction: column;
             row-gap: 8px;
