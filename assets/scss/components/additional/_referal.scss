@@ -136,9 +136,12 @@
             align-items: flex-start;
         }
         &-item{
-            width: 272px;
+            width: 200px;
+            flex-grow: 1;
+            max-width: 272px;
             @include s_600{
                 width: 100%;
+                max-width: none;
             }
         }
         &-item-title{

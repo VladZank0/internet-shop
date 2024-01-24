@@ -1,7 +1,6 @@
 .header{
-    position: fixed;
+    position: sticky;
     z-index: 15;
-    left: 0;
     top: 0;
     background-color: white;
     width: 100%;
@@ -25,8 +24,8 @@
         @include s_1200{
             position: fixed;
             z-index: 15;
-            left: 0;
             top: 0;
+            left: 0;
             width: 100%;
             padding: 15px 0;
         } 

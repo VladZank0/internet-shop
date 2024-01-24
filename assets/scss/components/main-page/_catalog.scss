@@ -53,6 +53,12 @@
             background: transparent;
             }
         }
+        &-link{
+            display: flex !important;
+            align-items: center !important;
+            column-gap: 8px;
+            font-size: 20px !important;
+        }
     }
     &__tabs{
         overflow-y: auto;
@@ -97,9 +103,6 @@
         padding: 0;
         margin: 0; 
         &_active{
-            // min-height: 30vh;
-            // height: 690px;
-            // max-height: 78vh;
             height: 690px;
         }
     }
@@ -246,7 +249,7 @@
             padding: 0;
             color: $black-1;  
             font-family: 'SF Pro Display-Medium', sans-serif;
-            font-size: 20px;
+            font-size: 20px !important;
             font-style: normal;
             font-weight: 500;
             height: 24px;

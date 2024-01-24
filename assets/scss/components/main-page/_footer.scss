@@ -1,4 +1,7 @@
 .footer{
+    @media(min-width: 1200px){
+        margin-top: auto;
+    }
     background: #FAFAFA;
     @include s_1200{
         margin-bottom: 56px;
@@ -36,13 +39,19 @@
         }
     }
     &__inner{
-        padding: 35px 18px 40px;
+        padding: 35px 10px 40px;
         box-sizing: border-box;
+        @include s_1200{
+            padding-right: 24px;
+            padding-left: 24px;
+        }
         @include s_768{
             padding-top: 40px;
         }
         @include s_576{
             padding-top: 24px;
+            padding-right: 16px;
+            padding-left: 16px;
         }
     } 
    
@@ -195,6 +204,11 @@
     justify-content: space-between;
     align-items: flex-end;
     column-gap: 40px;
+    @include s_800{
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 16px;
+    }
     @include s_576{
         flex-direction: column-reverse;
         align-items: flex-start;
@@ -208,6 +222,10 @@
         max-width: 1050px;
         width: 100%;
         justify-content: space-between;
+        @include s_800{
+            justify-content: flex-start;
+            column-gap: 34px;
+        }
         @include s_576{
             flex-direction: column;
             align-items: flex-start;

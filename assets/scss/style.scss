@@ -83,6 +83,7 @@ $black-07: #595959;
 }
 
 :root{
+    min-height: 100vh;
     --gl-star-color: #fdd835;                 
     --gl-star-color-inactive: #dcdce6;
 }
@@ -106,18 +107,18 @@ a{
     text-decoration: none;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
     @include s_1200(){
-        box-sizing: border-box;
         margin-top: 63px;
     }
-    @include s_768(){
-        
-    }
-    margin-top: 136px;
 }
-input[type="text"]:focus:not(.search__input){
+input[type="text"]:focus:not(.search__input), input[type="text"]:hover:not(.search__input){
     border: 1px solid $prime-prime;
 }
+
 
 .container{
     max-width: 1460px;
