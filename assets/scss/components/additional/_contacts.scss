@@ -103,6 +103,10 @@
         border: 1px solid $black-01;
         &:hover{
             cursor: pointer;
+            border: 1px solid $prime-prime;
+        }
+        &.active{
+            border: 1px solid $prime-prime;
         }
         @include s_576{
             padding: 16px;

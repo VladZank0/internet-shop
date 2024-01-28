@@ -76,6 +76,7 @@
     &__img{
         width: 100%;
         height: 100%;
+        max-height: 560px;
         object-fit: contain;
     }
     &__images{
@@ -91,9 +92,11 @@
         }
         &-slider{
             overflow: hidden;
+            margin-bottom: 20px;
             @include s_1260{
                 width: 560px;
                 margin: 0 auto;
+                margin-bottom: 20px;
             }
             @include s_700{
                 width: 328px;
@@ -452,6 +455,11 @@
                 background-color: transparent;
                 border: none;
                 outline: none;
+                &_active{
+                    svg path{
+                        stroke: $prime-prime;
+                    }
+                }
                 &:hover{
                     cursor: pointer;
                     svg path{
@@ -638,12 +646,14 @@
     box-sizing: border-box;
     border: 1px solid var(--black-01, #E7E7E7);
     background: #FFF;
+    cursor: pointer;
     @include s_576{
         padding: 16px 20px 10px 32px;
     }
     &__content{
         display: flex;
         flex-direction: column;
+        text-align: left;
     }
     &__icons{
         display: flex;
@@ -1022,21 +1032,17 @@
 
 .product-banner{
     overflow: hidden;
-    height: 480px;
+    max-height: 480px;
     width: 100%;
-    @include s_700{
-        height: 400px;
+    @include s_768{
+        max-height: 480px;
+    }
+    @media(max-width:361px){
+        max-height: 400px;
     }
     &:first-child{
         border-top-right-radius: 16px;
         border-top-left-radius: 16px;
-        background: #ECF3FF;
-    }
-    &:nth-child(2){
-        background: #F5F5F5;
-    }
-    &:nth-child(3){
-        background-color: rgba(0, 0, 0, 1);
     }
     &__link{
         display: flex;
@@ -1046,6 +1052,7 @@
         justify-content: center;
     }
     &__img{
+        vertical-align: middle;
         object-fit: contain;
         background-size: contain;
         height: auto;
@@ -1173,6 +1180,8 @@
         height: 100%;
         &-img{
             width: 160px;
+            max-height: 160px;
+            object-fit: contain;
             height: auto;
         }
         

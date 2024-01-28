@@ -757,9 +757,9 @@
         max-width: 1410px;
         width: 100%;
         overflow: hidden;
-        padding-top: 40px;
+        padding-top: 33px;
         @include s_1200(){
-            padding: 40px 24px;
+            padding: 33px 24px 25px;
         }
         @include s_576(){
             padding: 16px 16px;
@@ -769,7 +769,10 @@
         }
     }
     &__slider{
-        padding: 5px;
+        padding: 7px 10px 15px 10px;
+        @include s_576{
+            padding: 5px;
+        }
         box-sizing: border-box;
         overflow-x: hidden;
         &-button-prev{
@@ -823,17 +826,34 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            &-color{
-                display: block;
+            position: relative;
+            &:before{
+                content: "";
                 width: 16px;
                 height: 16px;
+                background-color: #77EE83;
                 border-radius: 50%;
+                flex-shrink: 0;
             }
+            &_not-actual{
+                &::before{
+                    content: url("../img/product/bx_time.svg");
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    background-color: transparent;
+                }
+            }
+           
         }
         &-delivery{
             display: flex;
             flex-direction: column;
             row-gap: 18px;
+            &_hidden{
+                display: none;
+            }
             &-option{
                 display: flex;
                 flex-direction: column;
@@ -879,6 +899,12 @@
         width: 100%;
         margin-top: 32px;
         margin-bottom: 12px;
+        &-icon{
+            display: inline-flex;
+            &_hidden{
+                display: none;
+            }
+        }
     }
 }
 .success-window{
@@ -896,7 +922,132 @@
         }
     }
 }
-
+.auth-window{
+    &__container{
+        max-width: 500px;
+        width: 100%;
+        padding: 40px;
+        @include s_576{
+            padding: 32px 16px;
+        }
+    }
+    &__form{
+        display: flex;
+        column-gap: 16px;
+        align-items: flex-end;
+        width: 100%;
+        @include s_576{
+            flex-direction: column;
+            row-gap: 16px;
+            align-items: flex-start;
+        }
+    }
+     
+    &__title{
+        font-size: 40px;
+        margin-bottom: 16px;
+        @include s_576{
+            margin-bottom: 8px;
+            font-size: 32px;
+        }
+    }
+    &__text{
+        font-size: 24px;
+        margin-bottom: 25px;
+        @include s_576{
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+    }
+    &__label{
+        width: 100%;
+    }
+    &__button{
+        max-width: 160px;
+        width: 100%;
+        @include s_576{
+            max-width: none;
+        }
+    }
+}
+.auth-code-window{
+    &__container{
+        max-width: 500px;
+        width: 100%;
+        padding: 40px;
+        @include s_576{
+            padding: 32px 16px;
+        }
+    }  
+    &__title{
+        font-size: 40px;
+        margin-bottom: 8px;
+        @include s_576{
+            margin-bottom: 8px;
+            font-size: 32px;
+        }
+    }
+    &__text{
+        font-size: 32px;
+        margin-bottom: 8px;
+        @include s_576{
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+    }
+    &__btn{
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        &:hover{
+            color: #7AABFF;
+        }
+        color: var(--prime-prime, #4286FA);
+        font-family: "SF Pro Display-Medium", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+.sms-code{
+    display: flex;
+    column-gap: 16px;
+    @include s_576{
+        column-gap: 13px;
+    }
+    &__input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--black-1, #31373C);
+        font-family: "SF Pro Display-Medium", sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: 80px;
+        height: 80px;
+        border-radius: 12px;
+        padding: 12px 25px 11px 25px;
+        box-sizing: border-box;
+        border: 1px solid var(--black-03, #CECECE);
+        margin-bottom: 8px;
+        margin-top: 16px;
+        @include s_576{
+            margin-bottom: 16px;
+            padding: 32px 16px;
+            width: 64px;
+            height: 64px;
+        }
+        &_failure{
+            border: 0.8px solid #FA4263;
+        }
+        &_success{
+            border: 0.8px solid #0ECF21;
+        }
+    }
+}
 
 .custom-select-container{
     display: flex;

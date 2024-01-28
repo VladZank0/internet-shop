@@ -7,7 +7,6 @@
     }
     @include s_576{
         padding: 24px 0;
-        padding-bottom: 0;
     }
     &__title{
         color: $black-1;
@@ -82,6 +81,12 @@
         }
         margin: 25px 0;
         &-item{
+            img{
+                max-height: 183px;
+                @include s_576{
+                    max-height: 130px;
+                }
+            }
             width: unset;
         }
     }
@@ -90,6 +95,11 @@
         margin-top: 16px;
         &-img{
             max-width: 883px;
+            height: auto;
+            width: 100%;
+            object-fit: contain;
+            max-height: 530px;
+            object-position: left;
         }
         &-body{
             h2,h3,h4,h5,h6{
@@ -118,10 +128,13 @@
             }
             
             img{
-                max-width: 883px;
+                max-width: 800px;
                 width: 100%;
+                object-position: left;
                 height: auto;
                 margin: 16px 0;
+                object-fit: contain;
+                max-height: 530px;
             }
             box-sizing: border-box;
             color: $black-1;

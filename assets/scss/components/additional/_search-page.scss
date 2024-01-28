@@ -95,9 +95,11 @@
         }
         img{
             // margin-left: -30px;
-            width: 326px;
+            // width: 326px;
+            max-height: 183px;
             text-align: start;
-            @include s_768{
+            @include s_576{
+                max-height: 130px;
                 width: unset;
             }
         }

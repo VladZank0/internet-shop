@@ -250,7 +250,7 @@
                 }
                 &__preview{
                     display: flex;
-                    align-items: center;
+                    align-self: center;
                 }
                 &__details{
                     display: flex;
@@ -264,7 +264,7 @@
                     row-gap: 8px;
                     max-width: 384px;
                     width: 100%;
-                    &:nth-child(even){
+                    &_padding{
                         max-width: 315px;
                         padding: 15px 16px 6px 24px;
                         box-sizing: border-box;

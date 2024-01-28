@@ -22,22 +22,35 @@
             display: none;
         }
     }
+    &__icon{
+        display: inline-flex;
+        &_hidden{
+            display: none;
+        }
+    }
     &__delete-button{
         display: inline-flex;
-    }
-    &__delete-button-icon{
+        background: transparent;
+        border: none;
+        cursor: pointer;
         &:hover{
-            cursor: pointer;
             path{
                 fill: $prime-prime;;
             }
         }
     }
+    
     &__delete-button_absolute{
         display: block;
         position: absolute;
         top: 0;
         right: 0;
+        cursor: pointer;
+        &:hover{
+            path{
+                fill: $prime-prime;;
+            }
+        }
         @include s_576{
             display: none;
         }
@@ -99,33 +112,30 @@
     }
     &__preview-img{
         width: 134px;
+        object-fit: contain;
+        max-width: 134px;
+        height: auto;
+        max-height: 134px;
     }
     &__button{
         display: flex;
         justify-content: center;
         align-items: center;
         column-gap: 8px;
-        padding: 8px;
         border-radius: 8px;
-        background: $prime-prime;
         font-family: 'SF Pro Display-Medium', sans-serif;
-        color: white;
-        border: none;
         outline: none;
         font-size: 17px;
         font-weight: 500;
         overflow-x: hidden;
         width: 100%;
         margin-top: auto;
-        &_hidden{
-            display: none;
-        }
-        &:hover{
-            cursor: pointer;
-            background: #7AABFF;
-        }
-        &-icon_hidden{
-            display: none;
+        height: 40px;
+        padding: 0;
+        overflow: hidden;
+        &-text{
+            text-align: center;
+            line-height: 1;
         }
         &_hidden{
             display: none;
@@ -233,6 +243,8 @@
                 width: 150px;
                 &-img{
                     width: 64px;
+                    height: auto;
+                    max-height: 64px;
                 }
             }
             &-delete{

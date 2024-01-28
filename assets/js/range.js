@@ -39,6 +39,14 @@
           });
     }
   
-  
+    var credit = document.getElementById('credit-term');
+
+    credit_range.noUiSlider.on('update', function (values, handle, unencoded) {
+      var value = values[handle];
+      credit.value = value;
+    });
+    credit.addEventListener('change', function () {
+        slider.noUiSlider.set([null, this.value]);
+    });
 
 }())

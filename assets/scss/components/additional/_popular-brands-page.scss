@@ -56,11 +56,16 @@
            
             &-img{
                 object-fit: contain;
+                max-width: 120px;
+                max-height: 90px;
+                height: auto;
+                object-position: center;
                 &-wrapper{
                     display: flex;
                     justify-content: center;
+                    align-items: center;
                     width: 144px;
-                    height: 146px;
+                    height: 144px;
                     border-radius: 16px;
                     background: var(--black-005, #FCFCFC);
                 }

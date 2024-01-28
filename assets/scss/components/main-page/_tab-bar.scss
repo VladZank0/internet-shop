@@ -11,45 +11,18 @@
     @include s_1200{
         display: flex;
     }
-    &_full{
-        flex-direction: column;
-        padding: 9px 0;
-        box-sizing: border-box;
-    }
-    &__basket-btn{
-        padding: 8px;
-        border-radius: 12px;
-        background: #F5F5F5;
-        position: relative;
-        height: 24px;
-        &-amount{
-            display: none;
-            position: absolute;
-            top: 3px;
-            right: 5px;
-            color: #FFF;
-            font-family:'SF Pro Display-Regualr', sans-serif;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            &_active{
-                display: block;
-            }
-        }
-        &_filled{
-            background-color: $prime-green;
-            svg path{
-                fill: white;
-            }
-        }
-        &_active{
-            background-color: $prime-prime;
-            svg path{
-                fill: white;
-            }
+    &__container{
+        display: flex;
+        align-items: center;
+        &_full{
+            flex-direction: column;
+            row-gap: 11px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            box-sizing: border-box;
         }
     }
+    
     &__list{
         
         &_hidden{
@@ -67,7 +40,17 @@
         column-gap: 4px;
         justify-content: center;
         height: 100%;
-        
+        &-btn{
+            &_hidden{
+                display: none;
+            }
+        }
+        &-link{
+            display: flex;
+            align-items: center;
+            column-gap: 4px;
+            height: 100%;
+        }
         &-icon{
             height: 24px;
             &:hover{

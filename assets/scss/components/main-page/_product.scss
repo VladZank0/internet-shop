@@ -14,6 +14,7 @@
         width: 150px;
         padding: 8px;
         // min-height: 508px;
+        background: transparent;
         height: 100%;
         border: none;
         box-shadow: unset;
@@ -29,6 +30,9 @@
     &__delete-btn{
         margin-left: auto;
         display: inline-flex;
+        background: transparent;
+        cursor: pointer;
+        border: none;
         svg{
             &:hover{
                 path{
@@ -85,11 +89,15 @@
     &__top-button{
         border: none;
         background-color: transparent;
-        outline: none;
         height: 24px;
         &:hover{
             cursor: pointer;
             
+            svg path{
+                stroke: $prime-prime;
+            }
+        }
+        &_active{
             svg path{
                 stroke: $prime-prime;
             }
@@ -141,6 +149,7 @@
         position: relative;
         width: 208px;
         height: 208px;
+        max-height: 208px;
         display: flex;
         flex-shrink: 0;
         margin: 0 auto;
@@ -149,6 +158,10 @@
         @include s_576{
             width: 134px;
             height: 134px;
+            max-height: 134px;
+        }
+        &-link{
+            height: 100%;
         }
         &-img{
             width: 100%;
@@ -239,12 +252,10 @@
         &::before{
             content: url("../img/product/bx_time.svg");
             display: block;
-            width: 16px;
-            height: 16px;
+            width: 24px;
+            height: 24px;
             border-radius: 50%;
             background-color: transparent;
-            transform: translateY(-20%);
-            margin-right: 6px;
         }
     }
     &__basket-button{
@@ -259,11 +270,11 @@
         font-family: 'SF Pro Display-Medium', sans-serif;
         color: white;
         border: none;
-        outline: none;
         font-size: 17px;
         font-weight: 500;
         overflow-x: hidden;
         transition: .3s;
+        height: 48px;
         @include s_576{
             padding: 0 2px;
             height: 48px;
@@ -306,14 +317,15 @@
             background: transparent;
             overflow: hidden;
             padding: 13px;
+            margin-bottom: 21px;
             @include s_576{
                 padding: 0 2px;
                 height: 48px;
+                margin-bottom: 46px;
             }
             &:hover{
                 border: 1px solid transparent;
-                color: white;
-                background: #7AABFF;
+                background: #D3E4FF;
             }
         }
         &:hover{
@@ -329,7 +341,8 @@
         }
     }
     &__bottom-buttons_hidden{
-        visibility: hidden;
+        // visibility: hidden;
+        display: none;
     }
     &__credit-button{
         &:hover{
@@ -344,7 +357,6 @@
         font-style: normal;
         font-weight: 400;
         border: none;
-        outline: none;
         background-color: transparent;
     }
     &__fast-buy-button{
@@ -360,7 +372,6 @@
         font-style: normal;
         font-weight: 400;
         border: none;
-        outline: none;
         background-color: transparent;
     }
     &__price{

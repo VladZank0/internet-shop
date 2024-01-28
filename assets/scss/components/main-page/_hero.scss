@@ -24,7 +24,7 @@
         font-weight: 600;
         font-size: 36px;
         font-style: normal;
-        padding: 55px 46px;
+        padding: 55px 44px;
         box-sizing: border-box;
         overflow: hidden;
         width: 348px;
@@ -52,8 +52,11 @@
         }
         
         &-img{
+            object-fit: contain;
+            max-height: 357px;
             @media (max-width:500px){
-                height: 281px;
+                // height: 281px;
+                max-height: 274px;
             }
             position: absolute;
             bottom: 0;

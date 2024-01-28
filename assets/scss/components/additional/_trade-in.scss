@@ -63,6 +63,8 @@
                 flex-grow: 1;
                 border-radius: 24px;
                 width: 240px;
+                max-width: 650px;
+                margin: 0 auto;
                 @include s_576{
                     flex-direction: row;
                     column-gap: 16px;
@@ -95,11 +97,13 @@
                     &-wrapper{
                         display: flex;
                         justify-content: center;
-                        width: 237px;
-                        height: 160px;
+                        max-width: 237px;
+                        width: 100%;
+                        max-height: 160px;
+                        height: 100%;
                         @include s_576{
-                            width: 120px;
-                            height: 81px;
+                            max-width: 120px;
+                            max-height: 81px;
                         }
                     }
                 }

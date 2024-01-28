@@ -90,7 +90,6 @@ $black-07: #595959;
 *{
     margin: 0;
     padding: 0;
-    outline: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0;
@@ -98,7 +97,6 @@ $black-07: #595959;
     -webkit-tap-highlight-color: transparent;
     -moz-font-smoothing: antialiased;
     font-synthesis: weight;
-    
 }
 ul{
     list-style-type: none;
@@ -115,10 +113,20 @@ body{
         margin-top: 63px;
     }
 }
-input[type="text"]:focus:not(.search__input), input[type="text"]:hover:not(.search__input){
-    border: 1px solid $prime-prime;
-}
 
+input[type="text"]:focus:not(.busket-page__item-count-input, .sms-code__input), 
+input[type="text"]:hover:not(.busket-page__item-count-input, .sms-code__input),
+input[type="email"]:focus,
+input[type="radio"]:focus:not(.rating-input__star-input),
+input[type="email"]:hover,
+input[type="radio"]:hover:not(.rating-input__star-input)
+{
+    border: 1px solid $prime-prime;  
+}
+input:not(input[type="checkbox"],.search__input, .busket-page__item-count-input,.rating-input__star-input){
+    outline: none;
+}
+ 
 
 .container{
     max-width: 1460px;
@@ -496,6 +504,7 @@ input[type="text"]:focus:not(.search__input), input[type="text"]:hover:not(.sear
     box-sizing: border-box;
     border: none;
     text-align: center;
+    height: 48px;
     &:hover{
         cursor: pointer;
         transition: .3s;
@@ -516,6 +525,7 @@ input[type="text"]:focus:not(.search__input), input[type="text"]:hover:not(.sear
             border: 1px solid transparent;
         }
     }
+    
 }
 .close-btn{
     &:hover{

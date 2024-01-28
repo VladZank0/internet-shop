@@ -21,6 +21,7 @@
     }
     &__back-button{
         display: flex;
+        width: fit-content;
         align-items: center;
         color: $prime-prime;
         font-family: 'SF Pro Display-Regular', sans-serif;
@@ -64,8 +65,12 @@
         }
         &-img{
             width: 120px;
+            max-height: 120px;
+            object-fit: contain;
+            object-position: left;
             @include s_768{
                 width: 64px;
+                max-height: 64px;
             }
         }
         &-title{
@@ -131,6 +136,7 @@
                 font-weight: 400;
                 line-height: 120%;
                 white-space: nowrap;
+               
             }
             &-button{
                 display: inline-flex;
@@ -160,12 +166,12 @@
                     display: flex;
                     flex-direction: column;
                     color: $black-05;
-                    font-family: 'SF Pro Display-Regualar', sans-serif;
+                    font-family: 'SF Pro Display-Regular', sans-serif;
                     font-weight: 400;
                 }
                 &_del{
                     color: $black-05;
-                    font-family: 'SF Pro Display-Regualar', sans-serif;
+                    font-family: 'SF Pro Display-Regular', sans-serif;
                     font-weight: 400;
                     font-size: 16px;
                 }
@@ -351,6 +357,9 @@
         }
     }
     &__form{
+        display: flex;
+        justify-content: center;
+        width: 100%;
         &-title{
             color: $black-1;
             font-family: 'SF Pro Display-Bold', sans-serif;
@@ -488,9 +497,7 @@
     }
     &__form-tab{
         display: block;
-        color: $black-1;
-        border-radius: 8px;
-        background: $prime-prime-5;         
+        position: relative;        
         font-family: 'SF Pro Display-Medium', sans-serif;
         font-size: 24px;
         font-style: normal;
@@ -507,18 +514,35 @@
             padding: 12px 16px;
             width: 100%;
         }
-
-        &:hover{
-            cursor: pointer;
-            color:  #FFF;
-            background: $prime-prime;
-        }
-        &_active{
-            color:  #FFF;
-            background: $prime-prime;
+        span{
+            position: relative;
+            z-index: 1;
+            pointer-events: none;
         }
         &-radio{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            color: $black-1;
+            border-radius: 8px;
+            background: $prime-prime-5; 
+            left: 0;
+            top: 0;
+            height: 100%;
             appearance: none;
+            cursor: pointer;
+            &:checked{
+                background: $prime-prime;
+                & ~ span{
+                    color:  #FFF;
+                }
+            }
+            &:hover ~ span{
+                color:  #FFF;
+            }
+            &:hover{
+                background: $prime-prime;
+            }
         }
     }
     &__form-radios{
@@ -538,10 +562,19 @@
         position: relative;
         z-index: 2;
         // background-color: black;
+        @include s_1200{
+            width: 100%;
+        }
+        @media (max-width: 1100px){
+            width: fit-content;
+        }
         @include s_700{
             width: 100%;
             padding: 16px;
         } 
+        &-img_active{
+            display: none;
+        }
         &-title{
             display: flex;
             column-gap: 4px;
@@ -593,21 +626,11 @@
                 & ~ *{
                     color: $prime-prime;   
                 }
-                & ~ .busket-page__form-radio-title .busket-page__form-radio-icon_stroke-fill{
-                    path{
-                        fill: none;
-                        stroke: $prime-prime;
-                    }
+                & + span > .busket-page__form-radio-img_active{
+                    display: block;
                 }
-                & ~ .busket-page__form-radio-title svg path{
-                    fill: $prime-prime;
-                }
-                & ~ .busket-page__form-radio-title svg rect{
-                    fill: $prime-prime;
-                }
-                & ~ .busket-page__form-radio-title_empty-svg-path svg path{
-                    fill: none;
-                    stroke: $prime-prime;
+                & + span > .busket-page__form-radio-img{
+                    display: none;
                 }
                 & ~ .busket-page__form-select-location-item-selected-mark{
                     display: inline-flex;
@@ -620,6 +643,7 @@
             }
             
             &_date{
+                padding: 16px 32px;
                 appearance: none;
                 position: relative;
                 color: $black-1;
@@ -688,7 +712,7 @@
             max-width: 100%;
             align-items: center;
             text-align: center;
-            padding: 16px 32px;
+            padding: 0;
             border: 1px solid $black-01; 
             border-radius: 12px; 
             &:hover{
@@ -720,6 +744,7 @@
                 left: 32px;
             }
         }
+        
     }
     &__form-select-location-list{
         display: flex;
@@ -745,6 +770,12 @@
         box-sizing: border-box;
         max-width: 547px;
         width: 100%;
+        @include s_1200{
+            max-width: none;
+        }
+        @media (max-width: 1100px){
+            max-width: 547px;
+        }
         @include s_700{
             max-width: none;
         }

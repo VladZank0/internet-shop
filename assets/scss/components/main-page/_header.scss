@@ -8,6 +8,7 @@
         position: static;
     }
     &__nav{
+        margin-left: auto;
         @include s_1200{
             display: none;
         }
@@ -338,45 +339,57 @@
 }
 .mini-logo{
     display: none;
+    img{
+        width: 134px;
+        max-height: 33px;
+        height: auto;
+        object-fit: contain;
+    }
     @include s_1200{
         display: flex;
-        align-items: center;
-        column-gap: 10px;
-        font-family: Droid Sans;
-        font-size: 24.316px;
-        font-style: normal;
-        font-weight: bold;
-        line-height: normal;
-        font-family: 'Droid Sans-Bold', sans-serif ;
-        color: $prime-prime;
-        @include s_380{
-            column-gap: 8px;
-        }
-        &__icon{
-            display: inline-flex;
-        }
-        &__text{
-            @media (max-width:310px) {
-                display: none;
-            }
-        }
+        // align-items: center;
+        // column-gap: 10px;
+        // font-family: Droid Sans;
+        // font-size: 24.316px;
+        // font-style: normal;
+        // font-weight: bold;
+        // line-height: normal;
+        // font-family: 'Droid Sans-Bold', sans-serif ;
+        // color: $prime-prime;
+        // @include s_380{
+        //     column-gap: 8px;
+        // }
+        // &__icon{
+        //     display: inline-flex;
+        // }
+        // &__text{
+        //     @media (max-width:310px) {
+        //         display: none;
+        //     }
+        // }
         &:hover{
             cursor: pointer;
         }
     }
 }
 .logo{
-    display: flex;
-    margin-right: 20px;
-    align-items: center;
-    column-gap: 16px;
-    font-family: Droid Sans;
-    font-size: 36.667px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-family: 'Droid Sans-Bold', sans-serif;
-    color: $prime-prime;
+    img{
+        width: 203px;
+        max-height: 50px;
+        height: auto;
+        object-fit: contain;
+    }
+    // display: flex;
+    // margin-right: 20px;
+    // align-items: center;
+    // column-gap: 16px;
+    // font-family: Droid Sans;
+    // font-size: 36.667px;
+    // font-style: normal;
+    // font-weight: bold;
+    // line-height: normal;
+    // font-family: 'Droid Sans-Bold', sans-serif;
+    // color: $prime-prime;
     &__icon{
         display: inline-flex;
     }
@@ -422,21 +435,18 @@
     display: flex;
     align-items: center;
     column-gap: 8px;
-    max-width: 569px;
-    height: 48px;
-    padding: 0 16px;
-    box-sizing: border-box;
+    position: relative;
     width: 100%;
-    border-radius: 8px;
-    border: 1px solid $black-01;
-    background-color: $black-005;
+    max-width: 569px;
     @include s_1200{
         max-width: none;
     }
     &__btn{
+        position: absolute;
         border: none;
         background-color: transparent;
         outline: none;
+        left: 16px;
         &:hover{
             cursor: pointer;
             svg path{
@@ -445,15 +455,24 @@
         }
     }
     &__input{
-        border: none;
         outline: none;
         width: 100%;
+        height: 100%;
         font-family: 'SF Pro Display-Regular', sans-serif;
         font-size: 16px;
         background-color: $black-005;
         font-style: normal;
         font-weight: 400;
-        height: 100%;
+        height: 48px;
+        padding: 0 16px;
+        padding-left: 48px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        border: 1px solid $black-01;
+        background-color: $black-005;
+        &:focus{
+            background: #FFF;
+        }
         &::placeholder{
             color: $black-04;
         }
@@ -461,8 +480,19 @@
 }
 .favorite-btn{
     position: relative;
+    &_active{
+        svg path{
+            stroke: $prime-prime;
+        }
+        .tab-bar__item-text{
+            color: $prime-prime;
+        }
+        .favorite-btn__amount{
+            display: block;
+        }
+    }
     &__amount{
-        display: block;
+        display: none;
         position: absolute;
         padding: 1px 5px;
         border-radius: 50%;
@@ -489,6 +519,7 @@
     }
 }
 .compare-btn{
+    position: relative;
     &__icon{
         &:hover{
             svg path{
@@ -496,11 +527,46 @@
             }
         }
     }
+    &_active{
+        svg path{
+            stroke: $prime-prime;
+        }
+        .tab-bar__item-text{
+            color: $prime-prime;
+        }
+        .compare-btn__amount{
+            display: block;
+        }
+    }
+    &__amount{
+        display: none;
+        position: absolute;
+        padding: 1px 5px;
+        border-radius: 50%;
+        background: #2ED23F;
+        color: #FFF;
+        font-family: 'SF Pro Display-Regular', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        right: -5px;
+        top: 5px;
+        transform: translate(5px, -50%);
+    }
     &:hover{
         cursor: pointer;
     }
 }
 .profile-btn{
+    &_active{
+        svg path{
+            stroke: $prime-prime;
+        }
+        .tab-bar__item-text{
+            color: $prime-prime;
+        }
+    }
     &__icon{
         &:hover{
             svg path{
@@ -550,6 +616,47 @@
         color: #FFF;
         &:hover{
             background: #3EDD4E;
+        }
+    }
+}
+.mobile-basket-btn{
+    &__indicator{
+        padding: 8px;
+        border-radius: 12px;
+        background: #F5F5F5;
+        position: relative;
+        height: 24px;
+        &-amount{
+            display: none;
+            position: absolute;
+            top: 3px;
+            right: 5px;
+            color: #FFF;
+            font-family:'SF Pro Display-Regualr', sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            &_active{
+                display: block;
+            }
+        }
+        &_filled{
+            background-color: $prime-green;
+            svg path{
+                fill: white;
+            }
+        }
+        &_active{
+            background-color: $prime-prime;
+            svg path{
+                fill: white;
+            }
+        }
+    }
+    &_active{
+        .tab-bar__item-text{
+            color: $prime-prime;
         }
     }
 }
