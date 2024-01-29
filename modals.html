@@ -904,6 +904,30 @@
             </div>
         </div>
     </div>
+    <div style="display: none;" id="trade-in-window" class="modal-window trade-in-window">
+        <div class="modal-window__container trade-in-window__container">
+            <button class="modal-window__close" aria-label="Закрыть модальное окно">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4.57492 4.575C4.85621 4.29379 5.23768 4.13582 5.63542 4.13582C6.03317 4.13582 6.41463 4.29379 6.69592 4.575L11.9999 9.879L17.3039 4.575C17.5868 4.30176 17.9657 4.15057 18.359 4.15399C18.7523 4.1574 19.1285 4.31516 19.4066 4.59327C19.6848 4.87138 19.8425 5.2476 19.8459 5.6409C19.8493 6.03419 19.6982 6.4131 19.4249 6.696L14.1209 12L19.4249 17.304C19.6982 17.5869 19.8493 17.9658 19.8459 18.3591C19.8425 18.7524 19.6848 19.1286 19.4066 19.4067C19.1285 19.6848 18.7523 19.8426 18.359 19.846C17.9657 19.8494 17.5868 19.6982 17.3039 19.425L11.9999 14.121L6.69592 19.425C6.41302 19.6982 6.03412 19.8494 5.64082 19.846C5.24752 19.8426 4.87131 19.6848 4.59319 19.4067C4.31508 19.1286 4.15733 18.7524 4.15391 18.3591C4.15049 17.9658 4.30168 17.5869 4.57492 17.304L9.87892 12L4.57492 6.696C4.29372 6.41471 4.13574 6.03324 4.13574 5.6355C4.13574 5.23775 4.29372 4.85629 4.57492 4.575Z" fill="#CECECE"/>
+                </svg>
+            </button>
+            <form class="trade-in-window__form">
+                <p class="modal-window__title trade-in-window__title">Трейд-Ин</p>
+                <p class="modal-window__text trade-in-window__text">Сдайте своё старое устройство и получите скидку на новое</p>
+                <label class="modal-window__label trade-in-window__label">Какое устройство вы хотите сдать?
+                    <input class="modal-window__input default-input" name="device-name" required type="text">
+                </label>
+                <label class="modal-window__label trade-in-window__label">Ваш номер телефона
+                    <input class="modal-window__input default-input phone-input" name="phonenumber" required type="text" placeholder="+7 900 123 45 67">
+                </label>
+                <button type="submit" class="trade-in-window__button default-btn">Получить предложение</button>
+                <label class="custom-checkbox trade-in-window__checkbox">
+                    <input class="custom-checkbox__input" name="personal-data" required checked type="checkbox">
+                    Даю согласие на обработку своих персональных данных
+                </label>
+            </form>
+        </div>
+    </div>
     <div style="display: none;" id="fast-buy-window" class="modal-window fast-buy-window">
         <div class="modal-window__container fast-buy-window__container">
             <button class="modal-window__close" aria-label="Закрыть модальное окно">
@@ -931,28 +955,31 @@
 
         </div>
     </div>
-    <div style="display: none;" id="trade-in-window" class="modal-window trade-in-window">
-        <div class="modal-window__container trade-in-window__container">
+    <div style="display: none;" id="found-cheaper-window" class="modal-window found-cheaper-window">
+        <div class="modal-window__container found-cheaper-window__container">
             <button class="modal-window__close" aria-label="Закрыть модальное окно">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M4.57492 4.575C4.85621 4.29379 5.23768 4.13582 5.63542 4.13582C6.03317 4.13582 6.41463 4.29379 6.69592 4.575L11.9999 9.879L17.3039 4.575C17.5868 4.30176 17.9657 4.15057 18.359 4.15399C18.7523 4.1574 19.1285 4.31516 19.4066 4.59327C19.6848 4.87138 19.8425 5.2476 19.8459 5.6409C19.8493 6.03419 19.6982 6.4131 19.4249 6.696L14.1209 12L19.4249 17.304C19.6982 17.5869 19.8493 17.9658 19.8459 18.3591C19.8425 18.7524 19.6848 19.1286 19.4066 19.4067C19.1285 19.6848 18.7523 19.8426 18.359 19.846C17.9657 19.8494 17.5868 19.6982 17.3039 19.425L11.9999 14.121L6.69592 19.425C6.41302 19.6982 6.03412 19.8494 5.64082 19.846C5.24752 19.8426 4.87131 19.6848 4.59319 19.4067C4.31508 19.1286 4.15733 18.7524 4.15391 18.3591C4.15049 17.9658 4.30168 17.5869 4.57492 17.304L9.87892 12L4.57492 6.696C4.29372 6.41471 4.13574 6.03324 4.13574 5.6355C4.13574 5.23775 4.29372 4.85629 4.57492 4.575Z" fill="#CECECE"/>
                 </svg>
             </button>
-            <form class="trade-in-window__form">
-                <p class="modal-window__title trade-in-window__title">Трейд-Ин</p>
-                <p class="modal-window__text trade-in-window__text">Сдайте своё старое устройство и получите скидку на новое</p>
-                <label class="modal-window__label trade-in-window__label">Какое устройство вы хотите сдать?
-                    <input class="modal-window__input default-input" name="device-name" required type="text">
-                </label>
-                <label class="modal-window__label trade-in-window__label">Ваш номер телефона
+            <form class="found-cheaper-window__form">
+                <a href="#" class="found-cheaper-window__img-link">
+                    <img class="modal-window__img found-cheaper-window__img" src="./assets/img/modals/product-img.png" alt="">
+                </a>
+                <p class="modal-window__title found-cheaper-window__title">Нашли дешевле?</p>
+                <a href="#" class="modal-window__text modal-window__link-text found-cheaper-window__text">Смартфон Xiaomi Redmi 10C NFC 4/128 ГБ RU, синий океан</a>
+                
+                <label class="modal-window__label found-cheaper-window__label">Ваш номер телефона
                     <input class="modal-window__input default-input phone-input" name="phonenumber" required type="text" placeholder="+7 900 123 45 67">
                 </label>
-                <button type="submit" class="trade-in-window__button default-btn">Получить предложение</button>
-                <label class="custom-checkbox trade-in-window__checkbox">
+               
+                <button class="found-cheaper-window__button default-btn">Получить предложение</button>
+                <label class="custom-checkbox found-cheaper-window__checkbox">
                     <input class="custom-checkbox__input" name="personal-data" required checked type="checkbox">
                     Даю согласие на обработку своих персональных данных
                 </label>
             </form>
+
         </div>
     </div>
 

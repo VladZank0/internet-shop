@@ -371,6 +371,63 @@
         margin-top: 17px;
     }
 }
+.found-cheaper-window{
+    &__form{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-rows: min-content;
+        grid-template-areas: 
+        'img title'
+        'img text'
+        'img input'
+        'img button'
+        'checkbox checkbox';
+        max-width: 640px;
+        @include s_576{
+            grid-template-areas: 
+            'title title'
+            'img text'
+            'input input'
+            'button button'
+            'checkbox checkbox';
+        }
+    }
+    &__img{
+        &-link{
+            grid-area: img;
+        }
+        margin-right: 16px;
+        @include s_576{
+            margin-bottom: 12px;
+        }
+    }
+    &__title{
+        grid-area: title;
+        @include s_576{
+            margin-bottom: 16px;
+        }
+    }
+    &__label{
+        grid-area: input;
+        max-width: 275px;
+        @include s_576{
+            max-width: none;
+        }
+    }
+    &__checkbox{
+        margin-top: 24px;
+        grid-area: checkbox;
+    }
+    &__text{
+        grid-area: text;
+        margin-bottom: 16px;
+    }
+    &__button{
+        grid-area: button;
+        width: 100%;
+        margin-top: 17px;
+    }
+}
 .credit-window{
     &__container{
         max-width: 640px; 
