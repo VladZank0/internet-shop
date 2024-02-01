@@ -23,6 +23,28 @@ const hero_slider = new Swiper ('.hero__slider', {
     
     
 })
+const watched_slider = new Swiper ('.watched-slider', {
+  spaceBetween: 16,
+  watchOverflow: true,
+  slidesPerView: "auto",
+  centeredSlidesBounds:true,
+  observer: true,
+  observeParents: true,
+  loop:false,
+  slidesOffsetAfter: 0,
+  dynamicBullets: true
+})
+const popular_brands_slider = new Swiper ('.popular-brands-slider', {
+  spaceBetween: 16,
+  watchOverflow: true,
+  slidesPerView: "auto",
+  centeredSlidesBounds:true,
+  observer: true,
+  observeParents: true,
+  loop:false,
+  slidesOffsetAfter: 0,
+  dynamicBullets: true
+})
 const product_slider = new Swiper ('.product-slider', {
     
     pagination: {

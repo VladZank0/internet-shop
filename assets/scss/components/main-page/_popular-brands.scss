@@ -1,27 +1,21 @@
 .popular-brands{
     padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 34px;
     @include s_576{
         padding-top: 32px;
-        padding-bottom: 32px;
+        padding-bottom: 18px;
     }
     &__title{
         margin: 0;
     }
+    &-slider{
+        overflow: hidden;
+        padding: 10px 12px 16px 8px;
+    }
     &__wrapper{
         display: flex;
-        column-gap: 16px;
         justify-content: flex-start;
         width: 100%;
-        overflow-x: auto;
-        padding: 10px 7px;
-        box-sizing: border-box;
-        &::-webkit-scrollbar{
-            display: none;
-        }
-        -ms-overflow-style: none;  
-        scrollbar-width: none; 
-        overflow-y: scroll;
     }
     &__item{
         display: flex;
@@ -32,8 +26,10 @@
         min-height: 144px;
         border-radius: 16px;
         background: $black-005;
+        transition: .3s;
         &:hover{
             box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.1);
+            transition: .3s;
         }
         &-img{
             object-fit: contain;
