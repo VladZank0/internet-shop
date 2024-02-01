@@ -45,6 +45,17 @@ const popular_brands_slider = new Swiper ('.popular-brands-slider', {
   slidesOffsetAfter: 0,
   dynamicBullets: true
 })
+const collection_line_slider = new Swiper ('.collection-line-slider', {
+  spaceBetween: 16,
+  watchOverflow: true,
+  slidesPerView: "auto",
+  centeredSlidesBounds:true,
+  observer: true,
+  observeParents: true,
+  loop:false,
+  slidesOffsetAfter: 0,
+  dynamicBullets: true
+})
 const product_slider = new Swiper ('.product-slider', {
     
     pagination: {
