@@ -12,13 +12,13 @@
     box-sizing: border-box;
     overflow-y: auto;
     @include s_1200(){
-        padding: 0 24px;
+        padding: 24px 24px;
     }
     @include s_576(){
-        padding: 0 16px;
+        padding: 16px 16px;
     }
     @include s_380(){
-        padding: 0 10px;
+        padding: 10px 10px;
     }
     &__container{
         position: relative;
