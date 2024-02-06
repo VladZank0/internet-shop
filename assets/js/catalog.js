@@ -45,8 +45,10 @@ var navigator = menu.navigation({
                 })
             }
         })
-        
-        let catalog_list = document.querySelector('.catalog-page__catalog-list');
+    }
+
+    let catalog_list = document.querySelector('.catalog-page__catalog-list');
+    if(catalog_list){
         let list_view_change_btn = document.querySelector('.catalog-page__view-modes-list');
         let card_view_change_btn = document.querySelector('.catalog-page__view-modes-card');
         list_view_change_btn.addEventListener('click', () => {
