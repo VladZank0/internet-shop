@@ -90,6 +90,7 @@
     }
     &__btn{
         &:hover{
+            transition: .3s;
             cursor: pointer;
             box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);
         }
@@ -104,6 +105,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        transition: .3s;
         &_large{
             @include s_576{
                 width: 100%;

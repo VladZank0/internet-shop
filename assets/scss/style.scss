@@ -393,17 +393,19 @@ input:not(input[type="checkbox"],.search__input, .busket-page__item-count-input,
     border-radius: 8px;
     border: 1px solid $prime-prime;    
     color: $prime-prime;
-    padding: 10.5px;
+    padding: 14.5px;
     font-family: 'SF Pro Display-Medium', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     box-sizing: border-box;  
+    height: 48px;
+    transition: .3s;
     &:hover{
+        transition: .3s;
         cursor: pointer;
-        color: white;
-        background-color: #7AABFF;
+        background: #D3E4FF;
         border: 1px solid transparent;
     }
 }
@@ -523,6 +525,15 @@ input:not(input[type="checkbox"],.search__input, .busket-page__item-count-input,
         &:hover{
             background: #D3E4FF;
             border: 1px solid transparent;
+        }
+    }
+    &_white{
+        color: $prime-prime;
+        border: none;
+        background: white;
+        &:hover{
+            background: white;
+            box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.1);
         }
     }
     
@@ -730,4 +741,5 @@ input:not(input[type="checkbox"],.search__input, .busket-page__item-count-input,
 @import "./components/additional/trade-in";
 @import "./components/additional/popular-brands-page";
 @import "./components/modals/modal-window";
+@import "./components/account/account";
 
