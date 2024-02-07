@@ -391,10 +391,10 @@
     
     &-btn{
         &_active{
-            .tab-bar__item-icon svg path{
+            .catalog-float-buttons__item-icon svg path{
                 fill: $prime-prime;
             }
-            .tab-bar__item-text{
+            .catalog-float-buttons__item-text{
                 color: $prime-prime;
             }
         }
@@ -466,6 +466,9 @@
             justify-content: space-between;
             align-items: center;
             position: relative;
+            a{
+                color: var(--black-1, #31373C);
+            }
             &_active{
                 color: $prime-prime;
                 &::after{
@@ -475,15 +478,18 @@
                     width: 20px;
                     right: 0;
                 }
+                a{
+                    color: $prime-prime;
+                }
             }
         }
     }
     &-btn{
         &_active{
-            .tab-bar__item-icon svg path{
+            .catalog-float-buttons__item-icon svg path{
                 fill: $prime-prime;
             }
-            .tab-bar__item-text{
+            .catalog-float-buttons__item-text{
                 color: $prime-prime;
             }
         }

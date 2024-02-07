@@ -77,6 +77,7 @@
         display: flex;
         margin-bottom: 12px;
         column-gap: 4px;
+        margin-top: auto;
         @include s_576{
             display: none;
         }
@@ -107,9 +108,7 @@
         line-height: 120%;
         margin-bottom: 9px;
     }
-    &__preview-link{
-        margin-bottom: auto;
-    }
+   
     &__preview-img{
         width: 134px;
         object-fit: contain;
@@ -133,6 +132,9 @@
         height: 40px;
         padding: 0;
         overflow: hidden;
+        @include s_576{
+            margin-top: auto;
+        }
         &-text{
             text-align: center;
             line-height: 1;
@@ -217,7 +219,7 @@
             transform: translateX(-50%);
             top: 0px;
             z-index: 30;
-            padding: 23px 10px;
+            padding: 23px 10px 10px 23px;
             box-sizing: border-box;
             background: #FFF;
             box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);

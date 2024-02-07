@@ -36,7 +36,9 @@
             display: none;
             margin-top: 12px;
             @include s_768{
-                display: block;
+                &_visible{
+                    display: block;
+                }
             }      
         }
     }
@@ -50,13 +52,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        border: 1px solid var(--prime-prime-5, rgba(66, 134, 250, 0.05));
-        @include s_768{
-            &:not(:nth-child(-n+9)){
-                display: none;
-            }
+        &:not(:nth-child(1)){
+            border: 1px solid var(--prime-prime-5, rgba(66, 134, 250, 0.05));
         }
-        @include s_520{
+        @include s_768{
             &:not(:nth-child(-n+5)){
                 display: none;
             }
@@ -531,4 +530,61 @@
         font-weight: 400;
         line-height: normal;
     }
+}
+
+.catalog-float-buttons{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 56px;
+    z-index: 22;
+    background-color: white;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    display: none;
+    @include s_1200{
+        display: block;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        &-icon{
+            display: inline-flex;
+        }
+        &-text{
+            color: var(--black-1, #31373C);
+            font-family: 'SF Pro Display-Regular', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+
+.product-float-button-block{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 54px;
+    z-index: 22;
+    background-color: white;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    display: none;
+    @include s_1200{
+        display: block;
+    }
+}
+.product-float-button{
+    width: 100%;
 }
