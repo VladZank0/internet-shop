@@ -47,7 +47,8 @@ var navigator = menu.navigation({
         })
     }
 
-    let catalog_list = document.querySelector('.catalog-page__catalog-list');
+    let catalog_list = document.querySelector('.reload_catalog');
+
     if(catalog_list){
         let list_view_change_btn = document.querySelector('.catalog-page__view-modes-list');
         let card_view_change_btn = document.querySelector('.catalog-page__view-modes-card');
