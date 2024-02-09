@@ -159,6 +159,16 @@ const product_tabs_slider = new Swiper ('.product-tabs__slider', {
   slidesOffsetAfter:false,
   dynamicBullets: true
 })
+const accessories_tabs_slider = new Swiper ('.accessories__tabs-slider', {
+  spaceBetween: 8,
+  watchOverflow: true,
+  slidesPerView: "auto",
+  loop:false,
+  observer: true,
+  observeParents: true,
+  slidesOffsetAfter:false,
+  dynamicBullets: true
+})
 const compareSlider_fixed = new Swiper('.comparison-page__main-fixed-slider', {
   spaceBetween: 55,
   watchOverflow: true,

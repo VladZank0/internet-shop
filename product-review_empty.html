@@ -2817,11 +2817,21 @@
                                 <div class="container">
                                     <h3 class="accessories__title">Аксессуары для iPhone 14 Pro Max</h3>
                                     <div class="accessories__inner tabs-container">
-                                        <div class="accessories__tabs">
-                                            <button class= "accessories__tab tab" onclick="tabs(event)" data-content="#accessories-content-1">Название категории</button>
-                                            <button class= "accessories__tab tab tab_active" onclick="tabs(event)" data-content="#accessories-content-2">Название категории</button>
-                                            <button class= "accessories__tab tab" onclick="tabs(event)" data-content="#accessories-content-3">Название категории</button>
-                                            <button class= "accessories__tab tab" onclick="tabs(event)" data-content="#accessories-content-4">Название категории</button>
+                                        <div class="accessories__tabs-slider">
+                                            <ul class="accessories__tabs swiper-wrapper">
+                                                <li class="swiper-slide">
+                                                    <button class= "accessories__tab tab" onclick="tabs(event)" data-content="#accessories-content-1">Название категории</button>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <button class= "accessories__tab tab tab_active" onclick="tabs(event)" data-content="#accessories-content-2">Название категории</button>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <button class= "accessories__tab tab" onclick="tabs(event)" data-content="#accessories-content-3">Название категории</button>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <button class= "accessories__tab tab" onclick="tabs(event)" data-content="#accessories-content-4">Название категории</button>
+                                                </li>
+                                            </ul>
                                         </div>
                                         <div class="accessories__contents tabs-contents">
                                             <div id="accessories-content-1" class="tab-content accessories__content">
