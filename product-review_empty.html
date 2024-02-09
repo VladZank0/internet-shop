@@ -1579,15 +1579,33 @@
         </section>
         <section class="product-tabs">
                 <div class="product-tabs__inner tabs-container">
-                    <div class="product-tabs__tabs container">
-                        <button class="product-tabs__tab tab" onclick="tabs(event)" data-content="#product-content-1">О товаре</button>
-                        <button id="characteristics-tab" class="product-tabs__tab tab tab_active" onclick="tabs(event)" data-content="#product-content-2">Характеристики</button>
-                        <button id="reviews-tab" class="product-tabs__tab tab" onclick="tabs(event)" data-content="#product-content-3">Отзывы 16</button>
-                        <button class="product-tabs__tab tab" onclick="tabs(event)" data-content="#product-content-4">Вопросы 4</button>
-                        <button class="product-tabs__tab tab" onclick="tabs(event)" data-content="#product-content-5">Оплата</button>
-                        <button class="product-tabs__tab tab" onclick="tabs(event)" data-content="#product-content-6">Доставка</button>
-                        <button class="product-tabs__tab tab" onclick="tabs(event)" data-content="#product-content-7">Кредит</button>
-                        <button class="product-tabs__tab tab" onclick="tabs(event)" data-content="#product-content-8">Аксессуары</button>
+                    <div class="product-tabs__slider container">
+                        <ul class="product-tabs__tabs swiper-wrapper">
+                            <li class="swiper-slide">
+                                <button class="product-tabs__tab tab" onclick="tabs(event)" data-content="#product-content-1">О товаре</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <button id="characteristics-tab" class="product-tabs__tab tab tab_active" onclick="tabs(event)" data-content="#product-content-2">Характеристики</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <button id="reviews-tab" class="product-tabs__tab tab" onclick="tabs(event)" data-content="#product-content-3">Отзывы 16</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <button class="product-tabs__tab tab" onclick="tabs(event)" data-content="#product-content-4">Вопросы 4</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <button class="product-tabs__tab tab" onclick="tabs(event)" data-content="#product-content-5">Оплата</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <button class="product-tabs__tab tab" onclick="tabs(event)" data-content="#product-content-6">Доставка</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <button class="product-tabs__tab tab" onclick="tabs(event)" data-content="#product-content-7">Кредит</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <button class="product-tabs__tab tab" onclick="tabs(event)" data-content="#product-content-8">Аксессуары</button>
+                            </li>
+                        </ul>
                     </div>
                     <div class="product-tabs__contents tabs-contents">
                         <div id="product-content-1" class="tab-content product-tabs__content">
