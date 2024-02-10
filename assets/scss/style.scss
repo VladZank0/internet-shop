@@ -114,8 +114,8 @@ body{
     }
 }
 
-input[type="text"]:focus:not(.busket-page__item-count-input, .sms-code__input), 
-input[type="text"]:hover:not(.busket-page__item-count-input, .sms-code__input),
+input[type="text"]:focus:not(.busket-page__item-count-input), 
+input[type="text"]:hover:not(.busket-page__item-count-input),
 input[type="email"]:focus,
 input[type="radio"]:focus:not(.rating-input__star-input),
 input[type="email"]:hover,
@@ -389,6 +389,7 @@ input:not(input[type="checkbox"],.search__input, .busket-page__item-count-input,
 }
 .show-more-btn{
     width: 100%;
+    max-width: 822px;
     background-color: transparent;
     border-radius: 8px;
     border: 1px solid $prime-prime;    

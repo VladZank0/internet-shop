@@ -24,13 +24,13 @@
     }
     
     function codeFailure(){
-        clearCode()
+        clearCode();
         sms_code_inputs.forEach(e=>{
             e.classList.add('sms-code__input_failure');
         })
     }
     function codeSuccess(){
-        clearCode()
+        clearCode();
         sms_code_inputs.forEach(e=>{
             e.classList.add('sms-code__input_success');
         })
@@ -43,6 +43,5 @@
             e.classList.remove('sms-code__input_success');
         });
     }
-
 
 }())

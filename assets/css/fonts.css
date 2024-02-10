@@ -59,6 +59,16 @@
     font-weight: 900;
     font-style: italic;
 }
+@font-face {
+    font-family: 'SF Pro Display-Heavy';
+    src: url('../fonts/SFProDisplay2/SFProDisplay-Heavy.eot');
+    src: 
+        url('../fonts/SFProDisplay2/SFProDisplay-Heavy.woff2') format('woff2'),
+        url('../fonts/SFProDisplay2/SFProDisplay-Heavy.woff') format('woff'),
+        url('../fonts/SFProDisplay2/SFProDisplay-Heavy.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'SF Pro Display-Regular';

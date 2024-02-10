@@ -522,6 +522,11 @@
                 user-select: none;
                 pointer-events: none;
             }
+            &-input{
+                &-hidden{
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -1067,12 +1072,25 @@
         font-weight: 500;
         line-height: normal;
     }
+    &__execution-text{
+        color: $prime-green;
+        font-family: "SF Pro Display-Medium", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        &_waiting{
+            color: $black-05;
+        }
+    }
 }
 .sms-code{
     display: flex;
     column-gap: 16px;
+    margin-bottom: 8px;
+    margin-top: 16px;
     @include s_576{
         column-gap: 13px;
+        margin-bottom: 16px;
     }
     &__input{
         display: flex;
@@ -1090,13 +1108,11 @@
         padding: 12px 25px 11px 25px;
         box-sizing: border-box;
         border: 1px solid var(--black-03, #CECECE);
-        margin-bottom: 8px;
-        margin-top: 16px;
         @include s_576{
-            margin-bottom: 16px;
             padding: 32px 16px;
             width: 64px;
             height: 64px;
+            font-size: 40px;
         }
         &_failure{
             border: 0.8px solid #FA4263;

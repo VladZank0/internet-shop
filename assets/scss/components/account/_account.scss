@@ -6,9 +6,10 @@
         }
     }
     &-sidebar{
-        width: 350px;
+        width: 325px;
         position: relative;
         padding: 48px 24px 140px 0;
+        flex-shrink: 0;
         @include s_1200{
             width: 100%;
             padding: 24px 0 40px 0;
@@ -312,10 +313,10 @@
             display: flex;
             flex-direction: column;
             row-gap: 16px;
-            padding: 24px 0;
+            padding-bottom: 24px;
             box-sizing: border-box;
             @include s_768{
-                padding: 16px 0;
+                padding-bottom: 16px;
             }
             @include s_576{
                 row-gap: 12px;
@@ -407,7 +408,7 @@
         justify-content: space-between;
         align-items: center;
         row-gap: 40px;
-        padding: 0 90px;
+        padding: 0 93px;
         box-sizing: border-box;
         @include s_1200{
             row-gap: 12px;
@@ -419,7 +420,311 @@
             padding-bottom: 16px;
         }
     }
-    
+    &-bonus{
+        width: 100%;
+        padding: 48px 0 32px 40px;
+        box-sizing: border-box;
+        @include s_1200{
+            padding: 0;
+            padding-bottom: 32px;
+        }
+        @include s_576{
+            padding: 0;
+        }
+        &__summary-info{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 16px;
+            row-gap: 16px;
+            margin-bottom: 24px;
+
+        }
+        &__general-block{
+            padding: 16px;
+            box-sizing: border-box;
+            background-color: $black-005;
+            flex-grow: 1;
+            &-title{
+                font-family: 'SF Pro Display-Bold', sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                color: $black-1;
+                margin-bottom: 8px;
+                @include s_576{
+                    font-size: 20px;
+                }
+                &_operation{
+                    @include s_576{
+                        font-size: 16px;
+                    }
+                }
+            }
+            &-text{
+                display: flex;
+                column-gap: 8px;
+                align-items: center;
+                font-family: 'SF Pro Display-Regular', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                &:not(:last-child){
+                    margin-bottom: 8px;
+                }
+                &_referals{
+                    max-width: 573px;
+                }
+            }
+            &-info{
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+            }
+            &-value{
+                font-family: 'SF Pro Display-Bold', sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                color: $prime-prime;
+                @include s_576{
+                    font-size: 20px;
+                }
+                &_operation{
+                    font-family: 'SF Pro Display-Heavy', sans-serif;
+                    font-weight: 900;
+                    @include s_576{
+                        font-size: 18px;
+                    }
+                }
+            }
+            &-copy{
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                margin-top: 16px;
+                position: relative;
+                &-link{
+                    font-family: 'SF Pro Display-Medium', sans-serif;
+                    font-size: 32px;
+                    font-weight: 500;
+                    color: $prime-prime;
+                    @include s_576{
+                        font-size: 18px;
+                    }
+                }
+                &-btn{
+                    display: inline-flex;
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;
+                    &:hover{
+                        svg path{
+                            stroke: #7AABFF;
+                        }
+                    }
+                }
+                &-label{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    pointer-events: none;
+                    opacity: 0;
+                    z-index: 10;
+                    transform: translateY(120%);
+                    padding: 7px;
+                    box-sizing: border-box;
+                    font-size: 16px;
+                    background-color: $prime-prime;
+                    color: white;
+                    border-radius: 12px;
+                    transition: .5s;
+                    font-family: 'SF Pro Display-Medium', sans-serif;
+                    &::before{
+                        content: " ";
+                        position: absolute;
+                        top: 3px;
+                        transform: translate(-50%,-100%);
+                        left: 50%;
+                        border-width: 10px;
+                        border-style: solid;
+                        border-color: transparent transparent #4286FA transparent;
+                    }
+                    &_active{
+                        transition: .5s;
+                        opacity: 1;
+                    }
+                }
+            }
+            &_referals{
+                width: 569px;
+                @media (max-width: 1000px){
+                    width: 100%;
+                }  
+            }
+            &_bonuses{
+                width: 392px;
+            }
+            &_personal-link{
+                width: 100%;
+            }
+        }
+        &__operations{
+            &-list{
+                display: flex;
+                flex-direction: column;
+                row-gap: 16px;
+                margin-bottom: 24px;
+                @include s_576{
+                    margin-bottom: 16px;
+                }
+            }
+            &-title{
+                font-family: 'SF Pro Display-Bold', sans-serif;
+                font-size: 40px;
+                font-weight: 700;
+                margin-bottom: 24px;
+                margin-bottom: 16px;
+                @include s_768{
+                    font-size: 24px;
+                }
+                @include s_576{
+                    font-size: 20px;
+                }
+            }
+           
+        }
+    }
+    &-settings{
+        width: 100%;
+        padding: 48px 0 80px 40px;
+        box-sizing: border-box;
+        @include s_1200{
+            padding: 0;
+            padding-bottom: 40px;
+        }
+        @include s_576{
+            padding-bottom: 32px;
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            max-width: 594px;
+            width: 100%;
+            @include s_768{
+                row-gap: 32px;
+                max-width: unset;
+            }
+            @include s_576{
+                row-gap: 24px;
+            }
+            &-title{
+                font-family: 'SF Pro Display-Bold', sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 16px;
+                @include s_576{
+                    font-size: 20px;
+                }
+                &_min-margin{
+                    margin-bottom: 8px;
+                }
+            }
+            &-text{
+                font-family: 'SF Pro Display-Regular', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 16px;
+            }
+            &-part{
+                &-main{
+                    display: flex;
+                    column-gap: 24px;
+                    row-gap: 24px;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    @include s_768{
+                        row-gap: 16px;
+                    }
+                }
+                &-address-details{
+                    display: flex;
+                    flex-wrap: wrap;
+                    column-gap: 16px;
+                    row-gap: 16px;
+                    margin-bottom: -8px;
+                }
+            }
+            &-label{
+                display: flex;
+                flex-direction: column;
+                row-gap: 4px;
+                color: $black-1;
+                font-family: 'SF Pro Display-Medium', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                flex-grow: 1;
+                
+                &_name{
+                    max-width: 275px;
+                    @include s_768{
+                        max-width: unset;
+                        width: 100%;
+                    }
+                }
+                &_phonenumber{
+                    max-width: 275px;
+                    @include s_768{
+                        max-width: unset;
+                        width: 100%;
+                    }
+                }
+                &_comment{
+                    width: 100%;
+                }
+                &_city{
+                    max-width: 275px;
+                    @include s_768{
+                        max-width: unset;
+                        width: 100%;
+                    }
+                }
+                &_house{
+                    max-width: 80px;
+                }
+                &_corpus{
+                    max-width: 80px;
+                }
+                &_entrance{
+                    max-width: 80px;
+                   
+                    @include s_576{
+                        width: 100px;
+                        max-width: unset;
+                    }
+                }
+                &_flat{
+                    max-width: 145px;
+                    margin-left: 0px;
+                    @include s_576{
+                        width: 120px;
+                        max-width: 250px;
+                    }
+                }
+                &_doorphone{
+                    max-width: 145px;
+                    @include s_576{
+                        width: 100px;
+                        max-width: 250px;
+                    }
+                }
+            }
+            &-button{
+                width: fit-content;
+                @include s_576{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 .sidebar-menu-slider{
     @include s_1200{
@@ -505,6 +810,7 @@
     display: flex;
     column-gap: 16px;
     padding: 40px;
+    padding-top: 35px;
     box-sizing: border-box;
     width: 100%;
     row-gap: 24px;
@@ -524,7 +830,7 @@
         display: flex;
         flex-wrap: wrap;
         column-gap: 24px;
-        align-items: center;
+        align-items: flex-start;
         margin-bottom: 11px;
         min-height: 48px;
         row-gap: 8px;

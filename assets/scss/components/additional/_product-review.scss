@@ -689,18 +689,13 @@
     padding-top: 32px;
     border-top: 1px solid $black-03;
     background-color: $black-005;
+    &__slider{
+        overflow: hidden;
+    }
     &__tabs{
         display: flex;
-        justify-content: space-between;
-        column-gap: 18px;
         flex-shrink: 0;
         white-space: nowrap;
-        overflow-x: auto;
-        &::-webkit-scrollbar{
-            display: none;
-        }
-        -ms-overflow-style: none;  
-        scrollbar-width: none; 
     }
     &__tab{
         border-radius: 8px;
@@ -736,9 +731,7 @@
     box-sizing: border-box;
     &__inner{
         display: flex;
-        column-gap: 100px;
-        row-gap: 24px;
-        flex-wrap: wrap;
+        flex-direction: column;
         row-gap: 24px;
     }
     &__group{
@@ -773,7 +766,6 @@
                 }
                 @include s_576{
                     flex-direction: column;
-                    
                 }
             }
         }
@@ -1081,15 +1073,11 @@
     }
     &__tabs{
         display: flex;
-        column-gap: 8px;
         margin-bottom: 24px;
         white-space: nowrap;
-        overflow-x: auto;
-        &::-webkit-scrollbar{
-            display: none;
+        &-slider{
+            overflow: hidden;
         }
-        -ms-overflow-style: none;  
-        scrollbar-width: none; 
     }
     &__tab{
         padding: 12px 24px;
