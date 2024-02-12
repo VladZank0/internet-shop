@@ -49,9 +49,12 @@
             display: flex;
             align-items: center;
             padding: 18px;
-            justify-content: space-between;
+            justify-content: center;
             min-height: 200px;
             border-radius: 16px;
+            column-gap: 10px;
+            flex-wrap: wrap;
+            text-align: center;
         }
         @media (max-width: 350px){
             flex-direction: column;
@@ -87,12 +90,17 @@
             position: absolute;
             bottom: 0;
             right: 0;
+            max-width: 340px;
+            max-height: 384px;
             @media (max-width: 1000px){
                 top: 43%;
                 right: 50px;
             }
             @media (max-width: 480px){
                 position: static;
+                max-width: 192px;
+                max-height: 162px;
+                
             }
            
         }
@@ -105,6 +113,8 @@
             line-height: normal;
             @media (max-width:480px){
                 font-size: 24px;
+                flex-grow: 1;
+                width: 160px;
             }
         }
         &_slider{
