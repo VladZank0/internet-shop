@@ -158,6 +158,11 @@
             font-style: normal;
             font-weight: 500;
             line-height: normal;
+            transition: .1s;
+            &:hover{
+                transition: .1s;
+                color: #4286FA;
+            }
         }
         &-list-title{
             display: block;
@@ -167,6 +172,11 @@
             font-size: 24px;
             font-style: normal;
             font-weight: 500;
+            transition: .1s;
+            &:hover{
+                transition: .1s;
+                color: #4286FA;
+            }
         }
         &-link{
             color: $black-07;
@@ -174,6 +184,11 @@
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
+            transition: .1s;
+            &:hover{
+                transition: .1s;
+                color: #4286FA;
+            }
         }
         &-list{
             display: flex;
@@ -261,6 +276,21 @@
     left: 0;
     z-index: 20;
     background-color: white;
+    &_main{
+        .mm-spn--open{
+            padding-left: 0 !important;
+            margin-bottom: 24px !important;
+        }
+        width: 100%;
+        display: block;
+        position: relative;
+        height: 70vh;
+        z-index: 10;
+        @media (min-width:1000px){
+            display: none;
+        }
+    }
+
     @media (min-width:1200px){
         display: none;
     }

@@ -20,7 +20,14 @@
     
 
 const menu = new MmenuLight( document.querySelector( '#menu' ), 'all');
+const menu_main = new MmenuLight( document.querySelector( '#menu_main' ), 'all');
 var navigator = menu.navigation({
+    // selectedClass: 'Selected',
+    // slidingSubmenus: true,
+    // theme: 'dark',
+    // title: 'Menu'
+});
+var navigator = menu_main.navigation({
     // selectedClass: 'Selected',
     // slidingSubmenus: true,
     // theme: 'dark',
