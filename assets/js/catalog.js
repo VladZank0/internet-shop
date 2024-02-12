@@ -27,12 +27,15 @@ var navigator = menu.navigation({
     // theme: 'dark',
     // title: 'Menu'
 });
-var navigator = menu_main.navigation({
-    // selectedClass: 'Selected',
-    // slidingSubmenus: true,
-    // theme: 'dark',
-    // title: 'Menu'
-});
+if(document.querySelector( '#menu_main' )){
+    var navigator = menu_main.navigation({
+        // selectedClass: 'Selected',
+        // slidingSubmenus: true,
+        // theme: 'dark',
+        // title: 'Menu'
+    });
+}
+
 
     let catalog_tags_btn = document.querySelector('.catalog-page__tags-show-btn');
     let catalog_tags = document.querySelectorAll('.catalog-page__tag');
