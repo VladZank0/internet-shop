@@ -794,13 +794,11 @@
         display: none;
         @include s_1200{
             display: block;
+            max-width: none;
+            width: 100%;
         }
         margin-bottom: 0;
         margin: 24px 0 40px 0;
-        @media (max-width: 1000px){
-            width: 100%;
-            max-width: none;
-        }
         @include s_576{
             margin: 5px 0 40px 0;
         }
