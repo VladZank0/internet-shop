@@ -4,9 +4,14 @@
     })
 
     let sms_code_inputs = document.querySelectorAll('.sms-code__input');
+    let hidden_sms_code = document.querySelector('.sms-code__input_hidden');
     
     function handleInputField({ target }) {
         const value = target.value.slice(0, 1);
+        if (!/^\d*$/.test(value)) {
+            target.value = target.value.replace(/\D/g, '');
+            return;
+        }
         target.value = value;
     
         const step = value ? 1 : -1;
@@ -16,11 +21,20 @@
         if (focusToIndex < 0 || focusToIndex >= sms_code_inputs.length) return;
     
         sms_code_inputs[focusToIndex].focus();
+
+        const codeValues = Array.from(sms_code_inputs).map((input) => input.value);
+        hidden_sms_code.value = codeValues.join('');
     }
+    
+    
     if(sms_code_inputs){
         sms_code_inputs.forEach((input) => {
             input.addEventListener("input", handleInputField);
         });    
+        sms_code_inputs[sms_code_inputs.length - 1].addEventListener('input', () => {
+            const codeValues = Array.from(sms_code_inputs).map((input) => input.value);
+            hidden_sms_code.value = codeValues.join('');
+        });
     }
     
     function codeFailure(){

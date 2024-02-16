@@ -24,12 +24,13 @@
             <button class="auth-code-window__btn">Изменить номер</button>
             <form class="auth-code-window__form">
                 <div class="sms-code">
-                    <input type="text" name="sms-code-value-1" class="sms-code__input sms-code__input_success">
-                    <input type="text" name="sms-code-value-2" class="sms-code__input sms-code__input_failure">
-                    <input type="text" name="sms-code-value-3" class="sms-code__input">
-                    <input type="text" name="sms-code-value-4" class="sms-code__input">
+                    <input type="text" class="sms-code__input sms-code__input_success">
+                    <input type="text" class="sms-code__input sms-code__input_failure">
+                    <input type="text" class="sms-code__input">
+                    <input type="text" class="sms-code__input">
+                    <input type="hidden" class="sms-code__input_hidden" id="hidden-input" name="sms-code">
                 </div>
-                <button class="auth-code-window__btn">Отправить новый код</button>
+                <button type="submit" class="auth-code-window__btn">Отправить новый код</button>
                 <p class="auth-code-window__execution-text">Секунду</p>
                 <p class="auth-code-window__execution-text auth-code-window__execution-text_waiting">Отправить новый код через: 0:29</p>
             </form>
@@ -50,6 +51,7 @@
                 </label>
                 <button type="submit" class="auth-window__button default-btn">Далее</button>
             </form>
+            <div class="auth-error">Сообщение об ошибке</div>
         </div>
     </div>
     <div style="display: none;" id="review-success-window" class="modal-window success-window">
