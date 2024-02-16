@@ -69,14 +69,18 @@ if(document.querySelector( '#menu_main' )){
         let list_view_change_btn = document.querySelector('.catalog-page__view-modes-list');
         let card_view_change_btn = document.querySelector('.catalog-page__view-modes-card');
         list_view_change_btn.addEventListener('click', () => {
-            list_view_change_btn.classList.add('catalog-page__view-modes-list_active');
-            card_view_change_btn.classList.remove('catalog-page__view-modes-card_active');
-            catalog_list.classList.add('catalog-page__catalog-list_list');
+            if(document.querySelector('.catalog-page__view-modes-card_active')){
+                list_view_change_btn.classList.add('catalog-page__view-modes-list_active');
+                card_view_change_btn.classList.remove('catalog-page__view-modes-card_active');
+                catalog_list.classList.add('catalog-page__catalog-list_list');
+            }
         })
         card_view_change_btn.addEventListener('click', () => {
-            card_view_change_btn.classList.add('catalog-page__view-modes-card_active');
-            list_view_change_btn.classList.remove('catalog-page__view-modes-list_active');
-            catalog_list.classList.remove('catalog-page__catalog-list_list');
+            if(document.querySelector('.catalog-page__view-modes-list_active')){
+                card_view_change_btn.classList.add('catalog-page__view-modes-card_active');
+                list_view_change_btn.classList.remove('catalog-page__view-modes-list_active');
+                catalog_list.classList.remove('catalog-page__catalog-list_list');
+            }
         })
         // matchMedia('only screen and (min-width:1200px)').addEventListener('change', () => {
         //     card_view_change_btn.classList.add('catalog-page__view-modes-card_active');
