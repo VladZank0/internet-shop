@@ -31,7 +31,7 @@
             padding: 15px 0;
         } 
         @include s_768{
-            
+            padding: 8px 0;
         }
         @include s_576{
             border-bottom: 1px solid var(--black-01, #E7E7E7);
@@ -53,12 +53,12 @@
         align-items: center;
         height: 88px;
         @include s_768{
-            padding-top: 16px;
+            // padding-top: 16px;
             padding-bottom: 16px;
             height: unset;
         }
         @include s_576{
-            padding-top: 8px;
+            // padding-top: 8px;
             padding-bottom: 8px;
         }
         &__btns{
