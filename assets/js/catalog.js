@@ -69,16 +69,23 @@ if(document.querySelector( '#menu_main' )){
         let list_view_change_btn = document.querySelector('.catalog-page__view-modes-list');
         let card_view_change_btn = document.querySelector('.catalog-page__view-modes-card');
         list_view_change_btn.addEventListener('click', () => {
-            if(document.querySelector('.catalog-page__view-modes-card_active')){
-                list_view_change_btn.classList.add('catalog-page__view-modes-list_active');
-                card_view_change_btn.classList.remove('catalog-page__view-modes-card_active');
-                catalog_list.classList.add('catalog-page__catalog-list_list');
-            }
+            list_view_change_btn.classList.add('catalog-page__view-modes-list_active');
+            card_view_change_btn.classList.remove('catalog-page__view-modes-card_active');
+            catalog_list.classList.add('catalog-page__catalog-list_list');
         })
         card_view_change_btn.addEventListener('click', () => {
-            if(document.querySelector('.catalog-page__view-modes-list_active')){
-                card_view_change_btn.classList.add('catalog-page__view-modes-card_active');
+            if(list_view_change_btn.classList.contains('catalog-page__view-modes-card_active') && list_view_change_btn.classList.contains('catalog-page__view-modes-list_active')){
+                list_view_change_btn.classList.remove('catalog-page__view-modes-card_active');
                 list_view_change_btn.classList.remove('catalog-page__view-modes-list_active');
+                card_view_change_btn.classList.add('catalog-page__view-modes-card_active');
+                catalog_list.classList.remove('catalog-page__catalog-list_list');
+            }else if(list_view_change_btn.classList.contains('catalog-page__view-modes-card_active') && !list_view_change_btn.classList.contains('catalog-page__view-modes-list_active')){
+                list_view_change_btn.classList.remove('catalog-page__view-modes-card_active');
+                card_view_change_btn.classList.add('catalog-page__view-modes-card_active');
+                catalog_list.classList.remove('catalog-page__catalog-list_list');
+            }else{
+                list_view_change_btn.classList.remove('catalog-page__view-modes-list_active');
+                card_view_change_btn.classList.add('catalog-page__view-modes-card_active');
                 catalog_list.classList.remove('catalog-page__catalog-list_list');
             }
         })

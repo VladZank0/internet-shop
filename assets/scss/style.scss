@@ -113,11 +113,6 @@ body{
         margin-top: 63px;
     }
 }
-@media (max-width: 600px){
-   html{
-    scroll-behavior: auto;
-   }
-}
 input[type="text"]:focus:not(.busket-page__item-count-input), 
 input[type="text"]:hover:not(.busket-page__item-count-input),
 input[type="email"]:focus,
