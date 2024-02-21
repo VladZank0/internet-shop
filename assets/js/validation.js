@@ -27,7 +27,7 @@
     }
     
     
-    if(sms_code_inputs){
+    if(sms_code_inputs.length){
         sms_code_inputs.forEach((input) => {
             input.addEventListener("input", handleInputField);
         });    
